@@ -83,6 +83,17 @@ export function Slot({ name, className }: { name: string; className?: string }) 
   );
 }
 
+export function PluginView({ manifestId, slot = "main" }: { manifestId: string; slot?: string }) {
+  const host = usePluginHost();
+  const manifest = host.manifests.find((m) => m.id === manifestId);
+  if (!host.ready) return <div aria-busy="true" />;
+  if (!manifest)
+    return (
+      <div className="text-sm text-destructive">Lisäosaa "{manifestId}" ei löytynyt.</div>
+    );
+  return <PluginMount manifest={manifest} slot={slot} />;
+}
+
 function PluginMount({ manifest, slot }: { manifest: PluginManifest; slot: string }) {
   const host = usePluginHost();
   const containerRef = React.useRef<HTMLDivElement | null>(null);
