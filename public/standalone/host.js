@@ -1,7 +1,9 @@
 // Kevyt staattinen plugin-host. Toimii GitHub Pagesilla (vain staattisia tiedostoja).
 // Käyttää suhteellisia polkuja, joten /<repo>/-alipolut toimivat ilman konfigurointia.
 
-const PLUGINS_BASE = "../plugins/"; // public/plugins/ relatiivisesti standalone/:sta
+// GitHub Pagesilla index.html on juuressa ja pluginit ./plugins/ alla.
+// Lokaalisti (Lovable preview) standalone on /standalone/ ja pluginit /plugins/ → ../plugins/.
+const PLUGINS_BASE = location.pathname.includes("/standalone/") ? "../plugins/" : "./plugins/";
 
 // --- Event bus ---------------------------------------------------------------
 function createEventBus() {
