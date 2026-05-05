@@ -1,0 +1,9 @@
+{
+  "id": "demo-listener",
+  "version": "1.0.0",
+  "title": "Tapahtumakuuntelija",
+  "slots": ["dashboard.widgets", "sidebar.menu"],
+  "entry": "./index.js",
+  "styles": "./styles.css",
+  "permissions": ["events:listen"]
+}
