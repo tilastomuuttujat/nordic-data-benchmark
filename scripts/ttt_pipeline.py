@@ -888,8 +888,24 @@ def step_nordic_sync(client, dry_run=False, since=None) -> PipelineResult:
     result = PipelineResult("nordic_sync")
     log.info("ASKEL 6: Nordic indicators_ref-meta")
 
-    nordic_df = fetch_df(client, "nordic_indicators",
-                         "category,indicator_name,unit")
+    # Selvitetään saatavilla olevat sarakkeet (skeemavaihtelut: indicator_name
+    # voi olla esim. "indicator", "subcategory" tai puuttua kokonaan)
+    candidate_name_cols = ["indicator_name", "indicator", "subcategory", "sub_category", "name"]
+    name_col = None
+    for c in candidate_name_cols:
+        try:
+            probe = fetch_df(client, "nordic_indicators", f"category,{c}").head(1)
+            name_col = c
+            break
+        except Exception:
+            continue
+
+    select_cols = "category,unit" + (f",{name_col}" if name_col else "")
+    try:
+        nordic_df = fetch_df(client, "nordic_indicators", select_cols)
+    except Exception:
+        nordic_df = fetch_df(client, "nordic_indicators", "category")
+
     if nordic_df.empty:
         result.warnings.append("nordic_indicators tyhjä")
         return result
@@ -902,18 +918,20 @@ def step_nordic_sync(client, dry_run=False, since=None) -> PipelineResult:
 
     new = []
     cols = nordic_df.columns
-    src = nordic_df[["category"] + (["indicator_name"] if "indicator_name" in cols else [])
-                    + (["unit"] if "unit" in cols else [])].drop_duplicates()
+    keep = ["category"] + ([name_col] if name_col and name_col in cols else []) \
+                       + (["unit"] if "unit" in cols else [])
+    src = nordic_df[keep].drop_duplicates()
     for _, r in src.iterrows():
         cat = str(r.get("category", "")) if pd.notna(r.get("category")) else ""
-        name = str(r.get("indicator_name", "")) if pd.notna(r.get("indicator_name", "")) else cat
+        nm_raw = r.get(name_col) if name_col and name_col in cols else None
+        name = str(nm_raw) if (nm_raw is not None and pd.notna(nm_raw)) else cat
         ext_id = f"nordic_{norm(cat)}_{norm(name)}"[:80]
         if ext_id not in existing:
             new.append({
                 "external_id": ext_id,
                 "name": f"{name} (pohjoismaat)",
                 "category_name": f"Nordic — {cat}",
-                "unit": str(r.get("unit")) if pd.notna(r.get("unit")) else None,
+                "unit": str(r.get("unit")) if "unit" in cols and pd.notna(r.get("unit")) else None,
                 "ttt_pilari": "vertailu",
             })
             existing.add(ext_id)
@@ -1168,9 +1186,7 @@ def step_regression_results_sync(client, dry_run=False, since=None) -> PipelineR
                 f"v3 sync run_id={RUN_ID} — OLS β_std, "
                 f"p_adj={r.get('p_adjusted')}, sig={r.get('sig_level')}"
             ),
-            "strength": ("vahva" if abs(float(beta)) >= 0.7
-                         else "kohtalainen" if abs(float(beta)) >= 0.45
-                         else "heikko"),
+            # HUOM: "strength" on generated column tietokannassa — älä lähetä
             "direction": "positiivinen" if float(beta) > 0 else "negatiivinen",
         })
 
@@ -1200,8 +1216,8 @@ def step_analytics_snapshot(client, dry_run=False, since=None) -> PipelineResult
     now = datetime.now(timezone.utc).isoformat()
     row = {
         "event_type": "db_snapshot_v3",
-        "event_data": {"model_run_id": RUN_ID, "row_counts": counts,
-                       "recorded_at": now},
+        "metadata": {"model_run_id": RUN_ID, "row_counts": counts,
+                     "recorded_at": now},
         "created_at": now,
     }
     if dry_run:
