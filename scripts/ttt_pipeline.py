@@ -1124,9 +1124,14 @@ def step_causal_chains_sync(client, dry_run=False, since=None) -> PipelineResult
     ind_map = dict(zip(ind_df["id"], ind_df["external_id"]))
 
     rows = []
+    seen = set()
     for _, r in el.iterrows():
         ext = ind_map.get(r["indicator_id"], r["indicator_id"])
         chain_id = f"auto_{r['j_code']}_{ext}"[:80]
+        key = (chain_id, 1)
+        if key in seen:
+            continue
+        seen.add(key)
         rows.append({
             "chain_id": chain_id,
             "chain_name": f"AUTO: {r['j_code']} → {ext}",
@@ -1186,8 +1191,7 @@ def step_regression_results_sync(client, dry_run=False, since=None) -> PipelineR
                 f"v3 sync run_id={RUN_ID} — OLS β_std, "
                 f"p_adj={r.get('p_adjusted')}, sig={r.get('sig_level')}"
             ),
-            # HUOM: "strength" on generated column tietokannassa — älä lähetä
-            "direction": "positiivinen" if float(beta) > 0 else "negatiivinen",
+            # HUOM: "strength" JA "direction" ovat generated columns — älä lähetä
         })
 
     n = upsert(client, "regression_results", rows,
