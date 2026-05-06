@@ -1,4 +1,5 @@
 [
   { "dir": "demo-counter" },
-  { "dir": "demo-listener" }
+  { "dir": "demo-listener" },
+  { "dir": "vaesto-huoltosuhde" }
 ]

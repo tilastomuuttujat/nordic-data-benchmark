@@ -337,7 +337,8 @@ async function loadData(core) {
   return res.json();
 }
 
-async function mount(target, core) {
+async function mount({ container, core }) {
+  const target = container;
   if (!target) return;
   target.innerHTML = "";
   const root = document.createElement("section");
@@ -446,12 +447,13 @@ async function mount(target, core) {
   _state = { root, tt, onResize };
 }
 
-function unmount() {
+function unmount({ container } = {}) {
   if (!_state) return;
   const { root, tt, onResize } = _state;
   window.removeEventListener("resize", onResize);
   if (tt && tt.parentNode) tt.parentNode.removeChild(tt);
   if (root && root.parentNode) root.parentNode.removeChild(root);
+  if (container) container.innerHTML = "";
   _state = null;
 }
 
