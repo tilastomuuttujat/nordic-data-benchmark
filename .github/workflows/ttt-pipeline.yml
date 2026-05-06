@@ -18,6 +18,8 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -34,8 +36,22 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_EXPORT_DIR: public/data
         run: |
           ARGS=""
           if [ -n "${{ inputs.step }}" ]; then ARGS="$ARGS --step ${{ inputs.step }}"; fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python scripts/ttt_pipeline.py $ARGS
+
+      - name: Commit updated JSON exports
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia JSON-tiedostoihin"
+          else
+            git commit -m "chore(data): päivitä JSON-export [skip ci]"
+            git push
+          fi
