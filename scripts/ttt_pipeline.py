@@ -855,6 +855,95 @@ def step_analytics_snapshot(client: Client, dry_run: bool = False,
 # PÄÄOHJELMA
 # ──────────────────────────────────────────────────────────────
 
+# ──────────────────────────────────────────────────────────────
+# ASKEL 8: JSON-EXPORT — LUKIJAVERSION DATA
+# ──────────────────────────────────────────────────────────────
+
+# Taulut jotka viedään JSON-tiedostoiksi lukijaversiota varten.
+# Avain = tiedoston nimi (public/data/<key>.json), arvo = Supabase-taulun nimi.
+EXPORT_TABLES = {
+    "sectors": "sectors",
+    "sector_series": "sector_series",
+    "sector_target_population": "sector_target_population",
+    "sector_jcode_map": "sector_jcode_map",
+    "j_codes": "j_codes",
+    "j_code_indicator": "j_code_indicator",
+    "indicators_ref": "indicators_ref",
+    "time_series": "time_series",
+    "elasticities": "elasticities",
+    "ols_models": "ols_models",
+    "ols_coefficients": "ols_coefficients",
+    "statistical_tests": "statistical_tests",
+    "tfr_forecast": "tfr_forecast",
+    "hoiva_aalto_projection": "hoiva_aalto_projection",
+    "nordic_indicators": "nordic_indicators",
+    "ttt_essays": "ttt_essays",
+    "amounts": "amounts",
+    "cofog_amounts": "cofog_amounts",
+}
+
+# Hakemisto johon JSON-tiedostot kirjoitetaan (suhteessa repon juureen)
+EXPORT_DIR = os.environ.get("TTT_EXPORT_DIR", "public/data")
+
+
+def step_export_json(client: Client, dry_run: bool = False,
+                     since: Optional[str] = None) -> PipelineResult:
+    """
+    Vie keskeiset taulut JSON-tiedostoiksi public/data/-hakemistoon.
+    Lukijaversio (staattinen sivusto) lukee nämä tiedostot eikä ole
+    riippuvainen Supabase-tietokannasta ajon aikana.
+
+    Tuottaa:
+      - public/data/<table>.json   (taulun rivit listana)
+      - public/data/manifest.json  (yhteenveto: taulut, rivimäärät, aikaleima)
+    """
+    import json
+    from pathlib import Path
+
+    result = PipelineResult("export_json")
+    log.info("ASKEL 8: JSON-export lukijaversiolle")
+
+    out_dir = Path(EXPORT_DIR)
+    if not dry_run:
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+    manifest = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": "ttt_pipeline.step_export_json",
+        "tables": {},
+    }
+
+    for fname, table in EXPORT_TABLES.items():
+        try:
+            df = fetch_df(client, table, "*")
+        except Exception as exc:
+            result.warnings.append(f"{table}: {exc}")
+            log.warning(f"  ! {table} ohitettu: {exc}")
+            continue
+
+        rows = df.to_dict(orient="records") if not df.empty else []
+        # JSON-yhteensopivuus: NaN → None
+        for row in rows:
+            for k, v in list(row.items()):
+                if isinstance(v, float) and (pd.isna(v) or v != v):
+                    row[k] = None
+
+        target = out_dir / f"{fname}.json"
+        if dry_run:
+            log.info(f"  [dry-run] {target} ({len(rows)} riviä)")
+        else:
+            with open(target, "w", encoding="utf-8") as f:
+                json.dump(rows, f, ensure_ascii=False, separators=(",", ":"), default=str)
+        manifest["tables"][fname] = {"file": f"{fname}.json", "rows": len(rows)}
+        result.rows_inserted += len(rows)
+
+    if not dry_run:
+        with open(out_dir / "manifest.json", "w", encoding="utf-8") as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2, default=str)
+    log.info(f"  ✓ {len(manifest['tables'])} taulua viety hakemistoon {EXPORT_DIR}")
+    return result
+
+
 STEPS = {
     "per_capita":        step_per_capita,
     "elasticities":      step_elasticities,
@@ -863,6 +952,7 @@ STEPS = {
     "hoiva_aalto":       step_hoiva_aalto,
     "nordic_sync":       step_nordic_sync,
     "analytics_snapshot":step_analytics_snapshot,
+    "export_json":       step_export_json,
 }
 
 # Suorituksen oletusjärjestys — riippuvuudet huomioitu
@@ -873,7 +963,8 @@ DEFAULT_ORDER = [
     "ols",               # Regressiot (tarvitsee time_series-datan)
     "forecasts",         # Ennusteet (tarvitsee TFR-datan)
     "hoiva_aalto",       # Projektiot (tarvitsee väestödatan)
-    "analytics_snapshot",# Viimeisenä: tallenna tilasto ajosta
+    "analytics_snapshot",# Tallenna tilasto ajosta
+    "export_json",       # Viimeisenä: vie kaikki JSON-tiedostoiksi
 ]
 
 
