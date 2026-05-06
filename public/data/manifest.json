@@ -1,78 +1,413 @@
 {
-  "generated_at": "2026-05-06T08:05:47.193394+00:00",
-  "source": "ttt_pipeline.step_export_json",
+  "generated_at": "2026-05-06T09:43:13.174492+00:00",
+  "model_run_id": "20260506T094140Z_6ede31c",
   "tables": {
     "sectors": {
       "file": "sectors.json",
-      "rows": 18
+      "rows": 18,
+      "sha256_16": "ad9bfa814a229a22"
     },
     "sector_series": {
       "file": "sector_series.json",
-      "rows": 4158
+      "rows": 4158,
+      "sha256_16": "fd0b21c70496e609"
     },
     "sector_target_population": {
       "file": "sector_target_population.json",
-      "rows": 298
+      "rows": 298,
+      "sha256_16": "91f5e91eda8ec548"
     },
     "sector_jcode_map": {
       "file": "sector_jcode_map.json",
-      "rows": 79
+      "rows": 79,
+      "sha256_16": "ec03438decf5ccb9"
     },
     "j_codes": {
       "file": "j_codes.json",
-      "rows": 80
+      "rows": 80,
+      "sha256_16": "aa92c372b408ad24"
     },
     "j_code_indicator": {
       "file": "j_code_indicator.json",
-      "rows": 117
+      "rows": 117,
+      "sha256_16": "35a444b9793678ef"
+    },
+    "j_code_cofog": {
+      "file": "j_code_cofog.json",
+      "rows": 49,
+      "sha256_16": "108ffacf20595110"
+    },
+    "j_code_lifecycle": {
+      "file": "j_code_lifecycle.json",
+      "rows": 80,
+      "sha256_16": "1a87fdfae7662ae2"
+    },
+    "lifecycle_groups": {
+      "file": "lifecycle_groups.json",
+      "rows": 9,
+      "sha256_16": "5ac0e41506d19044"
     },
     "indicators_ref": {
       "file": "indicators_ref.json",
-      "rows": 301
+      "rows": 360,
+      "sha256_16": "861121654a4ca4d7"
     },
     "time_series": {
       "file": "time_series.json",
-      "rows": 22744
+      "rows": 22744,
+      "sha256_16": "83bdafa63c9d9064"
     },
     "elasticities": {
       "file": "elasticities.json",
-      "rows": 255
+      "rows": 255,
+      "sha256_16": "6da473d4ee1773b2"
     },
     "ols_models": {
       "file": "ols_models.json",
-      "rows": 9
+      "rows": 9,
+      "sha256_16": "39a7b148064f1724"
     },
     "ols_coefficients": {
       "file": "ols_coefficients.json",
-      "rows": 25
+      "rows": 25,
+      "sha256_16": "60a32fb7092dbec6"
     },
     "statistical_tests": {
       "file": "statistical_tests.json",
-      "rows": 16
+      "rows": 16,
+      "sha256_16": "41cf832f643ba21a"
+    },
+    "regression_results": {
+      "file": "regression_results.json",
+      "rows": 60,
+      "sha256_16": "a11bafadf0f6019a"
+    },
+    "panel_datasets": {
+      "file": "panel_datasets.json",
+      "rows": 1,
+      "sha256_16": "50c9e5ad3ee13752"
+    },
+    "panel_heterogeneity": {
+      "file": "panel_heterogeneity.json",
+      "rows": 3,
+      "sha256_16": "ae8ce29c96326e67"
     },
     "tfr_forecast": {
       "file": "tfr_forecast.json",
-      "rows": 5
+      "rows": 5,
+      "sha256_16": "bcd94a8191a19d64"
     },
     "hoiva_aalto_projection": {
       "file": "hoiva_aalto_projection.json",
-      "rows": 11
+      "rows": 11,
+      "sha256_16": "6c2432c3bbf53720"
     },
     "nordic_indicators": {
       "file": "nordic_indicators.json",
-      "rows": 8088
+      "rows": 8088,
+      "sha256_16": "3a3143fc06861714"
+    },
+    "nordic_category_map": {
+      "file": "nordic_category_map.json",
+      "rows": 81,
+      "sha256_16": "601c5e87837f5f92"
     },
     "ttt_essays": {
       "file": "ttt_essays.json",
-      "rows": 219
+      "rows": 219,
+      "sha256_16": "517ab9e0581bc033"
+    },
+    "ttt_chapters": {
+      "file": "ttt_chapters.json",
+      "rows": 40,
+      "sha256_16": "8c96f79f23da5a6d"
+    },
+    "ttt_blocks": {
+      "file": "ttt_blocks.json",
+      "rows": 85,
+      "sha256_16": "65d14ed787c95059"
     },
     "amounts": {
       "file": "amounts.json",
-      "rows": 62848
+      "rows": 62848,
+      "sha256_16": "9ead61bea8556202"
     },
     "cofog_amounts": {
       "file": "cofog_amounts.json",
-      "rows": 64443
+      "rows": 64443,
+      "sha256_16": "323d2eb9a1ca49fd"
+    },
+    "cofog_codes": {
+      "file": "cofog_codes.json",
+      "rows": 99,
+      "sha256_16": "be75fd66964d3a8a"
+    },
+    "causal_chains": {
+      "file": "causal_chains.json",
+      "rows": 100,
+      "sha256_16": "a01249f799f378c4"
+    },
+    "crisis_events": {
+      "file": "crisis_events.json",
+      "rows": 13,
+      "sha256_16": "226c5d034d5f918f"
+    },
+    "policy_decisions": {
+      "file": "policy_decisions.json",
+      "rows": 20,
+      "sha256_16": "0af429912a5c728c"
+    },
+    "intervention_definitions": {
+      "file": "intervention_definitions.json",
+      "rows": 8,
+      "sha256_16": "f271676855be7c01"
+    },
+    "prevention_package": {
+      "file": "prevention_package.json",
+      "rows": 29,
+      "sha256_16": "c1d6f456d27e1bb0"
+    },
+    "fact_intervention_evidence": {
+      "file": "fact_intervention_evidence.json",
+      "rows": 10,
+      "sha256_16": "4ea311fa4a6fa0b0"
+    }
+  },
+  "views": {
+    "v_signal": {
+      "file": "views/v_signal.json",
+      "rows": 80,
+      "sha256_16": "8b6475d7833d44fb"
+    },
+    "v_signal_full_chain": {
+      "file": "views/v_signal_full_chain.json",
+      "rows": 6,
+      "sha256_16": "71923e4c37546995"
+    },
+    "v_signal_funding_paradox": {
+      "file": "views/v_signal_funding_paradox.json",
+      "rows": 80,
+      "sha256_16": "ef599692c7cb61da"
+    },
+    "v_signal_leverage": {
+      "file": "views/v_signal_leverage.json",
+      "rows": 10,
+      "sha256_16": "21398b06d2f4fa50"
+    },
+    "v_signal_policy_lag": {
+      "file": "views/v_signal_policy_lag.json",
+      "rows": 14,
+      "sha256_16": "65409e862e6151b7"
+    },
+    "v_signal_counterfactual": {
+      "file": "views/v_signal_counterfactual.json",
+      "rows": 320,
+      "sha256_16": "9ef227e3aa76f4ec"
+    },
+    "v_signal_counterfactual_v2": {
+      "file": "views/v_signal_counterfactual_v2.json",
+      "rows": 320,
+      "sha256_16": "4c4913bcfe1663fe"
+    },
+    "v_signal_drift": {
+      "file": "views/v_signal_drift.json",
+      "rows": 198,
+      "sha256_16": "71e983b04ebf53cd"
+    },
+    "v_policy_signal": {
+      "file": "views/v_policy_signal.json",
+      "rows": 20,
+      "sha256_16": "4f0417f621e06d08"
+    },
+    "v_causal_chain_full": {
+      "file": "views/v_causal_chain_full.json",
+      "rows": 100,
+      "sha256_16": "020eee6800331580"
+    },
+    "v_causal_chain_summary": {
+      "file": "views/v_causal_chain_summary.json",
+      "rows": 82,
+      "sha256_16": "5393c15b5ce841f6"
+    },
+    "v_crisis_chain_timeline": {
+      "file": "views/v_crisis_chain_timeline.json",
+      "rows": 21,
+      "sha256_16": "f1e42c64168a5b70"
+    },
+    "v_crisis_lifecycle": {
+      "file": "views/v_crisis_lifecycle.json",
+      "rows": 48,
+      "sha256_16": "9e0bb495ea7c3dc5"
+    },
+    "v_crisis_summary": {
+      "file": "views/v_crisis_summary.json",
+      "rows": 13,
+      "sha256_16": "15aec6a3f2ac0761"
+    },
+    "v_crisis_timeseries": {
+      "file": "views/v_crisis_timeseries.json",
+      "rows": 4073,
+      "sha256_16": "c129a2912d84e83c"
+    },
+    "v_crisis_wake": {
+      "file": "views/v_crisis_wake.json",
+      "rows": 184,
+      "sha256_16": "21aed5e9f3df9a28"
+    },
+    "v_demographic_pressure": {
+      "file": "views/v_demographic_pressure.json",
+      "rows": 9,
+      "sha256_16": "675e7833e04993e0"
+    },
+    "v_fertility_housing": {
+      "file": "views/v_fertility_housing.json",
+      "rows": 23,
+      "sha256_16": "e2ac5b6b84007cd9"
+    },
+    "v_housing_fertility_chain": {
+      "file": "views/v_housing_fertility_chain.json",
+      "rows": 23,
+      "sha256_16": "d7eef6c69162d1fd"
+    },
+    "v_population_trend": {
+      "file": "views/v_population_trend.json",
+      "rows": 90,
+      "sha256_16": "14e9e40c3e77832a"
+    },
+    "v_population_weighted": {
+      "file": "views/v_population_weighted.json",
+      "rows": 530,
+      "sha256_16": "933af9735914d181"
+    },
+    "v_fi_tfr": {
+      "file": "views/v_fi_tfr.json",
+      "rows": 43,
+      "sha256_16": "e09bb75e01e03931"
+    },
+    "v_funding_by_jcode": {
+      "file": "views/v_funding_by_jcode.json",
+      "rows": 80,
+      "sha256_16": "071d6b4d6f51db37"
+    },
+    "v_spending_by_age_band": {
+      "file": "views/v_spending_by_age_band.json",
+      "rows": 53,
+      "sha256_16": "f18129e5ad8eb8fb"
+    },
+    "v_hoiva_aalto_summary": {
+      "file": "views/v_hoiva_aalto_summary.json",
+      "rows": 11,
+      "sha256_16": "ca9a6494dbc04459"
+    },
+    "v_intervention_simulation": {
+      "file": "views/v_intervention_simulation.json",
+      "rows": 160,
+      "sha256_16": "ae0bb24e5d4ffd84"
+    },
+    "v_interventions_by_lifecycle": {
+      "file": "views/v_interventions_by_lifecycle.json",
+      "rows": 10,
+      "sha256_16": "5f004eeb4953c1b3"
+    },
+    "v_lag_analysis_osa_aikatyo": {
+      "file": "views/v_lag_analysis_osa_aikatyo.json",
+      "rows": 6,
+      "sha256_16": "707d13179c27f555"
+    },
+    "v_regression_syntyvyys": {
+      "file": "views/v_regression_syntyvyys.json",
+      "rows": 8,
+      "sha256_16": "2967b60390bdcdf5"
+    },
+    "v_segment_panel": {
+      "file": "views/v_segment_panel.json",
+      "rows": 90,
+      "sha256_16": "9eb1ab318ef8b290"
+    },
+    "v_nordic_alcohol": {
+      "file": "views/v_nordic_alcohol.json",
+      "rows": 172,
+      "sha256_16": "13d06a1ef9fd3e25"
+    },
+    "v_nordic_fertility": {
+      "file": "views/v_nordic_fertility.json",
+      "rows": 504,
+      "sha256_16": "ba0990dfcfb65114"
+    },
+    "v_nordic_fertility_trend": {
+      "file": "views/v_nordic_fertility_trend.json",
+      "rows": 43,
+      "sha256_16": "b654480ba621abcb"
+    },
+    "v_nordic_fi_comparison": {
+      "file": "views/v_nordic_fi_comparison.json",
+      "rows": 140,
+      "sha256_16": "2d5f256072178df8"
+    },
+    "v_nordic_finland_gap": {
+      "file": "views/v_nordic_finland_gap.json",
+      "rows": 1865,
+      "sha256_16": "32cca37c59b1e819"
+    },
+    "v_nordic_finland_vs_peers": {
+      "file": "views/v_nordic_finland_vs_peers.json",
+      "rows": 90,
+      "sha256_16": "80c539aee6f0dda8"
+    },
+    "v_nordic_health_expenditure": {
+      "file": "views/v_nordic_health_expenditure.json",
+      "rows": 821,
+      "sha256_16": "be24d5909302d8f5"
+    },
+    "v_nordic_health_spending": {
+      "file": "views/v_nordic_health_spending.json",
+      "rows": 821,
+      "sha256_16": "ad79a091ec9d001e"
+    },
+    "v_nordic_health_workforce": {
+      "file": "views/v_nordic_health_workforce.json",
+      "rows": 440,
+      "sha256_16": "9a64944155e824a9"
+    },
+    "v_nordic_mental_health": {
+      "file": "views/v_nordic_mental_health.json",
+      "rows": 1312,
+      "sha256_16": "e30ba67ad898796a"
+    },
+    "v_nordic_paradox_benchmark": {
+      "file": "views/v_nordic_paradox_benchmark.json",
+      "rows": 25,
+      "sha256_16": "c13dc872706232fc"
+    },
+    "v_nordic_socexp_by_lifecycle": {
+      "file": "views/v_nordic_socexp_by_lifecycle.json",
+      "rows": 1644,
+      "sha256_16": "bee63a4a7c286263"
+    },
+    "v_nordic_social_spending": {
+      "file": "views/v_nordic_social_spending.json",
+      "rows": 1644,
+      "sha256_16": "1e816e47912918b1"
+    },
+    "v_nordic_suicide": {
+      "file": "views/v_nordic_suicide.json",
+      "rows": 1116,
+      "sha256_16": "e32c1ca3e533b667"
+    },
+    "per_capita_trend": {
+      "file": "views/per_capita_trend.json",
+      "rows": 835,
+      "sha256_16": "4ea043f423edb07e"
+    },
+    "sector_efficiency_snapshot": {
+      "file": "views/sector_efficiency_snapshot.json",
+      "rows": 18,
+      "sha256_16": "b9e3d989ff3497f8"
+    },
+    "sector_spending_per_capita": {
+      "file": "views/sector_spending_per_capita.json",
+      "rows": 835,
+      "sha256_16": "fc4817613f556c31"
     }
   }
 }
