@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-05-06T08:05:47.193394+00:00",
+  "source": "ttt_pipeline.step_export_json",
+  "tables": {
+    "sectors": {
+      "file": "sectors.json",
+      "rows": 18
+    },
+    "sector_series": {
+      "file": "sector_series.json",
+      "rows": 4158
+    },
+    "sector_target_population": {
+      "file": "sector_target_population.json",
+      "rows": 298
+    },
+    "sector_jcode_map": {
+      "file": "sector_jcode_map.json",
+      "rows": 79
+    },
+    "j_codes": {
+      "file": "j_codes.json",
+      "rows": 80
+    },
+    "j_code_indicator": {
+      "file": "j_code_indicator.json",
+      "rows": 117
+    },
+    "indicators_ref": {
+      "file": "indicators_ref.json",
+      "rows": 301
+    },
+    "time_series": {
+      "file": "time_series.json",
+      "rows": 22744
+    },
+    "elasticities": {
+      "file": "elasticities.json",
+      "rows": 255
+    },
+    "ols_models": {
+      "file": "ols_models.json",
+      "rows": 9
+    },
+    "ols_coefficients": {
+      "file": "ols_coefficients.json",
+      "rows": 25
+    },
+    "statistical_tests": {
+      "file": "statistical_tests.json",
+      "rows": 16
+    },
+    "tfr_forecast": {
+      "file": "tfr_forecast.json",
+      "rows": 5
+    },
+    "hoiva_aalto_projection": {
+      "file": "hoiva_aalto_projection.json",
+      "rows": 11
+    },
+    "nordic_indicators": {
+      "file": "nordic_indicators.json",
+      "rows": 8088
+    },
+    "ttt_essays": {
+      "file": "ttt_essays.json",
+      "rows": 219
+    },
+    "amounts": {
+      "file": "amounts.json",
+      "rows": 62848
+    },
+    "cofog_amounts": {
+      "file": "cofog_amounts.json",
+      "rows": 64443
+    }
+  }
+}
