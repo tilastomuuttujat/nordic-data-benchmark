@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T04:23:16.798586+00:00",
-  "model_run_id": "20260507T042121Z_06babb5",
+  "generated_at": "2026-05-07T05:29:27.085806+00:00",
+  "model_run_id": "20260507T052756Z_f5d4d3d",
   "tables": {
     "sectors": {
       "file": "sectors.json",
@@ -10,7 +10,7 @@
     "sector_series": {
       "file": "sector_series.json",
       "rows": 4158,
-      "sha256_16": "32329fccae7615ce"
+      "sha256_16": "61b941bb431e4739"
     },
     "sector_target_population": {
       "file": "sector_target_population.json",
@@ -60,7 +60,7 @@
     "elasticities": {
       "file": "elasticities.json",
       "rows": 255,
-      "sha256_16": "4952dd13f05beffe"
+      "sha256_16": "552d35f23967288e"
     },
     "ols_models": {
       "file": "ols_models.json",
@@ -80,7 +80,7 @@
     "regression_results": {
       "file": "regression_results.json",
       "rows": 60,
-      "sha256_16": "af47b3922d88b151"
+      "sha256_16": "52ceaceca3526b8b"
     },
     "panel_datasets": {
       "file": "panel_datasets.json",
@@ -145,7 +145,7 @@
     "causal_chains": {
       "file": "causal_chains.json",
       "rows": 100,
-      "sha256_16": "b2bfcc7d54636db6"
+      "sha256_16": "b9a8ddec30dccab1"
     },
     "crisis_events": {
       "file": "crisis_events.json",
@@ -177,17 +177,17 @@
     "v_signal": {
       "file": "views/v_signal.json",
       "rows": 80,
-      "sha256_16": "5d04f41cb3c2b869"
+      "sha256_16": "cfcb49d9df8477e1"
     },
     "v_signal_full_chain": {
       "file": "views/v_signal_full_chain.json",
-      "rows": 6,
-      "sha256_16": "71923e4c37546995"
+      "rows": 4,
+      "sha256_16": "bb9afd0dcd15fe74"
     },
     "v_signal_funding_paradox": {
       "file": "views/v_signal_funding_paradox.json",
       "rows": 80,
-      "sha256_16": "fe91e575377e17e4"
+      "sha256_16": "0d4afa969508ecd8"
     },
     "v_signal_leverage": {
       "file": "views/v_signal_leverage.json",
@@ -222,7 +222,7 @@
     "v_causal_chain_full": {
       "file": "views/v_causal_chain_full.json",
       "rows": 100,
-      "sha256_16": "a5a2e608ab373181"
+      "sha256_16": "f201f6c8a310afa9"
     },
     "v_causal_chain_summary": {
       "file": "views/v_causal_chain_summary.json",
@@ -262,12 +262,12 @@
     "v_fertility_housing": {
       "file": "views/v_fertility_housing.json",
       "rows": 23,
-      "sha256_16": "e2ac5b6b84007cd9"
+      "sha256_16": "ed25ee6d72eb5d5e"
     },
     "v_housing_fertility_chain": {
       "file": "views/v_housing_fertility_chain.json",
       "rows": 23,
-      "sha256_16": "d7eef6c69162d1fd"
+      "sha256_16": "f1a9e9ca72ab3ee3"
     },
     "v_population_trend": {
       "file": "views/v_population_trend.json",
