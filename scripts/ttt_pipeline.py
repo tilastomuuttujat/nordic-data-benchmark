@@ -131,6 +131,8 @@ EXPORT_VIEWS = [
     "v_hoiva_aalto_summary", "v_intervention_simulation",
     "v_interventions_by_lifecycle", "v_lag_analysis_osa_aikatyo",
     "v_regression_syntyvyys", "v_segment_panel",
+    "v_osa_aikatyo_sukupuoli", "v_detrended_correlation",
+    "v_spuriousness_test",
     "v_nordic_alcohol", "v_nordic_fertility", "v_nordic_fertility_trend",
     "v_nordic_fi_comparison", "v_nordic_finland_gap",
     "v_nordic_finland_vs_peers", "v_nordic_health_expenditure",
