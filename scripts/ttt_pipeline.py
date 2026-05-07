@@ -1289,6 +1289,186 @@ def step_export_json(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
+# ASKEL 13: PLUGIN-NÄKYMÄT (osa-aikatyö-analyysi pluginia varten)
+# ──────────────────────────────────────────────────────────────
+# Tuottaa neljä JSON-tiedostoa public/data/views/-hakemistoon, joita
+# `vaesto-huoltosuhde` (ja vastaavat) pluginit voivat lukea suoraan ilman
+# Supabase-yhteyttä:
+#   v_osa_aikatyo_sukupuoli.json   — vuosittain naiset/miehet osa-aikatyö% (1990–2024)
+#   v_lag_analysis_osa_aikatyo.json — TFR vs naiset_osaaikatyo_pct_2534, lag 0–10v
+#   v_detrended_correlation.json    — trendipoistettu r samojen sarjojen välillä
+#   v_spuriousness_test.json        — falsifiointi vuosikymmenittäin (R²)
+
+def _pv_num(v):
+    if v is None:
+        return None
+    try:
+        f = float(v)
+        if f != f:
+            return None
+        return round(f, 4)
+    except Exception:
+        return None
+
+
+def _pv_write(out_dir: Path, fname: str, rows: list, dry_run: bool,
+              result: PipelineResult, written: list):
+    payload = json.dumps(rows, ensure_ascii=False,
+                         separators=(",", ":"), default=str)
+    if not dry_run:
+        (out_dir / f"{fname}.json").write_text(payload, encoding="utf-8")
+    result.rows_inserted += len(rows)
+    written.append(fname)
+    log.info(f"    · {fname}.json ({len(rows)} riviä)")
+
+
+def step_plugin_views(client, dry_run=False, since=None) -> PipelineResult:
+    result = PipelineResult("plugin_views")
+    log.info("ASKEL 13: Plugin-näkymät (osa-aikatyö & TFR)")
+
+    out_dir = Path(EXPORT_DIR) / "views"
+    if not dry_run:
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+    ts = fetch_df(client, "time_series", "j_code,year,value")
+    if ts.empty:
+        result.warnings.append("time_series tyhjä")
+        return result
+
+    pivot = (ts.pivot_table(index="year", columns="j_code",
+                            values="value", aggfunc="mean")
+               .sort_index())
+
+    TFR = "syntyvyys_tfr"
+    NAI = "naiset_osaaikatyo_pct_2534"
+    MIE = "miehet_osaaikatyo_pct_2534"
+
+    written: list[str] = []
+
+    # 1) Osa-aikatyö sukupuolittain
+    if NAI in pivot.columns or MIE in pivot.columns:
+        rows = []
+        for yr, r in pivot.iterrows():
+            try:
+                yi = int(yr)
+            except Exception:
+                continue
+            if 1990 <= yi <= 2024:
+                rows.append({
+                    "year": yi,
+                    "naiset_osa_pct": _pv_num(r.get(NAI)) if NAI in pivot.columns else None,
+                    "miehet_osa_pct": _pv_num(r.get(MIE)) if MIE in pivot.columns else None,
+                })
+        _pv_write(out_dir, "v_osa_aikatyo_sukupuoli", rows, dry_run,
+                  result, written)
+    else:
+        result.warnings.append(
+            "naiset/miehet_osaaikatyo_pct_2534 puuttuu time_series:stä")
+
+    # 2) Lag-analyysi (korvaa nykyiset nolla-rivit)
+    if TFR in pivot.columns and NAI in pivot.columns:
+        s = pivot[[TFR, NAI]].dropna().sort_index()
+        rows = []
+        for lag in range(0, 11):
+            if lag == 0:
+                x, y = s[NAI].values, s[TFR].values
+            else:
+                x = s[NAI].values[:-lag]
+                y = s[TFR].values[lag:]
+            n = len(x)
+            if n >= 5 and np.std(x) > 0 and np.std(y) > 0:
+                r, p = pearsonr(x, y)
+                rows.append({"lag_years": lag,
+                             "pearson_r": round(float(r), 4),
+                             "p_value": round(float(p), 4),
+                             "n": int(n)})
+            else:
+                rows.append({"lag_years": lag, "pearson_r": None,
+                             "p_value": None, "n": int(n)})
+        _pv_write(out_dir, "v_lag_analysis_osa_aikatyo", rows, dry_run,
+                  result, written)
+
+    # 3) Detrendattu korrelaatio
+    if TFR in pivot.columns and NAI in pivot.columns:
+        s = pivot[[TFR, NAI]].dropna().sort_index()
+        if len(s) >= 5:
+            from scipy.signal import detrend as _detrend
+            tfr_d = _detrend(s[TFR].values)
+            osa_d = _detrend(s[NAI].values)
+            r_raw, p_raw = pearsonr(s[TFR].values, s[NAI].values)
+            r_det, p_det = pearsonr(tfr_d, osa_d)
+            payload = [{
+                "n": int(len(s)),
+                "year_min": int(s.index.min()),
+                "year_max": int(s.index.max()),
+                "raw_r": round(float(r_raw), 4),
+                "raw_p": round(float(p_raw), 4),
+                "detrended_r": round(float(r_det), 4),
+                "detrended_p": round(float(p_det), 4),
+                "tulkinta": ("Trendipoiston jälkeen jäävä yhteys: mitä lähempänä "
+                             "nollaa detrended_r on, sitä todennäköisemmin alkuperäinen "
+                             "korrelaatio selittyi yhteisellä aikatrendillä.")
+            }]
+            _pv_write(out_dir, "v_detrended_correlation", payload, dry_run,
+                      result, written)
+
+    # 4) Spuriousness-testi (falsifiointi vuosikymmenittäin)
+    if TFR in pivot.columns and NAI in pivot.columns:
+        s = pivot[[TFR, NAI]].dropna().sort_index()
+        rows = []
+        windows = [
+            ("1990-luku", 1990, 1999),
+            ("2000-luku", 2000, 2009),
+            ("2010-luku", 2010, 2019),
+            ("2020-luku", 2020, 2029),
+            ("Koko jakso", int(s.index.min()) if len(s) else 1990,
+                            int(s.index.max()) if len(s) else 2024),
+        ]
+        for label, lo, hi in windows:
+            sub = s[(s.index >= lo) & (s.index <= hi)]
+            if len(sub) >= 5 and sub[NAI].std() > 0 and sub[TFR].std() > 0:
+                r, p = pearsonr(sub[NAI].values, sub[TFR].values)
+                rows.append({"jakso": label, "year_min": int(lo), "year_max": int(hi),
+                             "n": int(len(sub)),
+                             "pearson_r": round(float(r), 4),
+                             "r_squared": round(float(r * r), 4),
+                             "p_value": round(float(p), 4)})
+            else:
+                rows.append({"jakso": label, "year_min": int(lo), "year_max": int(hi),
+                             "n": int(len(sub)), "pearson_r": None,
+                             "r_squared": None, "p_value": None})
+        _pv_write(out_dir, "v_spuriousness_test", rows, dry_run,
+                  result, written)
+
+    # Päivitä manifest, jos export_json on jo ajettu samassa ajossa
+    manifest_path = Path(EXPORT_DIR) / "manifest.json"
+    if not dry_run and manifest_path.exists() and written:
+        try:
+            mf = json.loads(manifest_path.read_text(encoding="utf-8"))
+            mf.setdefault("views", {})
+            for fname in written:
+                fp = out_dir / f"{fname}.json"
+                if not fp.exists():
+                    continue
+                payload = fp.read_text(encoding="utf-8")
+                rows = json.loads(payload)
+                sha = hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+                mf["views"][fname] = {
+                    "file": f"views/{fname}.json",
+                    "rows": len(rows),
+                    "sha256_16": sha,
+                }
+            manifest_path.write_text(
+                json.dumps(mf, ensure_ascii=False, indent=2, default=str),
+                encoding="utf-8")
+        except Exception as e:
+            result.warnings.append(f"manifest-päivitys epäonnistui: {e}")
+
+    log.info(f"  ✓ {len(written)} plugin-näkymää → {EXPORT_DIR}/views")
+    return result
+
+
+# ──────────────────────────────────────────────────────────────
 # PÄÄOHJELMA
 # ──────────────────────────────────────────────────────────────
 
