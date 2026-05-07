@@ -1503,6 +1503,7 @@ DEFAULT_ORDER = [
     "regression_results_sync",
     "analytics_snapshot",
     "export_json",
+    "plugin_views",
 ]
 
 
