@@ -1487,6 +1487,7 @@ STEPS = {
     "regression_results_sync": step_regression_results_sync,
     "analytics_snapshot":      step_analytics_snapshot,
     "export_json":             step_export_json,
+    "plugin_views":            step_plugin_views,
 }
 
 DEFAULT_ORDER = [
