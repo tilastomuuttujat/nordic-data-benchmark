@@ -731,7 +731,7 @@ def step_ols(client, dry_run=False, since=None) -> PipelineResult:
                 "statistic": round(float(sw_s), 4),
                 "p_value": round(float(sw_p), 6),
                 "df": str(len(m.resid)),
-                "significant": bool(sw_p < 0.05),
+                # HUOM: "significant" on generated column — älä lähetä
                 "interpretation": ("Residuaalit ei-normaaleja"
                                    if sw_p < 0.05 else "Normaalit"),
                 "model_run_id": RUN_ID, "is_current": True,
@@ -745,7 +745,7 @@ def step_ols(client, dry_run=False, since=None) -> PipelineResult:
                 "statistic": None,
                 "p_value": round(adf_p, 6),
                 "df": str(len(m.resid)),
-                "significant": bool(adf_p < 0.05),
+                # HUOM: "significant" on generated column — älä lähetä
                 "interpretation": ("Stationaariset residuaalit"
                                    if adf_p < 0.05
                                    else "Ei-stationaariset — varo spurious"),
