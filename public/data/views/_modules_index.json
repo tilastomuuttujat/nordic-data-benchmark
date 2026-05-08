@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-08T06:25:31.332787+00:00",
+  "generated_at": "2026-05-08T14:17:40.312540+00:00",
   "modules": [
     {
       "module_id": "moduli011_alueellinen_eriarvoisuus",
-      "title": "Alueellinen eriarvoisuuskartta",
+      "title": "Hyvinvointi maakunnittain — alueellinen eriarvoisuuskartta",
       "priority": 1,
       "view": "views/v_moduli011_alueellinen_eriarvoisuus.json",
       "status": "stub",
-      "required_sources": [
-        "regional_welfare_indicators",
-        "kunta_topojson"
+      "sources_used": [],
+      "sources_missing": [
+        "regional_welfare_indicators"
       ]
     },
     {
@@ -18,7 +18,8 @@
       "priority": 1,
       "view": "views/v_moduli012_sukupolvien_tasapaino.json",
       "status": "stub",
-      "required_sources": [
+      "sources_used": [],
+      "sources_missing": [
         "population_pyramid_historical",
         "population_projection_2040",
         "transfers_by_age_group"
@@ -29,11 +30,13 @@
       "title": "Mielenterveyskriisin syvyys",
       "priority": 1,
       "view": "views/v_moduli013_mielenterveyskriisi.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "mental_health_diagnoses_by_age",
         "mental_health_waiting_times_regional",
-        "sick_leave_mental_health"
+        "sick_leave_mental_health",
+        "mental_health_nordic_comparison"
       ]
     },
     {
@@ -41,8 +44,9 @@
       "title": "Koulutus–tuottavuus–hyvinvointi -ketju",
       "priority": 2,
       "view": "views/v_moduli014_koulutus_tuottavuus.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "education_outcomes_by_cohort",
         "pisa_finland_trend",
         "early_childhood_roi_estimates"
@@ -53,8 +57,9 @@
       "title": "Maahanmuutto ja väestödynamiikka",
       "priority": 2,
       "view": "views/v_moduli015_maahanmuutto.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "migration_net_flows",
         "immigrant_employment_integration",
         "fiscal_impact_immigration"
@@ -65,8 +70,9 @@
       "title": "Asuntomarkkinat ja segregaatio",
       "priority": 3,
       "view": "views/v_moduli016_asuntomarkkinat.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "housing_price_income_ratio",
         "segregation_index_cities",
         "homelessness_trend"
@@ -77,8 +83,9 @@
       "title": "Verojärjestelmä ja redistributio",
       "priority": 2,
       "view": "views/v_moduli017_verojarjestelma.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "gini_pretax_posttax",
         "effective_tax_rate_by_decile",
         "corporate_tax_trend_eu"
@@ -89,8 +96,9 @@
       "title": "Subjektiivinen hyvinvointi ja luottamus",
       "priority": 3,
       "view": "views/v_moduli018_subjektiivinen_hyvinvointi.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "world_happiness_nordic",
         "institutional_trust_survey",
         "loneliness_statistics"
@@ -101,8 +109,9 @@
       "title": "Ilmasto–hyvinvointikytkentä",
       "priority": 3,
       "view": "views/v_moduli019_ilmasto_hyvinvointi.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "climate_policy_distributional_impact",
         "energy_poverty_finland",
         "green_transition_jobs"
@@ -114,9 +123,9 @@
       "priority": 3,
       "view": "views/v_moduli020_realtime_dashboard.json",
       "status": "stub",
-      "required_sources": [
-        "statfin_api",
-        "kela_api"
+      "sources_used": [],
+      "sources_missing": [
+        "realtime_indicators"
       ]
     }
   ]

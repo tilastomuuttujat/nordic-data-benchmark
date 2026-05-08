@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T06:24:06.803683+00:00",
-  "model_run_id": "20260508T062221Z_21ee270",
+  "generated_at": "2026-05-08T14:09:43.638310+00:00",
+  "model_run_id": "20260508T140753Z_9f2ce01",
   "tables": {
     "sectors": {
       "file": "sectors.json",
@@ -10,7 +10,7 @@
     "sector_series": {
       "file": "sector_series.json",
       "rows": 4158,
-      "sha256_16": "1a21492e521012e2"
+      "sha256_16": "f491421c3bd9d740"
     },
     "sector_target_population": {
       "file": "sector_target_population.json",
@@ -60,7 +60,7 @@
     "elasticities": {
       "file": "elasticities.json",
       "rows": 255,
-      "sha256_16": "4d21bb4bf44a3c5a"
+      "sha256_16": "7c6dc16a94b2b068"
     },
     "ols_models": {
       "file": "ols_models.json",
@@ -80,7 +80,7 @@
     "regression_results": {
       "file": "regression_results.json",
       "rows": 60,
-      "sha256_16": "7f28cb82fb85f68f"
+      "sha256_16": "838ae63761808135"
     },
     "panel_datasets": {
       "file": "panel_datasets.json",
@@ -145,7 +145,7 @@
     "causal_chains": {
       "file": "causal_chains.json",
       "rows": 100,
-      "sha256_16": "a5dc74e78a0a6d6f"
+      "sha256_16": "d294cc7ea847308c"
     },
     "crisis_events": {
       "file": "crisis_events.json",
@@ -222,7 +222,7 @@
     "v_causal_chain_full": {
       "file": "views/v_causal_chain_full.json",
       "rows": 100,
-      "sha256_16": "51e416d5fe801bbb"
+      "sha256_16": "349046d26e195a1b"
     },
     "v_causal_chain_summary": {
       "file": "views/v_causal_chain_summary.json",
@@ -411,75 +411,65 @@
     },
     "v_moduli011_alueellinen_eriarvoisuus": {
       "file": "views/v_moduli011_alueellinen_eriarvoisuus.json",
-      "rows": 1,
-      "sha256_16": "78c62284e65596e1",
+      "sha256_16": "630305cdceba5938",
       "status": "stub"
     },
     "v_moduli012_sukupolvien_tasapaino": {
       "file": "views/v_moduli012_sukupolvien_tasapaino.json",
-      "rows": 1,
-      "sha256_16": "ca464468b5fa08d0",
+      "sha256_16": "f1e9627964513178",
       "status": "stub"
     },
     "v_moduli013_mielenterveyskriisi": {
       "file": "views/v_moduli013_mielenterveyskriisi.json",
-      "rows": 1,
-      "sha256_16": "54492bff0c044b68",
-      "status": "stub"
+      "sha256_16": "d3fa67ccef054c09",
+      "status": "partial"
     },
     "v_moduli014_koulutus_tuottavuus": {
       "file": "views/v_moduli014_koulutus_tuottavuus.json",
-      "rows": 1,
-      "sha256_16": "71aeac73a432ae05",
-      "status": "stub"
+      "sha256_16": "3552274d02742ce1",
+      "status": "partial"
     },
     "v_moduli015_maahanmuutto": {
       "file": "views/v_moduli015_maahanmuutto.json",
-      "rows": 1,
-      "sha256_16": "6beea205397ebe07",
-      "status": "stub"
+      "sha256_16": "300e339ce8451156",
+      "status": "partial"
     },
     "v_moduli016_asuntomarkkinat": {
       "file": "views/v_moduli016_asuntomarkkinat.json",
-      "rows": 1,
-      "sha256_16": "66a6fb96675b39fb",
-      "status": "stub"
+      "sha256_16": "c0d5c8feee571357",
+      "status": "partial"
     },
     "v_moduli017_verojarjestelma": {
       "file": "views/v_moduli017_verojarjestelma.json",
-      "rows": 1,
-      "sha256_16": "8fa19a8b1181095a",
-      "status": "stub"
+      "sha256_16": "e32e58338120102b",
+      "status": "partial"
     },
     "v_moduli018_subjektiivinen_hyvinvointi": {
       "file": "views/v_moduli018_subjektiivinen_hyvinvointi.json",
-      "rows": 1,
-      "sha256_16": "9d6b703aea49b627",
-      "status": "stub"
+      "sha256_16": "8db83986afb551d6",
+      "status": "partial"
     },
     "v_moduli019_ilmasto_hyvinvointi": {
       "file": "views/v_moduli019_ilmasto_hyvinvointi.json",
-      "rows": 1,
-      "sha256_16": "bc4dfad5be5e5455",
-      "status": "stub"
+      "sha256_16": "13c7564669fcdc6e",
+      "status": "partial"
     },
     "v_moduli020_realtime_dashboard": {
       "file": "views/v_moduli020_realtime_dashboard.json",
-      "rows": 1,
-      "sha256_16": "362b5872a957d66f",
+      "sha256_16": "bbd86b7d7ec848c0",
       "status": "stub"
     }
   },
   "modules": {
     "moduli011_alueellinen_eriarvoisuus": {
       "module_id": "moduli011_alueellinen_eriarvoisuus",
-      "title": "Alueellinen eriarvoisuuskartta",
+      "title": "Hyvinvointi maakunnittain — alueellinen eriarvoisuuskartta",
       "priority": 1,
       "view": "views/v_moduli011_alueellinen_eriarvoisuus.json",
       "status": "stub",
-      "required_sources": [
-        "regional_welfare_indicators",
-        "kunta_topojson"
+      "sources_used": [],
+      "sources_missing": [
+        "regional_welfare_indicators"
       ]
     },
     "moduli012_sukupolvien_tasapaino": {
@@ -488,7 +478,8 @@
       "priority": 1,
       "view": "views/v_moduli012_sukupolvien_tasapaino.json",
       "status": "stub",
-      "required_sources": [
+      "sources_used": [],
+      "sources_missing": [
         "population_pyramid_historical",
         "population_projection_2040",
         "transfers_by_age_group"
@@ -499,11 +490,13 @@
       "title": "Mielenterveyskriisin syvyys",
       "priority": 1,
       "view": "views/v_moduli013_mielenterveyskriisi.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "mental_health_diagnoses_by_age",
         "mental_health_waiting_times_regional",
-        "sick_leave_mental_health"
+        "sick_leave_mental_health",
+        "mental_health_nordic_comparison"
       ]
     },
     "moduli014_koulutus_tuottavuus": {
@@ -511,8 +504,9 @@
       "title": "Koulutus–tuottavuus–hyvinvointi -ketju",
       "priority": 2,
       "view": "views/v_moduli014_koulutus_tuottavuus.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "education_outcomes_by_cohort",
         "pisa_finland_trend",
         "early_childhood_roi_estimates"
@@ -523,8 +517,9 @@
       "title": "Maahanmuutto ja väestödynamiikka",
       "priority": 2,
       "view": "views/v_moduli015_maahanmuutto.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "migration_net_flows",
         "immigrant_employment_integration",
         "fiscal_impact_immigration"
@@ -535,8 +530,9 @@
       "title": "Asuntomarkkinat ja segregaatio",
       "priority": 3,
       "view": "views/v_moduli016_asuntomarkkinat.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "housing_price_income_ratio",
         "segregation_index_cities",
         "homelessness_trend"
@@ -547,8 +543,9 @@
       "title": "Verojärjestelmä ja redistributio",
       "priority": 2,
       "view": "views/v_moduli017_verojarjestelma.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "gini_pretax_posttax",
         "effective_tax_rate_by_decile",
         "corporate_tax_trend_eu"
@@ -559,8 +556,9 @@
       "title": "Subjektiivinen hyvinvointi ja luottamus",
       "priority": 3,
       "view": "views/v_moduli018_subjektiivinen_hyvinvointi.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "world_happiness_nordic",
         "institutional_trust_survey",
         "loneliness_statistics"
@@ -571,8 +569,9 @@
       "title": "Ilmasto–hyvinvointikytkentä",
       "priority": 3,
       "view": "views/v_moduli019_ilmasto_hyvinvointi.json",
-      "status": "stub",
-      "required_sources": [
+      "status": "partial",
+      "sources_used": [],
+      "sources_missing": [
         "climate_policy_distributional_impact",
         "energy_poverty_finland",
         "green_transition_jobs"
@@ -584,9 +583,9 @@
       "priority": 3,
       "view": "views/v_moduli020_realtime_dashboard.json",
       "status": "stub",
-      "required_sources": [
-        "statfin_api",
-        "kela_api"
+      "sources_used": [],
+      "sources_missing": [
+        "realtime_indicators"
       ]
     }
   }
