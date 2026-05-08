@@ -1471,6 +1471,307 @@ def step_plugin_views(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
+# ASKEL 14: MODULE-VIEWS (moduli011–020 plugin-kontraktit)
+# ──────────────────────────────────────────────────────────────
+# Tuottaa kunkin uuden modulin oman JSON-näkymän public/data/views/
+# kansioon. Jos lähdedata on saatavilla → täytetään arvoilla
+# (status="ready" tai "partial"). Jos lähde puuttuu → kirjoitetaan
+# stub-payload (status="stub", schema, required_sources), jotta
+# plugin-kehitys voi alkaa rinnakkain ja pipeline täyttää tiedot
+# heti kun lähdetaulut saapuvat kantaan.
+
+MODULE_SPECS = [
+    {
+        "id": "moduli011_alueellinen_eriarvoisuus",
+        "title": "Alueellinen eriarvoisuuskartta",
+        "priority": 1,
+        "required_sources": ["regional_welfare_indicators", "kunta_topojson"],
+        "schema": {"kunta_id": "str", "year": "int",
+                   "indikaattori": "str", "value": "float"},
+    },
+    {
+        "id": "moduli012_sukupolvien_tasapaino",
+        "title": "Sukupolvien välinen tasapaino",
+        "priority": 1,
+        "required_sources": ["population_pyramid_historical",
+                             "population_projection_2040",
+                             "transfers_by_age_group"],
+        "schema": {"year": "int", "age_group": "str",
+                   "sex": "str", "population": "int",
+                   "transfers_eur": "float"},
+    },
+    {
+        "id": "moduli013_mielenterveyskriisi",
+        "title": "Mielenterveyskriisin syvyys",
+        "priority": 1,
+        "required_sources": ["mental_health_diagnoses_by_age",
+                             "mental_health_waiting_times_regional",
+                             "sick_leave_mental_health"],
+        "schema": {"year": "int", "age_group": "str",
+                   "diagnosis": "str", "rate_per_1000": "float"},
+    },
+    {
+        "id": "moduli014_koulutus_tuottavuus",
+        "title": "Koulutus–tuottavuus–hyvinvointi -ketju",
+        "priority": 2,
+        "required_sources": ["education_outcomes_by_cohort",
+                             "pisa_finland_trend",
+                             "early_childhood_roi_estimates"],
+        "schema": {"cohort_year": "int", "edu_level": "str",
+                   "median_income": "float", "tax_contrib": "float"},
+    },
+    {
+        "id": "moduli015_maahanmuutto",
+        "title": "Maahanmuutto ja väestödynamiikka",
+        "priority": 2,
+        "required_sources": ["migration_net_flows",
+                             "immigrant_employment_integration",
+                             "fiscal_impact_immigration"],
+        "schema": {"year": "int", "origin_group": "str",
+                   "net_migration": "int",
+                   "employment_rate": "float"},
+    },
+    {
+        "id": "moduli016_asuntomarkkinat",
+        "title": "Asuntomarkkinat ja segregaatio",
+        "priority": 3,
+        "required_sources": ["housing_price_income_ratio",
+                             "segregation_index_cities",
+                             "homelessness_trend"],
+        "schema": {"year": "int", "area": "str",
+                   "price_income_ratio": "float",
+                   "segregation_index": "float"},
+    },
+    {
+        "id": "moduli017_verojarjestelma",
+        "title": "Verojärjestelmä ja redistributio",
+        "priority": 2,
+        "required_sources": ["gini_pretax_posttax",
+                             "effective_tax_rate_by_decile",
+                             "corporate_tax_trend_eu"],
+        "schema": {"year": "int", "gini_pre": "float",
+                   "gini_post": "float", "decile": "int",
+                   "effective_rate": "float"},
+    },
+    {
+        "id": "moduli018_subjektiivinen_hyvinvointi",
+        "title": "Subjektiivinen hyvinvointi ja luottamus",
+        "priority": 3,
+        "required_sources": ["world_happiness_nordic",
+                             "institutional_trust_survey",
+                             "loneliness_statistics"],
+        "schema": {"year": "int", "country": "str",
+                   "happiness_score": "float",
+                   "trust_government": "float"},
+    },
+    {
+        "id": "moduli019_ilmasto_hyvinvointi",
+        "title": "Ilmasto–hyvinvointikytkentä",
+        "priority": 3,
+        "required_sources": ["climate_policy_distributional_impact",
+                             "energy_poverty_finland",
+                             "green_transition_jobs"],
+        "schema": {"year": "int", "decile": "int",
+                   "policy_cost_share": "float",
+                   "energy_poverty_pct": "float"},
+    },
+    {
+        "id": "moduli020_realtime_dashboard",
+        "title": "Reaaliaikadashboard (API-integraatio)",
+        "priority": 3,
+        "required_sources": ["statfin_api", "kela_api"],
+        "schema": {"indicator": "str", "value": "float",
+                   "fetched_at": "iso8601"},
+    },
+]
+
+
+def _module_stub(spec: dict, note: str = "") -> dict:
+    return {
+        "status": "stub",
+        "module_id": spec["id"],
+        "title": spec["title"],
+        "priority": spec["priority"],
+        "schema": spec["schema"],
+        "required_sources": spec["required_sources"],
+        "data": [],
+        "note": note or ("Lähdetaulut puuttuvat kannasta — plugin voi "
+                         "kehittyä mock-datalla kunnes pipeline täyttää."),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def _module_payload(spec: dict, data: list, status: str = "ready",
+                    note: str = "") -> dict:
+    return {
+        "status": status,
+        "module_id": spec["id"],
+        "title": spec["title"],
+        "priority": spec["priority"],
+        "schema": spec["schema"],
+        "required_sources": spec["required_sources"],
+        "data": data,
+        "note": note,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
+    result = PipelineResult("module_views")
+    log.info("ASKEL 14: Module-views (moduli011–020 plugin-kontraktit)")
+
+    out_dir = Path(EXPORT_DIR) / "views"
+    if not dry_run:
+        out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Esivalmistelu: aikasarjapivot mahdollisia "partial"-täyttöjä varten
+    try:
+        ts = fetch_df(client, "time_series", "j_code,year,value")
+    except Exception as e:
+        ts = pd.DataFrame()
+        result.warnings.append(f"time_series-haku epäonnistui: {e}")
+
+    pivot = (ts.pivot_table(index="year", columns="j_code",
+                            values="value", aggfunc="mean").sort_index()
+             if not ts.empty else pd.DataFrame())
+
+    written: list[tuple[str, str]] = []  # (fname, status)
+    index_entries: list[dict] = []
+
+    for spec in MODULE_SPECS:
+        fname = f"v_{spec['id']}"
+        payload: dict
+        status = "stub"
+
+        # ── moduli012: huoltosuhde aikasarjana, jos sopiva j_code löytyy
+        if spec["id"] == "moduli012_sukupolvien_tasapaino" and not pivot.empty:
+            candidates = [c for c in pivot.columns
+                          if "huoltosuhde" in str(c).lower()]
+            if candidates:
+                col = candidates[0]
+                rows = []
+                for yr, v in pivot[col].dropna().items():
+                    try:
+                        rows.append({"year": int(yr),
+                                     "indicator": col,
+                                     "value": round(float(v), 4)})
+                    except Exception:
+                        continue
+                if rows:
+                    payload = _module_payload(
+                        spec, rows, status="partial",
+                        note=("Vain huoltosuhde täytetty (j_code "
+                              f"{col}). Ikäpyramidi & sankey vaativat "
+                              "erilliset lähteet."))
+                    status = "partial"
+                else:
+                    payload = _module_stub(spec)
+            else:
+                payload = _module_stub(spec)
+
+        # ── moduli015: nettomaahanmuutto, jos j_code löytyy
+        elif spec["id"] == "moduli015_maahanmuutto" and not pivot.empty:
+            candidates = [c for c in pivot.columns
+                          if "maahanmuutt" in str(c).lower()
+                          or "migration" in str(c).lower()]
+            if candidates:
+                rows = []
+                for col in candidates:
+                    for yr, v in pivot[col].dropna().items():
+                        try:
+                            rows.append({"year": int(yr),
+                                         "indicator": col,
+                                         "value": round(float(v), 4)})
+                        except Exception:
+                            continue
+                payload = _module_payload(
+                    spec, rows, status="partial",
+                    note="Vain time_series-pohjaiset migraatiosarjat täytetty.")
+                status = "partial"
+            else:
+                payload = _module_stub(spec)
+
+        # ── moduli018: jos nordic_indicators sisältää happiness-rivejä
+        elif spec["id"] == "moduli018_subjektiivinen_hyvinvointi":
+            try:
+                nd = fetch_df(client, "nordic_indicators",
+                              "country_code,indicator_code,year,value")
+            except Exception:
+                nd = pd.DataFrame()
+            if not nd.empty:
+                hh = nd[nd["indicator_code"].astype(str)
+                        .str.contains("happiness", case=False, na=False)]
+                if not hh.empty:
+                    rows = hh.rename(columns={"country_code": "country",
+                                              "value": "happiness_score"})\
+                             .to_dict(orient="records")
+                    payload = _module_payload(
+                        spec, rows, status="partial",
+                        note="Happiness-osio täytetty nordic_indicators-taulusta.")
+                    status = "partial"
+                else:
+                    payload = _module_stub(spec)
+            else:
+                payload = _module_stub(spec)
+
+        else:
+            payload = _module_stub(spec)
+
+        body = json.dumps(payload, ensure_ascii=False,
+                          separators=(",", ":"), default=str)
+        if not dry_run:
+            (out_dir / f"{fname}.json").write_text(body, encoding="utf-8")
+        written.append((fname, status))
+        index_entries.append({
+            "module_id": spec["id"],
+            "title": spec["title"],
+            "priority": spec["priority"],
+            "view": f"views/{fname}.json",
+            "status": status,
+            "required_sources": spec["required_sources"],
+        })
+        result.rows_inserted += 1
+        log.info(f"    · {fname}.json [{status}]")
+
+    # Module-indeksi: yksi tiedosto plugin-hostille
+    if not dry_run:
+        idx = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "modules": index_entries,
+        }
+        (out_dir / "_modules_index.json").write_text(
+            json.dumps(idx, ensure_ascii=False, indent=2, default=str),
+            encoding="utf-8")
+
+    # Päivitä manifest, jos export_json on jo ajettu
+    manifest_path = Path(EXPORT_DIR) / "manifest.json"
+    if not dry_run and manifest_path.exists() and written:
+        try:
+            mf = json.loads(manifest_path.read_text(encoding="utf-8"))
+            mf.setdefault("views", {})
+            mf.setdefault("modules", {})
+            for fname, status in written:
+                fp = out_dir / f"{fname}.json"
+                if not fp.exists():
+                    continue
+                payload_str = fp.read_text(encoding="utf-8")
+                sha = hashlib.sha256(payload_str.encode("utf-8")).hexdigest()[:16]
+                mf["views"][fname] = {
+                    "file": f"views/{fname}.json",
+                    "rows": 1, "sha256_16": sha, "status": status,
+                }
+            mf["modules"] = {e["module_id"]: e for e in index_entries}
+            manifest_path.write_text(
+                json.dumps(mf, ensure_ascii=False, indent=2, default=str),
+                encoding="utf-8")
+        except Exception as e:
+            result.warnings.append(f"manifest-päivitys epäonnistui: {e}")
+
+    log.info(f"  ✓ {len(written)} module-näkymää + _modules_index.json")
+    return result
+
+
+# ──────────────────────────────────────────────────────────────
 # PÄÄOHJELMA
 # ──────────────────────────────────────────────────────────────
 
@@ -1488,6 +1789,7 @@ STEPS = {
     "analytics_snapshot":      step_analytics_snapshot,
     "export_json":             step_export_json,
     "plugin_views":            step_plugin_views,
+    "module_views":            step_module_views,
 }
 
 DEFAULT_ORDER = [
@@ -1504,6 +1806,7 @@ DEFAULT_ORDER = [
     "analytics_snapshot",
     "export_json",
     "plugin_views",
+    "module_views",
 ]
 
 
