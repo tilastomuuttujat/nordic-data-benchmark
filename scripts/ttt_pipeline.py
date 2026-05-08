@@ -14,19 +14,19 @@ Päivittää Supabase-laskennat. v3-muutokset (vrt. v2):
 
   UUDET ASKELEET
   ──────────────
-  * step_nordic_correlations  — käyttää `nordic_category_map`-taulua ja laskee
+  * step_nordic_correlations  -- käyttää `nordic_category_map`-taulua ja laskee
     Suomen sektorimenojen ja muiden Pohjoismaiden vastaavien indikaattoreiden
     väliset korrelaatiot. Ratkaisee suurimman analyyttisen aukon.
-  * step_cofog_link            — käyttää `j_code_cofog`-taulua: laskee
+  * step_cofog_link            -- käyttää `j_code_cofog`-taulua: laskee
     j_code-tasoiset summat `cofog_amounts`-datasta, kirjoittaa
     `cofog_jcode_amounts` (uusi taulu / view-tyyppinen aggregaatti).
-  * step_causal_chains_sync    — päivittää `causal_chains`-taulun rivit
+  * step_causal_chains_sync    -- päivittää `causal_chains`-taulun rivit
     elasticities-tuloksista: jokainen vahva/kohtalainen elasticity → ketjun
     ehdotus-taso ("auto"-confidence). Käsin verified-rivejä ei kosketa.
-  * step_regression_results_sync — synkronoi `ols_coefficients` →
+  * step_regression_results_sync -- synkronoi `ols_coefficients` →
     `regression_results` (vanha päällekkäinen taulu pidetään ajan tasalla
     kunnes voidaan poistaa).
-  * step_export_views          — vie `v_*`-näkymät JSONiksi
+  * step_export_views          -- vie `v_*`-näkymät JSONiksi
     `public/data/views/<view>.json`. Avaa 40 valmista analyysiä
     lukijaversiolle.
 
@@ -51,7 +51,7 @@ Ympäristömuuttujat:
     TTT_FDR_ALPHA=0.05
     TTT_BOOTSTRAP_N=2000
 
-Huom: Tämä versio on yhteensopiva v2:n kanssa — kaikki v2-askeleet löytyvät
+Huom: Tämä versio on yhteensopiva v2:n kanssa -- kaikki v2-askeleet löytyvät
 edelleen, ja DEFAULT_ORDER on järjestetty uusien jälkeen niin että
 elasticities ajetaan ennen causal_chains_sync.
 """
@@ -591,7 +591,7 @@ def step_elasticities(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
-# ASKEL 3: OLS (v2:sta — paneelilaajennus TODO v4)
+# ASKEL 3: OLS (v2:sta -- paneelilaajennus TODO v4)
 # ──────────────────────────────────────────────────────────────
 
 DEFAULT_MODELS = [
@@ -733,7 +733,7 @@ def step_ols(client, dry_run=False, since=None) -> PipelineResult:
                 "statistic": round(float(sw_s), 4),
                 "p_value": round(float(sw_p), 6),
                 "df": str(len(m.resid)),
-                # HUOM: "significant" on generated column — älä lähetä
+                # HUOM: "significant" on generated column -- älä lähetä
                 "interpretation": ("Residuaalit ei-normaaleja"
                                    if sw_p < 0.05 else "Normaalit"),
                 "model_run_id": RUN_ID, "is_current": True,
@@ -747,10 +747,10 @@ def step_ols(client, dry_run=False, since=None) -> PipelineResult:
                 "statistic": None,
                 "p_value": round(adf_p, 6),
                 "df": str(len(m.resid)),
-                # HUOM: "significant" on generated column — älä lähetä
+                # HUOM: "significant" on generated column -- älä lähetä
                 "interpretation": ("Stationaariset residuaalit"
                                    if adf_p < 0.05
-                                   else "Ei-stationaariset — varo spurious"),
+                                   else "Ei-stationaariset -- varo spurious"),
                 "model_run_id": RUN_ID, "is_current": True,
             })
 
@@ -780,7 +780,7 @@ def step_ols(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
-# ASKEL 4: TFR-ENNUSTE — vuosittainen (uusi taulu, EI tfr_forecast)
+# ASKEL 4: TFR-ENNUSTE -- vuosittainen (uusi taulu, EI tfr_forecast)
 # ──────────────────────────────────────────────────────────────
 
 def step_forecasts(client, dry_run=False, since=None) -> PipelineResult:
@@ -789,7 +789,7 @@ def step_forecasts(client, dry_run=False, since=None) -> PipelineResult:
 
     if not table_exists(client, "tfr_forecast_yearly"):
         result.warnings.append(
-            "tfr_forecast_yearly-tauluttuottu ei ole — luo migraatiolla. "
+            "tfr_forecast_yearly-tauluttuottu ei ole -- luo migraatiolla. "
             "tfr_forecast varataan skenaariotauluksi."
         )
         return result
@@ -847,7 +847,7 @@ def step_hoiva_aalto(client, dry_run=False, since=None) -> PipelineResult:
 
     if not table_exists(client, "hoiva_aalto_yearly"):
         result.warnings.append(
-            "hoiva_aalto_yearly-taulu puuttuu — luo migraatiolla. "
+            "hoiva_aalto_yearly-taulu puuttuu -- luo migraatiolla. "
             "hoiva_aalto_projection jätetään 85+-aaltoja varten."
         )
         return result
@@ -883,7 +883,7 @@ def step_hoiva_aalto(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
-# ASKEL 6: NORDIC-LINKITYS (meta) — säilyy v2:sta
+# ASKEL 6: NORDIC-LINKITYS (meta) -- säilyy v2:sta
 # ──────────────────────────────────────────────────────────────
 
 def step_nordic_sync(client, dry_run=False, since=None) -> PipelineResult:
@@ -932,7 +932,7 @@ def step_nordic_sync(client, dry_run=False, since=None) -> PipelineResult:
             new.append({
                 "external_id": ext_id,
                 "name": f"{name} (pohjoismaat)",
-                "category_name": f"Nordic — {cat}",
+                "category_name": f"Nordic -- {cat}",
                 "unit": str(r.get("unit")) if "unit" in cols and pd.notna(r.get("unit")) else None,
                 "ttt_pilari": "vertailu",
             })
@@ -959,7 +959,7 @@ def step_nordic_correlations(client, dry_run=False, since=None) -> PipelineResul
         return result
     if not table_exists(client, "nordic_correlations"):
         result.warnings.append(
-            "nordic_correlations-taulu puuttuu — luo migraatiolla"
+            "nordic_correlations-taulu puuttuu -- luo migraatiolla"
         )
         return result
 
@@ -1065,7 +1065,7 @@ def step_cofog_link(client, dry_run=False, since=None) -> PipelineResult:
         return result
     if not table_exists(client, "cofog_jcode_amounts"):
         result.warnings.append(
-            "cofog_jcode_amounts-taulu puuttuu — luo migraatiolla"
+            "cofog_jcode_amounts-taulu puuttuu -- luo migraatiolla"
         )
         return result
 
@@ -1101,7 +1101,7 @@ def step_cofog_link(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
-# ASKEL 9 (UUSI): CAUSAL CHAINS — synkronointi elasticities-tuloksista
+# ASKEL 9 (UUSI): CAUSAL CHAINS -- synkronointi elasticities-tuloksista
 # ──────────────────────────────────────────────────────────────
 
 def step_causal_chains_sync(client, dry_run=False, since=None) -> PipelineResult:
@@ -1190,10 +1190,10 @@ def step_regression_results_sync(client, dry_run=False, since=None) -> PipelineR
             "lag_years": 0,
             "n": int(r.get("n") or 0),
             "interpretation": (
-                f"v3 sync run_id={RUN_ID} — OLS β_std, "
+                f"v3 sync run_id={RUN_ID} -- OLS β_std, "
                 f"p_adj={r.get('p_adjusted')}, sig={r.get('sig_level')}"
             ),
-            # HUOM: "strength" JA "direction" ovat generated columns — älä lähetä
+            # HUOM: "strength" JA "direction" ovat generated columns -- älä lähetä
         })
 
     n = upsert(client, "regression_results", rows,
@@ -1278,6 +1278,10 @@ def step_export_json(client, dry_run=False, since=None) -> PipelineResult:
 
     for fname, table in EXPORT_TABLES.items():
         _write(out_dir, fname, table, "tables")
+    # Vie myös moduli011–020 lähdetaulut, jos ne ovat kannassa
+    for tbl in MODULE_SOURCE_TABLES:
+        if tbl not in EXPORT_TABLES and table_exists(client, tbl):
+            _write(out_dir, tbl, tbl, "tables")
     for view in EXPORT_VIEWS:
         _write(views_dir, view, view, "views")
 
@@ -1296,10 +1300,10 @@ def step_export_json(client, dry_run=False, since=None) -> PipelineResult:
 # Tuottaa neljä JSON-tiedostoa public/data/views/-hakemistoon, joita
 # `vaesto-huoltosuhde` (ja vastaavat) pluginit voivat lukea suoraan ilman
 # Supabase-yhteyttä:
-#   v_osa_aikatyo_sukupuoli.json   — vuosittain naiset/miehet osa-aikatyö% (1990–2024)
-#   v_lag_analysis_osa_aikatyo.json — TFR vs naiset_osaaikatyo_pct_2534, lag 0–10v
-#   v_detrended_correlation.json    — trendipoistettu r samojen sarjojen välillä
-#   v_spuriousness_test.json        — falsifiointi vuosikymmenittäin (R²)
+#   v_osa_aikatyo_sukupuoli.json   -- vuosittain naiset/miehet osa-aikatyö% (1990–2024)
+#   v_lag_analysis_osa_aikatyo.json -- TFR vs naiset_osaaikatyo_pct_2534, lag 0–10v
+#   v_detrended_correlation.json    -- trendipoistettu r samojen sarjojen välillä
+#   v_spuriousness_test.json        -- falsifiointi vuosikymmenittäin (R²)
 
 def _pv_num(v):
     if v is None:
@@ -1473,148 +1477,562 @@ def step_plugin_views(client, dry_run=False, since=None) -> PipelineResult:
 # ──────────────────────────────────────────────────────────────
 # ASKEL 14: MODULE-VIEWS (moduli011–020 plugin-kontraktit)
 # ──────────────────────────────────────────────────────────────
-# Tuottaa kunkin uuden modulin oman JSON-näkymän public/data/views/
-# kansioon. Jos lähdedata on saatavilla → täytetään arvoilla
-# (status="ready" tai "partial"). Jos lähde puuttuu → kirjoitetaan
-# stub-payload (status="stub", schema, required_sources), jotta
-# plugin-kehitys voi alkaa rinnakkain ja pipeline täyttää tiedot
-# heti kun lähdetaulut saapuvat kantaan.
+# Tuottaa kunkin modulin JSON-näkymän public/data/views/-kansioon.
+# Jokainen builder hakee oikeat taulut Supabasesta kehityssuunnitelman
+# mukaisesti. Jos taulu puuttuu tai on tyhjä → status="stub".
+# Jos osa lähteistä saatavilla → status="partial".
+# Kaikki lähteet saatavilla → status="ready".
 
-MODULE_SPECS = [
-    {
-        "id": "moduli011_alueellinen_eriarvoisuus",
-        "title": "Alueellinen eriarvoisuuskartta",
-        "priority": 1,
-        "required_sources": ["regional_welfare_indicators", "kunta_topojson"],
-        "schema": {"kunta_id": "str", "year": "int",
-                   "indikaattori": "str", "value": "float"},
-    },
-    {
-        "id": "moduli012_sukupolvien_tasapaino",
-        "title": "Sukupolvien välinen tasapaino",
-        "priority": 1,
-        "required_sources": ["population_pyramid_historical",
-                             "population_projection_2040",
-                             "transfers_by_age_group"],
-        "schema": {"year": "int", "age_group": "str",
-                   "sex": "str", "population": "int",
-                   "transfers_eur": "float"},
-    },
-    {
-        "id": "moduli013_mielenterveyskriisi",
-        "title": "Mielenterveyskriisin syvyys",
-        "priority": 1,
-        "required_sources": ["mental_health_diagnoses_by_age",
-                             "mental_health_waiting_times_regional",
-                             "sick_leave_mental_health"],
-        "schema": {"year": "int", "age_group": "str",
-                   "diagnosis": "str", "rate_per_1000": "float"},
-    },
-    {
-        "id": "moduli014_koulutus_tuottavuus",
-        "title": "Koulutus–tuottavuus–hyvinvointi -ketju",
-        "priority": 2,
-        "required_sources": ["education_outcomes_by_cohort",
-                             "pisa_finland_trend",
-                             "early_childhood_roi_estimates"],
-        "schema": {"cohort_year": "int", "edu_level": "str",
-                   "median_income": "float", "tax_contrib": "float"},
-    },
-    {
-        "id": "moduli015_maahanmuutto",
-        "title": "Maahanmuutto ja väestödynamiikka",
-        "priority": 2,
-        "required_sources": ["migration_net_flows",
-                             "immigrant_employment_integration",
-                             "fiscal_impact_immigration"],
-        "schema": {"year": "int", "origin_group": "str",
-                   "net_migration": "int",
-                   "employment_rate": "float"},
-    },
-    {
-        "id": "moduli016_asuntomarkkinat",
-        "title": "Asuntomarkkinat ja segregaatio",
-        "priority": 3,
-        "required_sources": ["housing_price_income_ratio",
-                             "segregation_index_cities",
-                             "homelessness_trend"],
-        "schema": {"year": "int", "area": "str",
-                   "price_income_ratio": "float",
-                   "segregation_index": "float"},
-    },
-    {
-        "id": "moduli017_verojarjestelma",
-        "title": "Verojärjestelmä ja redistributio",
-        "priority": 2,
-        "required_sources": ["gini_pretax_posttax",
-                             "effective_tax_rate_by_decile",
-                             "corporate_tax_trend_eu"],
-        "schema": {"year": "int", "gini_pre": "float",
-                   "gini_post": "float", "decile": "int",
-                   "effective_rate": "float"},
-    },
-    {
-        "id": "moduli018_subjektiivinen_hyvinvointi",
-        "title": "Subjektiivinen hyvinvointi ja luottamus",
-        "priority": 3,
-        "required_sources": ["world_happiness_nordic",
-                             "institutional_trust_survey",
-                             "loneliness_statistics"],
-        "schema": {"year": "int", "country": "str",
-                   "happiness_score": "float",
-                   "trust_government": "float"},
-    },
-    {
-        "id": "moduli019_ilmasto_hyvinvointi",
-        "title": "Ilmasto–hyvinvointikytkentä",
-        "priority": 3,
-        "required_sources": ["climate_policy_distributional_impact",
-                             "energy_poverty_finland",
-                             "green_transition_jobs"],
-        "schema": {"year": "int", "decile": "int",
-                   "policy_cost_share": "float",
-                   "energy_poverty_pct": "float"},
-    },
-    {
-        "id": "moduli020_realtime_dashboard",
-        "title": "Reaaliaikadashboard (API-integraatio)",
-        "priority": 3,
-        "required_sources": ["statfin_api", "kela_api"],
-        "schema": {"indicator": "str", "value": "float",
-                   "fetched_at": "iso8601"},
-    },
+# Taulut joita module_views tarvitsee (lisätään EXPORT_TABLES:iin
+# automaattisesti jos niitä ei ole vielä siellä)
+MODULE_SOURCE_TABLES = [
+    "regional_welfare_indicators",
+    "population_pyramid_historical",
+    "population_projection_2040",
+    "transfers_by_age_group",
+    "mental_health_diagnoses_by_age",
+    "mental_health_waiting_times_regional",
+    "sick_leave_mental_health",
+    "mental_health_nordic_comparison",
+    "education_outcomes_by_cohort",
+    "pisa_finland_trend",
+    "early_childhood_roi_estimates",
+    "migration_net_flows",
+    "immigrant_employment_integration",
+    "fiscal_impact_immigration",
+    "housing_price_income_ratio",
+    "segregation_index_cities",
+    "homelessness_trend",
+    "gini_pretax_posttax",
+    "effective_tax_rate_by_decile",
+    "corporate_tax_trend_eu",
+    "world_happiness_nordic",
+    "institutional_trust_survey",
+    "loneliness_statistics",
+    "climate_policy_distributional_impact",
+    "energy_poverty_finland",
+    "green_transition_jobs",
+    "realtime_indicators",        # moduli020: Tilastokeskus + Kela snapshot
 ]
 
 
-def _module_stub(spec: dict, note: str = "") -> dict:
-    return {
-        "status": "stub",
-        "module_id": spec["id"],
-        "title": spec["title"],
-        "priority": spec["priority"],
-        "schema": spec["schema"],
-        "required_sources": spec["required_sources"],
-        "data": [],
-        "note": note or ("Lähdetaulut puuttuvat kannasta — plugin voi "
-                         "kehittyä mock-datalla kunnes pipeline täyttää."),
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-    }
+def _mw_fetch(client: Client, table: str,
+              result: PipelineResult) -> pd.DataFrame:
+    """Hakee taulun; palauttaa tyhjän DataFramen ja kirjaa varoituksen jos epäonnistuu."""
+    try:
+        df = fetch_df(client, table, "*")
+        return df
+    except Exception as e:
+        result.warnings.append(f"{table}: {e}")
+        return pd.DataFrame()
 
 
-def _module_payload(spec: dict, data: list, status: str = "ready",
-                    note: str = "") -> dict:
+def _mw_nan(rows: list[dict]) -> list[dict]:
+    """Korvaa NaN-arvot None:lla JSON-serialisointia varten."""
+    for row in rows:
+        for k, v in list(row.items()):
+            if isinstance(v, float) and (pd.isna(v) or v != v):
+                row[k] = None
+    return rows
+
+
+def _mw_payload(module_id: str, title: str, priority: int,
+                sources_used: list[str], sources_missing: list[str],
+                data: list[dict], note: str = "") -> dict:
+    if sources_missing and not data:
+        status = "stub"
+    elif sources_missing:
+        status = "partial"
+    else:
+        status = "ready"
     return {
         "status": status,
-        "module_id": spec["id"],
-        "title": spec["title"],
-        "priority": spec["priority"],
-        "schema": spec["schema"],
-        "required_sources": spec["required_sources"],
+        "module_id": module_id,
+        "title": title,
+        "priority": priority,
+        "sources_used": sources_used,
+        "sources_missing": sources_missing,
         "data": data,
         "note": note,
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
+
+def _mw_write(out_dir: Path, fname: str, payload: dict,
+              dry_run: bool, result: PipelineResult,
+              written: list, index_entries: list) -> None:
+    body = json.dumps(payload, ensure_ascii=False,
+                      separators=(",", ":"), default=str)
+    if not dry_run:
+        (out_dir / f"{fname}.json").write_text(body, encoding="utf-8")
+    written.append((fname, payload["status"]))
+    result.rows_inserted += len(payload["data"]) or 1
+    index_entries.append({
+        "module_id": payload["module_id"],
+        "title": payload["title"],
+        "priority": payload["priority"],
+        "view": f"views/{fname}.json",
+        "status": payload["status"],
+        "sources_used": payload["sources_used"],
+        "sources_missing": payload["sources_missing"],
+    })
+    log.info(f"    · {fname}.json [{payload['status']}, "
+             f"{len(payload['data'])} riviä]")
+
+
+# ── Builder-funktiot per moduli ──────────────────────────────
+
+def _build_moduli011(client, result) -> dict:
+    """Hyvinvointi maakunnittain — alueellinen eriarvoisuuskartta.
+
+    Lähde: regional_welfare_indicators (kunta_id/maakunta_id, year,
+    indicator_code, value). Moduli odottaa tämän rakenteen suoraan.
+    """
+    df = _mw_fetch(client, "regional_welfare_indicators", result)
+    used, missing = [], []
+    if df.empty:
+        missing.append("regional_welfare_indicators")
+        return _mw_payload(
+            "moduli011_alueellinen_eriarvoisuus",
+            "Hyvinvointi maakunnittain — alueellinen eriarvoisuuskartta",
+            1, used, missing, [])
+
+    used.append("regional_welfare_indicators")
+    # Normalisoi sarakenimet joustavasti
+    col_map = {}
+    for c in df.columns:
+        lc = c.lower()
+        if lc in ("kunta_id", "kunta", "region_id", "maakunta_id", "alue_id"):
+            col_map[c] = "alue_id"
+        elif lc in ("maakunta", "maakunta_nimi", "region_name", "alue_nimi"):
+            col_map[c] = "alue_nimi"
+        elif lc in ("indicator_code", "indikaattori", "indicator"):
+            col_map[c] = "indikaattori"
+        elif lc in ("indicator_label", "indicator_name", "nimi", "label"):
+            col_map[c] = "indikaattori_nimi"
+        elif lc == "year":
+            col_map[c] = "year"
+        elif lc == "value":
+            col_map[c] = "value"
+    df = df.rename(columns=col_map)
+
+    rows = _mw_nan(df.to_dict(orient="records"))
+    return _mw_payload(
+        "moduli011_alueellinen_eriarvoisuus",
+        "Hyvinvointi maakunnittain — alueellinen eriarvoisuuskartta",
+        1, used, missing, rows)
+
+
+def _build_moduli012(client, result) -> dict:
+    """Sukupolvien välinen tasapaino.
+
+    Lähteet:
+      population_pyramid_historical  → ikäryhmä × sukupuoli × vuosi
+      population_projection_2040     → Tilastokeskuksen ennuste 2025–2040
+      transfers_by_age_group         → julkiset tulonsiirrot ikäryhmittäin
+    Yhdistetään vuosi + age_group -avaimella.
+    """
+    used, missing = [], []
+
+    df_hist = _mw_fetch(client, "population_pyramid_historical", result)
+    df_proj = _mw_fetch(client, "population_projection_2040", result)
+    df_tr   = _mw_fetch(client, "transfers_by_age_group", result)
+
+    if not df_hist.empty:
+        used.append("population_pyramid_historical")
+    else:
+        missing.append("population_pyramid_historical")
+    if not df_proj.empty:
+        used.append("population_projection_2040")
+    else:
+        missing.append("population_projection_2040")
+    if not df_tr.empty:
+        used.append("transfers_by_age_group")
+    else:
+        missing.append("transfers_by_age_group")
+
+    if df_hist.empty and df_proj.empty:
+        return _mw_payload(
+            "moduli012_sukupolvien_tasapaino",
+            "Sukupolvien välinen tasapaino",
+            1, used, missing, [])
+
+    # Yhdistä historialliset + ennuste, merkitse tyyppi
+    frames = []
+    if not df_hist.empty:
+        df_hist = df_hist.copy()
+        df_hist["data_type"] = "historical"
+        frames.append(df_hist)
+    if not df_proj.empty:
+        df_proj = df_proj.copy()
+        df_proj["data_type"] = "projection"
+        frames.append(df_proj)
+
+    pop_df = pd.concat(frames, ignore_index=True)
+
+    # Liitä tulonsiirrot jos saatavilla
+    if not df_tr.empty:
+        join_cols = [c for c in ("year", "age_group") if c in pop_df.columns and c in df_tr.columns]
+        if join_cols:
+            pop_df = pop_df.merge(df_tr, on=join_cols, how="left", suffixes=("", "_tr"))
+
+    rows = _mw_nan(pop_df.to_dict(orient="records"))
+    note = ("Tulonsiirtoja ei voitu liittää (transfers_by_age_group puuttuu)."
+            if "transfers_by_age_group" in missing else "")
+    return _mw_payload(
+        "moduli012_sukupolvien_tasapaino",
+        "Sukupolvien välinen tasapaino",
+        1, used, missing, rows, note)
+
+
+def _build_moduli013(client, result) -> dict:
+    """Mielenterveyskriisin syvyys.
+
+    Lähteet:
+      mental_health_diagnoses_by_age         → diagnoositrendi ikäryhmittäin
+      mental_health_waiting_times_regional   → hoitoonpääsy maakunnittain
+      sick_leave_mental_health               → sairauspoissaolot + talousvaikutus
+      mental_health_nordic_comparison        → kansainvälinen vertailu
+    Palautetaan rakenteinen dict neljällä osa-alueella.
+    """
+    used, missing = [], []
+
+    dfs = {}
+    sources = {
+        "diagnoses":  "mental_health_diagnoses_by_age",
+        "waiting":    "mental_health_waiting_times_regional",
+        "sick_leave": "sick_leave_mental_health",
+        "nordic":     "mental_health_nordic_comparison",
+    }
+    for key, tbl in sources.items():
+        df = _mw_fetch(client, tbl, result)
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli013_mielenterveyskriisi",
+        "Mielenterveyskriisin syvyys",
+        1, used, missing, data)
+
+
+def _build_moduli014(client, result) -> dict:
+    """Koulutus–tuottavuus–hyvinvointi -ketju.
+
+    Lähteet:
+      education_outcomes_by_cohort   → koulutusaste → mediaanipalkka per kohortti
+      pisa_finland_trend             → PISA-pisteet 2000–2025
+      early_childhood_roi_estimates  → varhaiskasvatus-ROI-estimaatit
+    """
+    used, missing = [], []
+    dfs = {}
+    sources = {
+        "education_outcomes": "education_outcomes_by_cohort",
+        "pisa":               "pisa_finland_trend",
+        "roi":                "early_childhood_roi_estimates",
+    }
+    for key, tbl in sources.items():
+        df = _mw_fetch(client, tbl, result)
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli014_koulutus_tuottavuus",
+        "Koulutus–tuottavuus–hyvinvointi -ketju",
+        2, used, missing, data)
+
+
+def _build_moduli015(client, result) -> dict:
+    """Maahanmuutto ja väestödynamiikka.
+
+    Lähteet:
+      migration_net_flows               → nettomaahanmuutto vs. luonnollinen kasvu
+      immigrant_employment_integration  → työllisyysaste maassaoloajan mukaan
+      fiscal_impact_immigration         → fiskaalinen nettovaikutus per ryhmä
+    Jos lähdetaulut puuttuvat, täydennetään time_series-pivotista.
+    """
+    used, missing = [], []
+
+    df_flows = _mw_fetch(client, "migration_net_flows", result)
+    df_empl  = _mw_fetch(client, "immigrant_employment_integration", result)
+    df_fisc  = _mw_fetch(client, "fiscal_impact_immigration", result)
+
+    dfs: dict[str, list] = {}
+    for key, df, tbl in [
+        ("net_flows",    df_flows, "migration_net_flows"),
+        ("employment",   df_empl,  "immigrant_employment_integration"),
+        ("fiscal",       df_fisc,  "fiscal_impact_immigration"),
+    ]:
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    # Fallback: time_series-pivot migraatiomuuttujille
+    if not dfs["net_flows"]:
+        try:
+            ts = fetch_df(client, "time_series", "j_code,year,value")
+            if not ts.empty:
+                pivot = ts.pivot_table(
+                    index="year", columns="j_code",
+                    values="value", aggfunc="mean").sort_index()
+                candidates = [c for c in pivot.columns
+                              if "maahanmuutt" in str(c).lower()
+                              or "migration" in str(c).lower()
+                              or "nettomig" in str(c).lower()]
+                if candidates:
+                    rows = []
+                    for col in candidates:
+                        for yr, v in pivot[col].dropna().items():
+                            try:
+                                rows.append({"year": int(yr), "indicator": col,
+                                             "value": round(float(v), 4),
+                                             "source": "time_series_fallback"})
+                            except Exception:
+                                continue
+                    if rows:
+                        dfs["net_flows"] = rows
+                        if "migration_net_flows" in missing:
+                            missing.remove("migration_net_flows")
+                        used.append("time_series[migration_fallback]")
+        except Exception as e:
+            result.warnings.append(f"moduli015 time_series-fallback epäonnistui: {e}")
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli015_maahanmuutto",
+        "Maahanmuutto ja väestödynamiikka",
+        2, used, missing, data)
+
+
+def _build_moduli016(client, result) -> dict:
+    """Asuntomarkkinat ja segregaatio.
+
+    Lähteet:
+      housing_price_income_ratio  → hintakehitys suhteessa ansiotasoon alueittain
+      segregation_index_cities    → segregaatioindeksi kaupungeittain
+      homelessness_trend          → asunnottomuuden trendi
+    """
+    used, missing = [], []
+    dfs = {}
+    sources = {
+        "price_income": "housing_price_income_ratio",
+        "segregation":  "segregation_index_cities",
+        "homelessness": "homelessness_trend",
+    }
+    for key, tbl in sources.items():
+        df = _mw_fetch(client, tbl, result)
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli016_asuntomarkkinat",
+        "Asuntomarkkinat ja segregaatio",
+        3, used, missing, data)
+
+
+def _build_moduli017(client, result) -> dict:
+    """Verojärjestelmä ja redistributio.
+
+    Lähteet:
+      gini_pretax_posttax           → Gini ennen/jälkeen verotuksen 1990–2025
+      effective_tax_rate_by_decile  → efektiivinen veroaste tulodesiileittäin
+      corporate_tax_trend_eu        → yhteisövero vs. EU-keskiarvo
+    Gini-data yhdistetään desiilidataan year-avaimella.
+    """
+    used, missing = [], []
+
+    df_gini  = _mw_fetch(client, "gini_pretax_posttax", result)
+    df_decil = _mw_fetch(client, "effective_tax_rate_by_decile", result)
+    df_corp  = _mw_fetch(client, "corporate_tax_trend_eu", result)
+
+    dfs: dict[str, list] = {}
+    for key, df, tbl in [
+        ("gini",          df_gini,  "gini_pretax_posttax"),
+        ("decile_rates",  df_decil, "effective_tax_rate_by_decile"),
+        ("corporate_tax", df_corp,  "corporate_tax_trend_eu"),
+    ]:
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    # Yhdistetty gini+desiilinäkymä jos molemmat saatavilla
+    if not df_gini.empty and not df_decil.empty:
+        try:
+            if "year" in df_gini.columns and "year" in df_decil.columns:
+                merged = df_decil.merge(
+                    df_gini[["year"] + [c for c in df_gini.columns if c != "year"]],
+                    on="year", how="left")
+                dfs["merged_year"] = _mw_nan(merged.to_dict(orient="records"))
+        except Exception as e:
+            result.warnings.append(f"moduli017 merge epäonnistui: {e}")
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli017_verojarjestelma",
+        "Verojärjestelmä ja redistributio",
+        2, used, missing, data)
+
+
+def _build_moduli018(client, result) -> dict:
+    """Subjektiivinen hyvinvointi ja luottamus.
+
+    Lähteet:
+      world_happiness_nordic       → WHR-pisteet Pohjoismaille 2012–2025
+      institutional_trust_survey   → luottamus instituutioihin, trendi
+      loneliness_statistics        → yksinäisyys % väestöstä ikäryhmittäin
+    Täydennetään nordic_indicators-taulusta jos omat taulut puuttuvat.
+    """
+    used, missing = [], []
+
+    df_hap  = _mw_fetch(client, "world_happiness_nordic", result)
+    df_tr   = _mw_fetch(client, "institutional_trust_survey", result)
+    df_lone = _mw_fetch(client, "loneliness_statistics", result)
+
+    dfs: dict[str, list] = {}
+    for key, df, tbl in [
+        ("happiness", df_hap,  "world_happiness_nordic"),
+        ("trust",     df_tr,   "institutional_trust_survey"),
+        ("loneliness",df_lone, "loneliness_statistics"),
+    ]:
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    # Fallback: nordic_indicators → happiness / trust -indikaattorit
+    if not dfs["happiness"] or not dfs["trust"]:
+        try:
+            nd = fetch_df(client, "nordic_indicators",
+                          "country_code,indicator_code,year,value")
+            if not nd.empty:
+                for key, pattern, missing_tbl in [
+                    ("happiness", "happiness",    "world_happiness_nordic"),
+                    ("trust",     "luottamus|trust", "institutional_trust_survey"),
+                ]:
+                    if not dfs[key]:
+                        mask = nd["indicator_code"].astype(str).str.contains(
+                            pattern, case=False, na=False)
+                        sub = nd[mask]
+                        if not sub.empty:
+                            dfs[key] = _mw_nan(sub.rename(
+                                columns={"country_code": "country"}).to_dict(orient="records"))
+                            if missing_tbl in missing:
+                                missing.remove(missing_tbl)
+                            used.append(f"nordic_indicators[{pattern}_fallback]")
+        except Exception as e:
+            result.warnings.append(f"moduli018 nordic_indicators-fallback epäonnistui: {e}")
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli018_subjektiivinen_hyvinvointi",
+        "Subjektiivinen hyvinvointi ja luottamus",
+        3, used, missing, data)
+
+
+def _build_moduli019(client, result) -> dict:
+    """Ilmasto–hyvinvointikytkentä.
+
+    Lähteet:
+      climate_policy_distributional_impact  → kustannusjako tulodesiileittäin
+      energy_poverty_finland                → energiaköyhyys % kotitalouksista
+      green_transition_jobs                 → vihreän siirtymän työpaikkamuutos alueittain
+    """
+    used, missing = [], []
+    dfs = {}
+    sources = {
+        "distributional": "climate_policy_distributional_impact",
+        "energy_poverty": "energy_poverty_finland",
+        "jobs":           "green_transition_jobs",
+    }
+    for key, tbl in sources.items():
+        df = _mw_fetch(client, tbl, result)
+        if not df.empty:
+            used.append(tbl)
+            dfs[key] = _mw_nan(df.to_dict(orient="records"))
+        else:
+            missing.append(tbl)
+            dfs[key] = []
+
+    data = [{"section": k, "rows": v} for k, v in dfs.items()]
+    return _mw_payload(
+        "moduli019_ilmasto_hyvinvointi",
+        "Ilmasto–hyvinvointikytkentä",
+        3, used, missing, data)
+
+
+def _build_moduli020(client, result) -> dict:
+    """Reaaliaikadashboard (API-integraatio).
+
+    Lähde: realtime_indicators — taulu jota ulkoinen etl-prosessi
+    (Tilastokeskus StatFin + Kela API) täyttää. Sarakkeet:
+      indicator_code, indicator_label, value, unit,
+      fetched_at (ISO-8601), source_api, yoy_change_pct
+
+    Jos taulu löytyy ja on tuore (viimeinen rivi < 24h vanha) → "ready".
+    Jos löytyy mutta vanha → "partial" + varoitus.
+    Jos puuttuu → "stub".
+    """
+    used, missing = [], []
+
+    df = _mw_fetch(client, "realtime_indicators", result)
+    if df.empty:
+        missing.append("realtime_indicators")
+        return _mw_payload(
+            "moduli020_realtime_dashboard",
+            "Reaaliaikadashboard (API-integraatio)",
+            3, used, missing, [],
+            note=("realtime_indicators-taulu puuttuu tai on tyhjä. "
+                  "Käynnistä StatFin+Kela ETL-prosessi täyttämään taulu "
+                  "ennen module_views-askelta."))
+
+    used.append("realtime_indicators")
+
+    # Tarkista tuoreus
+    note = ""
+    if "fetched_at" in df.columns:
+        try:
+            latest = pd.to_datetime(df["fetched_at"], utc=True).max()
+            age_h = (datetime.now(timezone.utc) -
+                     latest.to_pydatetime()).total_seconds() / 3600
+            if age_h > 24:
+                missing.append("realtime_indicators[stale]")
+                note = (f"Data on {age_h:.0f} tuntia vanhaa (> 24h). "
+                        "Päivitä StatFin/Kela ETL.")
+            elif age_h > 1:
+                note = f"Data päivitetty {age_h:.0f} tuntia sitten."
+        except Exception:
+            pass
+
+    rows = _mw_nan(df.to_dict(orient="records"))
+    return _mw_payload(
+        "moduli020_realtime_dashboard",
+        "Reaaliaikadashboard (API-integraatio)",
+        3, used, missing, rows, note)
+
+
+# ── Pääfunktio ───────────────────────────────────────────────
 
 def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
     result = PipelineResult("module_views")
@@ -1624,114 +2042,61 @@ def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
     if not dry_run:
         out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Esivalmistelu: aikasarjapivot mahdollisia "partial"-täyttöjä varten
-    try:
-        ts = fetch_df(client, "time_series", "j_code,year,value")
-    except Exception as e:
-        ts = pd.DataFrame()
-        result.warnings.append(f"time_series-haku epäonnistui: {e}")
+    # (kanoninen_nimi, builder, [alias-nimet joita index.json odottaa])
+    # Alias-tiedostot kirjoitetaan samaan views/-kansioon identtisellä sisällöllä,
+    # jotta plugin-host voi hakea ne index.json:n views-listan nimillä.
+    builders = [
+        ("v_moduli011_alueellinen_eriarvoisuus",  _build_moduli011,
+         ["regional_welfare_indicators"]),
+        ("v_moduli012_sukupolvien_tasapaino",     _build_moduli012,
+         ["population_pyramid_historical", "population_projection_2040"]),
+        ("v_moduli013_mielenterveyskriisi",       _build_moduli013,
+         ["mental_health_diagnoses_by_age", "mental_health_waiting_times_regional",
+          "sick_leave_mental_health", "mental_health_nordic_comparison"]),
+        ("v_moduli014_koulutus_tuottavuus",       _build_moduli014,
+         ["education_outcomes_by_cohort", "pisa_finland_trend",
+          "early_childhood_roi_estimates"]),
+        ("v_moduli015_maahanmuutto",              _build_moduli015,
+         ["migration_net_flows", "immigrant_employment_integration",
+          "fiscal_impact_immigration"]),
+        ("v_moduli016_asuntomarkkinat",           _build_moduli016,
+         ["housing_price_income_ratio", "segregation_index_cities",
+          "homelessness_trend"]),
+        ("v_moduli017_verojarjestelma",           _build_moduli017,
+         ["gini_pretax_posttax", "effective_tax_rate_by_decile",
+          "corporate_tax_trend_eu"]),
+        ("v_moduli018_subjektiivinen_hyvinvointi",_build_moduli018,
+         ["world_happiness_nordic", "institutional_trust_survey",
+          "loneliness_statistics"]),
+        ("v_moduli019_ilmasto_hyvinvointi",       _build_moduli019,
+         ["climate_policy_distributional_impact", "energy_poverty_finland",
+          "green_transition_jobs"]),
+        ("v_moduli020_realtime_dashboard",        _build_moduli020,
+         ["realtime_indicators"]),
+    ]
 
-    pivot = (ts.pivot_table(index="year", columns="j_code",
-                            values="value", aggfunc="mean").sort_index()
-             if not ts.empty else pd.DataFrame())
-
-    written: list[tuple[str, str]] = []  # (fname, status)
+    written: list[tuple[str, str]] = []
     index_entries: list[dict] = []
 
-    for spec in MODULE_SPECS:
-        fname = f"v_{spec['id']}"
-        payload: dict
-        status = "stub"
+    for fname, builder, aliases in builders:
+        try:
+            payload = builder(client, result)
+        except Exception as e:
+            result.errors.append(f"{fname}: odottamaton virhe: {e}")
+            log.error(f"    ✗ {fname}: {e}")
+            continue
+        _mw_write(out_dir, fname, payload, dry_run, result, written, index_entries)
 
-        # ── moduli012: huoltosuhde aikasarjana, jos sopiva j_code löytyy
-        if spec["id"] == "moduli012_sukupolvien_tasapaino" and not pivot.empty:
-            candidates = [c for c in pivot.columns
-                          if "huoltosuhde" in str(c).lower()]
-            if candidates:
-                col = candidates[0]
-                rows = []
-                for yr, v in pivot[col].dropna().items():
-                    try:
-                        rows.append({"year": int(yr),
-                                     "indicator": col,
-                                     "value": round(float(v), 4)})
-                    except Exception:
-                        continue
-                if rows:
-                    payload = _module_payload(
-                        spec, rows, status="partial",
-                        note=("Vain huoltosuhde täytetty (j_code "
-                              f"{col}). Ikäpyramidi & sankey vaativat "
-                              "erilliset lähteet."))
-                    status = "partial"
-                else:
-                    payload = _module_stub(spec)
-            else:
-                payload = _module_stub(spec)
-
-        # ── moduli015: nettomaahanmuutto, jos j_code löytyy
-        elif spec["id"] == "moduli015_maahanmuutto" and not pivot.empty:
-            candidates = [c for c in pivot.columns
-                          if "maahanmuutt" in str(c).lower()
-                          or "migration" in str(c).lower()]
-            if candidates:
-                rows = []
-                for col in candidates:
-                    for yr, v in pivot[col].dropna().items():
-                        try:
-                            rows.append({"year": int(yr),
-                                         "indicator": col,
-                                         "value": round(float(v), 4)})
-                        except Exception:
-                            continue
-                payload = _module_payload(
-                    spec, rows, status="partial",
-                    note="Vain time_series-pohjaiset migraatiosarjat täytetty.")
-                status = "partial"
-            else:
-                payload = _module_stub(spec)
-
-        # ── moduli018: jos nordic_indicators sisältää happiness-rivejä
-        elif spec["id"] == "moduli018_subjektiivinen_hyvinvointi":
-            try:
-                nd = fetch_df(client, "nordic_indicators",
-                              "country_code,indicator_code,year,value")
-            except Exception:
-                nd = pd.DataFrame()
-            if not nd.empty:
-                hh = nd[nd["indicator_code"].astype(str)
-                        .str.contains("happiness", case=False, na=False)]
-                if not hh.empty:
-                    rows = hh.rename(columns={"country_code": "country",
-                                              "value": "happiness_score"})\
-                             .to_dict(orient="records")
-                    payload = _module_payload(
-                        spec, rows, status="partial",
-                        note="Happiness-osio täytetty nordic_indicators-taulusta.")
-                    status = "partial"
-                else:
-                    payload = _module_stub(spec)
-            else:
-                payload = _module_stub(spec)
-
-        else:
-            payload = _module_stub(spec)
-
-        body = json.dumps(payload, ensure_ascii=False,
-                          separators=(",", ":"), default=str)
-        if not dry_run:
-            (out_dir / f"{fname}.json").write_text(body, encoding="utf-8")
-        written.append((fname, status))
-        index_entries.append({
-            "module_id": spec["id"],
-            "title": spec["title"],
-            "priority": spec["priority"],
-            "view": f"views/{fname}.json",
-            "status": status,
-            "required_sources": spec["required_sources"],
-        })
-        result.rows_inserted += 1
-        log.info(f"    · {fname}.json [{status}]")
+        # Kirjoita alias-nimet (index.json:n views-lista käyttää lähdetaulun nimeä)
+        if not dry_run and aliases:
+            body = json.dumps(payload, ensure_ascii=False,
+                              separators=(",", ":"), default=str)
+            for alias in aliases:
+                alias_path = out_dir / f"{alias}.json"
+                # Kirjoita vain jos tiedosto puuttuu tai on vanhempi
+                if not alias_path.exists():
+                    alias_path.write_text(body, encoding="utf-8")
+                    log.info(f"      alias: {alias}.json")
 
     # Module-indeksi: yksi tiedosto plugin-hostille
     if not dry_run:
@@ -1743,7 +2108,7 @@ def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
             json.dumps(idx, ensure_ascii=False, indent=2, default=str),
             encoding="utf-8")
 
-    # Päivitä manifest, jos export_json on jo ajettu
+    # Päivitä manifest, jos export_json on jo ajettu samassa ajossa
     manifest_path = Path(EXPORT_DIR) / "manifest.json"
     if not dry_run and manifest_path.exists() and written:
         try:
@@ -1758,7 +2123,8 @@ def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
                 sha = hashlib.sha256(payload_str.encode("utf-8")).hexdigest()[:16]
                 mf["views"][fname] = {
                     "file": f"views/{fname}.json",
-                    "rows": 1, "sha256_16": sha, "status": status,
+                    "sha256_16": sha,
+                    "status": status,
                 }
             mf["modules"] = {e["module_id"]: e for e in index_entries}
             manifest_path.write_text(
@@ -1767,7 +2133,12 @@ def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
         except Exception as e:
             result.warnings.append(f"manifest-päivitys epäonnistui: {e}")
 
-    log.info(f"  ✓ {len(written)} module-näkymää + _modules_index.json")
+    ready   = sum(1 for _, s in written if s == "ready")
+    partial = sum(1 for _, s in written if s == "partial")
+    stubs   = sum(1 for _, s in written if s == "stub")
+    log.info(f"  ✓ {len(written)} module-näkymää "
+             f"(ready={ready}, partial={partial}, stub={stubs}) "
+             f"+ _modules_index.json")
     return result
 
 
@@ -1835,7 +2206,7 @@ def run_pipeline(steps, dry_run=False, since=None):
 
     elapsed = (datetime.now() - start).total_seconds()
     log.info("=" * 60)
-    log.info(f"Valmis {elapsed:.1f}s — {len(results)} askelta")
+    log.info(f"Valmis {elapsed:.1f}s -- {len(results)} askelta")
     for r in results:
         log.info(f"  {'✓' if r.ok() else '✗'} {r.summary()}")
     log.info("=" * 60)
