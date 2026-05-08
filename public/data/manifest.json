@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-07T06:50:08.557214+00:00",
-  "model_run_id": "20260507T064809Z_7b85b08",
+  "generated_at": "2026-05-08T04:11:57.516061+00:00",
+  "model_run_id": "20260508T040941Z_b0e43cf",
   "tables": {
     "sectors": {
       "file": "sectors.json",
@@ -10,7 +10,7 @@
     "sector_series": {
       "file": "sector_series.json",
       "rows": 4158,
-      "sha256_16": "50dc9b2b03dfa57c"
+      "sha256_16": "e64e75c2095f2233"
     },
     "sector_target_population": {
       "file": "sector_target_population.json",
@@ -60,7 +60,7 @@
     "elasticities": {
       "file": "elasticities.json",
       "rows": 255,
-      "sha256_16": "c2036ee8a885a6b1"
+      "sha256_16": "983a305b026ecfb0"
     },
     "ols_models": {
       "file": "ols_models.json",
@@ -80,7 +80,7 @@
     "regression_results": {
       "file": "regression_results.json",
       "rows": 60,
-      "sha256_16": "2187eac3d8f0dca7"
+      "sha256_16": "a6c379699d767467"
     },
     "panel_datasets": {
       "file": "panel_datasets.json",
@@ -145,7 +145,7 @@
     "causal_chains": {
       "file": "causal_chains.json",
       "rows": 100,
-      "sha256_16": "19b2812045422cb5"
+      "sha256_16": "15bb1774a40980e2"
     },
     "crisis_events": {
       "file": "crisis_events.json",
@@ -177,7 +177,7 @@
     "v_signal": {
       "file": "views/v_signal.json",
       "rows": 80,
-      "sha256_16": "5d04f41cb3c2b869"
+      "sha256_16": "cfcb49d9df8477e1"
     },
     "v_signal_full_chain": {
       "file": "views/v_signal_full_chain.json",
@@ -187,7 +187,7 @@
     "v_signal_funding_paradox": {
       "file": "views/v_signal_funding_paradox.json",
       "rows": 80,
-      "sha256_16": "fe91e575377e17e4"
+      "sha256_16": "0d4afa969508ecd8"
     },
     "v_signal_leverage": {
       "file": "views/v_signal_leverage.json",
@@ -222,7 +222,7 @@
     "v_causal_chain_full": {
       "file": "views/v_causal_chain_full.json",
       "rows": 100,
-      "sha256_16": "1c38cecae992de76"
+      "sha256_16": "988423fbc6a872a9"
     },
     "v_causal_chain_summary": {
       "file": "views/v_causal_chain_summary.json",
@@ -252,7 +252,7 @@
     "v_crisis_wake": {
       "file": "views/v_crisis_wake.json",
       "rows": 184,
-      "sha256_16": "8c9242e0f485387a"
+      "sha256_16": "b0992f881af1cc66"
     },
     "v_demographic_pressure": {
       "file": "views/v_demographic_pressure.json",
