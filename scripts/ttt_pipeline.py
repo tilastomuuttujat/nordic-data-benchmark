@@ -1789,6 +1789,7 @@ STEPS = {
     "analytics_snapshot":      step_analytics_snapshot,
     "export_json":             step_export_json,
     "plugin_views":            step_plugin_views,
+    "module_views":            step_module_views,
 }
 
 DEFAULT_ORDER = [
@@ -1805,6 +1806,7 @@ DEFAULT_ORDER = [
     "analytics_snapshot",
     "export_json",
     "plugin_views",
+    "module_views",
 ]
 
 
