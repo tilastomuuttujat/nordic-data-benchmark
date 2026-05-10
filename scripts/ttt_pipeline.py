@@ -1,46 +1,32 @@
 """
-TTT-analyysipipeline v3
+TTT-analyysipipeline v4
 =======================
-Päivittää Supabase-laskennat. v3-muutokset (vrt. v2):
-
-  KORJAUKSET
-  ──────────
-  * `tfr_forecast`-skeemamatch korjattu: pipeline kirjoittaa nyt erilliseen
-    `tfr_forecast_yearly`-tauluun (vuositaso) ja jättää `tfr_forecast`-taulun
-    skenaariotauluksi (model_id, scenario, naiset_osa_pct, ...).
-  * `hoiva_aalto_projection`-skeemamatch korjattu: kirjoitetaan
-    `hoiva_aalto_yearly`-tauluun (population_75plus + tarve-ennusteet),
-    alkuperäinen taulu jätetään käsin ylläpidettäväksi 85+-aalloille.
+Päivittää Supabase-laskennat. v4-muutokset (vrt. v3):
 
   UUDET ASKELEET
   ──────────────
-  * step_nordic_correlations  -- käyttää `nordic_category_map`-taulua ja laskee
-    Suomen sektorimenojen ja muiden Pohjoismaiden vastaavien indikaattoreiden
-    väliset korrelaatiot. Ratkaisee suurimman analyyttisen aukon.
-  * step_cofog_link            -- käyttää `j_code_cofog`-taulua: laskee
-    j_code-tasoiset summat `cofog_amounts`-datasta, kirjoittaa
-    `cofog_jcode_amounts` (uusi taulu / view-tyyppinen aggregaatti).
-  * step_causal_chains_sync    -- päivittää `causal_chains`-taulun rivit
-    elasticities-tuloksista: jokainen vahva/kohtalainen elasticity → ketjun
-    ehdotus-taso ("auto"-confidence). Käsin verified-rivejä ei kosketa.
-  * step_regression_results_sync -- synkronoi `ols_coefficients` →
-    `regression_results` (vanha päällekkäinen taulu pidetään ajan tasalla
-    kunnes voidaan poistaa).
-  * step_export_views          -- vie `v_*`-näkymät JSONiksi
-    `public/data/views/<view>.json`. Avaa 40 valmista analyysiä
-    lukijaversiolle.
+  * step_export_supabase_views (askel 15) -- hakee automaattisesti kaikki
+    public-skeeman v_*-näkymät tietokannasta ja vie ne
+    public/data/views/<nimi>.json. Uudet kannan näkymät tulevat mukaan
+    ilman koodimuutoksia. Käyttää information_schema-taulua tai
+    'list_public_views()' RPC-funktiota.
 
   PARANNUKSET
   ───────────
-  * `j_code_indicator.weight` ja `relation_type` käytössä elasticities-
-    rivien painotuksessa: pipeline tallentaa nyt `expected_direction` ja
-    merkitsee `direction_match` jos tulos vastaa odotusta.
-  * Kaikki v2:n tilastolaajennukset säilyvät (FDR, ADF, bootstrap, Granger,
-    detrend, diff).
+  * EXPORT_TABLES päivitetty: lisätty uudet v3-taulut
+    (tfr_forecast_yearly, hoiva_aalto_yearly, nordic_correlations,
+    cofog_jcode_amounts).
+  * step_export_json: table_exists-tarkistus ennen vientiä (ohittaa
+    puuttuvat taulut varoituksella eikä kaadu), skipped_tables ja
+    skipped_views kirjataan manifest.json:iin, per-tiedosto-logitus.
+  * EXPORT_VIEWS järjestetty teemoittain, kaksoiskappaleet poistettu.
+  * DEFAULT_ORDER: export_supabase_views ajetaan viimeisenä jotta
+    manifest.json on jo olemassa päivitettäväksi.
 
 Käyttö:
     python ttt_pipeline.py
-    python ttt_pipeline.py --step nordic_correlations
+    python ttt_pipeline.py --step export_supabase_views
+    python ttt_pipeline.py --step export_json
     python ttt_pipeline.py --dry-run
     python ttt_pipeline.py --since 2024-01-01
 
@@ -51,9 +37,14 @@ Ympäristömuuttujat:
     TTT_FDR_ALPHA=0.05
     TTT_BOOTSTRAP_N=2000
 
-Huom: Tämä versio on yhteensopiva v2:n kanssa -- kaikki v2-askeleet löytyvät
-edelleen, ja DEFAULT_ORDER on järjestetty uusien jälkeen niin että
-elasticities ajetaan ennen causal_chains_sync.
+Tietokantavaatimukset (valinnainen RPC automaattinäkymälistaukselle):
+    CREATE OR REPLACE FUNCTION list_public_views()
+    RETURNS TABLE(view_name text) LANGUAGE sql SECURITY DEFINER AS $$
+      SELECT table_name::text
+      FROM   information_schema.views
+      WHERE  table_schema = 'public'
+      ORDER  BY table_name;
+    $$;
 """
 
 from __future__ import annotations
@@ -117,38 +108,80 @@ CONFIDENCE_THRESHOLDS = {
     "heikko":      0.0,
 }
 
-# Kaikki v_* + per_capita_trend näkymät jotka viedään JSONiksi
+# Kaikki v_* + muut näkymät jotka viedään JSONiksi public/data/views/-hakemistoon.
+# Järjestys: aakkosjärjestys teemoittain → helpompi ylläpitää.
 EXPORT_VIEWS = [
-    "v_signal", "v_signal_full_chain", "v_signal_funding_paradox",
-    "v_signal_leverage", "v_signal_policy_lag", "v_signal_counterfactual",
-    "v_signal_counterfactual_v2", "v_signal_drift", "v_policy_signal",
-    "v_causal_chain_full", "v_causal_chain_summary",
-    "v_crisis_chain_timeline", "v_crisis_lifecycle", "v_crisis_summary",
-    "v_crisis_timeseries", "v_crisis_wake",
-    "v_demographic_pressure", "v_fertility_housing", "v_housing_fertility_chain",
-    "v_population_trend", "v_population_weighted", "v_fi_tfr",
-    "v_funding_by_jcode", "v_spending_by_age_band",
-    "v_hoiva_aalto_summary", "v_intervention_simulation",
-    "v_interventions_by_lifecycle", "v_lag_analysis_osa_aikatyo",
-    "v_regression_syntyvyys", "v_segment_panel",
-    "v_osa_aikatyo_sukupuoli", "v_detrended_correlation",
+    # ── Signaalit & politiikka ──────────────────────────────────
+    "v_signal",
+    "v_signal_full_chain",
+    "v_signal_funding_paradox",
+    "v_signal_leverage",
+    "v_signal_policy_lag",
+    "v_signal_counterfactual",
+    "v_signal_counterfactual_v2",
+    "v_signal_drift",
+    "v_policy_signal",
+    # ── Kausaaliketjut ──────────────────────────────────────────
+    "v_causal_chain_full",
+    "v_causal_chain_summary",
+    # ── Kriisit ─────────────────────────────────────────────────
+    "v_crisis_chain_timeline",
+    "v_crisis_lifecycle",
+    "v_crisis_summary",
+    "v_crisis_timeseries",
+    "v_crisis_wake",
+    # ── Väestö & syntyvyys ──────────────────────────────────────
+    "v_demographic_pressure",
+    "v_fertility_housing",
+    "v_housing_fertility_chain",
+    "v_population_trend",
+    "v_population_weighted",
+    "v_fi_tfr",
+    # ── Rahoitus & menot ────────────────────────────────────────
+    "v_funding_by_jcode",
+    "v_spending_by_age_band",
+    # ── Hoiva & interventiot ────────────────────────────────────
+    "v_hoiva_aalto_summary",
+    "v_intervention_simulation",
+    "v_interventions_by_lifecycle",
+    # ── Osa-aikatyö & TFR (plugin-näkymät) ─────────────────────
+    "v_lag_analysis_osa_aikatyo",
+    "v_osa_aikatyo_sukupuoli",
+    # ── Regressiot & korrelaatiot ───────────────────────────────
+    "v_regression_syntyvyys",
+    "v_segment_panel",
+    "v_detrended_correlation",
     "v_spuriousness_test",
-    "v_nordic_alcohol", "v_nordic_fertility", "v_nordic_fertility_trend",
-    "v_nordic_fi_comparison", "v_nordic_finland_gap",
-    "v_nordic_finland_vs_peers", "v_nordic_health_expenditure",
-    "v_nordic_health_spending", "v_nordic_health_workforce",
-    "v_nordic_mental_health", "v_nordic_paradox_benchmark",
-    "v_nordic_socexp_by_lifecycle", "v_nordic_social_spending",
+    # ── Pohjoismaat ─────────────────────────────────────────────
+    "v_nordic_alcohol",
+    "v_nordic_fertility",
+    "v_nordic_fertility_trend",
+    "v_nordic_fi_comparison",
+    "v_nordic_finland_gap",
+    "v_nordic_finland_vs_peers",
+    "v_nordic_health_expenditure",
+    "v_nordic_health_spending",
+    "v_nordic_health_workforce",
+    "v_nordic_med_finland_gap",
+    "v_nordic_med_summary",
+    "v_nordic_mental_health",
+    "v_nordic_paradox_benchmark",
+    "v_nordic_socexp_by_lifecycle",
+    "v_nordic_social_spending",
     "v_nordic_suicide",
-    "per_capita_trend", "sector_efficiency_snapshot",
+    # ── Sektorianalyysi ─────────────────────────────────────────
+    "per_capita_trend",
+    "sector_efficiency_snapshot",
     "sector_spending_per_capita",
 ]
 
 EXPORT_TABLES = {
+    # ── Sektorit & rahoitus ─────────────────────────────────────
     "sectors": "sectors",
     "sector_series": "sector_series",
     "sector_target_population": "sector_target_population",
     "sector_jcode_map": "sector_jcode_map",
+    # ── J-koodit & indikaattorit ────────────────────────────────
     "j_codes": "j_codes",
     "j_code_indicator": "j_code_indicator",
     "j_code_cofog": "j_code_cofog",
@@ -156,6 +189,7 @@ EXPORT_TABLES = {
     "lifecycle_groups": "lifecycle_groups",
     "indicators_ref": "indicators_ref",
     "time_series": "time_series",
+    # ── Tilasto- ja regressiomallit ─────────────────────────────
     "elasticities": "elasticities",
     "ols_models": "ols_models",
     "ols_coefficients": "ols_coefficients",
@@ -163,22 +197,31 @@ EXPORT_TABLES = {
     "regression_results": "regression_results",
     "panel_datasets": "panel_datasets",
     "panel_heterogeneity": "panel_heterogeneity",
+    # ── Ennusteet ───────────────────────────────────────────────
     "tfr_forecast": "tfr_forecast",
+    "tfr_forecast_yearly": "tfr_forecast_yearly",          # v3 uusi
     "hoiva_aalto_projection": "hoiva_aalto_projection",
+    "hoiva_aalto_yearly": "hoiva_aalto_yearly",            # v3 uusi
+    # ── Pohjoismaat ─────────────────────────────────────────────
     "nordic_indicators": "nordic_indicators",
     "nordic_category_map": "nordic_category_map",
-    "ttt_essays": "ttt_essays",
-    "ttt_chapters": "ttt_chapters",
-    "ttt_blocks": "ttt_blocks",
+    "nordic_correlations": "nordic_correlations",          # v3 uusi
+    # ── COFOG ───────────────────────────────────────────────────
     "amounts": "amounts",
     "cofog_amounts": "cofog_amounts",
     "cofog_codes": "cofog_codes",
+    "cofog_jcode_amounts": "cofog_jcode_amounts",          # v3 uusi
+    # ── Kausaaliketjut & kriisit ────────────────────────────────
     "causal_chains": "causal_chains",
     "crisis_events": "crisis_events",
     "policy_decisions": "policy_decisions",
     "intervention_definitions": "intervention_definitions",
     "prevention_package": "prevention_package",
     "fact_intervention_evidence": "fact_intervention_evidence",
+    # ── Sisältö ─────────────────────────────────────────────────
+    "ttt_essays": "ttt_essays",
+    "ttt_chapters": "ttt_chapters",
+    "ttt_blocks": "ttt_blocks",
 }
 
 
@@ -1252,45 +1295,102 @@ def step_export_json(client, dry_run=False, since=None) -> PipelineResult:
         out_dir.mkdir(parents=True, exist_ok=True)
         views_dir.mkdir(parents=True, exist_ok=True)
 
-    manifest = {"generated_at": datetime.now(timezone.utc).isoformat(),
-                "model_run_id": RUN_ID, "tables": {}, "views": {}}
+    manifest = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "model_run_id": RUN_ID,
+        "tables": {},
+        "views": {},
+        "skipped_tables": [],
+        "skipped_views": [],
+    }
 
-    def _write(target_dir, fname, table, bucket_key):
+    def _write(target_dir: Path, fname: str, table: str, bucket_key: str,
+               is_view: bool = False) -> bool:
+        """Hakee taulun/näkymän ja kirjoittaa JSON-tiedostoon.
+        Palauttaa True jos onnistui, False jos ohitettiin/epäonnistui."""
         try:
             df = fetch_df(client, table, "*")
         except Exception as e:
-            result.warnings.append(f"{table}: {e}")
-            return
+            msg = f"{table}: {e}"
+            result.warnings.append(msg)
+            log.debug(f"    ✗ {fname}: {e}")
+            manifest.setdefault(
+                "skipped_views" if is_view else "skipped_tables", []
+            ).append({"name": fname, "reason": str(e)})
+            return False
+
         rows = df.to_dict(orient="records") if not df.empty else []
+
+        # Sanitoi NaN → None JSON-serialisointia varten
         for row in rows:
             for k, v in list(row.items()):
                 if isinstance(v, float) and (pd.isna(v) or v != v):
                     row[k] = None
+
         target = target_dir / f"{fname}.json"
         payload = json.dumps(rows, ensure_ascii=False,
                              separators=(",", ":"), default=str)
         if not dry_run:
             target.write_text(payload, encoding="utf-8")
+
         sha = hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
-        manifest[bucket_key][fname] = {"file": str(target.relative_to(out_dir)),
-                                        "rows": len(rows), "sha256_16": sha}
+        rel = str(target.relative_to(out_dir))
+        manifest[bucket_key][fname] = {
+            "file": rel,
+            "rows": len(rows),
+            "sha256_16": sha,
+        }
         result.rows_inserted += len(rows)
+        log.info(f"    · {rel} ({len(rows)} riviä)")
+        return True
 
+    # ── Taulut ──────────────────────────────────────────────────
+    log.info(f"  Viedään {len(EXPORT_TABLES)} taulua → {EXPORT_DIR}/")
     for fname, table in EXPORT_TABLES.items():
-        _write(out_dir, fname, table, "tables")
-    # Vie myös moduli011–020 lähdetaulut, jos ne ovat kannassa
-    for tbl in MODULE_SOURCE_TABLES:
-        if tbl not in EXPORT_TABLES and table_exists(client, tbl):
-            _write(out_dir, tbl, tbl, "tables")
-    for view in EXPORT_VIEWS:
-        _write(views_dir, view, view, "views")
+        if not table_exists(client, table):
+            log.debug(f"    – {table}: taulu puuttuu, ohitetaan")
+            manifest["skipped_tables"].append(
+                {"name": fname, "reason": "table_not_found"})
+            continue
+        _write(out_dir, fname, table, "tables", is_view=False)
 
+    # Vie myös moduli011–020 lähdetaulut, jos olemassa mutta ei vielä EXPORT_TABLES:ssa
+    extra_tables = [t for t in MODULE_SOURCE_TABLES
+                    if t not in EXPORT_TABLES and table_exists(client, t)]
+    if extra_tables:
+        log.info(f"  Viedään {len(extra_tables)} lisätaulua (module_source_tables)")
+        for tbl in extra_tables:
+            _write(out_dir, tbl, tbl, "tables", is_view=False)
+
+    # ── Näkymät ─────────────────────────────────────────────────
+    log.info(f"  Viedään {len(EXPORT_VIEWS)} näkymää → {EXPORT_DIR}/views/")
+    views_ok, views_skipped = 0, 0
+    for view in EXPORT_VIEWS:
+        if not table_exists(client, view):
+            log.debug(f"    – {view}: näkymä puuttuu, ohitetaan")
+            manifest["skipped_views"].append(
+                {"name": view, "reason": "view_not_found"})
+            views_skipped += 1
+            continue
+        ok = _write(views_dir, view, view, "views", is_view=True)
+        if ok:
+            views_ok += 1
+        else:
+            views_skipped += 1
+
+    # ── Manifest ────────────────────────────────────────────────
     if not dry_run:
-        (out_dir / "manifest.json").write_text(
+        manifest_path = out_dir / "manifest.json"
+        manifest_path.write_text(
             json.dumps(manifest, ensure_ascii=False, indent=2, default=str),
             encoding="utf-8")
-    log.info(f"  ✓ {len(manifest['tables'])} taulua + "
-             f"{len(manifest['views'])} näkymää → {EXPORT_DIR}")
+
+    n_tables = len(manifest["tables"])
+    n_views  = len(manifest["views"])
+    log.info(
+        f"  ✓ {n_tables} taulua + {n_views} näkymää kirjoitettu "
+        f"({views_skipped} näkymää ohitettu) → {EXPORT_DIR}"
+    )
     return result
 
 
@@ -2143,24 +2243,173 @@ def step_module_views(client, dry_run=False, since=None) -> PipelineResult:
 
 
 # ──────────────────────────────────────────────────────────────
+# ASKEL 15 (UUSI): SUPABASE-NÄKYMIEN AUTOMAATTIHAKU
+# Kyselee tietokannalta kaikki v_* -näkymät, vertaa EXPORT_VIEWS-
+# listaan ja vie puuttuvat automaattisesti public/data/views/-kansioon.
+# Näin uudet näkymät tulevat mukaan ilman koodimuutoksia.
+# ──────────────────────────────────────────────────────────────
+
+def _fetch_db_views(client: Client) -> list[str]:
+    """Hakee kaikki public-skeeman v_* ja muut näkymät tietokannasta
+    käyttäen information_schema-taulua Supabase RPC:n kautta."""
+    try:
+        resp = _exec(
+            client.rpc("list_public_views", {})
+        )
+        if resp.data:
+            return [r["view_name"] if isinstance(r, dict) else str(r)
+                    for r in resp.data]
+    except Exception:
+        pass
+
+    # Fallback: yritä information_schema suoraan
+    try:
+        resp = _exec(
+            client.from_("information_schema.views")
+            .select("table_name")
+            .eq("table_schema", "public")
+        )
+        if resp.data:
+            return [r["table_name"] for r in resp.data]
+    except Exception:
+        pass
+
+    return []
+
+
+def step_export_supabase_views(client, dry_run=False, since=None) -> PipelineResult:
+    """Askel 15: Vie kaikki Supabasen public-skeeman näkymät automaattisesti.
+
+    Logiikka:
+    1. Hakee kaikki näkymät tietokannasta (information_schema / RPC).
+    2. Vie näkymät jotka a) ovat jo EXPORT_VIEWS-listassa TAI b) alkavat 'v_'.
+    3. Tallentaa tiedostot public/data/views/<nimi>.json.
+    4. Päivittää manifest.json:n views-osion.
+    5. Kirjaa skipping_list.json jos näkymiä löytyy kannasta mutta ei viedy.
+    """
+    result = PipelineResult("export_supabase_views")
+    log.info("ASKEL 15: Automaattinen Supabase-näkymävienti")
+
+    out_dir = Path(EXPORT_DIR)
+    views_dir = out_dir / "views"
+    if not dry_run:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        views_dir.mkdir(parents=True, exist_ok=True)
+
+    # 1) Hae kaikki kannassa olevat näkymät
+    db_views = _fetch_db_views(client)
+    if not db_views:
+        result.warnings.append(
+            "Ei pystytty listaamaan tietokannan näkymiä. "
+            "Luo RPC-funktio 'list_public_views()' tai tarkista "
+            "information_schema-oikeudet."
+        )
+        log.warning("  ⚠ Näkymälistaus epäonnistui -- "
+                    "viedään vain EXPORT_VIEWS-listan näkymät")
+        db_views = []
+
+    # 2) Yhdistä: EXPORT_VIEWS + kannasta löytyvät v_*-näkymät
+    known_set = set(EXPORT_VIEWS)
+    auto_views = [v for v in db_views
+                  if v.startswith("v_") and v not in known_set]
+    all_views = list(EXPORT_VIEWS) + auto_views
+
+    if auto_views:
+        log.info(f"  Löytyi {len(auto_views)} uutta automaattivientiä: "
+                 f"{', '.join(auto_views[:5])}"
+                 + (" ..." if len(auto_views) > 5 else ""))
+
+    # 3) Vie näkymät
+    written: dict[str, dict] = {}
+    skipped: list[dict] = []
+
+    for view in all_views:
+        # Tarkista ensin että näkymä on olemassa
+        if not table_exists(client, view):
+            skipped.append({"name": view, "reason": "view_not_found"})
+            continue
+        try:
+            df = fetch_df(client, view, "*")
+        except Exception as e:
+            skipped.append({"name": view, "reason": str(e)})
+            result.warnings.append(f"{view}: {e}")
+            continue
+
+        rows = df.to_dict(orient="records") if not df.empty else []
+        # Sanitoi NaN → None
+        for row in rows:
+            for k, v in list(row.items()):
+                if isinstance(v, float) and (pd.isna(v) or v != v):
+                    row[k] = None
+
+        payload_str = json.dumps(rows, ensure_ascii=False,
+                                 separators=(",", ":"), default=str)
+        if not dry_run:
+            (views_dir / f"{view}.json").write_text(
+                payload_str, encoding="utf-8")
+
+        sha = hashlib.sha256(payload_str.encode("utf-8")).hexdigest()[:16]
+        written[view] = {
+            "file": f"views/{view}.json",
+            "rows": len(rows),
+            "sha256_16": sha,
+            "auto": view in auto_views,
+        }
+        result.rows_inserted += len(rows)
+        log.info(f"    · views/{view}.json "
+                 f"({len(rows)} riviä)"
+                 + (" [auto]" if view in auto_views else ""))
+
+    # 4) Päivitä manifest
+    manifest_path = out_dir / "manifest.json"
+    if not dry_run:
+        mf: dict = {}
+        if manifest_path.exists():
+            try:
+                mf = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except Exception:
+                mf = {}
+        mf.setdefault("views", {}).update(written)
+        mf["skipped_views"] = skipped
+        mf["export_supabase_views_run"] = datetime.now(timezone.utc).isoformat()
+        manifest_path.write_text(
+            json.dumps(mf, ensure_ascii=False, indent=2, default=str),
+            encoding="utf-8")
+
+        # 5) Erillinen ohitusraportti debuggausta varten
+        if skipped:
+            (out_dir / "skipped_views.json").write_text(
+                json.dumps(skipped, ensure_ascii=False, indent=2),
+                encoding="utf-8")
+
+    result.rows_updated = len(written)
+    result.rows_skipped = len(skipped)
+    log.info(f"  ✓ {len(written)} näkymää viety "
+             f"({len(auto_views)} automaattista, "
+             f"{len(skipped)} ohitettu)")
+    return result
+
+
+# ──────────────────────────────────────────────────────────────
 # PÄÄOHJELMA
 # ──────────────────────────────────────────────────────────────
 
 STEPS = {
-    "per_capita":              step_per_capita,
-    "elasticities":            step_elasticities,
-    "ols":                     step_ols,
-    "forecasts":               step_forecasts,
-    "hoiva_aalto":             step_hoiva_aalto,
-    "nordic_sync":             step_nordic_sync,
-    "nordic_correlations":     step_nordic_correlations,
-    "cofog_link":              step_cofog_link,
-    "causal_chains_sync":      step_causal_chains_sync,
-    "regression_results_sync": step_regression_results_sync,
-    "analytics_snapshot":      step_analytics_snapshot,
-    "export_json":             step_export_json,
-    "plugin_views":            step_plugin_views,
-    "module_views":            step_module_views,
+    "per_capita":               step_per_capita,
+    "elasticities":             step_elasticities,
+    "ols":                      step_ols,
+    "forecasts":                step_forecasts,
+    "hoiva_aalto":              step_hoiva_aalto,
+    "nordic_sync":              step_nordic_sync,
+    "nordic_correlations":      step_nordic_correlations,
+    "cofog_link":               step_cofog_link,
+    "causal_chains_sync":       step_causal_chains_sync,
+    "regression_results_sync":  step_regression_results_sync,
+    "analytics_snapshot":       step_analytics_snapshot,
+    "export_json":              step_export_json,
+    "plugin_views":             step_plugin_views,
+    "module_views":             step_module_views,
+    "export_supabase_views":    step_export_supabase_views,   # v4 uusi
 }
 
 DEFAULT_ORDER = [
@@ -2175,16 +2424,17 @@ DEFAULT_ORDER = [
     "causal_chains_sync",
     "regression_results_sync",
     "analytics_snapshot",
-    "export_json",
-    "plugin_views",
-    "module_views",
+    "export_json",              # taulut + EXPORT_VIEWS-lista
+    "plugin_views",             # osa-aikatyö & TFR plugin-näkymät
+    "module_views",             # moduli011–020 kontraktit
+    "export_supabase_views",    # automaattinen v_*-näkymävienti (ajetaan viimeisenä)
 ]
 
 
 def run_pipeline(steps, dry_run=False, since=None):
     client = get_client()
     log.info("=" * 60)
-    log.info(f"TTT-PIPELINE v3  run_id={RUN_ID}  "
+    log.info(f"TTT-PIPELINE v4  run_id={RUN_ID}  "
              f"{'[DRY-RUN] ' if dry_run else ''}"
              f"{'since='+since if since else ''}")
     log.info("=" * 60)
@@ -2216,11 +2466,11 @@ def run_pipeline(steps, dry_run=False, since=None):
 
 
 def main():
-    p = argparse.ArgumentParser(description="TTT-pipeline v3")
+    p = argparse.ArgumentParser(description="TTT-pipeline v4")
     p.add_argument("--step", choices=list(STEPS.keys()))
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--since", metavar="YYYY-MM-DD")
-    a = p.parse_args()
+    a, _ = p.parse_known_args()  # parse_known_args ignores Jupyter/Colab kernel args
     run_pipeline([a.step] if a.step else DEFAULT_ORDER,
                  dry_run=a.dry_run, since=a.since)
 
