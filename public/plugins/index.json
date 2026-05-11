@@ -1,5 +1,319 @@
-[
-  { "dir": "demo-counter" },
-  { "dir": "demo-listener" },
-  { "dir": "vaesto-huoltosuhde" }
-]
+{
+  "version": 2,
+  "dataDir": "/data/views/",
+  "plugins": [
+    {
+      "id": "moduli001",
+      "file": "moduli001.js",
+      "title": "Väestörakenne ja huoltosuhde 1985–2045",
+      "purpose": "Demografinen perusrakenne: pyramidi + huoltosuhde, joka kytkee hoivan, eläkkeet ja työvoiman.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_crisis_summary.json",
+        "per_capita_trend.json"
+      ],
+      "tags": [
+        "demografia",
+        "tilannekuva"
+      ]
+    },
+    {
+      "id": "moduli002",
+      "file": "moduli002.js",
+      "title": "Sektorimenot per asukas -- minne raha menee?",
+      "purpose": "Small-multiples + summa-stack: 5 sektorin €/asukas-kehitys 1990–2024.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "sector_spending_per_capita.json",
+        "sector_efficiency_snapshot.json"
+      ],
+      "tags": [
+        "talous",
+        "tilannekuva"
+      ]
+    },
+    {
+      "id": "moduli003",
+      "file": "moduli003.js",
+      "title": "Päätös → Asuminen → Syntyvyys",
+      "purpose": "Ketjuanalyysi: miten asuntopolitiikan päätökset vaikuttavat syntyvyyteen. Näyttää TFR:n, vuokrarasituksen ja rahoitusparadoksit.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_fertility_housing.json",
+        "v_signal_full_chain.json",
+        "v_signal_funding_paradox.json"
+      ],
+      "tags": [
+        "syntyvyys",
+        "asuminen",
+        "ketjuanalyysi"
+      ]
+    },
+    {
+      "id": "moduli004",
+      "file": "moduli004.js",
+      "title": "TFR ja osa-aikatyö · Korrelaatioanalyysi 1990–2024",
+      "purpose": "Tutkii syntyvyyden ja epävarman työn yhteyttä neljällä aikajaksolla, trendi-irrotusta, vuosimuutos-korrelaatiota, spuriousness-testiä ja 1990-luvun falsifiointia.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_fertility_housing.json",
+        "v_signal_full_chain.json",
+        "v_signal_funding_paradox.json"
+      ],
+      "tags": [
+        "syntyvyys",
+        "työmarkkinat",
+        "korrelaatio",
+        "kausaalisuus"
+      ]
+    },
+    {
+      "id": "moduli005",
+      "file": "moduli005.js",
+      "title": "Päätös → Asuminen → Syntyvyys (v2)",
+      "purpose": "Korjattu ketjuanalyysi: miten asuntopolitiikan päätökset vaikuttavat syntyvyyteen. Sisältää TFR:n, vuokrarasituksen, rahoitusparadoksit ja pohjoismaisen vertailun.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_housing_fertility_chain.json",
+        "v_signal_full_chain.json",
+        "v_signal_funding_paradox.json"
+      ],
+      "tags": [
+        "syntyvyys",
+        "asuminen",
+        "ketjuanalyysi",
+        "pohjoismaat"
+      ]
+    },
+    {
+      "id": "moduli006",
+      "file": "moduli006.js",
+      "title": "Elinkaarisukupolvi-indeksi",
+      "purpose": "Yhdistää elinkaarivaiheen (lapsuus, nuoruus, työikä, vanhuus) ja neljä tarkastelukulmaa yhdeksi sukupolvipisteeksi (0–100). Näyttää indeksien kehityksen 1990–2024.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_housing_fertility_chain.json"
+      ],
+      "tags": [
+        "sukupolvet",
+        "indeksi",
+        "elinkaari",
+        "kehitys"
+      ]
+    },
+    {
+      "id": "moduli007",
+      "file": "moduli007.js",
+      "title": "Pohjoismainen vertailu",
+      "purpose": "Vertaa Suomea Tanskaan, Ruotsiin ja Norjaan viidellä keskeisellä indikaattorilla. Radar-kuvaaja ja bar chart -vertailu.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_nordic_indicators.json",
+        "v_housing_fertility_chain.json"
+      ],
+      "tags": [
+        "pohjoismaat",
+        "vertailu",
+        "indikaattorit",
+        "radar"
+      ]
+    },
+    {
+      "id": "moduli008",
+      "file": "moduli008.js",
+      "title": "Kriisisignaalien varoitusvalo",
+      "purpose": "Nopea tilannekuva: liikennevalot (punainen/keltainen/vihreä) keskeisille indikaattoreille suhteessa pohjoismaiden keskiarvoon.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_housing_fertility_chain.json",
+        "v_nordic_indicators.json"
+      ],
+      "tags": [
+        "tilannekuva",
+        "indikaattorit",
+        "pohjoismaat",
+        "varoitus"
+      ]
+    },
+    {
+      "id": "moduli009",
+      "file": "moduli009.js",
+      "title": "Mitä jos -skenaariotyökalu",
+      "purpose": "Käyttäjä voi lisätä rahoitusta valitsemaansa sektoriin ja nähdä elastisuuksien perusteella, millä viiveellä ja kuinka paljon indikaattori muuttuu.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_signal_elasticities.json"
+      ],
+      "tags": [
+        "skenaario",
+        "ennuste",
+        "elastisuus",
+        "interaktiivinen"
+      ]
+    },
+    {
+      "id": "moduli010",
+      "file": "moduli010.js",
+      "title": "Suomen syntyvyyskriisin aikajana",
+      "purpose": "Interaktiivinen aikajana yhdistää keskeiset päätökset, kriisit ja TFR-muutokset vuosilta 1990–2024. Näyttää mekanismit ja viiveet.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_housing_fertility_chain.json"
+      ],
+      "tags": [
+        "syntyvyys",
+        "aikajana",
+        "päätökset",
+        "kriisit",
+        "historia"
+      ]
+    },
+    {
+      "id": "moduli011",
+      "file": "moduli011.js",
+      "title": "Hyvinvointi maakunnittain — alueellinen eriarvoisuuskartta",
+      "purpose": "Interaktiivinen maakuntakartta, joka värjää alueet valitun hyvinvointiindikaattorin mukaan. Klikkaus avaa maakuntakortin vertailuineen. Ranking-lista, tilastoboksi ja automaattinen analyysi.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "regional_welfare_indicators.json"
+      ],
+      "tags": [
+        "alue",
+        "maakunta",
+        "kartta",
+        "eriarvoisuus",
+        "vertailu",
+        "indikaattorit"
+      ]
+    },
+    {
+      "id": "moduli012",
+      "file": "moduli012.js",
+      "title": "Sukupolvien välinen tasapaino",
+      "purpose": "Animoitu ikäpyramidi (1980–2040 liukusäätimellä), huoltosuhde-aikasarja, julkiset tulonsiirrot ikäryhmittäin ja simulaattori (eläkeikä / TFR / maahanmuutto → huoltosuhde 2040).",
+      "slot": "dashboard.widgets",
+      "views": [
+        "population_pyramid_historical.json",
+        "population_projection_2040.json"
+      ],
+      "tags": [
+        "demografia",
+        "sukupolvet",
+        "ikärakenne",
+        "huoltosuhde",
+        "simulaattori",
+        "eläkkeet"
+      ]
+    },
+    {
+      "id": "moduli013",
+      "file": "moduli013.js",
+      "title": "Mielenterveyskriisin syvyys",
+      "purpose": "Kattava kokonaiskuva nuorten ja työikäisten mielenterveyden kehityksestä ja palvelujärjestelmän vastauskyvystä. Diagnoositrendi ikäryhmittäin, palvelupolku-suppilo, alueellinen eriarvoisuus hoitoonpääsyssä, talousvaikutukset ja kansainvälinen vertailu.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "mental_health_diagnoses_by_age.json",
+        "mental_health_waiting_times_regional.json",
+        "sick_leave_mental_health.json",
+        "mental_health_nordic_comparison.json"
+      ],
+      "tags": [
+        "mielenterveys",
+        "diagnoosit",
+        "palvelut",
+        "alue",
+        "talous",
+        "pohjoismaat",
+        "tilannekuva"
+      ]
+    },
+    {
+      "id": "moduli013b",
+      "file": "moduli013b.js",
+      "title": "Mielenterveyskriisin syvyys",
+      "purpose": "Diagnoositrendit ikäryhmittäin (tab-valinta), palvelupolku-suppilo (720k → 108k toipuvaa), alueellinen heatmap 12 maakunnalla, talousvaikutukset (6 Mrd €/v) ja kansainvälinen vertailu pohjoismaihin.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "mental_health_diagnoses_by_age.json",
+        "mental_health_waiting_times_regional.json",
+        "mental_health_nordic_comparison.json"
+      ],
+      "tags": [
+        "mielenterveys",
+        "nuoret",
+        "diagnoosit",
+        "palvelupolku",
+        "alue",
+        "kansainvälinen",
+        "talousvaikutus"
+      ]
+    },
+    {
+      "id": "moduli014",
+      "file": "moduli014.js",
+      "title": "Hyvinvointilmiösimulaattori",
+      "purpose": "Interaktiivinen 6-ilmiön systeemikartta: driveri-säätimet, ilmiö↔ilmiö-ketjut, skenaariot ja järjestelmäpaine 1990–2024.",
+      "slot": "dashboard.widgets",
+      "views": [
+        "v_housing_fertility_chain.json",
+        "v_signal_full_chain.json"
+      ],
+      "tags": [
+        "systeemikartta",
+        "ilmiöt",
+        "skenaariot",
+        "interaktiivinen",
+        "tilannekuva"
+      ]
+    },
+    {
+      "id": "moduli015",
+      "file": "moduli015.js",
+      "title": "Hyvinvointisimulaattori -- systeemianalyysi",
+      "purpose": "Standalone-systeemisimulaattori: ilmiövalinta, aikajana 1990–2024, vipusäätimet, skenaariot ja vaikutuskaavio.",
+      "slot": "dashboard.widgets",
+      "views": [],
+      "tags": [
+        "systeemi",
+        "simulaattori",
+        "skenaariot",
+        "interaktiivinen"
+      ]
+    },
+    {
+      "id": "moduli016",
+      "file": "moduli016.js",
+      "title": "Elinkaarikoordinaatisto — TTT-analyysi",
+      "purpose": "Interaktiivinen 9×6-koordinaatisto: yhdeksän elämänvaiheen ja kuuden aikakauden risteykset neljästä tulokulmasta (rakenteellinen, taloudellinen, kulttuurinen, subjektiivinen). Kriisikerros, kausaaliketjut, live-data Supabasesta ja väestöpainepalkki 2024–2040.",
+      "slot": "dashboard.widgets",
+      "views": [],
+      "tags": [
+        "elinkaari",
+        "koordinaatisto",
+        "kriisit",
+        "kausaaliketjut",
+        "demografia",
+        "tilannekuva",
+        "supabase"
+      ]
+    },
+    {
+  "id": "moduli017",
+  "file": "moduli017.js",
+  "title": "TTT-Navigaattori · Klusteri × Aika × Vanavesi",
+  "purpose": "Interaktiivinen navigaattori joka esittää klusterit, ajan ja vanavedet kolmen funktion (vahvistava, varautuminen, korjaava) kautta.",
+  "slot": "dashboard.widgets",
+  "views": [],
+  "tags": ["navigaattori", "klusteri", "vanavesi", "aikajana"]
+},
+    {
+      "id": "moduli018",
+      "file": "moduli018.js",
+      "title": "Pohjoismaat -- Hyvinvointijärjestelmävertailu",
+      "purpose": "Vertaileva analyysi Suomesta, Tanskasta, Norjasta ja Ruotsista: BKT, työttömyys, COFOG-menot, etuuskorvausasteet, TFR, lapsettomuus, PISA ja synteesi-radar.",
+      "slot": "dashboard.widgets",
+      "views": ["v_nordic_indicators.json"],
+      "tags": ["pohjoismaat", "vertailu", "talous", "syntyvyys", "koulutus", "etuudet", "radar"]
+    }
+  ]
+}
