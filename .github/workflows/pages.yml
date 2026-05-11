@@ -26,7 +26,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p _site
-          cp -r public/standalone/. _site/
+          cp -r public/. _site/
           mkdir -p _site/plugins
           cp -r public/plugins/. _site/plugins/
 
