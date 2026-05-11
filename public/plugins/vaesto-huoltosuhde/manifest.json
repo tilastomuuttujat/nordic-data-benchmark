@@ -1,8 +1,0 @@
-{
-  "id": "vaesto-huoltosuhde",
-  "version": "1.0.0",
-  "title": "Väestörakenne ja huoltosuhde 1985–2045",
-  "slots": ["dashboard.widgets"],
-  "entry": "./index.js",
-  "styles": "./styles.css"
-}
