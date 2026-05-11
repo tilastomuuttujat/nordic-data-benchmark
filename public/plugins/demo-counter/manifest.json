@@ -1,9 +1,0 @@
-{
-  "id": "demo-counter",
-  "version": "1.0.0",
-  "title": "Demolaskuri (D3)",
-  "slots": ["dashboard.widgets"],
-  "entry": "./index.js",
-  "styles": "./styles.css",
-  "permissions": ["events:emit", "data:read"]
-}
