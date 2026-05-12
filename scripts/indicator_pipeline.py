@@ -157,7 +157,7 @@ TEEMAT: list[dict] = [
         "rooli": "rakenne",
     },
     {
-        "teema_id": "kestävyys",
+        "teema_id": "kestavyys",
         "label": "Kestävyys & Rakenne",
         "kuvaus": "Demografinen paine, rahoituksen kestävyys ja henkilöstön saatavuus",
         "avainsanat": [
