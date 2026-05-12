@@ -3,8 +3,17 @@ name: TTT pipeline
 on:
   workflow_dispatch:
     inputs:
+      pipeline:
+        description: "Kumpi pipeline ajetaan"
+        required: false
+        default: "molemmat"
+        type: choice
+        options:
+          - molemmat
+          - ttt_pipeline
+          - indicator_pipeline
       step:
-        description: "Aja vain yksi askel (jätä tyhjäksi = kaikki)"
+        description: "Aja vain yksi askel (jätä tyhjäksi = kaikki; huom. askel-nimet eroavat pipelineittain)"
         required: false
         default: ""
       dry_run:
@@ -32,16 +41,39 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run pipeline
+      - name: Run ttt_pipeline.py
+        # Ohitetaan jos käyttäjä valitsi vain indicator_pipeline
+        if: ${{ inputs.pipeline != 'indicator_pipeline' }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_SB_URL: ${{ secrets.SUPABASE_URL }}
+          TTT_SB_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           TTT_EXPORT_DIR: public/data
         run: |
           ARGS=""
           if [ -n "${{ inputs.step }}" ]; then ARGS="$ARGS --step ${{ inputs.step }}"; fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python scripts/ttt_pipeline.py $ARGS
+
+      - name: Run indicator_pipeline.py
+        # Ohitetaan jos käyttäjä valitsi vain ttt_pipeline
+        # Jos step on asetettu yksittäisen pipelinen ajoon, ei anneta sitä toiselle
+        if: ${{ inputs.pipeline != 'ttt_pipeline' }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_SB_URL: ${{ secrets.SUPABASE_URL }}
+          TTT_SB_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_EXPORT_DIR: public/data
+        run: |
+          ARGS=""
+          # Step-argumentti annetaan vain jos pipeline on valittu eksplisiittisesti
+          if [ -n "${{ inputs.step }}" ] && [ "${{ inputs.pipeline }}" = "indicator_pipeline" ]; then
+            ARGS="$ARGS --step ${{ inputs.step }}"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python scripts/indicator_pipeline.py $ARGS
 
       - name: Commit updated JSON exports
         if: ${{ inputs.dry_run != 'true' }}
