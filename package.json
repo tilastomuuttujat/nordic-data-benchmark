@@ -1,0 +1,8 @@
+{
+  "name": "nordic-data-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server ${PORT:-5173} --bind 0.0.0.0 --directory public"
+  }
+}
