@@ -5,7 +5,9 @@
 import { PAIRINGS, findPairing, partnersOf } from "./pairings.js";
 
 const HOST_DIR = new URL("./", import.meta.url).href;
-const SITE_BASE = new URL("../", import.meta.url).href;
+// GitHub Pages palvelee tämän tiedoston suoraan projektin alipolusta
+// /nordic-data-benchmark/, joten emme saa nousta yhtä hakemistoa ylemmäs.
+const SITE_BASE = HOST_DIR;
 const PLUGINS_BASE = new URL("plugins/", SITE_BASE).href;
 const DATA_BASE_DEFAULT = new URL("data/views/", SITE_BASE).href;
 const STORAGE_KEY = "vsignal.workspace.v2";
