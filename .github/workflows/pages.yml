@@ -27,8 +27,6 @@ jobs:
         run: |
           mkdir -p _site
           cp -r public/. _site/
-          mkdir -p _site/plugins
-          cp -r public/plugins/. _site/plugins/
 
       - uses: actions/configure-pages@v5
 
