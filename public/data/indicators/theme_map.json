@@ -1,0 +1,2105 @@
+{
+  "generated_at": "2026-05-12T20:34:29.928871+00:00",
+  "node_count": 121,
+  "link_count": 214,
+  "node_types": [
+    "teema",
+    "jcode",
+    "indicator"
+  ],
+  "link_types": [
+    "teema_jcode",
+    "affects",
+    "outcome",
+    "input"
+  ],
+  "nodes": [
+    {
+      "id": "teema_resurssit",
+      "label": "Resurssit & Panostukset",
+      "type": "teema",
+      "group": "resurssit",
+      "kuvaus": "Julkiset menot, henkilöstö ja rahoitusrakenne"
+    },
+    {
+      "id": "teema_saavutettavuus",
+      "label": "Tuotokset & Saavutettavuus",
+      "type": "teema",
+      "group": "saavutettavuus",
+      "kuvaus": "Palvelujen käyttöaste, jonotusajat ja väestön peitto"
+    },
+    {
+      "id": "teema_vaikuttavuus",
+      "label": "Vaikuttavuus & Tulokset",
+      "type": "teema",
+      "group": "vaikuttavuus",
+      "kuvaus": "Terveys-, koulutus- ja hyvinvointitulokset"
+    },
+    {
+      "id": "teema_tehokkuus",
+      "label": "Tehokkuus & Panos-tuotos",
+      "type": "teema",
+      "group": "tehokkuus",
+      "kuvaus": "Kustannus per yksikkö, tuottavuus ja vertailut"
+    },
+    {
+      "id": "teema_vinouma",
+      "label": "Järjestelmän Vinouma & Oikeudenmukaisuus",
+      "type": "teema",
+      "group": "vinouma",
+      "kuvaus": "Sosioekonominen gradientti, sukupuoli-, ikä- ja aluevinouma"
+    },
+    {
+      "id": "teema_kestävyys",
+      "label": "Kestävyys & Rakenne",
+      "type": "teema",
+      "group": "kestävyys",
+      "kuvaus": "Demografinen paine, rahoituksen kestävyys ja henkilöstön saatavuus"
+    },
+    {
+      "id": "teema_pohjoismainen",
+      "label": "Pohjoismaiset Vertailumittarit",
+      "type": "teema",
+      "group": "pohjoismainen",
+      "kuvaus": "OECD/Eurostat/Nordic Council -yhteismitalliset indikaattorit"
+    },
+    {
+      "id": "teema_elinkaari",
+      "label": "Elinkaari & Väestöryhmät",
+      "type": "teema",
+      "group": "elinkaari",
+      "kuvaus": "Lapset, nuoret, työikäiset ja ikääntyneet palveluryhmittäin"
+    },
+    {
+      "id": "teema_politiikka",
+      "label": "Politiikka & Kausaalisuus",
+      "type": "teema",
+      "group": "politiikka",
+      "kuvaus": "Poliittiset päätökset, viiveet ja kausaaliketjut"
+    },
+    {
+      "id": "jcode_J1102",
+      "label": "Vanhempain-/äitiys-/isyysrahat",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_syntyvyys_tfr",
+      "label": "Kokonaishedelmällisyysluku (TFR)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "syntyvyys_tfr"
+    },
+    {
+      "id": "jcode_J0101",
+      "label": "1.1 Päiväkoti- ja ryhmäperhepäivähoito",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J1502",
+      "label": "15.2 Sijaishuolto",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_lastensuojelu_sijoitetut",
+      "label": "Kodin ulkopuolelle sijoitetut lapset",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "lastensuojelu_sijoitetut"
+    },
+    {
+      "id": "ind_lastensuojelu_sijoitetut_pct",
+      "label": "Kodin ulkopuolelle sijoitetut 0–17v, % ikäluokasta",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "lastensuojelu_sijoitetut_pct"
+    },
+    {
+      "id": "jcode_J1501",
+      "label": "Lastensuojelu: avohuolto ja tuki",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_lastensuojelu_avohuolto",
+      "label": "Lastensuojelun avohuollon asiakkaat",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "lastensuojelu_avohuolto"
+    },
+    {
+      "id": "jcode_J1101",
+      "label": "Lapsilisä ja monilapsikorotukset",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_lapsiperheiden_osuus",
+      "label": "Lapsiperheiden osuus kaikista kotitalouksista",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "lapsiperheiden_osuus"
+    },
+    {
+      "id": "jcode_J1103",
+      "label": "11.3 Kotihoidontuki ja muut perhetuet",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_varhaiskasvatus_osallistuminen",
+      "label": "Varhaiskasvatukseen osallistuneet 1–5v",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "varhaiskasvatus_osallistuminen"
+    },
+    {
+      "id": "jcode_J0203",
+      "label": "2.3 Perusopetus: kuljetukset ja tukipalvelut",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "jcode_J0103",
+      "label": "1.3 Varhaiskasvatuksen tuet ja palvelusetelit",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "jcode_J0102",
+      "label": "1.2 Perhepäivähoito ja yksityinen hoito",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_perhevapaat_kaytto_isat",
+      "label": "Isien osuus perhevapaiden käytöstä",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "perhevapaat_kaytto_isat"
+    },
+    {
+      "id": "ind_lastensuojelu_kiireelliset",
+      "label": "Kiireelliset sijoitukset",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "lastensuojelu_kiireelliset"
+    },
+    {
+      "id": "jcode_J1403",
+      "label": "14.3 Vammaispalvelut: kuljetus- ja tukipalvelut",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_lapset_vammaistuki_yht",
+      "label": "Alle 16v vammaistuen saajat, yhteensä",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "lapset_vammaistuki_yht"
+    },
+    {
+      "id": "jcode_J1401",
+      "label": "14.1 Henkilökohtainen apu ja avustaminen",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "jcode_J1203",
+      "label": "Muut etuudet (vammais-, elatus-)",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_mt_tyokyvyttomyyselakkeet",
+      "label": "Mielenterveysperusteiset työkyvyttömyyseläkkeet",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_tyokyvyttomyyselakkeet"
+    },
+    {
+      "id": "jcode_J0902",
+      "label": "9.2 Työkyvyttömyyseläkkeet",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0803",
+      "label": "Työterveys ja ennaltaehkäisevä työkykytyö",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0801",
+      "label": "Lääkinnällinen kuntoutus",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0701",
+      "label": "Mielenterveys/päihteet: avohoito ja terapiat",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_mt_sairaslomat",
+      "label": "MT-perusteiset sairauslomat",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_sairaslomat"
+    },
+    {
+      "id": "ind_mt_kuntoutus_yht",
+      "label": "Kelan MT-kuntoutujat yhteensä",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_kuntoutus_yht"
+    },
+    {
+      "id": "jcode_J0702",
+      "label": "7.2 Mielenterveys/päihteet: laitos- ja kriisihoito",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_paihde_hoitojaksojen_maara",
+      "label": "Päihdehuollon hoitojaksot",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "paihde_hoitojaksojen_maara"
+    },
+    {
+      "id": "ind_mt_avohoito_kaynteja",
+      "label": "Psykiatrian avohoidon käynnit",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "mt_avohoito_kaynteja"
+    },
+    {
+      "id": "ind_mt_sairaalahoito_paivat",
+      "label": "Psykiatrisen sairaalahoitojaksojen määrä / 1000 asukasta",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_sairaalahoito_paivat"
+    },
+    {
+      "id": "jcode_J0703",
+      "label": "Mielenterveys/päihteet: ennaltaehkäisy",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_alkoholin_kulutus",
+      "label": "Alkoholin kokonaiskulutus litraa 100% / asukas",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "alkoholin_kulutus"
+    },
+    {
+      "id": "ind_mt_tahdonvastaiset_hoidot",
+      "label": "Tahdosta riippumattomaan hoitoon määrätyt",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_tahdonvastaiset_hoidot"
+    },
+    {
+      "id": "ind_nuorten_mt_kayntimaara",
+      "label": "Nuorten (13–22v) MT-käynnit / 1000 ikäryhmästä",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "nuorten_mt_kayntimaara"
+    },
+    {
+      "id": "ind_mt_oireilu_nuoret",
+      "label": "Mt-oireilu, nuoret 12–22v (kohtalainen/vakava)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_oireilu_nuoret"
+    },
+    {
+      "id": "jcode_J0202",
+      "label": "Oppilashuolto ja tuki (ml. erityisopetus)",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_mt_itsemurhat",
+      "label": "Itsemurhakuolleisuus",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_itsemurhat"
+    },
+    {
+      "id": "jcode_J0502",
+      "label": "Ennaltaehkäisy (neuvolat, seulonnat)",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_mt_perusterveydenhuolto",
+      "label": "Mt-käynnit perusterveydenhuollossa",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "mt_perusterveydenhuolto"
+    },
+    {
+      "id": "ind_mt_hyvinvointi",
+      "label": "Koettu psyykkinen hyvinvointi (MHI-5)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_hyvinvointi"
+    },
+    {
+      "id": "ind_mt_itsemuho_nuoret",
+      "label": "Nuorten (alle 25v) itsemurhat ja itsetuhoinen käyttäytyminen",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "mt_itsemuho_nuoret"
+    },
+    {
+      "id": "ind_mt_koulupsykologi",
+      "label": "Koulupsykologin saatavuus oppilaitoksissa",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "mt_koulupsykologi"
+    },
+    {
+      "id": "jcode_J1402",
+      "label": "Vammaispalveluasuminen ja laitospalvelut",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_lapset_vammaistuki_mt_osuus",
+      "label": "Mt-häiriöiden osuus alle 16v vammaistuessa",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "lapset_vammaistuki_mt_osuus"
+    },
+    {
+      "id": "ind_koulupudokkaat_perus",
+      "label": "Peruskoulun keskeyttäneet",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "koulupudokkaat_perus"
+    },
+    {
+      "id": "jcode_J0201",
+      "label": "Perusopetus: opetus ja oppimateriaali",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0303",
+      "label": "Opintotuki ja toisen asteen tuet",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_koulupudokkaat_toinen_aste",
+      "label": "Toisen asteen keskeyttäneet",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "koulupudokkaat_toinen_aste"
+    },
+    {
+      "id": "jcode_J0302",
+      "label": "Ammatillinen koulutus",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0301",
+      "label": "Lukiokoulutus",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0402",
+      "label": "Ammattikorkeakoulut ja jatkuva oppiminen",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_amk_opiskelijat",
+      "label": "AMK-opiskelijamäärä",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "amk_opiskelijat"
+    },
+    {
+      "id": "jcode_J0401",
+      "label": "Yliopistot ja tutkintokoulutus",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_korkea_aste_suorittaneet",
+      "label": "Korkea-asteen tutkinnon suorittaneet 25–34v",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "korkea_aste_suorittaneet"
+    },
+    {
+      "id": "ind_pisa_lukutaito",
+      "label": "PISA-pisteet lukutaito",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "pisa_lukutaito"
+    },
+    {
+      "id": "ind_koulupudokkaat_amk",
+      "label": "AMK:n keskeyttäneet",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "koulupudokkaat_amk"
+    },
+    {
+      "id": "ind_kou_erityinen_tuki",
+      "label": "Erityinen tuki, peruskoulu",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "kou_erityinen_tuki"
+    },
+    {
+      "id": "ind_kou_oppimistulokset",
+      "label": "PISA keskimääräinen osaamispisteet (lukutaito + matematiikka)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "kou_oppimistulokset"
+    },
+    {
+      "id": "jcode_J1604",
+      "label": "Kotouttaminen ja maahanmuuttajien tuki",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "ind_neet_osuus",
+      "label": "NEET-nuorten osuus 15–24v",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "neet_osuus"
+    },
+    {
+      "id": "jcode_J1503",
+      "label": "15.3 Jälkihuolto ja jälkiseuranta",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "jcode_J1003",
+      "label": "10.3 Aktivointi, työllisyyspalvelut ja koulutustoimet",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "jcode_J1602",
+      "label": "Työllisyyspalvelut ja TE-toiminta",
+      "type": "jcode",
+      "group": "elinkaari"
+    },
+    {
+      "id": "ind_nuorisotyottomyys_1524",
+      "label": "Nuorisotyöttömyysaste 15–24v",
+      "type": "indicator",
+      "group": "elinkaari",
+      "external_id": "nuorisotyottomyys_1524"
+    },
+    {
+      "id": "ind_pitkaaikaistyottomyys",
+      "label": "Pitkäaikaistyöttömät (yli 12 kk)",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "pitkaaikaistyottomyys"
+    },
+    {
+      "id": "jcode_J1001",
+      "label": "Ansiosidonnainen työttömyysturva",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "jcode_J0802",
+      "label": "8.2 Ammatillinen kuntoutus ja työkykyohjelmat",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "ind_rakennetyottomyys",
+      "label": "Rakennetyöttömät yhteensä",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "rakennetyottomyys"
+    },
+    {
+      "id": "ind_tyollisyysaste_2534",
+      "label": "Työllisyysaste 25–34v",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "tyollisyysaste_2534"
+    },
+    {
+      "id": "ind_kuntoutustuella_olevat_alle30",
+      "label": "Kuntoutustuella olevat alle 30v",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "kuntoutustuella_olevat_alle30"
+    },
+    {
+      "id": "ind_nuoret_neet_riskiryhma",
+      "label": "NEET-nuoret riskiryhmissä (maahanmuuttajataustaiset + matala koulutus)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "nuoret_neet_riskiryhma"
+    },
+    {
+      "id": "jcode_J1303",
+      "label": "13.3 Laitoshoito (ikääntyneet)",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_elinajanodote",
+      "label": "Elinajanodote syntymässä",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "elinajanodote"
+    },
+    {
+      "id": "jcode_J0601",
+      "label": "Somaattinen erikoissairaanhoito",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0501",
+      "label": "Vastaanotto- ja hoitopalvelut",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "jcode_J0603",
+      "label": "6.3 Leikkaus- ja tehohoito",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_erikoissairaanhoito_hoitopaivatmaara",
+      "label": "Erikoissairaanhoidon hoitopäivät",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "erikoissairaanhoito_hoitopaivatmaara"
+    },
+    {
+      "id": "jcode_J0602",
+      "label": "6.2 Päivystys ja akuuttihoito",
+      "type": "jcode",
+      "group": "vaikuttavuus"
+    },
+    {
+      "id": "ind_hoitotakuu_toteutuminen",
+      "label": "Hoitotakuun toteutuminen (yli 3kk jonottaneet)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "hoitotakuu_toteutuminen"
+    },
+    {
+      "id": "ind_perusterveydenhuolto_menot_eurpcap",
+      "label": "Perusterveydenhuollon menot EUR/asukas",
+      "type": "indicator",
+      "group": "resurssit",
+      "external_id": "perusterveydenhuolto_menot_eurpcap"
+    },
+    {
+      "id": "ind_erikoissairaanhoito_menot_eurpcap",
+      "label": "Erikoissairaanhoidon menot EUR/asukas",
+      "type": "indicator",
+      "group": "resurssit",
+      "external_id": "erikoissairaanhoito_menot_eurpcap"
+    },
+    {
+      "id": "jcode_J0503",
+      "label": "Suun terveydenhuolto",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_hammashoidon_kayntimaara",
+      "label": "Hammashoitokäynnit / 1000 asukasta",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "hammashoidon_kayntimaara"
+    },
+    {
+      "id": "ind_erikoissairaanhoito_osuus_pct",
+      "label": "Erikoissairaanhoidon osuus terveydenhuoltomenoista",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "erikoissairaanhoito_osuus_pct"
+    },
+    {
+      "id": "jcode_J1301",
+      "label": "Kotihoito ja tukipalvelut (ikääntyneet)",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_kotihoidon_asiakkaat",
+      "label": "Säännöllisen kotihoidon asiakkaat 75v+",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "kotihoidon_asiakkaat"
+    },
+    {
+      "id": "jcode_J1302",
+      "label": "13.2 Tehostettu palveluasuminen",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_tehostetussa_palveluasumisessa",
+      "label": "Tehostetussa palveluasumisessa 75v+",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "tehostetussa_palveluasumisessa"
+    },
+    {
+      "id": "ind_omaishoitajat_maara",
+      "label": "Omaishoidon tuen saajia",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "omaishoitajat_maara"
+    },
+    {
+      "id": "jcode_J0901",
+      "label": "Vanhuuseläkkeet",
+      "type": "jcode",
+      "group": "saavutettavuus"
+    },
+    {
+      "id": "ind_elakkeensaajien_pienituloisuus",
+      "label": "Eläkkeensaajien pienituloisuusaste %",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "elakkeensaajien_pienituloisuus"
+    },
+    {
+      "id": "ind_muistisairaat_lkm",
+      "label": "Muistisairauksien esiintyvyys",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "muistisairaat_lkm"
+    },
+    {
+      "id": "ind_hoivahenkilosto_vajaus",
+      "label": "Hoitohenkilöstöpula (avoimet tehtävät / täytetyt)",
+      "type": "indicator",
+      "group": "resurssit",
+      "external_id": "hoivahenkilosto_vajaus"
+    },
+    {
+      "id": "ind_ika_toimintakyky",
+      "label": "Toimintakykyiset 75v+",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "ika_toimintakyky"
+    },
+    {
+      "id": "ind_ika_laitoshoito",
+      "label": "Laitoshoidossa olevat 75v+",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "ika_laitoshoito"
+    },
+    {
+      "id": "ind_ika_terveet_elinvuodet",
+      "label": "Terveet elinvuodet 65v+",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "ika_terveet_elinvuodet"
+    },
+    {
+      "id": "ind_ika_yksinaisyys_80",
+      "label": "Yksinäisyyttä kokevat 80-vuotiaat ja vanhemmat",
+      "type": "indicator",
+      "group": "saavutettavuus",
+      "external_id": "ika_yksinaisyys_80"
+    },
+    {
+      "id": "jcode_J1703",
+      "label": "Asuntopolitiikka ja rakentaminen",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "ind_asunnottomat",
+      "label": "Asunnottomat yhteensä",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "asunnottomat"
+    },
+    {
+      "id": "jcode_J1202",
+      "label": "Asumistuki",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "jcode_J1201",
+      "label": "Toimeentulotuki",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "ind_toimeentulotuki_saajat",
+      "label": "Toimeentulotuen saajat",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "toimeentulotuki_saajat"
+    },
+    {
+      "id": "jcode_J1002",
+      "label": "Peruspäiväraha ja työmarkkinatuki",
+      "type": "jcode",
+      "group": "muu"
+    },
+    {
+      "id": "ind_gini_kerroin",
+      "label": "Gini-kerroin (tulonjako)",
+      "type": "indicator",
+      "group": "vaikuttavuus",
+      "external_id": "gini_kerroin"
+    },
+    {
+      "id": "ind_toimeentulotuki_pitkaaik",
+      "label": "Toimeentulotukea yli 10 kk saaneet",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "toimeentulotuki_pitkaaik"
+    },
+    {
+      "id": "ind_toimeentulotuki_nuoret",
+      "label": "Toimeentulotuki alle 25v saajat",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "toimeentulotuki_nuoret"
+    },
+    {
+      "id": "ind_vuokra_asunnot_jono",
+      "label": "Kunnallisiin vuokra-asuntoihin jonottavat",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "vuokra_asunnot_jono"
+    },
+    {
+      "id": "ind_asuntohintasuhde_tulot",
+      "label": "Asuntojen hinnat / mediaanipalkka",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "asuntohintasuhde_tulot"
+    },
+    {
+      "id": "ind_asumistuki_yleinen_pct",
+      "label": "Yleistä asumistukea saaneet, % asuntokunnista",
+      "type": "indicator",
+      "group": "muu",
+      "external_id": "asumistuki_yleinen_pct"
+    },
+    {
+      "id": "ind_lapsiperheiden_asumisrasitus_vuokra",
+      "label": "Lapsiperheet vuokralla: asumiskustannusten tulo-osuus (netto %, mediaani)",
+      "type": "indicator",
+      "group": "resurssit",
+      "external_id": "lapsiperheiden_asumisrasitus_vuokra"
+    }
+  ],
+  "links": [
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1102",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1102",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1102",
+      "target": "ind_syntyvyys_tfr",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0101",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0101",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0101",
+      "target": "ind_syntyvyys_tfr",
+      "type": "need",
+      "weight": 0.4
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1502",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1502",
+      "target": "ind_lastensuojelu_sijoitetut",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1502",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J1502",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1502",
+      "target": "ind_lastensuojelu_sijoitetut_pct",
+      "type": "utilisation",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J1501",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1501",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1501",
+      "target": "ind_lastensuojelu_avohuolto",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1101",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1101",
+      "target": "ind_lapsiperheiden_osuus",
+      "type": "need",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1103",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1103",
+      "target": "ind_varhaiskasvatus_osallistuminen",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0203",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0203",
+      "target": "ind_varhaiskasvatus_osallistuminen",
+      "type": "need",
+      "weight": 0.3
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0103",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0103",
+      "target": "ind_varhaiskasvatus_osallistuminen",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0102",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0102",
+      "target": "ind_varhaiskasvatus_osallistuminen",
+      "type": "utilisation",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J0101",
+      "target": "ind_varhaiskasvatus_osallistuminen",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J1102",
+      "target": "ind_perhevapaat_kaytto_isat",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J1501",
+      "target": "ind_lastensuojelu_kiireelliset",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1403",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1403",
+      "target": "ind_lapset_vammaistuki_yht",
+      "type": "utilisation",
+      "weight": 0.6
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1401",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1401",
+      "target": "ind_lapset_vammaistuki_yht",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1203",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1203",
+      "target": "ind_lapset_vammaistuki_yht",
+      "type": "utilisation",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1401",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1401",
+      "target": "ind_mt_tyokyvyttomyyselakkeet",
+      "type": "need",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0902",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0902",
+      "target": "ind_mt_tyokyvyttomyyselakkeet",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0803",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0803",
+      "target": "ind_mt_tyokyvyttomyyselakkeet",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0801",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0801",
+      "target": "ind_mt_tyokyvyttomyyselakkeet",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0701",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0701",
+      "target": "ind_mt_tyokyvyttomyyselakkeet",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J0803",
+      "target": "ind_mt_sairaslomat",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J0701",
+      "target": "ind_mt_sairaslomat",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0801",
+      "target": "ind_mt_kuntoutus_yht",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0702",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0702",
+      "target": "ind_paihde_hoitojaksojen_maara",
+      "type": "utilisation",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0701",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0701",
+      "target": "ind_mt_avohoito_kaynteja",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J0702",
+      "target": "ind_mt_sairaalahoito_paivat",
+      "type": "utilisation",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0703",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0703",
+      "target": "ind_alkoholin_kulutus",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0702",
+      "target": "ind_mt_tahdonvastaiset_hoidot",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J0701",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0701",
+      "target": "ind_nuorten_mt_kayntimaara",
+      "type": "utilisation",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J0701",
+      "target": "ind_mt_oireilu_nuoret",
+      "type": "need",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0202",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0202",
+      "target": "ind_mt_oireilu_nuoret",
+      "type": "need",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J0703",
+      "target": "ind_mt_itsemurhat",
+      "type": "outcome",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0502",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0502",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0502",
+      "target": "ind_mt_perusterveydenhuolto",
+      "type": "utilisation",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J0701",
+      "target": "ind_mt_hyvinvointi",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J0703",
+      "target": "ind_mt_itsemuho_nuoret",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0703",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0703",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0703",
+      "target": "ind_mt_koulupsykologi",
+      "type": "utilisation",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1402",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1402",
+      "target": "ind_lapset_vammaistuki_mt_osuus",
+      "type": "utilisation",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0202",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0202",
+      "target": "ind_koulupudokkaat_perus",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0201",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0201",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0201",
+      "target": "ind_koulupudokkaat_perus",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0303",
+      "target": "ind_koulupudokkaat_toinen_aste",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0302",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0302",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0302",
+      "target": "ind_koulupudokkaat_toinen_aste",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0301",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0301",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0301",
+      "target": "ind_koulupudokkaat_toinen_aste",
+      "type": "outcome",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J0202",
+      "target": "ind_koulupudokkaat_toinen_aste",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0402",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0402",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0402",
+      "target": "ind_amk_opiskelijat",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0401",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0401",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0401",
+      "target": "ind_amk_opiskelijat",
+      "type": "need",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0402",
+      "target": "ind_korkea_aste_suorittaneet",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0401",
+      "target": "ind_korkea_aste_suorittaneet",
+      "type": "outcome",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J0201",
+      "target": "ind_pisa_lukutaito",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J0402",
+      "target": "ind_koulupudokkaat_amk",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J0202",
+      "target": "ind_kou_erityinen_tuki",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J0101",
+      "target": "ind_kou_erityinen_tuki",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0201",
+      "target": "ind_kou_oppimistulokset",
+      "type": "outcome",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J0101",
+      "target": "ind_kou_oppimistulokset",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1604",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1604",
+      "target": "ind_neet_osuus",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1503",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1503",
+      "target": "ind_neet_osuus",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1003",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1003",
+      "target": "ind_neet_osuus",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J0303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0303",
+      "target": "ind_neet_osuus",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J0301",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0301",
+      "target": "ind_neet_osuus",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1602",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1602",
+      "target": "ind_nuorisotyottomyys_1524",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1503",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1503",
+      "target": "ind_nuorisotyottomyys_1524",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J1502",
+      "target": "ind_nuorisotyottomyys_1524",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1003",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1003",
+      "target": "ind_nuorisotyottomyys_1524",
+      "type": "outcome",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J0302",
+      "target": "ind_nuorisotyottomyys_1524",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J0201",
+      "target": "ind_nuorisotyottomyys_1524",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1602",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1602",
+      "target": "ind_pitkaaikaistyottomyys",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J1003",
+      "target": "ind_pitkaaikaistyottomyys",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1001",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1001",
+      "target": "ind_pitkaaikaistyottomyys",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J0802",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0802",
+      "target": "ind_pitkaaikaistyottomyys",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J1602",
+      "target": "ind_rakennetyottomyys",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J1003",
+      "target": "ind_rakennetyottomyys",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J1001",
+      "target": "ind_rakennetyottomyys",
+      "type": "need",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J0802",
+      "target": "ind_rakennetyottomyys",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J1602",
+      "target": "ind_tyollisyysaste_2534",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J1003",
+      "target": "ind_tyollisyysaste_2534",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0802",
+      "target": "ind_tyollisyysaste_2534",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0301",
+      "target": "ind_tyollisyysaste_2534",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J0902",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0902",
+      "target": "ind_kuntoutustuella_olevat_alle30",
+      "type": "need",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J0801",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0801",
+      "target": "ind_kuntoutustuella_olevat_alle30",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1604",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J1604",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1604",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1604",
+      "target": "ind_nuoret_neet_riskiryhma",
+      "type": "need",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1303",
+      "target": "ind_elinajanodote",
+      "type": "outcome",
+      "weight": 0.4
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0601",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0601",
+      "target": "ind_elinajanodote",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0501",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0501",
+      "target": "ind_elinajanodote",
+      "type": "outcome",
+      "weight": 0.4
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0603",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0603",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0603",
+      "target": "ind_erikoissairaanhoito_hoitopaivatmaara",
+      "type": "utilisation",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0601",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0601",
+      "target": "ind_erikoissairaanhoito_hoitopaivatmaara",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0602",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0602",
+      "target": "ind_hoitotakuu_toteutuminen",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J0501",
+      "target": "ind_hoitotakuu_toteutuminen",
+      "type": "outcome",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_resurssit",
+      "target": "jcode_J0501",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0501",
+      "target": "ind_perusterveydenhuolto_menot_eurpcap",
+      "type": "cost_proxy",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_resurssit",
+      "target": "jcode_J0601",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0601",
+      "target": "ind_erikoissairaanhoito_menot_eurpcap",
+      "type": "cost_proxy",
+      "weight": 0.9
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0503",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J0503",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0503",
+      "target": "ind_hammashoidon_kayntimaara",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J0502",
+      "target": "ind_hammashoidon_kayntimaara",
+      "type": "utilisation",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0601",
+      "target": "ind_erikoissairaanhoito_osuus_pct",
+      "type": "cost_proxy",
+      "weight": 0.7
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J1301",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J1301",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1301",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1301",
+      "target": "ind_kotihoidon_asiakkaat",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J1103",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J1103",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1103",
+      "target": "ind_kotihoidon_asiakkaat",
+      "type": "need",
+      "weight": 0.6
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J1302",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J1302",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1302",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1302",
+      "target": "ind_tehostetussa_palveluasumisessa",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J1301",
+      "target": "ind_omaishoitajat_maara",
+      "type": "need",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J0901",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J0901",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J0901",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J0901",
+      "target": "ind_elakkeensaajien_pienituloisuus",
+      "type": "outcome",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_saavutettavuus",
+      "target": "jcode_J1303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_vinouma",
+      "target": "jcode_J1303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1303",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1303",
+      "target": "ind_muistisairaat_lkm",
+      "type": "need",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_resurssit",
+      "target": "jcode_J1302",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1302",
+      "target": "ind_hoivahenkilosto_vajaus",
+      "type": "need",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J1302",
+      "target": "ind_ika_toimintakyky",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J1301",
+      "target": "ind_ika_toimintakyky",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J1303",
+      "target": "ind_ika_laitoshoito",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "jcode_J1301",
+      "target": "ind_ika_terveet_elinvuodet",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J0901",
+      "target": "ind_ika_yksinaisyys_80",
+      "type": "need",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1703",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1703",
+      "target": "ind_asunnottomat",
+      "type": "outcome",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1202",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1202",
+      "target": "ind_asunnottomat",
+      "type": "need",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1201",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1201",
+      "target": "ind_toimeentulotuki_saajat",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_muu",
+      "target": "jcode_J1002",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1002",
+      "target": "ind_toimeentulotuki_saajat",
+      "type": "need",
+      "weight": 0.8
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1201",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_tehokkuus",
+      "target": "jcode_J1201",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1201",
+      "target": "ind_gini_kerroin",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "teema_vaikuttavuus",
+      "target": "jcode_J1002",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_tehokkuus",
+      "target": "jcode_J1002",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1002",
+      "target": "ind_gini_kerroin",
+      "type": "outcome",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1201",
+      "target": "ind_toimeentulotuki_pitkaaik",
+      "type": "utilisation",
+      "weight": 0.9
+    },
+    {
+      "source": "jcode_J1201",
+      "target": "ind_toimeentulotuki_nuoret",
+      "type": "utilisation",
+      "weight": 0.8
+    },
+    {
+      "source": "jcode_J1703",
+      "target": "ind_vuokra_asunnot_jono",
+      "type": "outcome",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J1202",
+      "target": "ind_vuokra_asunnot_jono",
+      "type": "need",
+      "weight": 0.7
+    },
+    {
+      "source": "jcode_J1703",
+      "target": "ind_asuntohintasuhde_tulot",
+      "type": "outcome",
+      "weight": 0.6
+    },
+    {
+      "source": "jcode_J1202",
+      "target": "ind_asumistuki_yleinen_pct",
+      "type": "utilisation",
+      "weight": 1.0
+    },
+    {
+      "source": "teema_resurssit",
+      "target": "jcode_J1703",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "teema_elinkaari",
+      "target": "jcode_J1703",
+      "type": "teema_jcode",
+      "weight": 0.5
+    },
+    {
+      "source": "jcode_J1703",
+      "target": "ind_lapsiperheiden_asumisrasitus_vuokra",
+      "type": "outcome",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-05-12T20:34:29.429433+00:00",
+  "total": 486,
+  "teemat": [
+    {
+      "teema_id": "resurssit",
+      "label": "Resurssit & Panostukset",
+      "kuvaus": "Julkiset menot, henkilöstö ja rahoitusrakenne",
+      "rooli_oletus": "panos",
+      "count": 89
+    },
+    {
+      "teema_id": "saavutettavuus",
+      "label": "Tuotokset & Saavutettavuus",
+      "kuvaus": "Palvelujen käyttöaste, jonotusajat ja väestön peitto",
+      "rooli_oletus": "tuotos",
+      "count": 39
+    },
+    {
+      "teema_id": "vaikuttavuus",
+      "label": "Vaikuttavuus & Tulokset",
+      "kuvaus": "Terveys-, koulutus- ja hyvinvointitulokset",
+      "rooli_oletus": "vaikuttavuus",
+      "count": 142
+    },
+    {
+      "teema_id": "tehokkuus",
+      "label": "Tehokkuus & Panos-tuotos",
+      "kuvaus": "Kustannus per yksikkö, tuottavuus ja vertailut",
+      "rooli_oletus": "tuotos",
+      "count": 6
+    },
+    {
+      "teema_id": "vinouma",
+      "label": "Järjestelmän Vinouma & Oikeudenmukaisuus",
+      "kuvaus": "Sosioekonominen gradientti, sukupuoli-, ikä- ja aluevinouma",
+      "rooli_oletus": "rakenne",
+      "count": 70
+    },
+    {
+      "teema_id": "kestävyys",
+      "label": "Kestävyys & Rakenne",
+      "kuvaus": "Demografinen paine, rahoituksen kestävyys ja henkilöstön saatavuus",
+      "rooli_oletus": "rakenne",
+      "count": 30
+    },
+    {
+      "teema_id": "pohjoismainen",
+      "label": "Pohjoismaiset Vertailumittarit",
+      "kuvaus": "OECD/Eurostat/Nordic Council -yhteismitalliset indikaattorit",
+      "rooli_oletus": "vaikuttavuus",
+      "count": 185
+    },
+    {
+      "teema_id": "elinkaari",
+      "label": "Elinkaari & Väestöryhmät",
+      "kuvaus": "Lapset, nuoret, työikäiset ja ikääntyneet palveluryhmittäin",
+      "rooli_oletus": "rakenne",
+      "count": 158
+    },
+    {
+      "teema_id": "politiikka",
+      "label": "Politiikka & Kausaalisuus",
+      "kuvaus": "Poliittiset päätökset, viiveet ja kausaaliketjut",
+      "rooli_oletus": "rakenne",
+      "count": 6
+    }
+  ],
+  "analyysityypit": [
+    "aikasarja",
+    "pohjoismainen_vertailu",
+    "panos_tuotos",
+    "jarjestelmavinouma"
+  ],
+  "files": {
+    "resurssit": {
+      "file": "indicators/resurssit.json",
+      "label": "Resurssit & Panostukset",
+      "count": 89,
+      "sha256_16": "6d1cd3a3d50a2f8d"
+    },
+    "saavutettavuus": {
+      "file": "indicators/saavutettavuus.json",
+      "label": "Tuotokset & Saavutettavuus",
+      "count": 39,
+      "sha256_16": "6b6c246ccad12ceb"
+    },
+    "vaikuttavuus": {
+      "file": "indicators/vaikuttavuus.json",
+      "label": "Vaikuttavuus & Tulokset",
+      "count": 142,
+      "sha256_16": "8b4cf5e71fcc5e13"
+    },
+    "tehokkuus": {
+      "file": "indicators/tehokkuus.json",
+      "label": "Tehokkuus & Panos-tuotos",
+      "count": 6,
+      "sha256_16": "41d43adac1444e6d"
+    },
+    "vinouma": {
+      "file": "indicators/vinouma.json",
+      "label": "Järjestelmän Vinouma & Oikeudenmukaisuus",
+      "count": 70,
+      "sha256_16": "3a6bd153a7187ccd"
+    },
+    "kestävyys": {
+      "file": "indicators/kestävyys.json",
+      "label": "Kestävyys & Rakenne",
+      "count": 30,
+      "sha256_16": "4f7a31c7ab40ad3a"
+    },
+    "pohjoismainen": {
+      "file": "indicators/pohjoismainen.json",
+      "label": "Pohjoismaiset Vertailumittarit",
+      "count": 185,
+      "sha256_16": "af9e3465ce33b7c4"
+    },
+    "elinkaari": {
+      "file": "indicators/elinkaari.json",
+      "label": "Elinkaari & Väestöryhmät",
+      "count": 158,
+      "sha256_16": "b640c6c8625c5f6c"
+    },
+    "politiikka": {
+      "file": "indicators/politiikka.json",
+      "label": "Politiikka & Kausaalisuus",
+      "count": 6,
+      "sha256_16": "8ff2a956917c5cc5"
+    },
+    "muu": {
+      "file": "indicators/muu.json",
+      "label": "muu",
+      "count": 62,
+      "sha256_16": "6036fe7ec811dba3"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "teema_id": "politiikka",
+  "label": "Politiikka & Kausaalisuus",
+  "count": 6,
+  "generated_at": "2026-05-12T20:34:29.427395+00:00",
+  "indicators": [
+    {
+      "id": "affc4a0c-f45c-4146-8a54-b2c08d80c53d",
+      "external_id": "inflaatio_vuosimuutos",
+      "name": "Inflaatio vuosimuutos",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "%",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1960.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vinouma",
+        "politiikka"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "3363f33d-d5f9-4449-949c-215c3725b179",
+      "external_id": "nordic_government_schemes_2._rahoituslähteet",
+      "name": "2. Rahoituslähteet (pohjoismaat)",
+      "category_name": "Nordic — Government schemes",
+      "unit": "% GDP",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "pohjoismainen",
+        "politiikka"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "09e313d7-77e0-4f24-a042-2410b4ea43a7",
+      "external_id": "nordic_share_prices_indices,_%_change_from_previous_year_share_prices_indices,_%",
+      "name": "Share prices indices, % change from previous year (pohjoismaat)",
+      "category_name": "Nordic -- Share prices indices, % change from previous year",
+      "unit": "",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "politiikka"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "82011d15-803d-43bc-8073-31ffce36eb70",
+      "external_id": "nordic_effective_exchange_rate,_%_change_from_previous_year_effective_exchange_r",
+      "name": "Effective exchange rate, % change from previous year (pohjoismaat)",
+      "category_name": "Nordic -- Effective exchange rate, % change from previous year",
+      "unit": "",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "politiikka"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "1d9f20c1-5cc1-4256-859f-d3e3844ce2ab",
+      "external_id": "nordic_total_general_government_revenue_total_general_government_revenue",
+      "name": "Total general government revenue (pohjoismaat)",
+      "category_name": "Nordic -- Total general government revenue",
+      "unit": null,
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "politiikka"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "5317520d-08f5-4f00-8fc8-5860a88d5c54",
+      "external_id": "nordic_total_general_government_expenditure_total_general_government_expenditure",
+      "name": "Total general government expenditure (pohjoismaat)",
+      "category_name": "Nordic -- Total general government expenditure",
+      "unit": "Percent of GDP, %",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "pohjoismainen",
+        "politiikka"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    }
+  ]
+}
