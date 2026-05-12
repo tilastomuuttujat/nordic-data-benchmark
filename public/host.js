@@ -5,7 +5,10 @@
 import { PAIRINGS, findPairing, partnersOf } from "./pairings.js";
 
 const HOST_DIR = new URL("./", import.meta.url).href;
-const SITE_BASE = new URL("../", import.meta.url).href;
+// host.js palvellaan siten ettei sen yläpuolella ole erillistä public/-kansiota,
+// joten SITE_BASE === HOST_DIR (toimii sekä paikallisesti että GitHub Pagesissa
+// alipolun /nordic-data-benchmark/ alla).
+const SITE_BASE = HOST_DIR;
 const PLUGINS_BASE = new URL("plugins/", SITE_BASE).href;
 const DATA_BASE_DEFAULT = new URL("data/views/", SITE_BASE).href;
 const STORAGE_KEY = "vsignal.workspace.v2";
