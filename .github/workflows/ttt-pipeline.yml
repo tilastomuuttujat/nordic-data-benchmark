@@ -15,6 +15,7 @@ on:
           - budjetti_pipeline
           - nordic_pipeline
           - lifecycle_pipeline
+          - causal_pipeline
       step:
         description: "Aja vain yksi askel (jätä tyhjäksi = kaikki; askel-nimet eroavat pipelineittain)"
         required: false
@@ -119,6 +120,20 @@ jobs:
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python scripts/lifecycle_pipeline.py $ARGS
+
+      # ── 6. causal_pipeline.py — vie causal_network.json ──
+      - name: Run causal_pipeline.py
+        if: ${{ inputs.pipeline == '' || inputs.pipeline == 'kaikki' || inputs.pipeline == 'causal_pipeline' }}
+        env:
+          SUPABASE_URL:         ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_SB_URL:           ${{ secrets.SUPABASE_URL }}
+          TTT_SB_SERVICE_KEY:   ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_EXPORT_DIR:       public/data
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python scripts/causal_pipeline.py $ARGS
 
       # ── Commit ──
       - name: Commit updated JSON exports
