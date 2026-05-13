@@ -14,6 +14,7 @@ on:
           - indicator_pipeline
           - budjetti_pipeline
           - nordic_pipeline
+          - lifecycle_pipeline
       step:
         description: "Aja vain yksi askel (jätä tyhjäksi = kaikki; askel-nimet eroavat pipelineittain)"
         required: false
@@ -104,6 +105,20 @@ jobs:
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           python scripts/nordic_pipeline.py $ARGS
+
+      # ── 5. lifecycle_pipeline.py — vie lifecycle.json ──
+      - name: Run lifecycle_pipeline.py
+        if: ${{ inputs.pipeline == '' || inputs.pipeline == 'kaikki' || inputs.pipeline == 'lifecycle_pipeline' }}
+        env:
+          SUPABASE_URL:         ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_SB_URL:           ${{ secrets.SUPABASE_URL }}
+          TTT_SB_SERVICE_KEY:   ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TTT_EXPORT_DIR:       public/data
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python scripts/lifecycle_pipeline.py $ARGS
 
       # ── Commit ──
       - name: Commit updated JSON exports
