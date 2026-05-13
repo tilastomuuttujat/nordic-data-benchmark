@@ -2,7 +2,7 @@
   "teema_id": "saavutettavuus",
   "label": "Tuotokset & Saavutettavuus",
   "count": 39,
-  "generated_at": "2026-05-12T20:34:29.410671+00:00",
+  "generated_at": "2026-05-13T04:42:00.464348+00:00",
   "indicators": [
     {
       "id": "9125940c-f0b8-4912-9f0d-f61683c537b9",
@@ -28,6 +28,31 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "bd009f54-d723-443a-9ab2-d0e2a739bb11",
+      "external_id": "ika_digiosallisuus",
+      "name": "Digitaitoiset 65–79-vuotiaat",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "% ikäryhmästä",
+      "ttt_pilari": "vahvistava",
+      "roi": 0.73,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 1.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "6f971980-a233-4bcb-9ca8-7c60166b4e99",
@@ -105,27 +130,28 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "bd009f54-d723-443a-9ab2-d0e2a739bb11",
-      "external_id": "ika_digiosallisuus",
-      "name": "Digitaitoiset 65–79-vuotiaat",
+      "id": "9931b708-aa86-4793-bef9-b7bbd690b2f0",
+      "external_id": "vanhustenhuolto_menot_milj_eur",
+      "name": "Vanhustenhuollon kokonaismenot, milj. EUR (SHA)",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "% ikäryhmästä",
+      "unit": "milj. EUR",
       "ttt_pilari": "vahvistava",
-      "roi": 0.73,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1995.0,
+      "year_end": 2005.0,
       "teemat": [
+        "resurssit",
         "saavutettavuus",
         "vinouma",
         "elinkaari"
       ],
-      "rooli": "tuotos",
+      "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.1,
+        "aikasarja": 0.2,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 1.0,
-        "pohjoismainen_vertailu": 0.1
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
     },
@@ -149,32 +175,6 @@
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "9931b708-aa86-4793-bef9-b7bbd690b2f0",
-      "external_id": "vanhustenhuolto_menot_milj_eur",
-      "name": "Vanhustenhuollon kokonaismenot, milj. EUR (SHA)",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "milj. EUR",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1995.0,
-      "year_end": 2005.0,
-      "teemat": [
-        "resurssit",
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.2,
-        "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
       },
@@ -354,31 +354,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "b798543a-4145-4466-89e4-a646ef9354e4",
-      "external_id": "kunta_korjaavat_eurpcap",
-      "name": "Kuntien korjaavat palvelut EUR/asukas",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "EUR/asukas",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "tarkistettava",
-      "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "saavutettavuus",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
       "id": "7cd5dbf6-798b-457b-b32b-c68f83409517",
       "external_id": "nordic_market_output,_output_for_own_final_use_and_payments_for_other_non_market",
       "name": "Market output, output for own final use and payments for other non-market output (pohjoismaat)",
@@ -452,28 +427,29 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "5caf29a5-d539-4b72-87dc-f60445b76af2",
-      "external_id": "mt_avohoito_kaynteja",
-      "name": "Psykiatrian avohoidon käynnit",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "käyntiä / 1000 asukasta",
+      "id": "b798543a-4145-4466-89e4-a646ef9354e4",
+      "external_id": "kunta_korjaavat_eurpcap",
+      "name": "Kuntien korjaavat palvelut EUR/asukas",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "EUR/asukas",
       "ttt_pilari": "korjaava",
       "roi": null,
-      "status": "haettava",
-      "year_start": 1995.0,
+      "status": "tarkistettava",
+      "year_start": 1975.0,
       "year_end": 2024.0,
       "teemat": [
+        "resurssit",
         "saavutettavuus",
-        "vaikuttavuus"
+        "vinouma"
       ],
-      "rooli": "tuotos",
+      "rooli": "panos",
       "suitability": {
         "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
         "pohjoismainen_vertailu": 0.0
       },
-      "best_analysis": "aikasarja"
+      "best_analysis": "panos_tuotos"
     },
     {
       "id": "6058f17b-5f65-47e6-93cc-cbb9670889b6",
@@ -509,6 +485,30 @@
       "roi": null,
       "status": "saatavilla",
       "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "5caf29a5-d539-4b72-87dc-f60445b76af2",
+      "external_id": "mt_avohoito_kaynteja",
+      "name": "Psykiatrian avohoidon käynnit",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "käyntiä / 1000 asukasta",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1995.0,
       "year_end": 2024.0,
       "teemat": [
         "saavutettavuus",

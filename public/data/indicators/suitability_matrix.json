@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T20:34:30.072609+00:00",
+  "generated_at": "2026-05-13T04:42:01.175825+00:00",
   "analyysityypit": [
     "aikasarja",
     "pohjoismainen_vertailu",
@@ -121,22 +121,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "ttt_ika65_osuus",
-      "name": "Ikääntyneiden osuus",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "best_analysis": "jarjestelmavinouma",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.8,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "vanhustenhuolto_menot_milj_eur",
       "name": "Vanhustenhuollon kokonaismenot, milj. EUR (SHA)",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
@@ -154,20 +138,20 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "nordic_childlessness_by_age_45_childlessness_by_age_45",
-      "name": "Childlessness by age 45 (pohjoismaat)",
-      "category_name": "Nordic -- Childlessness by age 45",
+      "external_id": "ttt_ika65_osuus",
+      "name": "Ikääntyneiden osuus",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
       "teemat": [
+        "saavutettavuus",
         "vinouma",
-        "pohjoismainen",
         "elinkaari"
       ],
-      "rooli": "rakenne",
+      "rooli": "tuotos",
       "best_analysis": "jarjestelmavinouma",
       "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
+      "score_panos_tuotos": 0.2,
       "score_jarjestelmavinouma": 0.8,
-      "score_pohjoismainen_vertailu": 0.5
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "nordic_mean_age_at_birth_of_first_child_mother",
@@ -191,7 +175,7 @@
       "category_name": "Nordic -- Old-age pension (age 67)",
       "teemat": [
         "vinouma",
-        "kestävyys",
+        "kestavyys",
         "pohjoismainen",
         "elinkaari"
       ],
@@ -272,7 +256,7 @@
       "category_name": "Nordic -- Old-age pension (age 67)",
       "teemat": [
         "vinouma",
-        "kestävyys",
+        "kestavyys",
         "pohjoismainen",
         "elinkaari"
       ],
@@ -297,22 +281,6 @@
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.8,
       "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "nuoret_neet_riskiryhma",
-      "name": "NEET-nuoret riskiryhmissä (maahanmuuttajataustaiset + matala koulutus)",
-      "category_name": "Nuoret ja työllisyys",
-      "teemat": [
-        "vaikuttavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "jarjestelmavinouma",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.8,
-      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "omaishoitajat_maara",
@@ -385,7 +353,7 @@
       "category_name": "Nordic -- Old-age pension (age 67)",
       "teemat": [
         "vinouma",
-        "kestävyys",
+        "kestavyys",
         "pohjoismainen",
         "elinkaari"
       ],
@@ -402,7 +370,7 @@
       "category_name": "Nordic -- Old-age pension (age 67)",
       "teemat": [
         "vinouma",
-        "kestävyys",
+        "kestavyys",
         "pohjoismainen",
         "elinkaari"
       ],
@@ -494,6 +462,38 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
+      "external_id": "nuoret_neet_riskiryhma",
+      "name": "NEET-nuoret riskiryhmissä (maahanmuuttajataustaiset + matala koulutus)",
+      "category_name": "Nuoret ja työllisyys",
+      "teemat": [
+        "vaikuttavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "jarjestelmavinouma",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.8,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
+      "external_id": "nordic_childlessness_by_age_45_childlessness_by_age_45",
+      "name": "Childlessness by age 45 (pohjoismaat)",
+      "category_name": "Nordic -- Childlessness by age 45",
+      "teemat": [
+        "vinouma",
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "jarjestelmavinouma",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.8,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
       "external_id": "terveyskeskus_kaynteja",
       "name": "Terveyskeskuslääkärikäynnit / asukas",
       "category_name": "Terveys",
@@ -515,7 +515,7 @@
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
         "vinouma",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "jarjestelmavinouma",
@@ -530,7 +530,7 @@
       "category_name": "Väestö ja demografia",
       "teemat": [
         "vinouma",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "jarjestelmavinouma",
@@ -647,21 +647,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "lastensuojelu_menot_eurpcap",
-      "name": "Lastensuojelun kustannukset EUR/asukas",
-      "category_name": "Lapset ja perhe",
-      "teemat": [
-        "resurssit",
-        "elinkaari"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.6,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "ttt_rahoitus_perhe",
       "name": "Perhe & lapset — kunnat %",
       "category_name": "Lapset ja perhe",
@@ -692,27 +677,26 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
+      "external_id": "lastensuojelu_menot_eurpcap",
+      "name": "Lastensuojelun kustannukset EUR/asukas",
+      "category_name": "Lapset ja perhe",
+      "teemat": [
+        "resurssit",
+        "elinkaari"
+      ],
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.6,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
       "external_id": "nordic_total_2._rahoituslähteet",
       "name": "2. Rahoituslähteet (pohjoismaat)",
       "category_name": "Nordic — Total",
       "teemat": [
         "resurssit",
-        "pohjoismainen"
-      ],
-      "rooli": "panos",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_compulsory_contributory_health_insurance_schemes_2._rahoituslähteet",
-      "name": "2. Rahoituslähteet (pohjoismaat)",
-      "category_name": "Nordic — Compulsory contributory health insurance schemes",
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "panos",
@@ -794,6 +778,22 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
+      "external_id": "nordic_compulsory_contributory_health_insurance_schemes_2._rahoituslähteet",
+      "name": "2. Rahoituslähteet (pohjoismaat)",
+      "category_name": "Nordic — Compulsory contributory health insurance schemes",
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus",
+        "pohjoismainen"
+      ],
+      "rooli": "panos",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
       "external_id": "nordic_fertility_rate_total_tfr",
       "name": "Total TFR (pohjoismaat)",
       "category_name": "Nordic -- Fertility rate",
@@ -870,21 +870,6 @@
     {
       "external_id": "nordic_maternity_benefit_couple_with_two_children_besides_newborn_|_75_&_75_100",
       "name": "Couple with two children besides newborn | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Maternity benefit",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_maternity_benefit_couple_without_children_besides_the_newborn_|_75_&_75_1",
-      "name": "Couple without children besides the newborn | 75 & 75/100 (pohjoismaat)",
       "category_name": "Nordic -- Maternity benefit",
       "teemat": [
         "pohjoismainen",
@@ -1033,9 +1018,9 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_disability_benefit_single_person_without_children_|_50",
-      "name": "Single person without children | 50 (pohjoismaat)",
-      "category_name": "Nordic -- Disability benefit",
+      "external_id": "nordic_maternity_benefit_couple_without_children_besides_the_newborn_|_75_&_75_1",
+      "name": "Couple without children besides the newborn | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Maternity benefit",
       "teemat": [
         "pohjoismainen",
         "elinkaari"
@@ -1252,21 +1237,6 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_share_of_population_who_are_overweight_or_obese_share_of_population_who_a",
-      "name": "Share of population who are overweight or obese (pohjoismaat)",
-      "category_name": "Nordic — Share of population who are overweight or obese",
-      "teemat": [
-        "kestävyys",
-        "pohjoismainen"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
       "external_id": "nordic_total_1._kokonaismenot_%_bkt",
       "name": "1. Kokonaismenot % BKT (pohjoismaat)",
       "category_name": "Nordic — Total",
@@ -1321,6 +1291,21 @@
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_share_of_population_who_are_overweight_or_obese_share_of_population_who_a",
+      "name": "Share of population who are overweight or obese (pohjoismaat)",
+      "category_name": "Nordic — Share of population who are overweight or obese",
+      "teemat": [
+        "kestavyys",
+        "pohjoismainen"
+      ],
+      "rooli": "rakenne",
       "best_analysis": "pohjoismainen_vertailu",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
@@ -1391,36 +1376,6 @@
       "external_id": "nordic_maternity_benefit_couple_without_children_besides_the_newborn_|_50_&_50_7",
       "name": "Couple without children besides the newborn | 50 & 50/75 (pohjoismaat)",
       "category_name": "Nordic -- Maternity benefit",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_100_&_100_125",
-      "name": "Couple with 2 children | 100 & 100/125 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_100_&_100_125",
-      "name": "Couple without children | 100 & 100/125 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
       "teemat": [
         "pohjoismainen",
         "elinkaari"
@@ -1523,17 +1478,18 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_compensation_of_employees_(payable)_compensation_of_employees_(payable)",
-      "name": "Compensation of employees (payable) (pohjoismaat)",
-      "category_name": "Nordic -- Compensation of employees (payable)",
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_100_&_100_125",
+      "name": "Couple without children | 100 & 100/125 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
       "teemat": [
-        "pohjoismainen"
+        "pohjoismainen",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "pohjoismainen_vertailu",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
+      "score_jarjestelmavinouma": 0.1,
       "score_pohjoismainen_vertailu": 0.5
     },
     {
@@ -1582,6 +1538,20 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
+      "external_id": "nordic_compensation_of_employees_(payable)_compensation_of_employees_(payable)",
+      "name": "Compensation of employees (payable) (pohjoismaat)",
+      "category_name": "Nordic -- Compensation of employees (payable)",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
       "external_id": "cofog_GF09_koulutus",
       "name": "COFOG GF09 Koulutus / BKT",
       "category_name": "Talous ja julkinen rahoitus",
@@ -1597,37 +1567,6 @@
       "score_panos_tuotos": 0.4,
       "score_jarjestelmavinouma": 0.5,
       "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "nordic_voluntary_healthcare_payment_schemes_2._rahoituslähteet",
-      "name": "2. Rahoituslähteet (pohjoismaat)",
-      "category_name": "Nordic — Voluntary healthcare payment schemes",
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "panos",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_npish_financing_schemes_2._rahoituslähteet",
-      "name": "2. Rahoituslähteet (pohjoismaat)",
-      "category_name": "Nordic — NPISH financing schemes",
-      "teemat": [
-        "resurssit",
-        "pohjoismainen"
-      ],
-      "rooli": "panos",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
     },
     {
       "external_id": "nordic_household_out_of_pocket_payments_2._rahoituslähteet",
@@ -1717,17 +1656,17 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_fertility_rate_20_24_years",
-      "name": "20-24 years (pohjoismaat)",
-      "category_name": "Nordic -- Fertility rate",
+      "external_id": "nordic_npish_financing_schemes_2._rahoituslähteet",
+      "name": "2. Rahoituslähteet (pohjoismaat)",
+      "category_name": "Nordic — NPISH financing schemes",
       "teemat": [
-        "vaikuttavuus",
+        "resurssit",
         "pohjoismainen"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "panos",
       "best_analysis": "pohjoismainen_vertailu",
       "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
+      "score_panos_tuotos": 0.4,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.5
     },
@@ -1822,33 +1761,18 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_50_&_50_75",
-      "name": "Couple without children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
+      "external_id": "nordic_fertility_rate_20_24_years",
+      "name": "20-24 years (pohjoismaat)",
+      "category_name": "Nordic -- Fertility rate",
       "teemat": [
-        "pohjoismainen",
-        "elinkaari"
+        "vaikuttavuus",
+        "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "pohjoismainen_vertailu",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_unemployment_benefit_(uninsured)_single_person_without_children_|_100",
-      "name": "Single person without children | 100 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (uninsured)",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
+      "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.5
     },
     {
@@ -1940,31 +1864,18 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_total_taxes_(payable)_total_taxes_(payable)",
-      "name": "Total taxes (payable) (pohjoismaat)",
-      "category_name": "Nordic -- Total taxes (payable)",
+      "external_id": "nordic_unemployment_benefit_(uninsured)_single_person_without_children_|_100",
+      "name": "Single person without children | 100 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (uninsured)",
       "teemat": [
-        "pohjoismainen"
+        "pohjoismainen",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "pohjoismainen_vertailu",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_intermediate_consumption_intermediate_consumption",
-      "name": "Intermediate consumption (pohjoismaat)",
-      "category_name": "Nordic -- Intermediate consumption",
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
+      "score_jarjestelmavinouma": 0.1,
       "score_pohjoismainen_vertailu": 0.5
     },
     {
@@ -2040,6 +1951,20 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
+      "external_id": "nordic_intermediate_consumption_intermediate_consumption",
+      "name": "Intermediate consumption (pohjoismaat)",
+      "category_name": "Nordic -- Intermediate consumption",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
       "external_id": "valtio_os28_koulutus",
       "name": "Valtion OS28 Koulutus",
       "category_name": "Talous ja julkinen rahoitus",
@@ -2082,21 +2007,6 @@
       "best_analysis": "pohjoismainen_vertailu",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_providers_of_ancillary_services_4._palveluntuottajat",
-      "name": "4. Palveluntuottajat (pohjoismaat)",
-      "category_name": "Nordic — Providers of ancillary services",
-      "teemat": [
-        "saavutettavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "tuotos",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.2,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.5
     },
@@ -2163,36 +2073,6 @@
     {
       "external_id": "nordic_unemployment_benefit_(insured)_single_person_with_a_child_|_50_&_50_75",
       "name": "Single person with a child | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_unemployment_benefit_(insured)_single_person_without_children_|_75_&_75_1",
-      "name": "Single person without children | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
-      "external_id": "nordic_unemployment_benefit_(insured)_single_person_without_children_|_125_(sing",
-      "name": "Single person without children | 125 (singles only) (pohjoismaat)",
       "category_name": "Nordic -- Unemployment benefit (insured)",
       "teemat": [
         "pohjoismainen",
@@ -2297,20 +2177,6 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
-      "external_id": "nordic_taxes,_of_which_current_taxes_on_income,_wealth_etcetera_(payable)_taxes,",
-      "name": "Taxes, of which current taxes on income, wealth etcetera (payable) (pohjoismaat)",
-      "category_name": "Nordic -- Taxes, of which current taxes on income, wealth etcetera (payable)",
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.5
-    },
-    {
       "external_id": "nordic_economic_affairs_economic_affairs",
       "name": "Economic affairs (pohjoismaat)",
       "category_name": "Nordic -- Economic affairs",
@@ -2325,6 +2191,21 @@
       "score_pohjoismainen_vertailu": 0.5
     },
     {
+      "external_id": "nordic_unemployment_benefit_(insured)_single_person_without_children_|_125_(sing",
+      "name": "Single person without children | 125 (singles only) (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
       "external_id": "nordic_recreation,_culture_and_religion_recreation,_culture_and_religion",
       "name": "Recreation, culture and religion (pohjoismaat)",
       "category_name": "Nordic -- Recreation, culture and religion",
@@ -2336,6 +2217,125 @@
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_100_&_100_125",
+      "name": "Couple with 2 children | 100 & 100/125 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_voluntary_healthcare_payment_schemes_2._rahoituslähteet",
+      "name": "2. Rahoituslähteet (pohjoismaat)",
+      "category_name": "Nordic — Voluntary healthcare payment schemes",
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus",
+        "pohjoismainen"
+      ],
+      "rooli": "panos",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_total_taxes_(payable)_total_taxes_(payable)",
+      "name": "Total taxes (payable) (pohjoismaat)",
+      "category_name": "Nordic -- Total taxes (payable)",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_providers_of_ancillary_services_4._palveluntuottajat",
+      "name": "4. Palveluntuottajat (pohjoismaat)",
+      "category_name": "Nordic — Providers of ancillary services",
+      "teemat": [
+        "saavutettavuus",
+        "pohjoismainen"
+      ],
+      "rooli": "tuotos",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_unemployment_benefit_(insured)_single_person_without_children_|_75_&_75_1",
+      "name": "Single person without children | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_taxes,_of_which_current_taxes_on_income,_wealth_etcetera_(payable)_taxes,",
+      "name": "Taxes, of which current taxes on income, wealth etcetera (payable) (pohjoismaat)",
+      "category_name": "Nordic -- Taxes, of which current taxes on income, wealth etcetera (payable)",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_disability_benefit_single_person_without_children_|_50",
+      "name": "Single person without children | 50 (pohjoismaat)",
+      "category_name": "Nordic -- Disability benefit",
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.5
+    },
+    {
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_50_&_50_75",
+      "name": "Couple without children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
       "score_pohjoismainen_vertailu": 0.5
     },
     {
@@ -2382,6 +2382,21 @@
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.4,
       "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "ttt_kuntien_menot_meur",
+      "name": "Paikallishallinnon menot",
+      "category_name": "Talous ja julkinen rahoitus",
+      "teemat": [
+        "resurssit",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.4,
       "score_pohjoismainen_vertailu": 0.0
     },
     {
@@ -2593,36 +2608,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "ttt_kuntien_menot_meur",
-      "name": "Paikallishallinnon menot",
-      "category_name": "Talous ja julkinen rahoitus",
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.4,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "ttt_kuntien_menot_bkt",
-      "name": "Paikallishallinnon menot / BKT",
-      "category_name": "Talous ja julkinen rahoitus",
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.4,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
       "external_id": "sosiaaliturva_rahoitus_kunnat",
       "name": "Kuntien osuus sosiaaliturvan rahoituksesta",
       "category_name": "Rakenne ja hyvinvointi",
@@ -2667,18 +2652,19 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "nordic_physicians_physicians",
-      "name": "Physicians (pohjoismaat)",
-      "category_name": "Nordic — Physicians",
+      "external_id": "ttt_kuntien_menot_bkt",
+      "name": "Paikallishallinnon menot / BKT",
+      "category_name": "Talous ja julkinen rahoitus",
       "teemat": [
-        "pohjoismainen"
+        "resurssit",
+        "vinouma"
       ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
       "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.4,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "nordic_psychologists_psychologists",
@@ -2865,10 +2851,11 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
-      "external_id": "nordic_social_contributions_(receivable)_social_contributions_(receivable)",
-      "name": "Social contributions (receivable) (pohjoismaat)",
-      "category_name": "Nordic -- Social contributions (receivable)",
+      "external_id": "nordic_pisa_reading_pisa_reading",
+      "name": "PISA Reading (pohjoismaat)",
+      "category_name": "Nordic -- PISA Reading",
       "teemat": [
+        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -2879,11 +2866,10 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
-      "external_id": "nordic_pisa_reading_pisa_reading",
-      "name": "PISA Reading (pohjoismaat)",
-      "category_name": "Nordic -- PISA Reading",
+      "external_id": "nordic_social_contributions_(receivable)_social_contributions_(receivable)",
+      "name": "Social contributions (receivable) (pohjoismaat)",
+      "category_name": "Nordic -- Social contributions (receivable)",
       "teemat": [
-        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -2983,20 +2969,6 @@
       "external_id": "nordic_employed,_number_of_persons_employed,_number_of_persons",
       "name": "Employed, number of persons (pohjoismaat)",
       "category_name": "Nordic -- Employed, number of persons",
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
-    },
-    {
-      "external_id": "nordic_labour_force,_number_of_persons_labour_force,_number_of_persons",
-      "name": "Labour force, number of persons (pohjoismaat)",
-      "category_name": "Nordic -- Labour force, number of persons",
       "teemat": [
         "pohjoismainen"
       ],
@@ -3161,7 +3133,7 @@
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
         "resurssit",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "panos",
       "best_analysis": "panos_tuotos",
@@ -3177,37 +3149,6 @@
       "teemat": [
         "resurssit",
         "vaikuttavuus",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.4,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "kunta_korjaavat_eurpcap",
-      "name": "Kuntien korjaavat palvelut EUR/asukas",
-      "category_name": "Talous ja julkinen rahoitus",
-      "teemat": [
-        "resurssit",
-        "saavutettavuus",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.4,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "valtionvelka_bktsta",
-      "name": "Valtionvelka / BKT",
-      "category_name": "Talous ja julkinen rahoitus",
-      "teemat": [
-        "resurssit",
         "vinouma"
       ],
       "rooli": "panos",
@@ -3293,18 +3234,19 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "nordic_qualified_nurses_qualified_nurses",
-      "name": "Qualified nurses (pohjoismaat)",
-      "category_name": "Nordic — Qualified nurses",
+      "external_id": "valtionvelka_bktsta",
+      "name": "Valtionvelka / BKT",
+      "category_name": "Talous ja julkinen rahoitus",
       "teemat": [
-        "pohjoismainen"
+        "resurssit",
+        "vinouma"
       ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.4,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "nordic_mental_and_behavioural_disorders_due_to_use_of_other_psychoactive_subst._",
@@ -3378,34 +3320,6 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
-      "external_id": "nordic_other_subsidies_on_production_(receivable)_other_subsidies_on_production_",
-      "name": "Other subsidies on production (receivable) (pohjoismaat)",
-      "category_name": "Nordic -- Other subsidies on production (receivable)",
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
-    },
-    {
-      "external_id": "nordic_interest_rate,_%_interest_rate,_%",
-      "name": "Interest rate, % (pohjoismaat)",
-      "category_name": "Nordic -- Interest rate, %",
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
-    },
-    {
       "external_id": "nordic_pisa_mathematics_pisa_mathematics",
       "name": "PISA Mathematics (pohjoismaat)",
       "category_name": "Nordic -- PISA Mathematics",
@@ -3467,6 +3381,20 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
+      "external_id": "nordic_interest_rate,_%_interest_rate,_%",
+      "name": "Interest rate, % (pohjoismaat)",
+      "category_name": "Nordic -- Interest rate, %",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
       "external_id": "nordic_total_other_current_and_capital_transfers_and_investment_grants_(receivab",
       "name": "Total other current and capital transfers and investment grants (receivable) (pohjoismaat)",
       "category_name": "Nordic -- Total other current and capital transfers and investment grants (receivable)",
@@ -3509,6 +3437,22 @@
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.4,
       "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "kunta_korjaavat_eurpcap",
+      "name": "Kuntien korjaavat palvelut EUR/asukas",
+      "category_name": "Talous ja julkinen rahoitus",
+      "teemat": [
+        "resurssit",
+        "saavutettavuus",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.4,
       "score_pohjoismainen_vertailu": 0.0
     },
     {
@@ -3572,21 +3516,6 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
-      "external_id": "perusterveydenhuolto_menot_eurpcap",
-      "name": "Perusterveydenhuollon menot EUR/asukas",
-      "category_name": "Terveys",
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "terveydenhuolto_bkt_pct",
       "name": "Terveydenhuoltomenot, % BKT:sta (SHA)",
       "category_name": "Terveys",
@@ -3609,20 +3538,6 @@
         "saavutettavuus"
       ],
       "rooli": "tuotos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "ttt_cofog_gf1005",
-      "name": "Työttömyys — julkiset menot (M€)",
-      "category_name": "Työ ja toimeentulo",
-      "teemat": [
-        "resurssit"
-      ],
-      "rooli": "panos",
       "best_analysis": "panos_tuotos",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.4,
@@ -3895,20 +3810,6 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
-      "external_id": "nordic_total_total",
-      "name": "Total (pohjoismaat)",
-      "category_name": "Nordic — Total",
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
-    },
-    {
       "external_id": "nordic_n06ab:_selective_serotonin_reuptake_inhibitors_n06ab:_selective_serotonin",
       "name": "N06AB: Selective serotonin reuptake inhibitors (pohjoismaat)",
       "category_name": "Nordic — N06AB: Selective serotonin reuptake inhibitors",
@@ -3955,21 +3856,6 @@
       "name": "Capital transfers (receivable) (pohjoismaat)",
       "category_name": "Nordic -- Capital transfers (receivable)",
       "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
-    },
-    {
-      "external_id": "nordic_pisa_science_pisa_science",
-      "name": "PISA Science (pohjoismaat)",
-      "category_name": "Nordic -- PISA Science",
-      "teemat": [
-        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -4197,36 +4083,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "ttt_julkiset_menot_meur",
-      "name": "Julkisyhteisöjen kokonaismenot",
-      "category_name": "Talous ja julkinen rahoitus",
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.4,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "vaikeavammaisten_palvelut_menot",
-      "name": "Vaikeavammaisten palvelujen menot",
-      "category_name": "Vammaisuus ja kuntoutus",
-      "teemat": [
-        "resurssit",
-        "saavutettavuus"
-      ],
-      "rooli": "panos",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.4,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "alle35_vuokra_jaljella_eur",
       "name": "Alle 35v vuokra-asujat (yksin): käytettävissä olevat tulot asumisen jälkeen (€/ku, mediaani)",
       "category_name": "Asuminen ja toimeentulo",
@@ -4239,21 +4095,6 @@
       "score_panos_tuotos": 0.4,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "nordic_main_group:_pregnancy,_childbirth_and_the_puerperium_(o00_o99)_main_group",
-      "name": "Main group: Pregnancy, childbirth and the puerperium (O00-O99) (pohjoismaat)",
-      "category_name": "Nordic — Main group: Pregnancy, childbirth and the puerperium (O00-O99)",
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.4
     },
     {
       "external_id": "nordic_housing_and_social_exclusion,_n.e.c._housing_and_social_exclusion,_n.e.c.",
@@ -4285,18 +4126,19 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
-      "external_id": "nordic_n06aa:_non_selective_monoamine_reuptake_inhibitors_n06aa:_non_selective_m",
-      "name": "N06AA: Non-selective monoamine reuptake inhibitors (pohjoismaat)",
-      "category_name": "Nordic — N06AA: Non-selective monoamine reuptake inhibitors",
+      "external_id": "vaikeavammaisten_palvelut_menot",
+      "name": "Vaikeavammaisten palvelujen menot",
+      "category_name": "Vammaisuus ja kuntoutus",
       "teemat": [
-        "pohjoismainen"
+        "resurssit",
+        "saavutettavuus"
       ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "pohjoismainen_vertailu",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.4,
       "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.4
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "nordic_n05cf:_benzodiazepine_related_drugs_n05cf:_benzodiazepine_related_drugs",
@@ -4356,6 +4198,20 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
+      "external_id": "nordic_n06aa:_non_selective_monoamine_reuptake_inhibitors_n06aa:_non_selective_m",
+      "name": "N06AA: Non-selective monoamine reuptake inhibitors (pohjoismaat)",
+      "category_name": "Nordic — N06AA: Non-selective monoamine reuptake inhibitors",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
       "external_id": "nordic_taxes,_of_which_taxes_on_production_and_import_(receivable)_taxes,_of_whi",
       "name": "Taxes, of which taxes on production and import (receivable) (pohjoismaat)",
       "category_name": "Nordic -- Taxes, of which taxes on production and import (receivable)",
@@ -4370,8 +4226,152 @@
       "score_pohjoismainen_vertailu": 0.4
     },
     {
-      "external_id": "lastensuojelu_huostassa",
-      "name": "Huostassa olevat lapset",
+      "external_id": "nordic_other_subsidies_on_production_(receivable)_other_subsidies_on_production_",
+      "name": "Other subsidies on production (receivable) (pohjoismaat)",
+      "category_name": "Nordic -- Other subsidies on production (receivable)",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "perusterveydenhuolto_menot_eurpcap",
+      "name": "Perusterveydenhuollon menot EUR/asukas",
+      "category_name": "Terveys",
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "ttt_cofog_gf1005",
+      "name": "Työttömyys — julkiset menot (M€)",
+      "category_name": "Työ ja toimeentulo",
+      "teemat": [
+        "resurssit"
+      ],
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "nordic_total_total",
+      "name": "Total (pohjoismaat)",
+      "category_name": "Nordic — Total",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "ttt_julkiset_menot_meur",
+      "name": "Julkisyhteisöjen kokonaismenot",
+      "category_name": "Talous ja julkinen rahoitus",
+      "teemat": [
+        "resurssit",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.4,
+      "score_jarjestelmavinouma": 0.4,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "nordic_main_group:_pregnancy,_childbirth_and_the_puerperium_(o00_o99)_main_group",
+      "name": "Main group: Pregnancy, childbirth and the puerperium (O00-O99) (pohjoismaat)",
+      "category_name": "Nordic — Main group: Pregnancy, childbirth and the puerperium (O00-O99)",
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "nordic_physicians_physicians",
+      "name": "Physicians (pohjoismaat)",
+      "category_name": "Nordic — Physicians",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "nordic_labour_force,_number_of_persons_labour_force,_number_of_persons",
+      "name": "Labour force, number of persons (pohjoismaat)",
+      "category_name": "Nordic -- Labour force, number of persons",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "nordic_qualified_nurses_qualified_nurses",
+      "name": "Qualified nurses (pohjoismaat)",
+      "category_name": "Nordic — Qualified nurses",
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "nordic_pisa_science_pisa_science",
+      "name": "PISA Science (pohjoismaat)",
+      "category_name": "Nordic -- PISA Science",
+      "teemat": [
+        "vaikuttavuus",
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "pohjoismainen_vertailu",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.4
+    },
+    {
+      "external_id": "neuvola_kayntimaara",
+      "name": "Äitiys- ja lastenneuvolan käyntimäärä / lapsi",
       "category_name": "Lapset ja perhe",
       "teemat": [
         "elinkaari"
@@ -4384,22 +4384,8 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "yksinhuoltajat_osuus",
-      "name": "Yksinhuoltajaperheiden osuus lapsiperheistä",
-      "category_name": "Lapset ja perhe",
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "neuvola_kayntimaara",
-      "name": "Äitiys- ja lastenneuvolan käyntimäärä / lapsi",
+      "external_id": "lastensuojelu_huostassa",
+      "name": "Huostassa olevat lapset",
       "category_name": "Lapset ja perhe",
       "teemat": [
         "elinkaari"
@@ -4468,34 +4454,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "alkoholin_kulutus",
-      "name": "Alkoholin kokonaiskulutus litraa 100% / asukas",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "huumekuolemat",
-      "name": "Huumekuolemat / 100 000 asukasta",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "paihdehuolto_kuntoutuslaitokset_hoitopaivat",
       "name": "Päihdehuollon kuntoutuslaitokset, hoitopäiviä/vuosi",
       "category_name": "Mielenterveys ja päihteet",
@@ -4510,18 +4468,17 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "koulupudokkaat_perus",
-      "name": "Peruskoulun keskeyttäneet",
-      "category_name": "Koulutus",
+      "external_id": "alkoholin_kulutus",
+      "name": "Alkoholin kokonaiskulutus litraa 100% / asukas",
+      "category_name": "Mielenterveys ja päihteet",
       "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
+        "vaikuttavuus"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.3,
       "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
+      "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.1
     },
     {
@@ -4625,6 +4582,34 @@
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.1,
       "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "ensisuojat_asumispaivat",
+      "name": "Ensisuojat, asumispäiviä/vuosi",
+      "category_name": "Asuminen ja toimeentulo",
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "ulkomaalaistaustaisten_osuus",
+      "name": "Ulkomaalaistaustaisten osuus väestöstä %",
+      "category_name": "Väestö ja demografia",
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "sydansairaudet_kuolleisuus",
@@ -4739,20 +4724,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "ensisuojat_asumispaivat",
-      "name": "Ensisuojat, asumispäiviä/vuosi",
-      "category_name": "Asuminen ja toimeentulo",
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "tulot_omistus_vuokra_suhde",
       "name": "Omistaja- vs. vuokralaistalouksien tulokuilu (€/ku, mediaani-suhde)",
       "category_name": "Asuminen ja toimeentulo",
@@ -4771,7 +4742,7 @@
       "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -4785,7 +4756,7 @@
       "name": "0–14v osuus väestöstä",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys",
+        "kestavyys",
         "elinkaari"
       ],
       "rooli": "rakenne",
@@ -4793,20 +4764,6 @@
       "score_aikasarja": 0.3,
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "ulkomaalaistaustaisten_osuus",
-      "name": "Ulkomaalaistaustaisten osuus väestöstä %",
-      "category_name": "Väestö ja demografia",
-      "teemat": [
-        "kestävyys"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.1
     },
     {
@@ -4880,6 +4837,20 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
+      "external_id": "lapsiperheiden_osuus",
+      "name": "Lapsiperheiden osuus kaikista kotitalouksista",
+      "category_name": "Lapset ja perhe",
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
       "external_id": "syntyvyys_tfr",
       "name": "Kokonaishedelmällisyysluku (TFR)",
       "category_name": "Lapset ja perhe",
@@ -4895,18 +4866,18 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "lapsiperheiden_osuus",
-      "name": "Lapsiperheiden osuus kaikista kotitalouksista",
-      "category_name": "Lapset ja perhe",
+      "external_id": "mt_sairaalahoito_paivat",
+      "name": "Psykiatrisen sairaalahoitojaksojen määrä / 1000 asukasta",
+      "category_name": "Mielenterveys ja päihteet",
       "teemat": [
-        "elinkaari"
+        "vaikuttavuus"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.1
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "esiopetus_oppilaat",
@@ -4920,20 +4891,6 @@
       "score_aikasarja": 0.3,
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "mt_sairaalahoito_paivat",
-      "name": "Psykiatrisen sairaalahoitojaksojen määrä / 1000 asukasta",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
     },
     {
@@ -5011,20 +4968,6 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
-      "external_id": "elinajanodote",
-      "name": "Elinajanodote syntymässä",
-      "category_name": "Terveys",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "lihavuus_aikuiset",
       "name": "Lihavuuden esiintyvyys (BMI>30) aikuiset",
       "category_name": "Terveys",
@@ -5053,25 +4996,11 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "toimeentulotuki_pitkaaik",
-      "name": "Toimeentulotukea yli 10 kk saaneet",
-      "category_name": "Asuminen ja toimeentulo",
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "muuttoliike_netto",
       "name": "Nettomaahanmuutto",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -5086,7 +5015,7 @@
       "category_name": "Väestö ja demografia",
       "teemat": [
         "vaikuttavuus",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
@@ -5152,18 +5081,32 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "varhaiskasvatus_osallistuminen",
-      "name": "Varhaiskasvatukseen osallistuneet 1–5v",
-      "category_name": "Lapset ja perhe",
+      "external_id": "elinajanodote",
+      "name": "Elinajanodote syntymässä",
+      "category_name": "Terveys",
       "teemat": [
-        "elinkaari"
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "toimeentulotuki_pitkaaik",
+      "name": "Toimeentulotukea yli 10 kk saaneet",
+      "category_name": "Asuminen ja toimeentulo",
+      "teemat": [
+        "muu"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.3,
-      "score_pohjoismainen_vertailu": 0.1
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "adoptiot_kotimaiset",
@@ -5177,21 +5120,6 @@
       "score_aikasarja": 0.3,
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "mt_avohoito_kaynteja",
-      "name": "Psykiatrian avohoidon käynnit",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "saavutettavuus",
-        "vaikuttavuus"
-      ],
-      "rooli": "tuotos",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
     },
     {
@@ -5239,34 +5167,19 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "koulupudokkaat_toinen_aste",
-      "name": "Toisen asteen keskeyttäneet",
-      "category_name": "Koulutus",
+      "external_id": "mt_avohoito_kaynteja",
+      "name": "Psykiatrian avohoidon käynnit",
+      "category_name": "Mielenterveys ja päihteet",
       "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
+        "saavutettavuus",
+        "vaikuttavuus"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "tuotos",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "korkea_aste_suorittaneet",
-      "name": "Korkea-asteen tutkinnon suorittaneet 25–34v",
-      "category_name": "Koulutus",
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.3,
-      "score_pohjoismainen_vertailu": 0.1
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "oppisopimus_opiskelijat",
@@ -5297,6 +5210,21 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
+      "external_id": "korkea_aste_suorittaneet",
+      "name": "Korkea-asteen tutkinnon suorittaneet 25–34v",
+      "category_name": "Koulutus",
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.3,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
       "external_id": "toimeentulotuki_nuoret",
       "name": "Toimeentulotuki alle 25v saajat",
       "category_name": "Asuminen ja toimeentulo",
@@ -5315,35 +5243,7 @@
       "name": "Väestö yhteensä",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "kaupungistumisaste",
-      "name": "Kaupunkiväestön osuus",
-      "category_name": "Väestö ja demografia",
-      "teemat": [
-        "kestävyys"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
-      "external_id": "sisainen_muuttoliike",
-      "name": "Maassamuutto netto suurimmissa kaupungeissa",
-      "category_name": "Väestö ja demografia",
-      "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -5396,11 +5296,11 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
-      "external_id": "tyokyvyttomyyselake_alle35v",
-      "name": "Alle 35v työkyvyttömyyseläkkeet",
-      "category_name": "Vammaisuus ja kuntoutus",
+      "external_id": "sisainen_muuttoliike",
+      "name": "Maassamuutto netto suurimmissa kaupungeissa",
+      "category_name": "Väestö ja demografia",
       "teemat": [
-        "muu"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -5465,34 +5365,6 @@
       "score_aikasarja": 0.3,
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "mt_tyokyvyttomyyselakkeet",
-      "name": "Mielenterveysperusteiset työkyvyttömyyseläkkeet",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
-      "external_id": "paihde_hoitojaksojen_maara",
-      "name": "Päihdehuollon hoitojaksot",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
     },
     {
@@ -5568,6 +5440,20 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
+      "external_id": "paihde_hoitojaksojen_maara",
+      "name": "Päihdehuollon hoitojaksot",
+      "category_name": "Mielenterveys ja päihteet",
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
       "external_id": "erikoissairaanhoito_hoitopaivatmaara",
       "name": "Erikoissairaanhoidon hoitopäivät",
       "category_name": "Terveys",
@@ -5613,25 +5499,11 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
-      "external_id": "asuntohintasuhde_tulot",
-      "name": "Asuntojen hinnat / mediaanipalkka",
-      "category_name": "Asuminen ja toimeentulo",
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.3,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "yksinasuvat_osuus",
       "name": "Yksinasuvien osuus kotitalouksista",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -5639,6 +5511,20 @@
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.1
+    },
+    {
+      "external_id": "pahoinpitely_naiset",
+      "name": "Naisiin kohdistunut lähisuhdeväkivalta",
+      "category_name": "Rakenne ja hyvinvointi",
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "vammaistuki_lapset",
@@ -5655,9 +5541,80 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "pahoinpitely_naiset",
-      "name": "Naisiin kohdistunut lähisuhdeväkivalta",
-      "category_name": "Rakenne ja hyvinvointi",
+      "external_id": "varhaiskasvatus_osallistuminen",
+      "name": "Varhaiskasvatukseen osallistuneet 1–5v",
+      "category_name": "Lapset ja perhe",
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.3,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
+      "external_id": "koulupudokkaat_toinen_aste",
+      "name": "Toisen asteen keskeyttäneet",
+      "category_name": "Koulutus",
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
+      "external_id": "kaupungistumisaste",
+      "name": "Kaupunkiväestön osuus",
+      "category_name": "Väestö ja demografia",
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
+      "external_id": "tyokyvyttomyyselake_alle35v",
+      "name": "Alle 35v työkyvyttömyyseläkkeet",
+      "category_name": "Vammaisuus ja kuntoutus",
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "yksinhuoltajat_osuus",
+      "name": "Yksinhuoltajaperheiden osuus lapsiperheistä",
+      "category_name": "Lapset ja perhe",
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
+      "external_id": "huumekuolemat",
+      "name": "Huumekuolemat / 100 000 asukasta",
+      "category_name": "Mielenterveys ja päihteet",
       "teemat": [
         "vaikuttavuus"
       ],
@@ -5667,6 +5624,49 @@
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "mt_tyokyvyttomyyselakkeet",
+      "name": "Mielenterveysperusteiset työkyvyttömyyseläkkeet",
+      "category_name": "Mielenterveys ja päihteet",
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "asuntohintasuhde_tulot",
+      "name": "Asuntojen hinnat / mediaanipalkka",
+      "category_name": "Asuminen ja toimeentulo",
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "koulupudokkaat_perus",
+      "name": "Peruskoulun keskeyttäneet",
+      "category_name": "Koulutus",
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.3,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "nuorisotyontekijat_maara",
@@ -5725,20 +5725,6 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "mt_sairaslomat",
-      "name": "MT-perusteiset sairauslomat",
-      "category_name": "Mielenterveys ja päihteet",
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.29,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.0
-    },
-    {
       "external_id": "koulunkaynnin_tuki",
       "name": "Koulunkäynninohjaajat / 1000 oppilasta",
       "category_name": "Koulutus",
@@ -5752,6 +5738,20 @@
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.1,
       "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "energiakoyhyys_osuus",
+      "name": "Energiaköyhyydestä kärsivien kotitalouksien osuus",
+      "category_name": "Asuminen ja toimeentulo",
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.29,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "pitkittyneesti_pienituloiset",
@@ -5768,18 +5768,18 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "energiakoyhyys_osuus",
-      "name": "Energiaköyhyydestä kärsivien kotitalouksien osuus",
-      "category_name": "Asuminen ja toimeentulo",
+      "external_id": "mt_sairaslomat",
+      "name": "MT-perusteiset sairauslomat",
+      "category_name": "Mielenterveys ja päihteet",
       "teemat": [
-        "muu"
+        "vaikuttavuus"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.29,
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.1
+      "score_pohjoismainen_vertailu": 0.0
     },
     {
       "external_id": "palkkatuki_nuoret",
@@ -6052,20 +6052,6 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
-      "external_id": "nuoret_liikunta_osuus",
-      "name": "Nuoret, jotka liikkuvat suositusten mukaan",
-      "category_name": "Nuoret ja työllisyys",
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
       "external_id": "nuoret_koulu_uupumus",
       "name": "Koulu-uupumus (8.–9.lk + 2.aste)",
       "category_name": "Nuoret ja työllisyys",
@@ -6140,7 +6126,7 @@
       "name": "Asumisväljyys (m² / henkilö)",
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "panos_tuotos",
@@ -6154,7 +6140,7 @@
       "name": "Yhdyskuntajätteen kierrätysaste",
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "panos_tuotos",
@@ -6370,7 +6356,7 @@
       "name": "Maksuhäiriömerkinnät (väestöstä)",
       "category_name": "Osallisuus ja yhteisöllisyys",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "panos_tuotos",
@@ -6398,7 +6384,7 @@
       "name": "Joukkoliikenteen käyttäjät",
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "panos_tuotos",
@@ -6412,7 +6398,7 @@
       "name": "Melulle altistuneet kaupunkilaiset",
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "panos_tuotos",
@@ -6464,20 +6450,6 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
-      "external_id": "nuoret_syrjaytyminen",
-      "name": "Nuoret (15–29v) työn/koulutuksen ulkopuolella (NEET)",
-      "category_name": "Nuoret ja työllisyys",
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "panos_tuotos",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.2,
-      "score_jarjestelmavinouma": 0.1,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
       "external_id": "nuoret_vanhempien_tuki",
       "name": "Nuoret, jotka voivat keskustella vanhempiensa kanssa usein/melko usein",
       "category_name": "Nuoret ja työllisyys",
@@ -6506,11 +6478,25 @@
       "score_pohjoismainen_vertailu": 0.1
     },
     {
+      "external_id": "nuoret_syrjaytyminen",
+      "name": "Nuoret (15–29v) työn/koulutuksen ulkopuolella (NEET)",
+      "category_name": "Nuoret ja työllisyys",
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.1,
+      "score_pohjoismainen_vertailu": 0.1
+    },
+    {
       "external_id": "ely_co2",
       "name": "Kasvihuonekaasupäästöt",
       "category_name": "Elinympäristö ja kestävyys",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "panos_tuotos",
@@ -6518,6 +6504,20 @@
       "score_panos_tuotos": 0.2,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "nuoret_liikunta_osuus",
+      "name": "Nuoret, jotka liikkuvat suositusten mukaan",
+      "category_name": "Nuoret ja työllisyys",
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "panos_tuotos",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.2,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "erikoissairaanhoito_osuus_pct",
@@ -6675,13 +6675,14 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "ttt_vakiluku",
-      "name": "Väkiluku",
+      "external_id": "elinajanodote_25v",
+      "name": "25-vuotiaan elinajanodote",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
+        "vaikuttavuus",
+        "kestavyys"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
@@ -6689,14 +6690,13 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "elinajanodote_25v",
-      "name": "25-vuotiaan elinajanodote",
+      "external_id": "ttt_vakiluku",
+      "name": "Väkiluku",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "vaikuttavuus",
-        "kestävyys"
+        "kestavyys"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "rakenne",
       "best_analysis": "aikasarja",
       "score_aikasarja": 0.1,
       "score_panos_tuotos": 0.0,
@@ -6820,7 +6820,7 @@
       "name": "Väestöennuste 2040",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -6835,7 +6835,7 @@
       "category_name": "Väestö ja demografia",
       "teemat": [
         "vaikuttavuus",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
@@ -6948,7 +6948,7 @@
       "category_name": "Väestö ja demografia",
       "teemat": [
         "vaikuttavuus",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
@@ -7029,25 +7029,11 @@
       "score_pohjoismainen_vertailu": 0.0
     },
     {
-      "external_id": "asumistuki_elakkeensaajat_pct",
-      "name": "Eläkkeensaajien asumistukea saaneet, % asuntokunnista",
-      "category_name": "Asuminen ja toimeentulo",
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "best_analysis": "aikasarja",
-      "score_aikasarja": 0.1,
-      "score_panos_tuotos": 0.0,
-      "score_jarjestelmavinouma": 0.0,
-      "score_pohjoismainen_vertailu": 0.1
-    },
-    {
       "external_id": "ttt_huoltosuhde",
       "name": "Demografinen huoltosuhde",
       "category_name": "Väestö ja demografia",
       "teemat": [
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "rakenne",
       "best_analysis": "aikasarja",
@@ -7062,7 +7048,7 @@
       "category_name": "Väestö ja demografia",
       "teemat": [
         "vaikuttavuus",
-        "kestävyys"
+        "kestavyys"
       ],
       "rooli": "vaikuttavuus",
       "best_analysis": "aikasarja",
@@ -7070,6 +7056,20 @@
       "score_panos_tuotos": 0.0,
       "score_jarjestelmavinouma": 0.0,
       "score_pohjoismainen_vertailu": 0.0
+    },
+    {
+      "external_id": "asumistuki_elakkeensaajat_pct",
+      "name": "Eläkkeensaajien asumistukea saaneet, % asuntokunnista",
+      "category_name": "Asuminen ja toimeentulo",
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "best_analysis": "aikasarja",
+      "score_aikasarja": 0.1,
+      "score_panos_tuotos": 0.0,
+      "score_jarjestelmavinouma": 0.0,
+      "score_pohjoismainen_vertailu": 0.1
     },
     {
       "external_id": "osa_aikatyo_2534_n_osuus",

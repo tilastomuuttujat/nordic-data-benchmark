@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T20:34:29.429433+00:00",
+  "generated_at": "2026-05-13T04:42:00.483629+00:00",
   "total": 486,
   "teemat": [
     {
@@ -38,7 +38,7 @@
       "count": 70
     },
     {
-      "teema_id": "kestävyys",
+      "teema_id": "kestavyys",
       "label": "Kestävyys & Rakenne",
       "kuvaus": "Demografinen paine, rahoituksen kestävyys ja henkilöstön saatavuus",
       "rooli_oletus": "rakenne",
@@ -77,61 +77,61 @@
       "file": "indicators/resurssit.json",
       "label": "Resurssit & Panostukset",
       "count": 89,
-      "sha256_16": "6d1cd3a3d50a2f8d"
+      "sha256_16": "eccfb7413c202e7c"
     },
     "saavutettavuus": {
       "file": "indicators/saavutettavuus.json",
       "label": "Tuotokset & Saavutettavuus",
       "count": 39,
-      "sha256_16": "6b6c246ccad12ceb"
+      "sha256_16": "8c48699ad59a2927"
     },
     "vaikuttavuus": {
       "file": "indicators/vaikuttavuus.json",
       "label": "Vaikuttavuus & Tulokset",
       "count": 142,
-      "sha256_16": "8b4cf5e71fcc5e13"
+      "sha256_16": "175383aedd1d5efa"
     },
     "tehokkuus": {
       "file": "indicators/tehokkuus.json",
       "label": "Tehokkuus & Panos-tuotos",
       "count": 6,
-      "sha256_16": "41d43adac1444e6d"
+      "sha256_16": "27db50fcd332912b"
     },
     "vinouma": {
       "file": "indicators/vinouma.json",
       "label": "Järjestelmän Vinouma & Oikeudenmukaisuus",
       "count": 70,
-      "sha256_16": "3a6bd153a7187ccd"
+      "sha256_16": "0b68dcf3e0f4576f"
     },
-    "kestävyys": {
-      "file": "indicators/kestävyys.json",
+    "kestavyys": {
+      "file": "indicators/kestavyys.json",
       "label": "Kestävyys & Rakenne",
       "count": 30,
-      "sha256_16": "4f7a31c7ab40ad3a"
+      "sha256_16": "897ec1d8e1f6d9ce"
     },
     "pohjoismainen": {
       "file": "indicators/pohjoismainen.json",
       "label": "Pohjoismaiset Vertailumittarit",
       "count": 185,
-      "sha256_16": "af9e3465ce33b7c4"
+      "sha256_16": "04a23b53ba9bfcb0"
     },
     "elinkaari": {
       "file": "indicators/elinkaari.json",
       "label": "Elinkaari & Väestöryhmät",
       "count": 158,
-      "sha256_16": "b640c6c8625c5f6c"
+      "sha256_16": "9225fdfeabe1ba40"
     },
     "politiikka": {
       "file": "indicators/politiikka.json",
       "label": "Politiikka & Kausaalisuus",
       "count": 6,
-      "sha256_16": "8ff2a956917c5cc5"
+      "sha256_16": "f7599b1fb1a6bc92"
     },
     "muu": {
       "file": "indicators/muu.json",
       "label": "muu",
       "count": 62,
-      "sha256_16": "6036fe7ec811dba3"
+      "sha256_16": "473ac3679479d2a7"
     }
   }
 }

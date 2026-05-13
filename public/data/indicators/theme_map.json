@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T20:34:29.928871+00:00",
+  "generated_at": "2026-05-13T04:42:00.981778+00:00",
   "node_count": 121,
   "link_count": 214,
   "node_types": [
@@ -50,10 +50,10 @@
       "kuvaus": "Sosioekonominen gradientti, sukupuoli-, ikä- ja aluevinouma"
     },
     {
-      "id": "teema_kestävyys",
+      "id": "teema_kestavyys",
       "label": "Kestävyys & Rakenne",
       "type": "teema",
-      "group": "kestävyys",
+      "group": "kestavyys",
       "kuvaus": "Demografinen paine, rahoituksen kestävyys ja henkilöstön saatavuus"
     },
     {
