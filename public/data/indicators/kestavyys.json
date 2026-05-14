@@ -2,7 +2,7 @@
   "teema_id": "kestavyys",
   "label": "Kestävyys & Rakenne",
   "count": 30,
-  "generated_at": "2026-05-13T07:58:14.577778+00:00",
+  "generated_at": "2026-05-14T04:39:18.954324+00:00",
   "indicators": [
     {
       "id": "254bbec1-27bc-4657-8526-94a36f6d5673",
@@ -14,6 +14,29 @@
       "roi": null,
       "status": "haettava",
       "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "e9a330cf-527e-42fa-985f-aaa90fbd4903",
+      "external_id": "vanhuushuoltosuhde",
+      "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
+      "category_name": "Väestö ja demografia",
+      "unit": "indeksi",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1960.0,
       "year_end": 2024.0,
       "teemat": [
         "kestavyys"
@@ -74,29 +97,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "e9a330cf-527e-42fa-985f-aaa90fbd4903",
-      "external_id": "vanhuushuoltosuhde",
-      "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
-      "category_name": "Väestö ja demografia",
-      "unit": "indeksi",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1960.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "fcbc99ca-069f-4588-a115-8f766969e2bd",
@@ -509,29 +509,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "c4a98a4b-0d9f-45d8-9103-77a1998e4e36",
-      "external_id": "yksinasuvat_osuus",
-      "name": "Yksinasuvien osuus kotitalouksista",
-      "category_name": "Väestö ja demografia",
-      "unit": "%",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1985.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "4bd7a6ca-2b94-4368-a58b-86696daa4d52",
       "external_id": "ttt_huoltosuhde",
       "name": "Demografinen huoltosuhde",
@@ -598,6 +575,29 @@
         "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "c4a98a4b-0d9f-45d8-9103-77a1998e4e36",
+      "external_id": "yksinasuvat_osuus",
+      "name": "Yksinasuvien osuus kotitalouksista",
+      "category_name": "Väestö ja demografia",
+      "unit": "%",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1985.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
     },
@@ -671,29 +671,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "7c9ef561-892b-4638-954b-f548d9d31f8a",
-      "external_id": "ely_melu",
-      "name": "Melulle altistuneet kaupunkilaiset",
-      "category_name": "Elinympäristö ja kestävyys",
-      "unit": "% kaupunkiväestöstä",
-      "ttt_pilari": "korjaava",
-      "roi": 1.92,
-      "status": "saatavilla_v4",
-      "year_start": 2005.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.29,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "3da700b2-c2e0-489e-a33c-3034582919b3",
       "external_id": "os_velkaongelmat",
       "name": "Maksuhäiriömerkinnät (väestöstä)",
@@ -710,6 +687,29 @@
       "rooli": "rakenne",
       "suitability": {
         "aikasarja": 0.21,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "7c9ef561-892b-4638-954b-f548d9d31f8a",
+      "external_id": "ely_melu",
+      "name": "Melulle altistuneet kaupunkilaiset",
+      "category_name": "Elinympäristö ja kestävyys",
+      "unit": "% kaupunkiväestöstä",
+      "ttt_pilari": "korjaava",
+      "roi": 1.92,
+      "status": "saatavilla_v4",
+      "year_start": 2005.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.29,
         "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
