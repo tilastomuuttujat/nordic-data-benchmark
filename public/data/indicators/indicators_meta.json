@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T04:39:18.966138+00:00",
+  "generated_at": "2026-05-15T04:47:10.321449+00:00",
   "total": 486,
   "teemat": [
     {
@@ -77,61 +77,61 @@
       "file": "indicators/resurssit.json",
       "label": "Resurssit & Panostukset",
       "count": 89,
-      "sha256_16": "20c7864673bbfb28"
+      "sha256_16": "55a5c6d6d166292e"
     },
     "saavutettavuus": {
       "file": "indicators/saavutettavuus.json",
       "label": "Tuotokset & Saavutettavuus",
       "count": 39,
-      "sha256_16": "9548d50b7ba5bf8b"
+      "sha256_16": "0947a9e7d830cfcc"
     },
     "vaikuttavuus": {
       "file": "indicators/vaikuttavuus.json",
       "label": "Vaikuttavuus & Tulokset",
       "count": 142,
-      "sha256_16": "0aaf89be1d323c95"
+      "sha256_16": "c7f970f22e9dbb2c"
     },
     "tehokkuus": {
       "file": "indicators/tehokkuus.json",
       "label": "Tehokkuus & Panos-tuotos",
       "count": 6,
-      "sha256_16": "031a8fcd10e43d4f"
+      "sha256_16": "7e0b9c14d0cbb66e"
     },
     "vinouma": {
       "file": "indicators/vinouma.json",
       "label": "Järjestelmän Vinouma & Oikeudenmukaisuus",
       "count": 70,
-      "sha256_16": "7e3a870d0f0bc0bd"
+      "sha256_16": "376ddd514a1adfdf"
     },
     "kestavyys": {
       "file": "indicators/kestavyys.json",
       "label": "Kestävyys & Rakenne",
       "count": 30,
-      "sha256_16": "c86b6cbfc0ef0b6b"
+      "sha256_16": "9e1716d8f4dc3578"
     },
     "pohjoismainen": {
       "file": "indicators/pohjoismainen.json",
       "label": "Pohjoismaiset Vertailumittarit",
       "count": 185,
-      "sha256_16": "57fc2aaf4acbbd99"
+      "sha256_16": "2add827fe4e1f40a"
     },
     "elinkaari": {
       "file": "indicators/elinkaari.json",
       "label": "Elinkaari & Väestöryhmät",
       "count": 158,
-      "sha256_16": "a761a5f2d0a9c7d1"
+      "sha256_16": "242ed9014d456750"
     },
     "politiikka": {
       "file": "indicators/politiikka.json",
       "label": "Politiikka & Kausaalisuus",
       "count": 6,
-      "sha256_16": "68192fa88d0d4acb"
+      "sha256_16": "fd12767ccb5d6913"
     },
     "muu": {
       "file": "indicators/muu.json",
       "label": "muu",
       "count": 62,
-      "sha256_16": "03b9651cc0984e7c"
+      "sha256_16": "c3376f6488511d34"
     }
   }
 }

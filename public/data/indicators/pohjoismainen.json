@@ -2,54 +2,8 @@
   "teema_id": "pohjoismainen",
   "label": "Pohjoismaiset Vertailumittarit",
   "count": 185,
-  "generated_at": "2026-05-14T04:39:18.955360+00:00",
+  "generated_at": "2026-05-15T04:47:10.311254+00:00",
   "indicators": [
-    {
-      "id": "3d8f715e-3581-499a-9b90-f41731607d5b",
-      "external_id": "nordic_schizophrenia,_schizotypal_and_delusional_disorders_(f20_f29)_schizophren",
-      "name": "Schizophrenia, schizotypal and delusional disorders (F20-F29) (pohjoismaat)",
-      "category_name": "Nordic — Schizophrenia, schizotypal and delusional disorders (F20-F29)",
-      "unit": "per 100 000",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "fa2a3e3a-a40b-4503-89c8-2e8a7c10f5cb",
-      "external_id": "nordic_mood_[affective]_disorders_(f30_f39)_mood_[affective]_disorders_(f30_f39)",
-      "name": "Mood [affective] disorders (F30-F39) (pohjoismaat)",
-      "category_name": "Nordic — Mood [affective] disorders (F30-F39)",
-      "unit": "per 100 000",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
     {
       "id": "7d1a4fbb-638e-482b-a1f0-590a7c90a3cc",
       "external_id": "nordic_family_children_family_children",
@@ -239,11 +193,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "3f2ef9ea-97f1-4d22-96d6-7f916cbf9356",
-      "external_id": "nordic_retailers_and_other_providers_of_medical_goods_4._palveluntuottajat",
-      "name": "4. Palveluntuottajat (pohjoismaat)",
-      "category_name": "Nordic — Retailers and other providers of medical goods",
-      "unit": "% GDP",
+      "id": "3d8f715e-3581-499a-9b90-f41731607d5b",
+      "external_id": "nordic_schizophrenia,_schizotypal_and_delusional_disorders_(f20_f29)_schizophren",
+      "name": "Schizophrenia, schizotypal and delusional disorders (F20-F29) (pohjoismaat)",
+      "category_name": "Nordic — Schizophrenia, schizotypal and delusional disorders (F20-F29)",
+      "unit": "per 100 000",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -257,16 +211,16 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "3df2a429-7e76-4213-afaa-0829cb98fc2a",
-      "external_id": "nordic_n06a:_antidepressants_n06a:_antidepressants",
-      "name": "N06A: Antidepressants (pohjoismaat)",
-      "category_name": "Nordic — N06A: Antidepressants",
-      "unit": "DDD/1000 inhabitants/day",
+      "id": "fa2a3e3a-a40b-4503-89c8-2e8a7c10f5cb",
+      "external_id": "nordic_mood_[affective]_disorders_(f30_f39)_mood_[affective]_disorders_(f30_f39)",
+      "name": "Mood [affective] disorders (F30-F39) (pohjoismaat)",
+      "category_name": "Nordic — Mood [affective] disorders (F30-F39)",
+      "unit": "per 100 000",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -495,18 +449,17 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "37404db6-d9ac-409d-90a1-ed68732852c1",
-      "external_id": "nordic_fertility_rate_45_49_years",
-      "name": "45-49 years (pohjoismaat)",
-      "category_name": "Nordic -- Fertility rate",
-      "unit": "births per 1000 women",
+      "id": "3f2ef9ea-97f1-4d22-96d6-7f916cbf9356",
+      "external_id": "nordic_retailers_and_other_providers_of_medical_goods_4._palveluntuottajat",
+      "name": "4. Palveluntuottajat (pohjoismaat)",
+      "category_name": "Nordic — Retailers and other providers of medical goods",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -519,29 +472,27 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "c62846d1-bdbf-4751-a240-621db43b2a32",
-      "external_id": "nordic_mean_age_at_birth_of_first_child_mother",
-      "name": "Mother (pohjoismaat)",
-      "category_name": "Nordic -- Mean age at birth of first child",
-      "unit": "years",
+      "id": "3df2a429-7e76-4213-afaa-0829cb98fc2a",
+      "external_id": "nordic_n06a:_antidepressants_n06a:_antidepressants",
+      "name": "N06A: Antidepressants (pohjoismaat)",
+      "category_name": "Nordic — N06A: Antidepressants",
+      "unit": "DDD/1000 inhabitants/day",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "vinouma",
-        "pohjoismainen",
-        "elinkaari"
+        "pohjoismainen"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.4
       },
-      "best_analysis": "jarjestelmavinouma"
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "091451b9-325d-4b7c-932b-27f0e70f1a83",
@@ -779,52 +730,53 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "20389b96-a9db-494d-b238-1e5b67694c09",
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_50_&_50_75",
-      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "unit": "% of previous net income",
+      "id": "37404db6-d9ac-409d-90a1-ed68732852c1",
+      "external_id": "nordic_fertility_rate_45_49_years",
+      "name": "45-49 years (pohjoismaat)",
+      "category_name": "Nordic -- Fertility rate",
+      "unit": "births per 1000 women",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen",
-        "elinkaari"
+        "vaikuttavuus",
+        "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "8cb081b0-dfe7-4c96-ba1f-863ed6789876",
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_75_&_75_100",
-      "name": "Couple without children | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "unit": "% of previous net income",
+      "id": "c62846d1-bdbf-4751-a240-621db43b2a32",
+      "external_id": "nordic_mean_age_at_birth_of_first_child_mother",
+      "name": "Mother (pohjoismaat)",
+      "category_name": "Nordic -- Mean age at birth of first child",
+      "unit": "years",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
+        "vinouma",
         "pohjoismainen",
         "elinkaari"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "rakenne",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.4
       },
-      "best_analysis": "pohjoismainen_vertailu"
+      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "d4c011e8-e50c-433e-8fe2-ea3fc6d4b5f6",
@@ -1019,10 +971,10 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "6d9745a7-19df-4d25-9b4e-e82bdf1602ed",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_50_&_50_75",
-      "name": "Single person without children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
+      "id": "20389b96-a9db-494d-b238-1e5b67694c09",
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_50_&_50_75",
+      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
       "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -1043,10 +995,10 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "709414d1-787e-4dbb-9c8f-ebd3337ac015",
-      "external_id": "nordic_social_assistance_couple_with_2_children_|_75_&_75_100",
-      "name": "Couple with 2 children | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
+      "id": "8cb081b0-dfe7-4c96-ba1f-863ed6789876",
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_75_&_75_100",
+      "name": "Couple without children | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
       "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -1236,94 +1188,49 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "e9538797-64ea-44b3-9d45-9ed68c160f1a",
-      "external_id": "nordic_property_income_(payable)_property_income_(payable)",
-      "name": "Property income (payable) (pohjoismaat)",
-      "category_name": "Nordic -- Property income (payable)",
-      "unit": "Percent of GDP, %",
+      "id": "6d9745a7-19df-4d25-9b4e-e82bdf1602ed",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_50_&_50_75",
+      "name": "Single person without children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen"
+        "pohjoismainen",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "7f371303-d4f1-4bf1-add7-d80c63cbf9fe",
-      "external_id": "nordic_gross_capital_formation_and_aquisitions_less_disposals_of_non_financial_n",
-      "name": "Gross capital formation and aquisitions less disposals of non-financial non-produced assets (pohjoismaat)",
-      "category_name": "Nordic -- Gross capital formation and aquisitions less disposals of non-financial non-produced assets",
-      "unit": "Percent of GDP, %",
+      "id": "709414d1-787e-4dbb-9c8f-ebd3337ac015",
+      "external_id": "nordic_social_assistance_couple_with_2_children_|_75_&_75_100",
+      "name": "Couple with 2 children | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen"
+        "pohjoismainen",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "fdc63e47-e960-4531-b93e-3ac8ea4cec9b",
-      "external_id": "nordic_defence_defence",
-      "name": "Defence (pohjoismaat)",
-      "category_name": "Nordic -- Defence",
-      "unit": "Percent of GDP, %",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "8a37ee91-5a65-4adb-b15b-1f1d42978d66",
-      "external_id": "nordic_public_order_and_safety_public_order_and_safety",
-      "name": "Public order and safety (pohjoismaat)",
-      "category_name": "Nordic -- Public order and safety",
-      "unit": "Percent of GDP, %",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vinouma",
-        "pohjoismainen"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.4,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
@@ -1422,43 +1329,17 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "3363f33d-d5f9-4449-949c-215c3725b179",
-      "external_id": "nordic_government_schemes_2._rahoituslähteet",
-      "name": "2. Rahoituslähteet (pohjoismaat)",
-      "category_name": "Nordic — Government schemes",
-      "unit": "% GDP",
+      "id": "e9538797-64ea-44b3-9d45-9ed68c160f1a",
+      "external_id": "nordic_property_income_(payable)_property_income_(payable)",
+      "name": "Property income (payable) (pohjoismaat)",
+      "category_name": "Nordic -- Property income (payable)",
+      "unit": "Percent of GDP, %",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "resurssit",
-        "pohjoismainen",
-        "politiikka"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "2549c0b1-7381-4a7c-a2e9-a3a4e93965af",
-      "external_id": "nordic_governance_and_health_system_and_financing_administration_3._toimintakate",
-      "name": "3. Toimintakategoriat (pohjoismaat)",
-      "category_name": "Nordic — Governance and health system and financing administration",
-      "unit": "% GDP",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -1466,6 +1347,76 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "7f371303-d4f1-4bf1-add7-d80c63cbf9fe",
+      "external_id": "nordic_gross_capital_formation_and_aquisitions_less_disposals_of_non_financial_n",
+      "name": "Gross capital formation and aquisitions less disposals of non-financial non-produced assets (pohjoismaat)",
+      "category_name": "Nordic -- Gross capital formation and aquisitions less disposals of non-financial non-produced assets",
+      "unit": "Percent of GDP, %",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "fdc63e47-e960-4531-b93e-3ac8ea4cec9b",
+      "external_id": "nordic_defence_defence",
+      "name": "Defence (pohjoismaat)",
+      "category_name": "Nordic -- Defence",
+      "unit": "Percent of GDP, %",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "8a37ee91-5a65-4adb-b15b-1f1d42978d66",
+      "external_id": "nordic_public_order_and_safety_public_order_and_safety",
+      "name": "Public order and safety (pohjoismaat)",
+      "category_name": "Nordic -- Public order and safety",
+      "unit": "Percent of GDP, %",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vinouma",
+        "pohjoismainen"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.4,
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
@@ -1659,11 +1610,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "7a9fbc4d-0553-4c8a-90cf-eaef9e0adb93",
-      "external_id": "nordic_gdp_per_capita,_euro_pps_gdp_per_capita,_euro_pps",
-      "name": "GDP per capita, euro PPS (pohjoismaat)",
-      "category_name": "Nordic -- GDP per capita, euro PPS",
-      "unit": "",
+      "id": "3363f33d-d5f9-4449-949c-215c3725b179",
+      "external_id": "nordic_government_schemes_2._rahoituslähteet",
+      "name": "2. Rahoituslähteet (pohjoismaat)",
+      "category_name": "Nordic — Government schemes",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -1671,39 +1622,39 @@
       "year_end": null,
       "teemat": [
         "resurssit",
-        "tehokkuus",
-        "pohjoismainen"
+        "pohjoismainen",
+        "politiikka"
       ],
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
+        "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "09e313d7-77e0-4f24-a042-2410b4ea43a7",
-      "external_id": "nordic_share_prices_indices,_%_change_from_previous_year_share_prices_indices,_%",
-      "name": "Share prices indices, % change from previous year (pohjoismaat)",
-      "category_name": "Nordic -- Share prices indices, % change from previous year",
-      "unit": "",
+      "id": "2549c0b1-7381-4a7c-a2e9-a3a4e93965af",
+      "external_id": "nordic_governance_and_health_system_and_financing_administration_3._toimintakate",
+      "name": "3. Toimintakategoriat (pohjoismaat)",
+      "category_name": "Nordic — Governance and health system and financing administration",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen",
-        "politiikka"
+        "vaikuttavuus",
+        "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
+        "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -1899,35 +1850,36 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "43945f60-8448-402f-aa61-4fa90c72881e",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_75_&_75_100",
-      "name": "Single person without children | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
+      "id": "7a9fbc4d-0553-4c8a-90cf-eaef9e0adb93",
+      "external_id": "nordic_gdp_per_capita,_euro_pps_gdp_per_capita,_euro_pps",
+      "name": "GDP per capita, euro PPS (pohjoismaat)",
+      "category_name": "Nordic -- GDP per capita, euro PPS",
+      "unit": "",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen",
-        "elinkaari"
+        "resurssit",
+        "tehokkuus",
+        "pohjoismainen"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "panos",
       "suitability": {
         "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "4b9cf603-d245-4745-a7a5-01e8a0837d32",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_125_(singles_only)",
-      "name": "Single person without children | 125 (singles only) (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
+      "id": "09e313d7-77e0-4f24-a042-2410b4ea43a7",
+      "external_id": "nordic_share_prices_indices,_%_change_from_previous_year_share_prices_indices,_%",
+      "name": "Share prices indices, % change from previous year (pohjoismaat)",
+      "category_name": "Nordic -- Share prices indices, % change from previous year",
+      "unit": "",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -1935,14 +1887,14 @@
       "year_end": null,
       "teemat": [
         "pohjoismainen",
-        "elinkaari"
+        "politiikka"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -2141,24 +2093,49 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "f8985c10-780e-473b-bffb-8e7fb31a6c98",
-      "external_id": "nordic_compensation_of_employees_(payable)_compensation_of_employees_(payable)",
-      "name": "Compensation of employees (payable) (pohjoismaat)",
-      "category_name": "Nordic -- Compensation of employees (payable)",
-      "unit": "Percent of GDP, %",
+      "id": "43945f60-8448-402f-aa61-4fa90c72881e",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_75_&_75_100",
+      "name": "Single person without children | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen"
+        "pohjoismainen",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "4b9cf603-d245-4745-a7a5-01e8a0837d32",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_125_(singles_only)",
+      "name": "Single person without children | 125 (singles only) (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
@@ -2236,28 +2213,27 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "71b8b994-4c9c-4735-b759-04e6ca35b2c7",
-      "external_id": "nordic_total_number_of_persons_in_age_group_total_number_of_persons_in_age_group",
-      "name": "Total number of persons in age group (pohjoismaat)",
-      "category_name": "Nordic -- Total number of persons in age group",
-      "unit": "persons",
+      "id": "f8985c10-780e-473b-bffb-8e7fb31a6c98",
+      "external_id": "nordic_compensation_of_employees_(payable)_compensation_of_employees_(payable)",
+      "name": "Compensation of employees (payable) (pohjoismaat)",
+      "category_name": "Nordic -- Compensation of employees (payable)",
+      "unit": "Percent of GDP, %",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "vinouma",
         "pohjoismainen"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.7,
-        "pohjoismainen_vertailu": 0.4
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
       },
-      "best_analysis": "jarjestelmavinouma"
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "9ed53a05-6c4e-4594-8422-ce3d1c531b50",
@@ -2283,6 +2259,30 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
+      "id": "71b8b994-4c9c-4735-b759-04e6ca35b2c7",
+      "external_id": "nordic_total_number_of_persons_in_age_group_total_number_of_persons_in_age_group",
+      "name": "Total number of persons in age group (pohjoismaat)",
+      "category_name": "Nordic -- Total number of persons in age group",
+      "unit": "persons",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vinouma",
+        "pohjoismainen"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.7,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
       "id": "ba64637a-5a3a-4c2a-8b0b-f434d0099d83",
       "external_id": "nordic_not_in_the_labour_force,_number_of_persons_not_in_the_labour_force,_numbe",
       "name": "Not in the labour force, number of persons (pohjoismaat)",
@@ -2294,53 +2294,6 @@
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "1019902c-0291-4aa0-998f-91a8b740734e",
-      "external_id": "nordic_self_inflicted_injuries_(x60_x84,_y870)_self_inflicted_injuries_(x60_x84,",
-      "name": "Self-inflicted injuries (X60-X84, Y870) (pohjoismaat)",
-      "category_name": "Nordic — Self-inflicted injuries (X60-X84, Y870)",
-      "unit": "per 100 000",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "afdd5eda-ff81-4c7f-acb5-53ba71f66dba",
-      "external_id": "nordic_main_group:_mental_and_behavioural_disorders_(f00_f99)_main_group:_mental",
-      "name": "Main group: Mental and behavioural disorders (F00-F99) (pohjoismaat)",
-      "category_name": "Nordic — Main group: Mental and behavioural disorders (F00-F99)",
-      "unit": "per 100 000",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -2470,11 +2423,34 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "f528747f-9681-4a4a-8f43-c4957d438e2b",
-      "external_id": "nordic_providers_of_ambulatory_healthcare_4._palveluntuottajat",
-      "name": "4. Palveluntuottajat (pohjoismaat)",
-      "category_name": "Nordic — Providers of ambulatory healthcare",
-      "unit": "% GDP",
+      "id": "1019902c-0291-4aa0-998f-91a8b740734e",
+      "external_id": "nordic_self_inflicted_injuries_(x60_x84,_y870)_self_inflicted_injuries_(x60_x84,",
+      "name": "Self-inflicted injuries (X60-X84, Y870) (pohjoismaat)",
+      "category_name": "Nordic — Self-inflicted injuries (X60-X84, Y870)",
+      "unit": "per 100 000",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "afdd5eda-ff81-4c7f-acb5-53ba71f66dba",
+      "external_id": "nordic_main_group:_mental_and_behavioural_disorders_(f00_f99)_main_group:_mental",
+      "name": "Main group: Mental and behavioural disorders (F00-F99) (pohjoismaat)",
+      "category_name": "Nordic — Main group: Mental and behavioural disorders (F00-F99)",
+      "unit": "per 100 000",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -2489,30 +2465,7 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "6df462f0-ed8d-4465-b13d-7858e4d4ee02",
-      "external_id": "nordic_providers_of_preventive_care_4._palveluntuottajat",
-      "name": "4. Palveluntuottajat (pohjoismaat)",
-      "category_name": "Nordic — Providers of preventive care",
-      "unit": "% GDP",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -2727,35 +2680,35 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "82011d15-803d-43bc-8073-31ffce36eb70",
-      "external_id": "nordic_effective_exchange_rate,_%_change_from_previous_year_effective_exchange_r",
-      "name": "Effective exchange rate, % change from previous year (pohjoismaat)",
-      "category_name": "Nordic -- Effective exchange rate, % change from previous year",
-      "unit": "",
+      "id": "f528747f-9681-4a4a-8f43-c4957d438e2b",
+      "external_id": "nordic_providers_of_ambulatory_healthcare_4._palveluntuottajat",
+      "name": "4. Palveluntuottajat (pohjoismaat)",
+      "category_name": "Nordic — Providers of ambulatory healthcare",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen",
-        "politiikka"
+        "vaikuttavuus",
+        "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
+        "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "4579466f-6a09-48ef-915b-44833820b076",
-      "external_id": "nordic_immigration_foreign_citizenship",
-      "name": "Foreign citizenship (pohjoismaat)",
-      "category_name": "Nordic -- Immigration",
-      "unit": "persons",
+      "id": "6df462f0-ed8d-4465-b13d-7858e4d4ee02",
+      "external_id": "nordic_providers_of_preventive_care_4._palveluntuottajat",
+      "name": "4. Palveluntuottajat (pohjoismaat)",
+      "category_name": "Nordic — Providers of preventive care",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -2769,7 +2722,7 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
+        "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -2988,11 +2941,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "aae01717-86aa-4936-957e-59431b01c939",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_100_&_100_125",
-      "name": "Single person without children | 100 & 100/125 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
+      "id": "82011d15-803d-43bc-8073-31ffce36eb70",
+      "external_id": "nordic_effective_exchange_rate,_%_change_from_previous_year_effective_exchange_r",
+      "name": "Effective exchange rate, % change from previous year (pohjoismaat)",
+      "category_name": "Nordic -- Effective exchange rate, % change from previous year",
+      "unit": "",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -3000,38 +2953,37 @@
       "year_end": null,
       "teemat": [
         "pohjoismainen",
-        "elinkaari"
+        "politiikka"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "a9e8d8c3-6198-43b5-b018-c6a3f0878233",
-      "external_id": "nordic_social_assistance_couple_with_2_children_|_50_&_50_75",
-      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
+      "id": "4579466f-6a09-48ef-915b-44833820b076",
+      "external_id": "nordic_immigration_foreign_citizenship",
+      "name": "Foreign citizenship (pohjoismaat)",
+      "category_name": "Nordic -- Immigration",
+      "unit": "persons",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen",
-        "elinkaari"
+        "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -3252,33 +3204,58 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "d5fbb072-6aca-4e29-8500-901cc1d7b078",
-      "external_id": "nordic_subsidies_(payable)_subsidies_(payable)",
-      "name": "Subsidies (payable) (pohjoismaat)",
-      "category_name": "Nordic -- Subsidies (payable)",
-      "unit": "Percent of GDP, %",
+      "id": "aae01717-86aa-4936-957e-59431b01c939",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_100_&_100_125",
+      "name": "Single person without children | 100 & 100/125 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen"
+        "pohjoismainen",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "317cb051-0e43-42ae-a4a6-0533612514e8",
-      "external_id": "nordic_intermediate_consumption_intermediate_consumption",
-      "name": "Intermediate consumption (pohjoismaat)",
-      "category_name": "Nordic -- Intermediate consumption",
+      "id": "a9e8d8c3-6198-43b5-b018-c6a3f0878233",
+      "external_id": "nordic_social_assistance_couple_with_2_children_|_50_&_50_75",
+      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "d5fbb072-6aca-4e29-8500-901cc1d7b078",
+      "external_id": "nordic_subsidies_(payable)_subsidies_(payable)",
+      "name": "Subsidies (payable) (pohjoismaat)",
+      "category_name": "Nordic -- Subsidies (payable)",
       "unit": "Percent of GDP, %",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -3369,35 +3346,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "594522c9-ea13-4825-b8cc-4828416daa70",
-      "external_id": "nordic_sickness_healthcare_and_disability_sickness_healthcare_and_disability",
-      "name": "Sickness/healthcare and disability (pohjoismaat)",
-      "category_name": "Nordic — Sickness/healthcare and disability",
-      "unit": "Million euro",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "1c36fe37-d401-4a73-a46d-fc978c9403e3",
-      "external_id": "nordic_medical_goods_(non_specified_by_function)_3._toimintakategoriat",
-      "name": "3. Toimintakategoriat (pohjoismaat)",
-      "category_name": "Nordic — Medical goods (non-specified by function)",
-      "unit": "% GDP",
+      "id": "317cb051-0e43-42ae-a4a6-0533612514e8",
+      "external_id": "nordic_intermediate_consumption_intermediate_consumption",
+      "name": "Intermediate consumption (pohjoismaat)",
+      "category_name": "Nordic -- Intermediate consumption",
+      "unit": "Percent of GDP, %",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -3463,11 +3416,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "01b0ddf5-b3c6-43bc-b1f0-989c51bcc43c",
-      "external_id": "nordic_fertility_rate_35_39_years",
-      "name": "35-39 years (pohjoismaat)",
-      "category_name": "Nordic -- Fertility rate",
-      "unit": "births per 1000 women",
+      "id": "594522c9-ea13-4825-b8cc-4828416daa70",
+      "external_id": "nordic_sickness_healthcare_and_disability_sickness_healthcare_and_disability",
+      "name": "Sickness/healthcare and disability (pohjoismaat)",
+      "category_name": "Nordic — Sickness/healthcare and disability",
+      "unit": "Million euro",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -3482,34 +3435,32 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
+        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "86ac7d92-8251-41ce-bb1c-27f401f8dc28",
-      "external_id": "nordic_mean_age_at_birth_of_first_child_father",
-      "name": "Father (pohjoismaat)",
-      "category_name": "Nordic -- Mean age at birth of first child",
-      "unit": "years",
+      "id": "1c36fe37-d401-4a73-a46d-fc978c9403e3",
+      "external_id": "nordic_medical_goods_(non_specified_by_function)_3._toimintakategoriat",
+      "name": "3. Toimintakategoriat (pohjoismaat)",
+      "category_name": "Nordic — Medical goods (non-specified by function)",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "vinouma",
-        "pohjoismainen",
-        "elinkaari"
+        "pohjoismainen"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.4
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
       },
-      "best_analysis": "jarjestelmavinouma"
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "350bb17c-a4b6-4a9f-9f15-3c79d6c1c33c",
@@ -3724,41 +3675,18 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "87eb294f-e38b-4bd1-8236-6103d20f8faa",
-      "external_id": "nordic_social_assistance_couple_with_2_children_|_100_&_100_125",
-      "name": "Couple with 2 children | 100 & 100/125 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
+      "id": "01b0ddf5-b3c6-43bc-b1f0-989c51bcc43c",
+      "external_id": "nordic_fertility_rate_35_39_years",
+      "name": "35-39 years (pohjoismaat)",
+      "category_name": "Nordic -- Fertility rate",
+      "unit": "births per 1000 women",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "34c4167d-1684-468d-aae6-77ae17fba24d",
-      "external_id": "nordic_taxes,_of_which_taxes_on_production_and_import_(receivable)_taxes,_of_whi",
-      "name": "Taxes, of which taxes on production and import (receivable) (pohjoismaat)",
-      "category_name": "Nordic -- Taxes, of which taxes on production and import (receivable)",
-      "unit": "Million euro",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
+        "vaikuttavuus",
         "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
@@ -3766,9 +3694,34 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
+        "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "86ac7d92-8251-41ce-bb1c-27f401f8dc28",
+      "external_id": "nordic_mean_age_at_birth_of_first_child_father",
+      "name": "Father (pohjoismaat)",
+      "category_name": "Nordic -- Mean age at birth of first child",
+      "unit": "years",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vinouma",
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "5317520d-08f5-4f00-8fc8-5860a88d5c54",
@@ -3800,53 +3753,6 @@
       "external_id": "nordic_economic_affairs_economic_affairs",
       "name": "Economic affairs (pohjoismaat)",
       "category_name": "Nordic -- Economic affairs",
-      "unit": "Percent of GDP, %",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "7e740e26-47be-429e-a744-07501614cb48",
-      "external_id": "nordic_sickness_benefit_single_person_without_children_|_100",
-      "name": "Single person without children | 100 (pohjoismaat)",
-      "category_name": "Nordic -- Sickness benefit",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "780a701a-82b8-4573-9452-cdaf5afb075b",
-      "external_id": "nordic_recreation,_culture_and_religion_recreation,_culture_and_religion",
-      "name": "Recreation, culture and religion (pohjoismaat)",
-      "category_name": "Nordic -- Recreation, culture and religion",
       "unit": "Percent of GDP, %",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -3962,6 +3868,100 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
+      "id": "87eb294f-e38b-4bd1-8236-6103d20f8faa",
+      "external_id": "nordic_social_assistance_couple_with_2_children_|_100_&_100_125",
+      "name": "Couple with 2 children | 100 & 100/125 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "7e740e26-47be-429e-a744-07501614cb48",
+      "external_id": "nordic_sickness_benefit_single_person_without_children_|_100",
+      "name": "Single person without children | 100 (pohjoismaat)",
+      "category_name": "Nordic -- Sickness benefit",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "34c4167d-1684-468d-aae6-77ae17fba24d",
+      "external_id": "nordic_taxes,_of_which_taxes_on_production_and_import_(receivable)_taxes,_of_whi",
+      "name": "Taxes, of which taxes on production and import (receivable) (pohjoismaat)",
+      "category_name": "Nordic -- Taxes, of which taxes on production and import (receivable)",
+      "unit": "Million euro",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "780a701a-82b8-4573-9452-cdaf5afb075b",
+      "external_id": "nordic_recreation,_culture_and_religion_recreation,_culture_and_religion",
+      "name": "Recreation, culture and religion (pohjoismaat)",
+      "category_name": "Nordic -- Recreation, culture and religion",
+      "unit": "Percent of GDP, %",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
       "id": "1e717ff1-8c2f-4170-b6ee-9f118799bc85",
       "external_id": "nordic_other_subsidies_on_production_(receivable)_other_subsidies_on_production_",
       "name": "Other subsidies on production (receivable) (pohjoismaat)",
@@ -4053,30 +4053,6 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "76fd9591-7c92-475b-a12e-525927b1bc2f",
-      "external_id": "nordic_main_group:_pregnancy,_childbirth_and_the_puerperium_(o00_o99)_main_group",
-      "name": "Main group: Pregnancy, childbirth and the puerperium (O00-O99) (pohjoismaat)",
-      "category_name": "Nordic — Main group: Pregnancy, childbirth and the puerperium (O00-O99)",
-      "unit": "per 100 000",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -4175,11 +4151,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "35564387-a7b1-427b-9cb5-20cdc19672f3",
-      "external_id": "nordic_disability_benefit_single_person_without_children_|_50",
-      "name": "Single person without children | 50 (pohjoismaat)",
-      "category_name": "Nordic -- Disability benefit",
-      "unit": "% of previous net income",
+      "id": "76fd9591-7c92-475b-a12e-525927b1bc2f",
+      "external_id": "nordic_main_group:_pregnancy,_childbirth_and_the_puerperium_(o00_o99)_main_group",
+      "name": "Main group: Pregnancy, childbirth and the puerperium (O00-O99) (pohjoismaat)",
+      "category_name": "Nordic — Main group: Pregnancy, childbirth and the puerperium (O00-O99)",
+      "unit": "per 100 000",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -4194,29 +4170,6 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "c954ee7e-8099-468b-9262-fe29a64fd54c",
-      "external_id": "nordic_labour_force,_number_of_persons_labour_force,_number_of_persons",
-      "name": "Labour force, number of persons (pohjoismaat)",
-      "category_name": "Nordic -- Labour force, number of persons",
-      "unit": "persons",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
@@ -4339,6 +4292,53 @@
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "35564387-a7b1-427b-9cb5-20cdc19672f3",
+      "external_id": "nordic_disability_benefit_single_person_without_children_|_50",
+      "name": "Single person without children | 50 (pohjoismaat)",
+      "category_name": "Nordic -- Disability benefit",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "c954ee7e-8099-468b-9262-fe29a64fd54c",
+      "external_id": "nordic_labour_force,_number_of_persons_labour_force,_number_of_persons",
+      "name": "Labour force, number of persons (pohjoismaat)",
+      "category_name": "Nordic -- Labour force, number of persons",
+      "unit": "persons",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "b399bba1-db2f-43f3-9d5b-a7f5d9e6016e",
