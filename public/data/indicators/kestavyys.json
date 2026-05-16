@@ -2,7 +2,7 @@
   "teema_id": "kestavyys",
   "label": "Kestävyys & Rakenne",
   "count": 30,
-  "generated_at": "2026-05-15T04:47:10.310294+00:00",
+  "generated_at": "2026-05-16T04:33:13.074060+00:00",
   "indicators": [
     {
       "id": "254bbec1-27bc-4657-8526-94a36f6d5673",
@@ -14,29 +14,6 @@
       "roi": null,
       "status": "haettava",
       "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "e9a330cf-527e-42fa-985f-aaa90fbd4903",
-      "external_id": "vanhuushuoltosuhde",
-      "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
-      "category_name": "Väestö ja demografia",
-      "unit": "indeksi",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1960.0,
       "year_end": 2024.0,
       "teemat": [
         "kestavyys"
@@ -97,6 +74,29 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "e9a330cf-527e-42fa-985f-aaa90fbd4903",
+      "external_id": "vanhuushuoltosuhde",
+      "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
+      "category_name": "Väestö ja demografia",
+      "unit": "indeksi",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1960.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "fcbc99ca-069f-4588-a115-8f766969e2bd",
@@ -196,53 +196,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "a5bf8641-915e-46fe-94b6-4d41f06a641c",
-      "external_id": "muuttoliike_netto",
-      "name": "Nettomaahanmuutto",
-      "category_name": "Väestö ja demografia",
-      "unit": "henkilöä",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1945.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "b5c163d9-8932-43fd-b24f-13bb8208cb99",
-      "external_id": "syntyvyys_ulkomaalaistaustaiset",
-      "name": "Ulkomaalaistaustaisten syntyvyys TFR",
-      "category_name": "Väestö ja demografia",
-      "unit": "lasta/nainen",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "kestavyys"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "16c57bc7-d23b-47de-8b70-fcc40cfdc920",
       "external_id": "vaesto_ennuste_2040",
       "name": "Väestöennuste 2040",
@@ -312,6 +265,53 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "a5bf8641-915e-46fe-94b6-4d41f06a641c",
+      "external_id": "muuttoliike_netto",
+      "name": "Nettomaahanmuutto",
+      "category_name": "Väestö ja demografia",
+      "unit": "henkilöä",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1945.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "b5c163d9-8932-43fd-b24f-13bb8208cb99",
+      "external_id": "syntyvyys_ulkomaalaistaustaiset",
+      "name": "Ulkomaalaistaustaisten syntyvyys TFR",
+      "category_name": "Väestö ja demografia",
+      "unit": "lasta/nainen",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "kestavyys"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "2d6091af-1da6-4ca6-8454-850274da3590",
@@ -509,30 +509,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "1bba1082-ac6f-4699-b7ce-077cc538a5b5",
-      "external_id": "elinajanodote_50v",
-      "name": "50-vuotiaan elinajanodote",
-      "category_name": "Väestö ja demografia",
-      "unit": "vuotta",
-      "ttt_pilari": "terveys",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "kestavyys"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "33e754a9-bd5a-4d21-b990-0ac15a5bf8ea",
       "external_id": "ely_co2",
       "name": "Kasvihuonekaasupäästöt",
@@ -593,6 +569,30 @@
         "kestavyys"
       ],
       "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "1bba1082-ac6f-4699-b7ce-077cc538a5b5",
+      "external_id": "elinajanodote_50v",
+      "name": "50-vuotiaan elinajanodote",
+      "category_name": "Väestö ja demografia",
+      "unit": "vuotta",
+      "ttt_pilari": "terveys",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "kestavyys"
+      ],
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
