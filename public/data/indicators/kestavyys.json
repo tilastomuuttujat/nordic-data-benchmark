@@ -2,7 +2,7 @@
   "teema_id": "kestavyys",
   "label": "Kestävyys & Rakenne",
   "count": 30,
-  "generated_at": "2026-05-16T04:33:13.074060+00:00",
+  "generated_at": "2026-05-17T04:44:56.610702+00:00",
   "indicators": [
     {
       "id": "254bbec1-27bc-4657-8526-94a36f6d5673",
@@ -196,53 +196,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "16c57bc7-d23b-47de-8b70-fcc40cfdc920",
-      "external_id": "vaesto_ennuste_2040",
-      "name": "Väestöennuste 2040",
-      "category_name": "Väestö ja demografia",
-      "unit": "henkilöä",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2040.0,
-      "year_end": 2040.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "4282e69c-4533-4d33-a013-8a635c1c38d1",
-      "external_id": "elinajanodote_15v",
-      "name": "15-vuotiaan elinajanodote",
-      "category_name": "Väestö ja demografia",
-      "unit": "vuotta",
-      "ttt_pilari": "terveys",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "kestavyys"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "ff6bacf6-520b-4589-9dc4-06510cdfe452",
       "external_id": "ttt_cofog_gf1006",
       "name": "Asuminen — julkiset menot (M€)",
@@ -314,6 +267,53 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "16c57bc7-d23b-47de-8b70-fcc40cfdc920",
+      "external_id": "vaesto_ennuste_2040",
+      "name": "Väestöennuste 2040",
+      "category_name": "Väestö ja demografia",
+      "unit": "henkilöä",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2040.0,
+      "year_end": 2040.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "4282e69c-4533-4d33-a013-8a635c1c38d1",
+      "external_id": "elinajanodote_15v",
+      "name": "15-vuotiaan elinajanodote",
+      "category_name": "Väestö ja demografia",
+      "unit": "vuotta",
+      "ttt_pilari": "terveys",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "kestavyys"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "2d6091af-1da6-4ca6-8454-850274da3590",
       "external_id": "nordic_share_of_population_who_are_overweight_or_obese_share_of_population_who_a",
       "name": "Share of population who are overweight or obese (pohjoismaat)",
@@ -364,29 +364,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "f32444dd-d8f7-4510-bc0a-9d69d1281009",
-      "external_id": "vaesto_yhteensa",
-      "name": "Väestö yhteensä",
-      "category_name": "Väestö ja demografia",
-      "unit": "henkilöä (1000)",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1950.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "307fca0b-0a31-438f-b85c-95d47aa0207e",
       "external_id": "ely_joukkoliikenne",
       "name": "Joukkoliikenteen käyttäjät",
@@ -404,6 +381,29 @@
       "suitability": {
         "aikasarja": 0.29,
         "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "f32444dd-d8f7-4510-bc0a-9d69d1281009",
+      "external_id": "vaesto_yhteensa",
+      "name": "Väestö yhteensä",
+      "category_name": "Väestö ja demografia",
+      "unit": "henkilöä (1000)",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1950.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
