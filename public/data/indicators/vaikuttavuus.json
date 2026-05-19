@@ -2,7 +2,7 @@
   "teema_id": "vaikuttavuus",
   "label": "Vaikuttavuus & Tulokset",
   "count": 142,
-  "generated_at": "2026-05-18T04:52:26.256766+00:00",
+  "generated_at": "2026-05-19T04:45:13.002008+00:00",
   "indicators": [
     {
       "id": "02e8e4ae-16cd-433c-b70b-a9e938c4b18a",
@@ -74,52 +74,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "9ebf1802-0f55-41e3-9f93-8247b0f66a4e",
-      "external_id": "mt_oireilu_nuoret",
-      "name": "Mt-oireilu, nuoret 12–22v (kohtalainen/vakava)",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "%",
-      "ttt_pilari": "korjaava",
-      "roi": 10.07,
-      "status": "saatavilla_v4",
-      "year_start": 2012.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.22,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "ed48ec37-9c58-4b61-af5f-f82d437e4753",
-      "external_id": "alkoholin_kulutus",
-      "name": "Alkoholin kokonaiskulutus litraa 100% / asukas",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "litraa 100%/asukas",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "3bee29ca-fb0c-4881-b430-e5e96b50bdba",
       "external_id": "ttt_kuolleet",
       "name": "Kuolleet",
@@ -167,25 +121,47 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "c0f77ffe-5024-4666-ac73-680e93007399",
-      "external_id": "kou_erityinen_tuki",
-      "name": "Erityinen tuki, peruskoulu",
-      "category_name": "Koulutus",
-      "unit": "% oppilaista",
+      "id": "9ebf1802-0f55-41e3-9f93-8247b0f66a4e",
+      "external_id": "mt_oireilu_nuoret",
+      "name": "Mt-oireilu, nuoret 12–22v (kohtalainen/vakava)",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "%",
       "ttt_pilari": "korjaava",
-      "roi": 2.22,
+      "roi": 10.07,
       "status": "saatavilla_v4",
-      "year_start": 2010.0,
+      "year_start": 2012.0,
       "year_end": 2024.0,
       "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
+        "vaikuttavuus"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.24,
+        "aikasarja": 0.22,
         "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.1,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "ed48ec37-9c58-4b61-af5f-f82d437e4753",
+      "external_id": "alkoholin_kulutus",
+      "name": "Alkoholin kokonaiskulutus litraa 100% / asukas",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "litraa 100%/asukas",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1975.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
@@ -311,6 +287,101 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "c0f77ffe-5024-4666-ac73-680e93007399",
+      "external_id": "kou_erityinen_tuki",
+      "name": "Erityinen tuki, peruskoulu",
+      "category_name": "Koulutus",
+      "unit": "% oppilaista",
+      "ttt_pilari": "korjaava",
+      "roi": 2.22,
+      "status": "saatavilla_v4",
+      "year_start": 2010.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.24,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "6f971980-a233-4bcb-9ca8-7c60166b4e99",
+      "external_id": "terveyskeskus_kaynteja",
+      "name": "Terveyskeskuslääkärikäynnit / asukas",
+      "category_name": "Terveys",
+      "unit": "käyntiä/asukas",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus",
+        "vinouma"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.7,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "1dd65623-bdb4-4fb3-b007-5319b19f0105",
+      "external_id": "erikoissairaanhoito_osuus_pct",
+      "name": "Erikoissairaanhoidon osuus terveydenhuoltomenoista",
+      "category_name": "Terveys",
+      "unit": "%",
+      "ttt_pilari": "rakenteellinen",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2005.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.15,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "336c26a4-28f8-460d-b8fc-a1df5f11c332",
+      "external_id": "syopakuolleisuus",
+      "name": "Syöpäkuolleisuus / 100 000",
+      "category_name": "Terveys",
+      "unit": "kuollutta/100 000",
+      "ttt_pilari": "terveys",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1970.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "5ad7d37f-c93e-41e8-ac69-f72a354acf2c",
       "external_id": "sydansairaudet_kuolleisuus",
       "name": "Sydän- ja verisuonitautikuolleisuus",
@@ -357,31 +428,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "6f971980-a233-4bcb-9ca8-7c60166b4e99",
-      "external_id": "terveyskeskus_kaynteja",
-      "name": "Terveyskeskuslääkärikäynnit / asukas",
-      "category_name": "Terveys",
-      "unit": "käyntiä/asukas",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vaikuttavuus",
-        "vinouma"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.7,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
       "id": "c62f6ac5-fc58-46c7-b505-f9c2f9ccded4",
       "external_id": "tyotapaturmat_maara",
       "name": "Työtapaturmat / 1000 palkansaajaa",
@@ -391,52 +437,6 @@
       "roi": null,
       "status": "haettava",
       "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "1dd65623-bdb4-4fb3-b007-5319b19f0105",
-      "external_id": "erikoissairaanhoito_osuus_pct",
-      "name": "Erikoissairaanhoidon osuus terveydenhuoltomenoista",
-      "category_name": "Terveys",
-      "unit": "%",
-      "ttt_pilari": "rakenteellinen",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2005.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.15,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "336c26a4-28f8-460d-b8fc-a1df5f11c332",
-      "external_id": "syopakuolleisuus",
-      "name": "Syöpäkuolleisuus / 100 000",
-      "category_name": "Terveys",
-      "unit": "kuollutta/100 000",
-      "ttt_pilari": "terveys",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1970.0,
       "year_end": 2024.0,
       "teemat": [
         "vaikuttavuus"
@@ -499,53 +499,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "4b281603-3ae4-41a7-9b29-f5ef63b4b8b7",
-      "external_id": "sosiaaliturva_rahoitus_kunnat",
-      "name": "Kuntien osuus sosiaaliturvan rahoituksesta",
-      "category_name": "Rakenne ja hyvinvointi",
-      "unit": "%",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1980.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "f3b7e066-583f-48cf-a6f6-ce107913dbb6",
-      "external_id": "rikokset_nuoret",
-      "name": "Alle 21v rikoksiin syyllistyneet",
-      "category_name": "Rakenne ja hyvinvointi",
-      "unit": "henkilöä/1000",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1987.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "45381f6c-bd9e-4b2c-8387-ce6104202ddf",
       "external_id": "vapaaehtoistyo_osuus",
       "name": "Vapaaehtoistoimintaan osallistuvien osuus",
@@ -593,6 +546,53 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "4b281603-3ae4-41a7-9b29-f5ef63b4b8b7",
+      "external_id": "sosiaaliturva_rahoitus_kunnat",
+      "name": "Kuntien osuus sosiaaliturvan rahoituksesta",
+      "category_name": "Rakenne ja hyvinvointi",
+      "unit": "%",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1980.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "f3b7e066-583f-48cf-a6f6-ce107913dbb6",
+      "external_id": "rikokset_nuoret",
+      "name": "Alle 21v rikoksiin syyllistyneet",
+      "category_name": "Rakenne ja hyvinvointi",
+      "unit": "henkilöä/1000",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1987.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "cf84b5ec-071e-43be-a31f-1b08ce0a352c",
       "external_id": "nordic_sickness_health_care_sickness_health_care",
       "name": "Sickness/health care (pohjoismaat)",
@@ -638,30 +638,6 @@
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "f60692fd-9505-4077-b7f7-7f432ab547eb",
-      "external_id": "nordic_pisa_reading_pisa_reading",
-      "name": "PISA Reading (pohjoismaat)",
-      "category_name": "Nordic -- PISA Reading",
-      "unit": "score points",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.4
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -738,28 +714,28 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "36c7be47-6389-4c65-b057-4338a275b03c",
-      "external_id": "syntyvyys_tfr",
-      "name": "Kokonaishedelmällisyysluku (TFR)",
-      "category_name": "Lapset ja perhe",
-      "unit": "lasta/nainen",
-      "ttt_pilari": "vahvistava",
-      "roi": 5.14,
-      "status": "saatavilla",
-      "year_start": 1940.0,
-      "year_end": 2024.0,
+      "id": "f60692fd-9505-4077-b7f7-7f432ab547eb",
+      "external_id": "nordic_pisa_reading_pisa_reading",
+      "name": "PISA Reading (pohjoismaat)",
+      "category_name": "Nordic -- PISA Reading",
+      "unit": "score points",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
       "teemat": [
         "vaikuttavuus",
-        "elinkaari"
+        "pohjoismainen"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.4
       },
-      "best_analysis": "aikasarja"
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "e770b89c-de5f-492a-96df-d55f843e4d9b",
@@ -786,29 +762,51 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "b59a5f61-bcd7-4100-ae70-f7f6bef7103f",
-      "external_id": "syntyvyys_teinit",
-      "name": "Alle 20-vuotiaiden synnytykset / 1000 naista ikäryhmässä",
+      "id": "36c7be47-6389-4c65-b057-4338a275b03c",
+      "external_id": "syntyvyys_tfr",
+      "name": "Kokonaishedelmällisyysluku (TFR)",
       "category_name": "Lapset ja perhe",
-      "unit": "synnytystä/1000 naista",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1975.0,
+      "unit": "lasta/nainen",
+      "ttt_pilari": "vahvistava",
+      "roi": 5.14,
+      "status": "saatavilla",
+      "year_start": 1940.0,
       "year_end": 2024.0,
       "teemat": [
         "vaikuttavuus",
-        "vinouma",
         "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.0
       },
-      "best_analysis": "jarjestelmavinouma"
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "1b789791-40fb-4f1d-94be-5e79de93edb8",
+      "external_id": "mt_sairaalahoito_paivat",
+      "name": "Psykiatrisen sairaalahoitojaksojen määrä / 1000 asukasta",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "hoitojaksoa/1000 asukasta",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1987.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "e85fa517-c479-4f9e-9010-6442be592950",
@@ -857,24 +855,98 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "1b789791-40fb-4f1d-94be-5e79de93edb8",
-      "external_id": "mt_sairaalahoito_paivat",
-      "name": "Psykiatrisen sairaalahoitojaksojen määrä / 1000 asukasta",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "hoitojaksoa/1000 asukasta",
-      "ttt_pilari": "korjaava",
+      "id": "b59a5f61-bcd7-4100-ae70-f7f6bef7103f",
+      "external_id": "syntyvyys_teinit",
+      "name": "Alle 20-vuotiaiden synnytykset / 1000 naista ikäryhmässä",
+      "category_name": "Lapset ja perhe",
+      "unit": "synnytystä/1000 naista",
+      "ttt_pilari": "ehkaiseva",
       "roi": null,
       "status": "haettava",
-      "year_start": 1987.0,
+      "year_start": 1975.0,
       "year_end": 2024.0,
       "teemat": [
-        "vaikuttavuus"
+        "vaikuttavuus",
+        "vinouma",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "1037156e-db07-4f59-b7e5-3cd7437da748",
+      "external_id": "ttt_cofog_gf1001",
+      "name": "Sairaus ja vammaisuus — julkiset menot (M€)",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "M€",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "9ba626bd-6580-434a-9619-84f360eb7225",
+      "external_id": "oppilaanohjaus_resurssit",
+      "name": "Oppilaanohjaajien määrä / 1000 oppilasta",
+      "category_name": "Koulutus",
+      "unit": "oppilaanohjaajaa/1000 oppilasta",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "48047b17-5672-4fb9-8833-9ad781dc2daa",
+      "external_id": "lukio_opiskelijat",
+      "name": "Lukion opiskelijamäärä",
+      "category_name": "Koulutus",
+      "unit": "henkilöä",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
@@ -928,54 +1000,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "1037156e-db07-4f59-b7e5-3cd7437da748",
-      "external_id": "ttt_cofog_gf1001",
-      "name": "Sairaus ja vammaisuus — julkiset menot (M€)",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "M€",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "9ba626bd-6580-434a-9619-84f360eb7225",
-      "external_id": "oppilaanohjaus_resurssit",
-      "name": "Oppilaanohjaajien määrä / 1000 oppilasta",
-      "category_name": "Koulutus",
-      "unit": "oppilaanohjaajaa/1000 oppilasta",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "b597dca1-262e-4ba4-8b5c-82bccd927225",
       "external_id": "oppivelvollisuuden_laajentaminen",
       "name": "Oppivelvollisuuden piirissä 18v asti",
@@ -1000,28 +1024,28 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "48047b17-5672-4fb9-8833-9ad781dc2daa",
-      "external_id": "lukio_opiskelijat",
-      "name": "Lukion opiskelijamäärä",
-      "category_name": "Koulutus",
-      "unit": "henkilöä",
+      "id": "170f8757-9d75-4f8d-af43-d2e0c7b6c69d",
+      "external_id": "psykiatrinen_sairaalahoito_milj_eur",
+      "name": "Psykiatrinen sairaalahoito, milj. EUR (SHA)",
+      "category_name": "Terveys",
+      "unit": "milj. EUR",
       "ttt_pilari": "vahvistava",
       "roi": null,
-      "status": "haettava",
+      "status": "saatavilla",
       "year_start": 2000.0,
-      "year_end": 2024.0,
+      "year_end": 2005.0,
       "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
+        "resurssit",
+        "vaikuttavuus"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
+        "aikasarja": 0.15,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
-      "best_analysis": "aikasarja"
+      "best_analysis": "panos_tuotos"
     },
     {
       "id": "a4b7faf4-8ffc-4215-a271-3122ef35798b",
@@ -1076,30 +1100,6 @@
       "name": "Terveydenhuoltomenot asukasta kohden (SHA)",
       "category_name": "Terveys",
       "unit": "EUR/asukas",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2005.0,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.15,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "170f8757-9d75-4f8d-af43-d2e0c7b6c69d",
-      "external_id": "psykiatrinen_sairaalahoito_milj_eur",
-      "name": "Psykiatrinen sairaalahoito, milj. EUR (SHA)",
-      "category_name": "Terveys",
-      "unit": "milj. EUR",
       "ttt_pilari": "vahvistava",
       "roi": null,
       "status": "saatavilla",
@@ -1356,30 +1356,6 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "132a88ed-d667-4391-956e-80a79e02fa37",
-      "external_id": "nordic_fertility_rate_25_29_years",
-      "name": "25-29 years (pohjoismaat)",
-      "category_name": "Nordic -- Fertility rate",
-      "unit": "births per 1000 women",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
       "id": "6900f273-dbca-4e9b-b2f1-e71687212ade",
       "external_id": "nordic_subgroup:_suicide_and_intentional__self_harm_(x60_x84)_subgroup:_suicide_",
       "name": "Subgroup: Suicide and intentional  self-harm (X60-X84) (pohjoismaat)",
@@ -1424,6 +1400,30 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.4
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "132a88ed-d667-4391-956e-80a79e02fa37",
+      "external_id": "nordic_fertility_rate_25_29_years",
+      "name": "25-29 years (pohjoismaat)",
+      "category_name": "Nordic -- Fertility rate",
+      "unit": "births per 1000 women",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
     },
@@ -1523,6 +1523,29 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "292f3ff0-03ce-43b8-99b3-4b3ea8edf26e",
+      "external_id": "mt_itsemurhat",
+      "name": "Itsemurhakuolleisuus",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "/ 100 000 as.",
+      "ttt_pilari": "korjaava",
+      "roi": 4.47,
+      "status": "saatavilla_v4",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "6058f17b-5f65-47e6-93cc-cbb9670889b6",
       "external_id": "mt_avohoito_lapset",
       "name": "Alle 18v psykiatrian avohoidon käynnit",
@@ -1538,29 +1561,6 @@
         "vaikuttavuus"
       ],
       "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "292f3ff0-03ce-43b8-99b3-4b3ea8edf26e",
-      "external_id": "mt_itsemurhat",
-      "name": "Itsemurhakuolleisuus",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "/ 100 000 as.",
-      "ttt_pilari": "korjaava",
-      "roi": 4.47,
-      "status": "saatavilla_v4",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.2,
@@ -1592,6 +1592,55 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "ca5a78cc-5041-4772-9c2a-8aacdbe29ad7",
+      "external_id": "kou_opiskeluhuolto",
+      "name": "Koulukuraattori, saatavuus",
+      "category_name": "Koulutus",
+      "unit": "% kouluista",
+      "ttt_pilari": "ehkaiseva",
+      "roi": 0.53,
+      "status": "saatavilla_v4",
+      "year_start": 2010.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.24,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "9218c7e2-9140-4939-a611-725122378a2b",
+      "external_id": "koulunkaynnin_tuki",
+      "name": "Koulunkäynninohjaajat / 1000 oppilasta",
+      "category_name": "Koulutus",
+      "unit": "koulunkäynninohjaajaa/1000 oppilasta",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2005.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.29,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "8d0b0275-688f-45ae-a786-1dbe450aa6c0",
@@ -1665,51 +1714,49 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "ca5a78cc-5041-4772-9c2a-8aacdbe29ad7",
-      "external_id": "kou_opiskeluhuolto",
-      "name": "Koulukuraattori, saatavuus",
-      "category_name": "Koulutus",
-      "unit": "% kouluista",
-      "ttt_pilari": "ehkaiseva",
-      "roi": 0.53,
-      "status": "saatavilla_v4",
-      "year_start": 2010.0,
-      "year_end": 2024.0,
+      "id": "7e32a777-887a-4e7f-9b0e-965d617e36bb",
+      "external_id": "terveydenhuolto_bkt_pct",
+      "name": "Terveydenhuoltomenot, % BKT:sta (SHA)",
+      "category_name": "Terveys",
+      "unit": "%",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2005.0,
       "teemat": [
-        "saavutettavuus",
-        "vaikuttavuus",
-        "elinkaari"
+        "resurssit",
+        "vaikuttavuus"
       ],
-      "rooli": "tuotos",
+      "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.24,
+        "aikasarja": 0.15,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.1,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "9218c7e2-9140-4939-a611-725122378a2b",
-      "external_id": "koulunkaynnin_tuki",
-      "name": "Koulunkäynninohjaajat / 1000 oppilasta",
-      "category_name": "Koulutus",
-      "unit": "koulunkäynninohjaajaa/1000 oppilasta",
-      "ttt_pilari": "ehkaiseva",
+      "id": "ba58e8c9-fa2a-460c-bae9-48b724bf8c2f",
+      "external_id": "laakkeet_osuus_pct",
+      "name": "Lääkkeiden osuus terveydenhuoltomenoista",
+      "category_name": "Terveys",
+      "unit": "%",
+      "ttt_pilari": "rakenteellinen",
       "roi": null,
-      "status": "haettava",
-      "year_start": 2005.0,
-      "year_end": 2024.0,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2005.0,
       "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
+        "vaikuttavuus"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.29,
+        "aikasarja": 0.15,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
     },
@@ -1738,46 +1785,23 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "ba58e8c9-fa2a-460c-bae9-48b724bf8c2f",
-      "external_id": "laakkeet_osuus_pct",
-      "name": "Lääkkeiden osuus terveydenhuoltomenoista",
-      "category_name": "Terveys",
-      "unit": "%",
-      "ttt_pilari": "rakenteellinen",
+      "id": "0058f8d9-fd81-4af3-a23f-dd5c6b9e2e65",
+      "external_id": "sosiaalmenot_terveys_bkt_pct",
+      "name": "Sosiaalimenot, terveys (% BKT)",
+      "category_name": null,
+      "unit": "% BKT",
+      "ttt_pilari": null,
       "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2005.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.15,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "7e32a777-887a-4e7f-9b0e-965d617e36bb",
-      "external_id": "terveydenhuolto_bkt_pct",
-      "name": "Terveydenhuoltomenot, % BKT:sta (SHA)",
-      "category_name": "Terveys",
-      "unit": "%",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2005.0,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
       "teemat": [
         "resurssit",
         "vaikuttavuus"
       ],
       "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.15,
+        "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
@@ -1808,54 +1832,6 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "0058f8d9-fd81-4af3-a23f-dd5c6b9e2e65",
-      "external_id": "sosiaalmenot_terveys_bkt_pct",
-      "name": "Sosiaalimenot, terveys (% BKT)",
-      "category_name": null,
-      "unit": "% BKT",
-      "ttt_pilari": null,
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "c1bf41d3-1096-4ef2-a4e6-5ceaf42d4a27",
-      "external_id": "elinajanodote_0v",
-      "name": "0-vuotiaan elinajanodote",
-      "category_name": "Väestö ja demografia",
-      "unit": "vuotta",
-      "ttt_pilari": "terveys",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "kestavyys"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "908da48e-653e-40a6-bef7-317e25344d24",
@@ -1954,6 +1930,30 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "c1bf41d3-1096-4ef2-a4e6-5ceaf42d4a27",
+      "external_id": "elinajanodote_0v",
+      "name": "0-vuotiaan elinajanodote",
+      "category_name": "Väestö ja demografia",
+      "unit": "vuotta",
+      "ttt_pilari": "terveys",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "kestavyys"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "afdd5eda-ff81-4c7f-acb5-53ba71f66dba",
       "external_id": "nordic_main_group:_mental_and_behavioural_disorders_(f00_f99)_main_group:_mental",
       "name": "Main group: Mental and behavioural disorders (F00-F99) (pohjoismaat)",
@@ -2002,30 +2002,6 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "77575bac-f3fc-4e23-b90c-046eb6ed3091",
-      "external_id": "nordic_long_term_care_(health)_3._toimintakategoriat",
-      "name": "3. Toimintakategoriat (pohjoismaat)",
-      "category_name": "Nordic — Long-term care (health)",
-      "unit": "% GDP",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
       "id": "f528747f-9681-4a4a-8f43-c4957d438e2b",
       "external_id": "nordic_providers_of_ambulatory_healthcare_4._palveluntuottajat",
       "name": "4. Palveluntuottajat (pohjoismaat)",
@@ -2050,11 +2026,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "0a31d88f-d8eb-4494-9b63-e15f0042cf47",
-      "external_id": "nordic_tertiary_educational_attainment_tertiary_educational_attainment",
-      "name": "Tertiary educational attainment (pohjoismaat)",
-      "category_name": "Nordic -- Tertiary educational attainment",
-      "unit": "% of 25-64 year-olds",
+      "id": "77575bac-f3fc-4e23-b90c-046eb6ed3091",
+      "external_id": "nordic_long_term_care_(health)_3._toimintakategoriat",
+      "name": "3. Toimintakategoriat (pohjoismaat)",
+      "category_name": "Nordic — Long-term care (health)",
+      "unit": "% GDP",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -2122,11 +2098,11 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "66fcbd9e-9d60-4c8c-b874-242440d72d53",
-      "external_id": "nordic_education_education",
-      "name": "Education (pohjoismaat)",
-      "category_name": "Nordic -- Education",
-      "unit": "Percent of GDP, %",
+      "id": "0a31d88f-d8eb-4494-9b63-e15f0042cf47",
+      "external_id": "nordic_tertiary_educational_attainment_tertiary_educational_attainment",
+      "name": "Tertiary educational attainment (pohjoismaat)",
+      "category_name": "Nordic -- Tertiary educational attainment",
+      "unit": "% of 25-64 year-olds",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -2144,30 +2120,6 @@
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "9e30dfd2-4d54-47ed-b0d8-8bd5847b1efb",
-      "external_id": "imevaiskuolleisuus",
-      "name": "Imeväiskuolleisuus (alle 1v)",
-      "category_name": "Lapset ja perhe",
-      "unit": "kuollutta / 1000 elävänä syntynyttä",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1940.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "13310dbd-f89b-463a-bfad-2d638570c6d0",
@@ -2192,31 +2144,6 @@
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "4120ef5b-d12d-489f-9e41-d673a2fb6f7a",
-      "external_id": "lastensuojelu_sijoitetut_pct",
-      "name": "Kodin ulkopuolelle sijoitetut 0–17v, % ikäluokasta",
-      "category_name": "Lapset ja perhe",
-      "unit": "%",
-      "ttt_pilari": "hyvinvointi",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "4b0ff3ea-03a5-4b32-8230-8023764fd0a9",
@@ -2267,74 +2194,77 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "a86703d9-fc42-4752-b790-44875792e500",
-      "external_id": "mt_seksuaali_hairinta",
-      "name": "Seksuaalista häirintää kokeneet tytöt",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "%",
-      "ttt_pilari": "korjaava",
-      "roi": 3.0,
-      "status": "saatavilla_v4",
-      "year_start": 2012.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.22,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "ab23f4fa-6dec-4547-b7e2-6099e1274560",
-      "external_id": "mt_kuntoutus_kust_saaja",
-      "name": "MT-kuntoutuksen kustannus per saaja 7–15v (€/henkilö)",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "€/henkilö",
-      "ttt_pilari": "korjaava",
+      "id": "66fcbd9e-9d60-4c8c-b874-242440d72d53",
+      "external_id": "nordic_education_education",
+      "name": "Education (pohjoismaat)",
+      "category_name": "Nordic -- Education",
+      "unit": "Percent of GDP, %",
+      "ttt_pilari": "vertailu",
       "roi": null,
-      "status": "saatavilla_v4",
+      "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "resurssit",
-        "vaikuttavuus"
+        "vaikuttavuus",
+        "pohjoismainen"
       ],
-      "rooli": "panos",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
+        "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
+        "pohjoismainen_vertailu": 0.5
       },
-      "best_analysis": "panos_tuotos"
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "8af951e3-74ad-48e8-93c7-b18ec80820c3",
-      "external_id": "katkaisuhoito_hoitopaivat",
-      "name": "Katkaisuhoitoasemat, hoitopäiviä/vuosi",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "hoitopäiviä/vuosi",
-      "ttt_pilari": "korjaava",
+      "id": "9e30dfd2-4d54-47ed-b0d8-8bd5847b1efb",
+      "external_id": "imevaiskuolleisuus",
+      "name": "Imeväiskuolleisuus (alle 1v)",
+      "category_name": "Lapset ja perhe",
+      "unit": "kuollutta / 1000 elävänä syntynyttä",
+      "ttt_pilari": "vahvistava",
       "roi": null,
       "status": "saatavilla",
-      "year_start": 1990.0,
-      "year_end": 2023.0,
+      "year_start": 1940.0,
+      "year_end": 2024.0,
       "teemat": [
-        "vaikuttavuus"
+        "vaikuttavuus",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
+    },
+    {
+      "id": "4120ef5b-d12d-489f-9e41-d673a2fb6f7a",
+      "external_id": "lastensuojelu_sijoitetut_pct",
+      "name": "Kodin ulkopuolelle sijoitetut 0–17v, % ikäluokasta",
+      "category_name": "Lapset ja perhe",
+      "unit": "%",
+      "ttt_pilari": "hyvinvointi",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "f59025c1-717b-4606-9d6a-60116a845f8d",
@@ -2360,30 +2290,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "4d092c14-e6bd-4bcf-b60a-66450c352f64",
-      "external_id": "yliopisto_opiskelijat",
-      "name": "Yliopisto-opiskelijamäärä",
-      "category_name": "Koulutus",
-      "unit": "henkilöä",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "4297caa6-d61a-4b33-a922-91d8e95ebb99",
@@ -2480,6 +2386,148 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "a86703d9-fc42-4752-b790-44875792e500",
+      "external_id": "mt_seksuaali_hairinta",
+      "name": "Seksuaalista häirintää kokeneet tytöt",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "%",
+      "ttt_pilari": "korjaava",
+      "roi": 3.0,
+      "status": "saatavilla_v4",
+      "year_start": 2012.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.22,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "ab23f4fa-6dec-4547-b7e2-6099e1274560",
+      "external_id": "mt_kuntoutus_kust_saaja",
+      "name": "MT-kuntoutuksen kustannus per saaja 7–15v (€/henkilö)",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "€/henkilö",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "8af951e3-74ad-48e8-93c7-b18ec80820c3",
+      "external_id": "katkaisuhoito_hoitopaivat",
+      "name": "Katkaisuhoitoasemat, hoitopäiviä/vuosi",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "hoitopäiviä/vuosi",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1990.0,
+      "year_end": 2023.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "4d092c14-e6bd-4bcf-b60a-66450c352f64",
+      "external_id": "yliopisto_opiskelijat",
+      "name": "Yliopisto-opiskelijamäärä",
+      "category_name": "Koulutus",
+      "unit": "henkilöä",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "069effb1-afa2-4b64-bb3b-4538a25a4586",
+      "external_id": "erikoissairaanhoito_hoitopaivatmaara",
+      "name": "Erikoissairaanhoidon hoitopäivät",
+      "category_name": "Terveys",
+      "unit": "päivää / 1000 asukasta",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "48139a38-ac5e-4efd-a4ae-0bb0c4f597b3",
+      "external_id": "gini_kerroin",
+      "name": "Gini-kerroin (tulonjako)",
+      "category_name": "Asuminen ja toimeentulo",
+      "unit": "indeksi 0–100",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1986.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "tehokkuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.3,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "d4ab5fbe-f985-4234-a7c2-4099c7c1c787",
       "external_id": "hammashoidon_kayntimaara",
       "name": "Hammashoitokäynnit / 1000 asukasta",
@@ -2526,54 +2574,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "48139a38-ac5e-4efd-a4ae-0bb0c4f597b3",
-      "external_id": "gini_kerroin",
-      "name": "Gini-kerroin (tulonjako)",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "indeksi 0–100",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1986.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "tehokkuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.3,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "069effb1-afa2-4b64-bb3b-4538a25a4586",
-      "external_id": "erikoissairaanhoito_hoitopaivatmaara",
-      "name": "Erikoissairaanhoidon hoitopäivät",
-      "category_name": "Terveys",
-      "unit": "päivää / 1000 asukasta",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vaikuttavuus"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "1bba1082-ac6f-4699-b7ce-077cc538a5b5",
@@ -2624,30 +2624,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "cb86340b-1e99-45c4-9129-e97e205ddb12",
-      "external_id": "nordic_fertility_rate_fertility_rate",
-      "name": "Fertility rate (pohjoismaat)",
-      "category_name": "Nordic — Fertility rate",
-      "unit": "births per 1000 women",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "pohjoismainen"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "6ffe28f4-9398-464e-bec2-70d718eec4ad",
@@ -2720,6 +2696,30 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
+      "id": "cb86340b-1e99-45c4-9129-e97e205ddb12",
+      "external_id": "nordic_fertility_rate_fertility_rate",
+      "name": "Fertility rate (pohjoismaat)",
+      "category_name": "Nordic — Fertility rate",
+      "unit": "births per 1000 women",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "pohjoismainen"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
       "id": "75766b60-a70f-4226-895b-550b95df46b9",
       "external_id": "nordic_fertility_rate_15_19_years",
       "name": "15-19 years (pohjoismaat)",
@@ -2766,31 +2766,6 @@
         "pohjoismainen_vertailu": 0.5
       },
       "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "49402513-207e-44a1-8ac6-aad3af443d85",
-      "external_id": "nuoret_neet_riskiryhma",
-      "name": "NEET-nuoret riskiryhmissä (maahanmuuttajataustaiset + matala koulutus)",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "% 15–29-vuotiaista",
-      "ttt_pilari": "korjaava",
-      "roi": 8.5,
-      "status": "saatavilla_v4",
-      "year_start": 2013.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.21,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "cca9e755-acea-466b-aeaf-d57abc5b2709",
@@ -2935,53 +2910,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "102773a6-69b3-4f7e-9bf5-058366bac773",
-      "external_id": "mt_terapiatakuu",
-      "name": "Lasten ja nuorten mielenterveyspalveluiden hoitoonpääsy terapiatakuun mukaisesti",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "% alle 1 kk",
-      "ttt_pilari": "korjaava",
-      "roi": 10.25,
-      "status": "saatavilla_v4",
-      "year_start": 2012.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.22,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "5b2e3f03-b226-4bc5-810a-f78c7b052675",
-      "external_id": "koulupudokkaat_perus",
-      "name": "Peruskoulun keskeyttäneet",
-      "category_name": "Koulutus",
-      "unit": "%",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1995.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "1797cb55-ee90-4a79-9bf4-2fa782b2d5a2",
       "external_id": "nordic_pisa_science_pisa_science",
       "name": "PISA Science (pohjoismaat)",
@@ -3054,54 +2982,51 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "71caeaee-244c-4edd-8352-f56ce0c8722f",
-      "external_id": "mt_koulupsykologi",
-      "name": "Koulupsykologin saatavuus oppilaitoksissa",
+      "id": "102773a6-69b3-4f7e-9bf5-058366bac773",
+      "external_id": "mt_terapiatakuu",
+      "name": "Lasten ja nuorten mielenterveyspalveluiden hoitoonpääsy terapiatakuun mukaisesti",
       "category_name": "Mielenterveys ja päihteet",
-      "unit": "% oppilaitoksista",
-      "ttt_pilari": "ehkaiseva",
-      "roi": -0.21,
+      "unit": "% alle 1 kk",
+      "ttt_pilari": "korjaava",
+      "roi": 10.25,
       "status": "saatavilla_v4",
       "year_start": 2012.0,
       "year_end": 2024.0,
       "teemat": [
-        "saavutettavuus",
-        "vaikuttavuus",
-        "elinkaari"
+        "vaikuttavuus"
       ],
-      "rooli": "tuotos",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.22,
         "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.1,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
     },
     {
-      "id": "dcba6e0c-bdc9-4a27-a81d-45bee8cf8a89",
-      "external_id": "ttt_paihde_mt_menot",
-      "name": "Päihde-MT menot per capita",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "€/as",
-      "ttt_pilari": "korjaava",
-      "roi": 3.33,
-      "status": "saatavilla_v4",
-      "year_start": 2015.0,
+      "id": "5b2e3f03-b226-4bc5-810a-f78c7b052675",
+      "external_id": "koulupudokkaat_perus",
+      "name": "Peruskoulun keskeyttäneet",
+      "category_name": "Koulutus",
+      "unit": "%",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1995.0,
       "year_end": 2024.0,
       "teemat": [
-        "resurssit",
         "vaikuttavuus",
-        "tehokkuus"
+        "elinkaari"
       ],
-      "rooli": "panos",
+      "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.19,
-        "panos_tuotos": 0.6,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
       },
-      "best_analysis": "panos_tuotos"
+      "best_analysis": "aikasarja"
     },
     {
       "id": "2fcd1e11-4f17-4d5e-bf59-afdba5a3a824",
@@ -3221,6 +3146,56 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "71caeaee-244c-4edd-8352-f56ce0c8722f",
+      "external_id": "mt_koulupsykologi",
+      "name": "Koulupsykologin saatavuus oppilaitoksissa",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "% oppilaitoksista",
+      "ttt_pilari": "ehkaiseva",
+      "roi": -0.21,
+      "status": "saatavilla_v4",
+      "year_start": 2012.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.22,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "dcba6e0c-bdc9-4a27-a81d-45bee8cf8a89",
+      "external_id": "ttt_paihde_mt_menot",
+      "name": "Päihde-MT menot per capita",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "€/as",
+      "ttt_pilari": "korjaava",
+      "roi": 3.33,
+      "status": "saatavilla_v4",
+      "year_start": 2015.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus",
+        "tehokkuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.19,
+        "panos_tuotos": 0.6,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "b7a1ae31-6b65-4187-9532-52d175732152",
       "external_id": "mt_anxiety_nuoret",
       "name": "Ahdistus oireilu nuorilla (GAD-7)",
@@ -3315,6 +3290,29 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "26092bff-4e2f-4d9c-a53d-2108a400e134",
+      "external_id": "lapset_vammaistuki_mt_osuus",
+      "name": "Mt-häiriöiden osuus alle 16v vammaistuessa",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "%",
+      "ttt_pilari": "korjaava",
+      "roi": 3.57,
+      "status": "saatavilla_v4",
+      "year_start": 2012.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.22,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "2b993b53-54b4-4888-96ba-837a18b4c2a8",
       "external_id": "mt_sateenkaarinuoret",
       "name": "Sateenkaarinuorten kohtalainen tai vakava mielenterveysoireilu",
@@ -3362,27 +3360,29 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "26092bff-4e2f-4d9c-a53d-2108a400e134",
-      "external_id": "lapset_vammaistuki_mt_osuus",
-      "name": "Mt-häiriöiden osuus alle 16v vammaistuessa",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "%",
+      "id": "49402513-207e-44a1-8ac6-aad3af443d85",
+      "external_id": "nuoret_neet_riskiryhma",
+      "name": "NEET-nuoret riskiryhmissä (maahanmuuttajataustaiset + matala koulutus)",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "% 15–29-vuotiaista",
       "ttt_pilari": "korjaava",
-      "roi": 3.57,
+      "roi": 8.5,
       "status": "saatavilla_v4",
-      "year_start": 2012.0,
+      "year_start": 2013.0,
       "year_end": 2024.0,
       "teemat": [
-        "vaikuttavuus"
+        "vaikuttavuus",
+        "vinouma",
+        "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.22,
+        "aikasarja": 0.21,
         "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
+        "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.1
       },
-      "best_analysis": "aikasarja"
+      "best_analysis": "jarjestelmavinouma"
     }
   ]
 }

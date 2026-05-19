@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-18T04:37:43.293496+00:00",
-  "model_run_id": "20260518T043518Z_36cbc0b",
+  "generated_at": "2026-05-19T04:32:52.738313+00:00",
+  "model_run_id": "20260519T043102Z_0af34c7",
   "tables": {
     "sectors": {
       "file": "sectors.json",
@@ -10,7 +10,7 @@
     "sector_series": {
       "file": "sector_series.json",
       "rows": 4158,
-      "sha256_16": "68c4e4f36d6bf512"
+      "sha256_16": "346737cbeb1f1a19"
     },
     "sector_target_population": {
       "file": "sector_target_population.json",
@@ -50,7 +50,7 @@
     "indicators_ref": {
       "file": "indicators_ref.json",
       "rows": 486,
-      "sha256_16": "13f5087a5e93d251"
+      "sha256_16": "506ebf41ae5d3daf"
     },
     "time_series": {
       "file": "time_series.json",
@@ -60,7 +60,7 @@
     "elasticities": {
       "file": "elasticities.json",
       "rows": 255,
-      "sha256_16": "f15218f6f812271a"
+      "sha256_16": "95120dcd12e82106"
     },
     "ols_models": {
       "file": "ols_models.json",
@@ -80,7 +80,7 @@
     "regression_results": {
       "file": "regression_results.json",
       "rows": 60,
-      "sha256_16": "600c62595fe4216c"
+      "sha256_16": "dbbdbe9ca93960c4"
     },
     "panel_datasets": {
       "file": "panel_datasets.json",
@@ -110,7 +110,7 @@
     "hoiva_aalto_yearly": {
       "file": "hoiva_aalto_yearly.json",
       "rows": 21,
-      "sha256_16": "6c1eb9e59d9bb99e"
+      "sha256_16": "c504b06826a354e9"
     },
     "nordic_indicators": {
       "file": "nordic_indicators.json",
@@ -125,7 +125,7 @@
     "nordic_correlations": {
       "file": "nordic_correlations.json",
       "rows": 210,
-      "sha256_16": "bbf9c1468bbc6989"
+      "sha256_16": "e8b79e5598ad4267"
     },
     "amounts": {
       "file": "amounts.json",
@@ -145,12 +145,12 @@
     "cofog_jcode_amounts": {
       "file": "cofog_jcode_amounts.json",
       "rows": 816,
-      "sha256_16": "10cf10d4caf96664"
+      "sha256_16": "bec09e6ff8747285"
     },
     "causal_chains": {
       "file": "causal_chains.json",
       "rows": 100,
-      "sha256_16": "417fb8548ddcad28"
+      "sha256_16": "7a9c6204d69f97fa"
     },
     "crisis_events": {
       "file": "crisis_events.json",
@@ -197,7 +197,7 @@
     "v_signal": {
       "file": "views/v_signal.json",
       "rows": 80,
-      "sha256_16": "a005d5c1edd3322a",
+      "sha256_16": "be0a394a7d5f2cb9",
       "auto": false
     },
     "v_signal_full_chain": {
@@ -209,7 +209,7 @@
     "v_signal_funding_paradox": {
       "file": "views/v_signal_funding_paradox.json",
       "rows": 80,
-      "sha256_16": "2271deff46674fd0",
+      "sha256_16": "05cb3957b218cd53",
       "auto": false
     },
     "v_signal_leverage": {
@@ -251,7 +251,7 @@
     "v_causal_chain_full": {
       "file": "views/v_causal_chain_full.json",
       "rows": 100,
-      "sha256_16": "4b0ef97b78503fc9",
+      "sha256_16": "d726bac0811d3ec3",
       "auto": false
     },
     "v_causal_chain_summary": {
@@ -287,7 +287,7 @@
     "v_crisis_wake": {
       "file": "views/v_crisis_wake.json",
       "rows": 184,
-      "sha256_16": "b53dd1abfb42edd4",
+      "sha256_16": "f7df4623c4b20389",
       "auto": false
     },
     "v_demographic_pressure": {
@@ -490,58 +490,58 @@
     },
     "v_moduli011_alueellinen_eriarvoisuus": {
       "file": "views/v_moduli011_alueellinen_eriarvoisuus.json",
-      "sha256_16": "22c49ebfeb9a9db3",
+      "sha256_16": "f2fefa60ccfdd016",
       "status": "stub"
     },
     "v_moduli012_sukupolvien_tasapaino": {
       "file": "views/v_moduli012_sukupolvien_tasapaino.json",
-      "sha256_16": "8a3b33ee94fe53ea",
+      "sha256_16": "9ea3ed7403334aef",
       "status": "stub"
     },
     "v_moduli013_mielenterveyskriisi": {
       "file": "views/v_moduli013_mielenterveyskriisi.json",
-      "sha256_16": "5ae3ae609d637175",
+      "sha256_16": "b3ffbc3afc0f2d0e",
       "status": "partial"
     },
     "v_moduli014_koulutus_tuottavuus": {
       "file": "views/v_moduli014_koulutus_tuottavuus.json",
-      "sha256_16": "4b507ea7cb6506af",
+      "sha256_16": "b548c4c15d989932",
       "status": "partial"
     },
     "v_moduli015_maahanmuutto": {
       "file": "views/v_moduli015_maahanmuutto.json",
-      "sha256_16": "50213bbb7492232e",
+      "sha256_16": "bf406165bfbb3bf9",
       "status": "partial"
     },
     "v_moduli016_asuntomarkkinat": {
       "file": "views/v_moduli016_asuntomarkkinat.json",
-      "sha256_16": "791e3429d61a7c3a",
+      "sha256_16": "e7a7252f3025324c",
       "status": "partial"
     },
     "v_moduli017_verojarjestelma": {
       "file": "views/v_moduli017_verojarjestelma.json",
-      "sha256_16": "3a5ea96af787ec13",
+      "sha256_16": "f031e0a90966d90d",
       "status": "partial"
     },
     "v_moduli018_subjektiivinen_hyvinvointi": {
       "file": "views/v_moduli018_subjektiivinen_hyvinvointi.json",
-      "sha256_16": "f891a6e44ef50a56",
+      "sha256_16": "681c078b5d8cbe44",
       "status": "partial"
     },
     "v_moduli019_ilmasto_hyvinvointi": {
       "file": "views/v_moduli019_ilmasto_hyvinvointi.json",
-      "sha256_16": "4faf596d91d6d4ec",
+      "sha256_16": "00c0fbef2c49e625",
       "status": "partial"
     },
     "v_moduli020_realtime_dashboard": {
       "file": "views/v_moduli020_realtime_dashboard.json",
-      "sha256_16": "432b92f09dcf83d1",
+      "sha256_16": "11b065558c1b2aab",
       "status": "stub"
     },
     "v_lag_confidence": {
       "file": "views/v_lag_confidence.json",
       "rows": 82,
-      "sha256_16": "309c712e46b613e1",
+      "sha256_16": "b9f364259fe2abcf",
       "auto": true
     },
     "v_lifecycle_pressure_2040": {
@@ -571,7 +571,7 @@
     "v_signal_crisis_adjusted": {
       "file": "views/v_signal_crisis_adjusted.json",
       "rows": 255,
-      "sha256_16": "006e022b5f4e1827",
+      "sha256_16": "9e6c14f5cf259574",
       "auto": true
     },
     "v_tfr_correlates": {
@@ -731,5 +731,5 @@
       ]
     }
   },
-  "export_supabase_views_run": "2026-05-18T04:47:17.241782+00:00"
+  "export_supabase_views_run": "2026-05-19T04:41:52.537995+00:00"
 }

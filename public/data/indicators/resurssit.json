@@ -2,7 +2,7 @@
   "teema_id": "resurssit",
   "label": "Resurssit & Panostukset",
   "count": 89,
-  "generated_at": "2026-05-18T04:52:26.252957+00:00",
+  "generated_at": "2026-05-19T04:45:12.997840+00:00",
   "indicators": [
     {
       "id": "b5c1e943-9850-41aa-abdf-963b0c24632e",
@@ -103,6 +103,53 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "333f1845-2044-4f81-a96f-3c9fb0da500b",
+      "external_id": "sosiaalmenot_valtio_milj_mk",
+      "name": "Sosiaalimenot, valtio (milj. mk)",
+      "category_name": null,
+      "unit": "milj. mk",
+      "ttt_pilari": null,
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "447955d9-b19a-4918-9ee0-8646e1102f9d",
+      "external_id": "sosiaalmenot_terveys_milj_mk",
+      "name": "Sosiaalimenot, terveys (milj. mk)",
+      "category_name": null,
+      "unit": "milj. mk",
+      "ttt_pilari": null,
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "e849d3cf-f73e-4381-ad24-0d5399b65efc",
       "external_id": "sosiaalmenot_yhteensa_t10_milj_mk",
       "name": "Sosiaalimenot yhteensä T10 (milj. mk)",
@@ -169,53 +216,6 @@
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "333f1845-2044-4f81-a96f-3c9fb0da500b",
-      "external_id": "sosiaalmenot_valtio_milj_mk",
-      "name": "Sosiaalimenot, valtio (milj. mk)",
-      "category_name": null,
-      "unit": "milj. mk",
-      "ttt_pilari": null,
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "447955d9-b19a-4918-9ee0-8646e1102f9d",
-      "external_id": "sosiaalmenot_terveys_milj_mk",
-      "name": "Sosiaalimenot, terveys (milj. mk)",
-      "category_name": null,
-      "unit": "milj. mk",
-      "ttt_pilari": null,
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "panos_tuotos"
     },
@@ -437,30 +437,6 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "4b281603-3ae4-41a7-9b29-f5ef63b4b8b7",
-      "external_id": "sosiaaliturva_rahoitus_kunnat",
-      "name": "Kuntien osuus sosiaaliturvan rahoituksesta",
-      "category_name": "Rakenne ja hyvinvointi",
-      "unit": "%",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1980.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
       "id": "5127ef73-ba24-4197-88af-d80b6bef0e4c",
       "external_id": "alle35_omapari_jaljella_eur",
       "name": "Alle 35v omistusasujat (lapsetonpari): tulot asumisen jälkeen (€/ku, mediaani)",
@@ -503,6 +479,30 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "4b281603-3ae4-41a7-9b29-f5ef63b4b8b7",
+      "external_id": "sosiaaliturva_rahoitus_kunnat",
+      "name": "Kuntien osuus sosiaaliturvan rahoituksesta",
+      "category_name": "Rakenne ja hyvinvointi",
+      "unit": "%",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1980.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
@@ -654,6 +654,30 @@
       "best_analysis": "panos_tuotos"
     },
     {
+      "id": "170f8757-9d75-4f8d-af43-d2e0c7b6c69d",
+      "external_id": "psykiatrinen_sairaalahoito_milj_eur",
+      "name": "Psykiatrinen sairaalahoito, milj. EUR (SHA)",
+      "category_name": "Terveys",
+      "unit": "milj. EUR",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2005.0,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.15,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "a4b7faf4-8ffc-4215-a271-3122ef35798b",
       "external_id": "sosiaalimeno_bktsta",
       "name": "Sosiaalimenot / BKT",
@@ -721,77 +745,6 @@
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.15,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "170f8757-9d75-4f8d-af43-d2e0c7b6c69d",
-      "external_id": "psykiatrinen_sairaalahoito_milj_eur",
-      "name": "Psykiatrinen sairaalahoito, milj. EUR (SHA)",
-      "category_name": "Terveys",
-      "unit": "milj. EUR",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2005.0,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.15,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "527947f5-fd15-43a7-9a6d-b301febf79b1",
-      "external_id": "lapsiperheiden_asumisrasitus_vuokra",
-      "name": "Lapsiperheet vuokralla: asumiskustannusten tulo-osuus (netto %, mediaani)",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "%",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "valmis",
-      "year_start": 2002.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "elinkaari"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "447909f3-4a65-4e76-b62b-969cc48b9ac5",
-      "external_id": "sosiaalmenot_yhteensa_milj_mk",
-      "name": "Sosiaalimenot yhteensä (milj. mk)",
-      "category_name": null,
-      "unit": "milj. mk",
-      "ttt_pilari": null,
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
@@ -919,51 +872,49 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "affc4a0c-f45c-4146-8a54-b2c08d80c53d",
-      "external_id": "inflaatio_vuosimuutos",
-      "name": "Inflaatio vuosimuutos",
-      "category_name": "Talous ja julkinen rahoitus",
+      "id": "527947f5-fd15-43a7-9a6d-b301febf79b1",
+      "external_id": "lapsiperheiden_asumisrasitus_vuokra",
+      "name": "Lapsiperheet vuokralla: asumiskustannusten tulo-osuus (netto %, mediaani)",
+      "category_name": "Asuminen ja toimeentulo",
       "unit": "%",
       "ttt_pilari": "talous",
       "roi": null,
-      "status": "saatavilla",
-      "year_start": 1960.0,
+      "status": "valmis",
+      "year_start": 2002.0,
       "year_end": 2024.0,
       "teemat": [
         "resurssit",
-        "vinouma",
-        "politiikka"
+        "elinkaari"
       ],
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "f29bcbee-f36d-4b30-8a88-8f2aa264a2c9",
-      "external_id": "ttt_elinkustannusindeksi",
-      "name": "Elinkustannusindeksi",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "indeksi",
-      "ttt_pilari": "konteksti",
+      "id": "447909f3-4a65-4e76-b62b-969cc48b9ac5",
+      "external_id": "sosiaalmenot_yhteensa_milj_mk",
+      "name": "Sosiaalimenot yhteensä (milj. mk)",
+      "category_name": null,
+      "unit": "milj. mk",
+      "ttt_pilari": null,
       "roi": null,
-      "status": "saatavilla_v4",
+      "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "resurssit",
-        "vinouma"
+        "resurssit"
       ],
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.1
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "panos_tuotos"
     },
@@ -1063,28 +1014,53 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "1c7de8c1-cad6-4f26-9b79-8c2779b538f4",
-      "external_id": "nordic_total_1._kokonaismenot_%_bkt",
-      "name": "1. Kokonaismenot % BKT (pohjoismaat)",
-      "category_name": "Nordic — Total",
-      "unit": "% GDP",
-      "ttt_pilari": "vertailu",
+      "id": "affc4a0c-f45c-4146-8a54-b2c08d80c53d",
+      "external_id": "inflaatio_vuosimuutos",
+      "name": "Inflaatio vuosimuutos",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "%",
+      "ttt_pilari": "talous",
       "roi": null,
-      "status": null,
+      "status": "saatavilla",
+      "year_start": 1960.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vinouma",
+        "politiikka"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "f29bcbee-f36d-4b30-8a88-8f2aa264a2c9",
+      "external_id": "ttt_elinkustannusindeksi",
+      "name": "Elinkustannusindeksi",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "indeksi",
+      "ttt_pilari": "konteksti",
+      "roi": null,
+      "status": "saatavilla_v4",
       "year_start": null,
       "year_end": null,
       "teemat": [
         "resurssit",
-        "pohjoismainen"
+        "vinouma"
       ],
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.5
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.1
       },
-      "best_analysis": "pohjoismainen_vertailu"
+      "best_analysis": "panos_tuotos"
     },
     {
       "id": "3363f33d-d5f9-4449-949c-215c3725b179",
@@ -1101,6 +1077,30 @@
         "resurssit",
         "pohjoismainen",
         "politiikka"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "1c7de8c1-cad6-4f26-9b79-8c2779b538f4",
+      "external_id": "nordic_total_1._kokonaismenot_%_bkt",
+      "name": "1. Kokonaismenot % BKT (pohjoismaat)",
+      "category_name": "Nordic — Total",
+      "unit": "% GDP",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "pohjoismainen"
       ],
       "rooli": "panos",
       "suitability": {
@@ -1161,6 +1161,30 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
+      "id": "8ee9cdab-e5c4-4834-a968-9b052c2bffa0",
+      "external_id": "lastensuojelu_menot_eurpcap",
+      "name": "Lastensuojelun kustannukset EUR/asukas",
+      "category_name": "Lapset ja perhe",
+      "unit": "EUR/asukas",
+      "ttt_pilari": "korjaava",
+      "roi": 11.0,
+      "status": "haettava",
+      "year_start": 1993.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "elinkaari"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.6,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "b798543a-4145-4466-89e4-a646ef9354e4",
       "external_id": "kunta_korjaavat_eurpcap",
       "name": "Kuntien korjaavat palvelut EUR/asukas",
@@ -1210,30 +1234,6 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "8ee9cdab-e5c4-4834-a968-9b052c2bffa0",
-      "external_id": "lastensuojelu_menot_eurpcap",
-      "name": "Lastensuojelun kustannukset EUR/asukas",
-      "category_name": "Lapset ja perhe",
-      "unit": "EUR/asukas",
-      "ttt_pilari": "korjaava",
-      "roi": 11.0,
-      "status": "haettava",
-      "year_start": 1993.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "elinkaari"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.6,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
       "id": "2f59fedf-7116-4a2c-bd41-33ef1863fc0e",
       "external_id": "ttt_cofog_gf0702",
       "name": "Avoterveydenhuolto (sis. MT) — menot (M€)",
@@ -1254,6 +1254,30 @@
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "7e32a777-887a-4e7f-9b0e-965d617e36bb",
+      "external_id": "terveydenhuolto_bkt_pct",
+      "name": "Terveydenhuoltomenot, % BKT:sta (SHA)",
+      "category_name": "Terveys",
+      "unit": "%",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2005.0,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.15,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
     },
@@ -1284,23 +1308,23 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "7e32a777-887a-4e7f-9b0e-965d617e36bb",
-      "external_id": "terveydenhuolto_bkt_pct",
-      "name": "Terveydenhuoltomenot, % BKT:sta (SHA)",
-      "category_name": "Terveys",
-      "unit": "%",
-      "ttt_pilari": "vahvistava",
+      "id": "0058f8d9-fd81-4af3-a23f-dd5c6b9e2e65",
+      "external_id": "sosiaalmenot_terveys_bkt_pct",
+      "name": "Sosiaalimenot, terveys (% BKT)",
+      "category_name": null,
+      "unit": "% BKT",
+      "ttt_pilari": null,
       "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2005.0,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
       "teemat": [
         "resurssit",
         "vaikuttavuus"
       ],
       "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.15,
+        "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
@@ -1374,55 +1398,6 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "0058f8d9-fd81-4af3-a23f-dd5c6b9e2e65",
-      "external_id": "sosiaalmenot_terveys_bkt_pct",
-      "name": "Sosiaalimenot, terveys (% BKT)",
-      "category_name": null,
-      "unit": "% BKT",
-      "ttt_pilari": null,
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "b39cb492-de7f-474f-ac93-8d78e71f26b8",
-      "external_id": "bkt_asukasta_reaali",
-      "name": "BKT per asukas (reaali)",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "EUR/asukas",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "tehokkuus",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "panos_tuotos"
@@ -1575,6 +1550,31 @@
       "best_analysis": "panos_tuotos"
     },
     {
+      "id": "b39cb492-de7f-474f-ac93-8d78e71f26b8",
+      "external_id": "bkt_asukasta_reaali",
+      "name": "BKT per asukas (reaali)",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "EUR/asukas",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1975.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "tehokkuus",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "59106a95-5d5c-492c-9308-ee05cddbb0d5",
       "external_id": "alle35_vuokrapari_jaljella_eur",
       "name": "Alle 35v vuokra-asujat (lapsetonpari): tulot asumisen jälkeen (€/ku, mediaani)",
@@ -1670,30 +1670,6 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "6b796fbb-eb96-4487-8bc6-fd3fa9e259db",
-      "external_id": "erikoissairaanhoito_menot_eurpcap",
-      "name": "Erikoissairaanhoidon menot EUR/asukas",
-      "category_name": "Terveys",
-      "unit": "EUR/asukas",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1995.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
       "id": "3fcc018f-5529-464b-9a96-7f75ab22ed18",
       "external_id": "ttt_cofog_gf10",
       "name": "Sosiaaliturva — julkiset menot (M€)",
@@ -1717,22 +1693,23 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "31697b3e-3431-49f4-ae26-4cca5df27adb",
-      "external_id": "sosiaalmenot_tyottomyys_milj_mk",
-      "name": "Sosiaalimenot, työttömyys (milj. mk)",
-      "category_name": null,
-      "unit": "milj. mk",
-      "ttt_pilari": null,
+      "id": "6b796fbb-eb96-4487-8bc6-fd3fa9e259db",
+      "external_id": "erikoissairaanhoito_menot_eurpcap",
+      "name": "Erikoissairaanhoidon menot EUR/asukas",
+      "category_name": "Terveys",
+      "unit": "EUR/asukas",
+      "ttt_pilari": "korjaava",
       "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
+      "status": "haettava",
+      "year_start": 1995.0,
+      "year_end": 2024.0,
       "teemat": [
-        "resurssit"
+        "resurssit",
+        "vaikuttavuus"
       ],
       "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.1,
+        "aikasarja": 0.3,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
@@ -1885,23 +1862,22 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "1a51cdc6-8e1d-4835-bef1-d1a0a6836b9b",
-      "external_id": "vaikeavammaisten_palvelut_menot",
-      "name": "Vaikeavammaisten palvelujen menot",
-      "category_name": "Vammaisuus ja kuntoutus",
-      "unit": "EUR/asukas",
-      "ttt_pilari": "korjaava",
+      "id": "31697b3e-3431-49f4-ae26-4cca5df27adb",
+      "external_id": "sosiaalmenot_tyottomyys_milj_mk",
+      "name": "Sosiaalimenot, työttömyys (milj. mk)",
+      "category_name": null,
+      "unit": "milj. mk",
+      "ttt_pilari": null,
       "roi": null,
-      "status": "haettava",
-      "year_start": 1995.0,
-      "year_end": 2024.0,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
       "teemat": [
-        "resurssit",
-        "saavutettavuus"
+        "resurssit"
       ],
       "rooli": "panos",
       "suitability": {
-        "aikasarja": 0.3,
+        "aikasarja": 0.1,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
@@ -1925,6 +1901,30 @@
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "1a51cdc6-8e1d-4835-bef1-d1a0a6836b9b",
+      "external_id": "vaikeavammaisten_palvelut_menot",
+      "name": "Vaikeavammaisten palvelujen menot",
+      "category_name": "Vammaisuus ja kuntoutus",
+      "unit": "EUR/asukas",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1995.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "saavutettavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
@@ -2053,6 +2053,30 @@
       "best_analysis": "panos_tuotos"
     },
     {
+      "id": "463e84c7-560e-4114-9ac7-5ce601b59b2c",
+      "external_id": "mt_kuntoutus_kust_yht",
+      "name": "MT-kuntoutuksen kokonaiskustannus 0–24v (Kela)",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "M€/vuosi",
+      "ttt_pilari": "korjaava",
+      "roi": 5.25,
+      "status": "saatavilla_v4",
+      "year_start": 2010.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vaikuttavuus"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.24,
+        "panos_tuotos": 0.6,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "dcba6e0c-bdc9-4a27-a81d-45bee8cf8a89",
       "external_id": "ttt_paihde_mt_menot",
       "name": "Päihde-MT menot per capita",
@@ -2071,30 +2095,6 @@
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.19,
-        "panos_tuotos": 0.6,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "463e84c7-560e-4114-9ac7-5ce601b59b2c",
-      "external_id": "mt_kuntoutus_kust_yht",
-      "name": "MT-kuntoutuksen kokonaiskustannus 0–24v (Kela)",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "M€/vuosi",
-      "ttt_pilari": "korjaava",
-      "roi": 5.25,
-      "status": "saatavilla_v4",
-      "year_start": 2010.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vaikuttavuus"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.24,
         "panos_tuotos": 0.6,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0

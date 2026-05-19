@@ -2,7 +2,7 @@
   "teema_id": "muu",
   "label": "muu",
   "count": 62,
-  "generated_at": "2026-05-18T04:52:26.272936+00:00",
+  "generated_at": "2026-05-19T04:45:13.018916+00:00",
   "indicators": [
     {
       "id": "a99c20f5-3bd0-4459-8c3f-28ea3d4722a8",
@@ -97,52 +97,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "22d94c62-7cb9-4c43-ab80-a3b32ded84a5",
-      "external_id": "asuntohintaindeksi_reaali",
-      "name": "Asuntojen reaalihinnat",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "indeksi (2015=100)",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1983.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "8d15ec2f-5df0-4523-9a95-c0792c1f020d",
-      "external_id": "asuntokunnat_yksinasuvat",
-      "name": "Yksinasuvat asuntokunnat",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "henkilöä",
-      "ttt_pilari": "demografia",
-      "roi": 4.33,
-      "status": "tarkistettava",
-      "year_start": 1985.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "f3201598-99c8-450a-b19a-eedb96e40b98",
       "external_id": "os_luottamus",
       "name": "Luottamus valtionhallintoon",
@@ -166,6 +120,75 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "244d38b2-105b-4351-b339-a84296b19593",
+      "external_id": "toimeentulotuki_saajat",
+      "name": "Toimeentulotuen saajat",
+      "category_name": "Asuminen ja toimeentulo",
+      "unit": "henkilöä",
+      "ttt_pilari": "korjaava",
+      "roi": 2.68,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "949fc726-71e5-4f81-8fad-26e5ca7a1ec8",
+      "external_id": "os_digitaalinen_kuilu",
+      "name": "Internetiä käyttämättömät 16–74-vuotiaat",
+      "category_name": "Osallisuus ja yhteisöllisyys",
+      "unit": "% ikäryhmästä",
+      "ttt_pilari": "ehkaiseva",
+      "roi": 1.1,
+      "status": "saatavilla_v4",
+      "year_start": 2013.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.21,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.2,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "22d94c62-7cb9-4c43-ab80-a3b32ded84a5",
+      "external_id": "asuntohintaindeksi_reaali",
+      "name": "Asuntojen reaalihinnat",
+      "category_name": "Asuminen ja toimeentulo",
+      "unit": "indeksi (2015=100)",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1983.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "8f3636db-15be-4570-b621-14e549a17e17",
       "external_id": "vuokra_asunnot_jono",
       "name": "Kunnallisiin vuokra-asuntoihin jonottavat",
@@ -183,6 +206,29 @@
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "8d15ec2f-5df0-4523-9a95-c0792c1f020d",
+      "external_id": "asuntokunnat_yksinasuvat",
+      "name": "Yksinasuvat asuntokunnat",
+      "category_name": "Asuminen ja toimeentulo",
+      "unit": "henkilöä",
+      "ttt_pilari": "demografia",
+      "roi": 4.33,
+      "status": "tarkistettava",
+      "year_start": 1985.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
@@ -231,52 +277,6 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "244d38b2-105b-4351-b339-a84296b19593",
-      "external_id": "toimeentulotuki_saajat",
-      "name": "Toimeentulotuen saajat",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": 2.68,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "949fc726-71e5-4f81-8fad-26e5ca7a1ec8",
-      "external_id": "os_digitaalinen_kuilu",
-      "name": "Internetiä käyttämättömät 16–74-vuotiaat",
-      "category_name": "Osallisuus ja yhteisöllisyys",
-      "unit": "% ikäryhmästä",
-      "ttt_pilari": "ehkaiseva",
-      "roi": 1.1,
-      "status": "saatavilla_v4",
-      "year_start": 2013.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.21,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.2,
-        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
     },
@@ -488,6 +488,29 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "fb0a4e08-8ed8-46a0-86e4-3085fe00143d",
+      "external_id": "kuntoutustuella_olevat_alle30",
+      "name": "Kuntoutustuella olevat alle 30v",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "henkilöä",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2005.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.29,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "74932159-af3f-475c-812f-d8a59931a450",
       "external_id": "rakennetyottomyys",
       "name": "Rakennetyöttömät yhteensä",
@@ -534,23 +557,23 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "fb0a4e08-8ed8-46a0-86e4-3085fe00143d",
-      "external_id": "kuntoutustuella_olevat_alle30",
-      "name": "Kuntoutustuella olevat alle 30v",
-      "category_name": "Nuoret ja työllisyys",
+      "id": "8b6f8db2-dd7a-4b2d-9cd5-8a64dbe6c33f",
+      "external_id": "asunnottomat",
+      "name": "Asunnottomat yhteensä",
+      "category_name": "Asuminen ja toimeentulo",
       "unit": "henkilöä",
       "ttt_pilari": "korjaava",
-      "roi": null,
+      "roi": 6.2,
       "status": "haettava",
-      "year_start": 2005.0,
+      "year_start": 1987.0,
       "year_end": 2024.0,
       "teemat": [
         "muu"
       ],
       "rooli": "rakenne",
       "suitability": {
-        "aikasarja": 0.29,
-        "panos_tuotos": 0.0,
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
@@ -574,29 +597,6 @@
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "8b6f8db2-dd7a-4b2d-9cd5-8a64dbe6c33f",
-      "external_id": "asunnottomat",
-      "name": "Asunnottomat yhteensä",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": 6.2,
-      "status": "haettava",
-      "year_start": 1987.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
@@ -741,6 +741,52 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "ce1ba192-108e-4ab8-9daf-85c31136f94a",
+      "external_id": "tyollisyysaste_2534",
+      "name": "Työllisyysaste 25–34v",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "%",
+      "ttt_pilari": null,
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "20bdf572-0c1f-4475-ab82-392646e17500",
+      "external_id": "oppisopimus_opiskelijat",
+      "name": "Oppisopimusopiskelijat",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "henkilöä",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1995.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "19b89b8d-63f1-4d97-8b55-b983df824a41",
       "external_id": "yli50v_pitkaaikaistyottomat",
       "name": "Yli 50v työnhakijat yli 3 vuotta",
@@ -787,29 +833,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "ce1ba192-108e-4ab8-9daf-85c31136f94a",
-      "external_id": "tyollisyysaste_2534",
-      "name": "Työllisyysaste 25–34v",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "%",
-      "ttt_pilari": null,
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "3a38c375-0d30-438c-b987-32966070b4c6",
       "external_id": "tyottomyysaste_1864",
       "name": "Työttömyysaste 18–64v",
@@ -829,29 +852,6 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "20bdf572-0c1f-4475-ab82-392646e17500",
-      "external_id": "oppisopimus_opiskelijat",
-      "name": "Oppisopimusopiskelijat",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "henkilöä",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1995.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },
@@ -971,6 +971,29 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "832b1742-e222-4e30-8e63-f6d9677f3f60",
+      "external_id": "tyolliset_2534_m_osaa_tuh",
+      "name": "25–34v miehet: osa-aikatyölliset (tuhatta henkilöä)",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "tuhatta henkilöä",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "2a3c96f3-50e4-4538-bdcb-323c53f40092",
       "external_id": "alle35_vuokra_asumisrasitus_brutto",
       "name": "Alle 35v vuokra-asujat (yksin): asumiskustannukset bruttotuloista (%), mediaani",
@@ -1013,29 +1036,6 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "832b1742-e222-4e30-8e63-f6d9677f3f60",
-      "external_id": "tyolliset_2534_m_osaa_tuh",
-      "name": "25–34v miehet: osa-aikatyölliset (tuhatta henkilöä)",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "tuhatta henkilöä",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },
@@ -1109,29 +1109,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "e7204523-ca57-4d3b-ad43-087fe73b5725",
-      "external_id": "osa_aikatyo_2534_n_osuus",
-      "name": "25–34v naiset: osa-aikatyön osuus kaikista työllisistä (%)",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "%",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "341a14ef-b731-4430-8144-b94ca0766fad",
       "external_id": "tyolliset_2534_m_kokoa_tuh",
       "name": "25–34v miehet: kokoaikatyölliset (tuhatta henkilöä)",
@@ -1178,12 +1155,58 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "e7204523-ca57-4d3b-ad43-087fe73b5725",
+      "external_id": "osa_aikatyo_2534_n_osuus",
+      "name": "25–34v naiset: osa-aikatyön osuus kaikista työllisistä (%)",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "%",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "d33f6603-38b7-41d2-8da3-86b33cc81c57",
       "external_id": "tyokyvyttomyyselake_alle35v",
       "name": "Alle 35v työkyvyttömyyseläkkeet",
       "category_name": "Vammaisuus ja kuntoutus",
       "unit": "henkilöä",
       "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "18ea4804-1a6c-449c-a5ab-a13e976df7d9",
+      "external_id": "asuntohintasuhde_tulot",
+      "name": "Asuntojen hinnat / mediaanipalkka",
+      "category_name": "Asuminen ja toimeentulo",
+      "unit": "suhdeluku",
+      "ttt_pilari": "talous",
       "roi": null,
       "status": "haettava",
       "year_start": 1990.0,
@@ -1224,29 +1247,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "18ea4804-1a6c-449c-a5ab-a13e976df7d9",
-      "external_id": "asuntohintasuhde_tulot",
-      "name": "Asuntojen hinnat / mediaanipalkka",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "suhdeluku",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "d7b176d1-3e83-49d2-8be0-5530dc427df2",
       "external_id": "os_pienituloiset_osallisuus",
       "name": "Erittäin heikko osallisuus pienituloisilla (ESIS < 50)",
@@ -1254,29 +1254,6 @@
       "unit": "%",
       "ttt_pilari": "ehkaiseva",
       "roi": 5.2,
-      "status": "saatavilla_v4",
-      "year_start": 2013.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "muu"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.21,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "de75c3f3-392f-440e-b12c-f33d0396ee01",
-      "external_id": "nuoret_tyytyvaisyys",
-      "name": "Tyytyväisyys elämään (8.–9.lk + 2.aste)",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "%",
-      "ttt_pilari": "vahvistava",
-      "roi": 1.67,
       "status": "saatavilla_v4",
       "year_start": 2013.0,
       "year_end": 2024.0,
@@ -1346,6 +1323,29 @@
       "unit": "%",
       "ttt_pilari": "ehkaiseva",
       "roi": 2.0,
+      "status": "saatavilla_v4",
+      "year_start": 2013.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "muu"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.21,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "de75c3f3-392f-440e-b12c-f33d0396ee01",
+      "external_id": "nuoret_tyytyvaisyys",
+      "name": "Tyytyväisyys elämään (8.–9.lk + 2.aste)",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "%",
+      "ttt_pilari": "vahvistava",
+      "roi": 1.67,
       "status": "saatavilla_v4",
       "year_start": 2013.0,
       "year_end": 2024.0,
