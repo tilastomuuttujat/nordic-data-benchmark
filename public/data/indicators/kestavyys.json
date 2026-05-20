@@ -2,7 +2,7 @@
   "teema_id": "kestavyys",
   "label": "Kestävyys & Rakenne",
   "count": 30,
-  "generated_at": "2026-05-19T04:45:13.008319+00:00",
+  "generated_at": "2026-05-20T04:50:35.056644+00:00",
   "indicators": [
     {
       "id": "254bbec1-27bc-4657-8526-94a36f6d5673",
@@ -14,6 +14,29 @@
       "roi": null,
       "status": "haettava",
       "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "e9a330cf-527e-42fa-985f-aaa90fbd4903",
+      "external_id": "vanhuushuoltosuhde",
+      "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
+      "category_name": "Väestö ja demografia",
+      "unit": "indeksi",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1960.0,
       "year_end": 2024.0,
       "teemat": [
         "kestavyys"
@@ -74,29 +97,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "e9a330cf-527e-42fa-985f-aaa90fbd4903",
-      "external_id": "vanhuushuoltosuhde",
-      "name": "Vanhuushuoltosuhde (65v+ / 15–64v)",
-      "category_name": "Väestö ja demografia",
-      "unit": "indeksi",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1960.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "fcbc99ca-069f-4588-a115-8f766969e2bd",
@@ -364,29 +364,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "f32444dd-d8f7-4510-bc0a-9d69d1281009",
-      "external_id": "vaesto_yhteensa",
-      "name": "Väestö yhteensä",
-      "category_name": "Väestö ja demografia",
-      "unit": "henkilöä (1000)",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1950.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "307fca0b-0a31-438f-b85c-95d47aa0207e",
       "external_id": "ely_joukkoliikenne",
       "name": "Joukkoliikenteen käyttäjät",
@@ -404,6 +381,29 @@
       "suitability": {
         "aikasarja": 0.29,
         "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "f32444dd-d8f7-4510-bc0a-9d69d1281009",
+      "external_id": "vaesto_yhteensa",
+      "name": "Väestö yhteensä",
+      "category_name": "Väestö ja demografia",
+      "unit": "henkilöä (1000)",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1950.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
@@ -509,29 +509,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "c4a98a4b-0d9f-45d8-9103-77a1998e4e36",
-      "external_id": "yksinasuvat_osuus",
-      "name": "Yksinasuvien osuus kotitalouksista",
-      "category_name": "Väestö ja demografia",
-      "unit": "%",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1985.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "4bd7a6ca-2b94-4368-a58b-86696daa4d52",
       "external_id": "ttt_huoltosuhde",
       "name": "Demografinen huoltosuhde",
@@ -598,6 +575,29 @@
         "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "c4a98a4b-0d9f-45d8-9103-77a1998e4e36",
+      "external_id": "yksinasuvat_osuus",
+      "name": "Yksinasuvien osuus kotitalouksista",
+      "category_name": "Väestö ja demografia",
+      "unit": "%",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1985.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
     },

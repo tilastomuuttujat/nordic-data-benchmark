@@ -2,8 +2,33 @@
   "teema_id": "saavutettavuus",
   "label": "Tuotokset & Saavutettavuus",
   "count": 39,
-  "generated_at": "2026-05-19T04:45:13.000690+00:00",
+  "generated_at": "2026-05-20T04:50:35.049152+00:00",
   "indicators": [
+    {
+      "id": "50d28c75-7918-4a47-a15c-0c62b0c357a2",
+      "external_id": "muistisairaat_lkm",
+      "name": "Muistisairauksien esiintyvyys",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "henkilöä",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
     {
       "id": "6f971980-a233-4bcb-9ca8-7c60166b4e99",
       "external_id": "terveyskeskus_kaynteja",
@@ -49,31 +74,6 @@
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "50d28c75-7918-4a47-a15c-0c62b0c357a2",
-      "external_id": "muistisairaat_lkm",
-      "name": "Muistisairauksien esiintyvyys",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
       },
@@ -179,31 +179,6 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "019a6e22-3d45-41a0-85eb-4d100d77f956",
-      "external_id": "elakkeensaajien_pienituloisuus",
-      "name": "Eläkkeensaajien pienituloisuusaste %",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "%",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
       "id": "e30bb5de-3432-4618-9fe9-9d9ff80e6297",
       "external_id": "ika_laitoshoito",
       "name": "Laitoshoidossa olevat 75v+",
@@ -224,6 +199,31 @@
         "aikasarja": 0.21,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 1.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "019a6e22-3d45-41a0-85eb-4d100d77f956",
+      "external_id": "elakkeensaajien_pienituloisuus",
+      "name": "Eläkkeensaajien pienituloisuusaste %",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "%",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "jarjestelmavinouma"
@@ -279,30 +279,6 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "abd65822-a62c-485f-bc83-6d64e1e459c1",
-      "external_id": "lapset_perheneuvolat",
-      "name": "Perheneuvola-asiakkaat",
-      "category_name": "Lapset ja perhe",
-      "unit": "/ 1 000 as.",
-      "ttt_pilari": "vahvistava",
-      "roi": 4.27,
-      "status": "saatavilla_v4",
-      "year_start": 2012.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.22,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
       "id": "9b29201e-8278-4de0-b5f0-3eb320bc5d1f",
       "external_id": "nordic_general_public_services_general_public_services",
       "name": "General public services (pohjoismaat)",
@@ -353,28 +329,28 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "5caf29a5-d539-4b72-87dc-f60445b76af2",
-      "external_id": "mt_avohoito_kaynteja",
-      "name": "Psykiatrian avohoidon käynnit",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "käyntiä / 1000 asukasta",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1995.0,
+      "id": "abd65822-a62c-485f-bc83-6d64e1e459c1",
+      "external_id": "lapset_perheneuvolat",
+      "name": "Perheneuvola-asiakkaat",
+      "category_name": "Lapset ja perhe",
+      "unit": "/ 1 000 as.",
+      "ttt_pilari": "vahvistava",
+      "roi": 4.27,
+      "status": "saatavilla_v4",
+      "year_start": 2012.0,
       "year_end": 2024.0,
       "teemat": [
         "saavutettavuus",
-        "vaikuttavuus"
+        "elinkaari"
       ],
       "rooli": "tuotos",
       "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
+        "aikasarja": 0.22,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.0
       },
-      "best_analysis": "aikasarja"
+      "best_analysis": "panos_tuotos"
     },
     {
       "id": "2b43a381-5e0f-447a-a68a-a42b02f58993",
@@ -425,6 +401,30 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "5caf29a5-d539-4b72-87dc-f60445b76af2",
+      "external_id": "mt_avohoito_kaynteja",
+      "name": "Psykiatrian avohoidon käynnit",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "käyntiä / 1000 asukasta",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1995.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "ca5a78cc-5041-4772-9c2a-8aacdbe29ad7",
       "external_id": "kou_opiskeluhuolto",
       "name": "Koulukuraattori, saatavuus",
@@ -450,16 +450,16 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "4f8f741b-b9e0-40fc-80b1-6264003cba8c",
-      "external_id": "ikaantyneet_tavallinen_palveluasuminen",
-      "name": "Ikääntyneiden tavallinen palveluasuminen, asiakkaat 31.12.",
+      "id": "568787c1-b19f-460b-be1c-8a8a6f4ef86b",
+      "external_id": "omaishoitajat_maara",
+      "name": "Omaishoidon tuen saajia",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "asiakkaita",
-      "ttt_pilari": "korjaava",
+      "unit": "henkilöä",
+      "ttt_pilari": "ehkaiseva",
       "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2022.0,
+      "status": "haettava",
+      "year_start": 1998.0,
+      "year_end": 2024.0,
       "teemat": [
         "saavutettavuus",
         "vinouma",
@@ -500,31 +500,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "568787c1-b19f-460b-be1c-8a8a6f4ef86b",
-      "external_id": "omaishoitajat_maara",
-      "name": "Omaishoidon tuen saajia",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "henkilöä",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1998.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
       "id": "12511b38-e451-492f-b895-95859704acb3",
       "external_id": "hoivahenkilosto_vajaus",
       "name": "Hoitohenkilöstöpula (avoimet tehtävät / täytetyt)",
@@ -547,6 +522,31 @@
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "4f8f741b-b9e0-40fc-80b1-6264003cba8c",
+      "external_id": "ikaantyneet_tavallinen_palveluasuminen",
+      "name": "Ikääntyneiden tavallinen palveluasuminen, asiakkaat 31.12.",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "asiakkaita",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2022.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
     },
@@ -673,6 +673,30 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "d4ab5fbe-f985-4234-a7c2-4099c7c1c787",
+      "external_id": "hammashoidon_kayntimaara",
+      "name": "Hammashoitokäynnit / 1000 asukasta",
+      "category_name": "Terveys",
+      "unit": "käyntiä/1000 asukasta",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vaikuttavuus"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
       "id": "fe564a35-8872-4c47-baa3-2c06a1c4dfb6",
       "external_id": "tehostetussa_palveluasumisessa",
       "name": "Tehostetussa palveluasumisessa 75v+",
@@ -696,30 +720,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "d4ab5fbe-f985-4234-a7c2-4099c7c1c787",
-      "external_id": "hammashoidon_kayntimaara",
-      "name": "Hammashoitokäynnit / 1000 asukasta",
-      "category_name": "Terveys",
-      "unit": "käyntiä/1000 asukasta",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vaikuttavuus"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "1a51cdc6-8e1d-4835-bef1-d1a0a6836b9b",

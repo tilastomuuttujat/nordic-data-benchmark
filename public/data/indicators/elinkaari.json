@@ -2,54 +2,8 @@
   "teema_id": "elinkaari",
   "label": "Elinkaari & Väestöryhmät",
   "count": 158,
-  "generated_at": "2026-05-19T04:45:13.014242+00:00",
+  "generated_at": "2026-05-20T04:50:35.062563+00:00",
   "indicators": [
-    {
-      "id": "161527a4-d2b4-42eb-b2bc-52b01ddd7c35",
-      "external_id": "perhevapaat_kaytto_isat",
-      "name": "Isien osuus perhevapaiden käytöstä",
-      "category_name": "Lapset ja perhe",
-      "unit": "%",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1993.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "aa0f37e1-330d-473b-9589-64f982116256",
-      "external_id": "lastensuojelu_kiireelliset",
-      "name": "Kiireelliset sijoitukset",
-      "category_name": "Lapset ja perhe",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
     {
       "id": "3a8c84cd-6bc7-446c-910a-4998c09d1c1d",
       "external_id": "vanhempainvapaa_kesto_keskim",
@@ -213,50 +167,48 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "8885b01f-0ca0-46e2-855d-ea110ea7998d",
-      "external_id": "pisa_lukutaito",
-      "name": "PISA-pisteet lukutaito",
-      "category_name": "Koulutus",
-      "unit": "pisteet",
-      "ttt_pilari": "vahvistava",
-      "roi": 0.52,
-      "status": "tarkistettava",
-      "year_start": 2000.0,
-      "year_end": 2022.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "a262d32c-0422-41ed-9b96-450b2b6b91d3",
-      "external_id": "erityinen_tuki_perusopetus",
-      "name": "Erityistä tukea saaneet perusopetuksessa (%)",
-      "category_name": "Koulutus",
+      "id": "161527a4-d2b4-42eb-b2bc-52b01ddd7c35",
+      "external_id": "perhevapaat_kaytto_isat",
+      "name": "Isien osuus perhevapaiden käytöstä",
+      "category_name": "Lapset ja perhe",
       "unit": "%",
-      "ttt_pilari": "ehkaiseva",
+      "ttt_pilari": "vahvistava",
       "roi": null,
       "status": "haettava",
-      "year_start": 1995.0,
+      "year_start": 1993.0,
       "year_end": 2024.0,
       "teemat": [
-        "vaikuttavuus",
         "elinkaari"
       ],
-      "rooli": "vaikuttavuus",
+      "rooli": "rakenne",
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "aa0f37e1-330d-473b-9589-64f982116256",
+      "external_id": "lastensuojelu_kiireelliset",
+      "name": "Kiireelliset sijoitukset",
+      "category_name": "Lapset ja perhe",
+      "unit": "henkilöä",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },
@@ -426,29 +378,52 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "74e4756b-4a6e-4203-9d99-a1da727e0067",
-      "external_id": "kotihoidon_asiakkaat",
-      "name": "Säännöllisen kotihoidon asiakkaat 75v+",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": 2.26,
+      "id": "8885b01f-0ca0-46e2-855d-ea110ea7998d",
+      "external_id": "pisa_lukutaito",
+      "name": "PISA-pisteet lukutaito",
+      "category_name": "Koulutus",
+      "unit": "pisteet",
+      "ttt_pilari": "vahvistava",
+      "roi": 0.52,
+      "status": "tarkistettava",
+      "year_start": 2000.0,
+      "year_end": 2022.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "a262d32c-0422-41ed-9b96-450b2b6b91d3",
+      "external_id": "erityinen_tuki_perusopetus",
+      "name": "Erityistä tukea saaneet perusopetuksessa (%)",
+      "category_name": "Koulutus",
+      "unit": "%",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
       "status": "haettava",
       "year_start": 1995.0,
       "year_end": 2024.0,
       "teemat": [
-        "saavutettavuus",
-        "vinouma",
+        "vaikuttavuus",
         "elinkaari"
       ],
-      "rooli": "tuotos",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
       },
-      "best_analysis": "jarjestelmavinouma"
+      "best_analysis": "aikasarja"
     },
     {
       "id": "50d28c75-7918-4a47-a15c-0c62b0c357a2",
@@ -497,6 +472,31 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
+    },
+    {
+      "id": "74e4756b-4a6e-4203-9d99-a1da727e0067",
+      "external_id": "kotihoidon_asiakkaat",
+      "name": "Säännöllisen kotihoidon asiakkaat 75v+",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "henkilöä",
+      "ttt_pilari": "korjaava",
+      "roi": 2.26,
+      "status": "haettava",
+      "year_start": 1995.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "b0fc4744-ae49-4274-84fd-b92af57275a7",
@@ -550,30 +550,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "4b35c72e-54bd-4b36-8783-d430b0777b26",
-      "external_id": "lapsivaestonosuus",
-      "name": "0–14v osuus väestöstä",
-      "category_name": "Väestö ja demografia",
-      "unit": "%",
-      "ttt_pilari": "demografia",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1960.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys",
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "485d1e78-bab6-4bbc-a6e2-404103454af3",
       "external_id": "lapsiperheiden_asumisrasitus_oma",
       "name": "Lapsiperheet omistusasunnossa: asumiskustannusten tulo-osuus (netto %, mediaani)",
@@ -596,6 +572,30 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "4b35c72e-54bd-4b36-8783-d430b0777b26",
+      "external_id": "lapsivaestonosuus",
+      "name": "0–14v osuus väestöstä",
+      "category_name": "Väestö ja demografia",
+      "unit": "%",
+      "ttt_pilari": "demografia",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1960.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys",
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "7d1a4fbb-638e-482b-a1f0-590a7c90a3cc",
@@ -698,54 +698,6 @@
       "external_id": "nordic_maternity_benefit_couple_with_two_children_besides_newborn_|_75_&_75_100",
       "name": "Couple with two children besides newborn | 75 & 75/100 (pohjoismaat)",
       "category_name": "Nordic -- Maternity benefit",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "20389b96-a9db-494d-b238-1e5b67694c09",
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_50_&_50_75",
-      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "8cb081b0-dfe7-4c96-ba1f-863ed6789876",
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_75_&_75_100",
-      "name": "Couple without children | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
       "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -958,10 +910,10 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "5315ca6b-d739-4fb8-88f7-06f8a8fdb8ac",
-      "external_id": "nordic_social_assistance_single_person_with_a_child_|_125_(singles_only)",
-      "name": "Single person with a child | 125 (singles only) (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
+      "id": "20389b96-a9db-494d-b238-1e5b67694c09",
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_50_&_50_75",
+      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
       "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -982,10 +934,10 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "6d9745a7-19df-4d25-9b4e-e82bdf1602ed",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_50_&_50_75",
-      "name": "Single person without children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
+      "id": "8cb081b0-dfe7-4c96-ba1f-863ed6789876",
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_without_children_|_75_&_75_100",
+      "name": "Couple without children | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
       "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -1175,6 +1127,54 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "5315ca6b-d739-4fb8-88f7-06f8a8fdb8ac",
+      "external_id": "nordic_social_assistance_single_person_with_a_child_|_125_(singles_only)",
+      "name": "Single person with a child | 125 (singles only) (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "6d9745a7-19df-4d25-9b4e-e82bdf1602ed",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_50_&_50_75",
+      "name": "Single person without children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
       "id": "36c7be47-6389-4c65-b057-4338a275b03c",
       "external_id": "syntyvyys_tfr",
       "name": "Kokonaishedelmällisyysluku (TFR)",
@@ -1222,29 +1222,6 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "33969af7-ea72-4165-9044-d6efc72ebd47",
-      "external_id": "ttt_elavanasyntyneet",
-      "name": "Elävänä syntyneet",
-      "category_name": "Lapset ja perhe",
-      "unit": "",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "84c3dd1c-1903-4aa0-8c03-390a9219141b",
       "external_id": "rikosepaillyt_0_14v",
       "name": "Rikoksista epäillyt 0–14-v / 1 000 vastaavan ikäistä",
@@ -1267,6 +1244,29 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "33969af7-ea72-4165-9044-d6efc72ebd47",
+      "external_id": "ttt_elavanasyntyneet",
+      "name": "Elävänä syntyneet",
+      "category_name": "Lapset ja perhe",
+      "unit": "",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "3fb1eb10-f65b-4036-b1de-c311441cd2c1",
@@ -1340,54 +1340,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "9ba626bd-6580-434a-9619-84f360eb7225",
-      "external_id": "oppilaanohjaus_resurssit",
-      "name": "Oppilaanohjaajien määrä / 1000 oppilasta",
-      "category_name": "Koulutus",
-      "unit": "oppilaanohjaajaa/1000 oppilasta",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "48047b17-5672-4fb9-8833-9ad781dc2daa",
-      "external_id": "lukio_opiskelijat",
-      "name": "Lukion opiskelijamäärä",
-      "category_name": "Koulutus",
-      "unit": "henkilöä",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "015f96e4-ea5c-4c6e-a785-03c7084adec5",
@@ -1485,29 +1437,52 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "019a6e22-3d45-41a0-85eb-4d100d77f956",
-      "external_id": "elakkeensaajien_pienituloisuus",
-      "name": "Eläkkeensaajien pienituloisuusaste %",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "%",
-      "ttt_pilari": "korjaava",
+      "id": "48047b17-5672-4fb9-8833-9ad781dc2daa",
+      "external_id": "lukio_opiskelijat",
+      "name": "Lukion opiskelijamäärä",
+      "category_name": "Koulutus",
+      "unit": "henkilöä",
+      "ttt_pilari": "vahvistava",
       "roi": null,
       "status": "haettava",
-      "year_start": 1990.0,
+      "year_start": 2000.0,
       "year_end": 2024.0,
       "teemat": [
-        "saavutettavuus",
-        "vinouma",
+        "vaikuttavuus",
         "elinkaari"
       ],
-      "rooli": "tuotos",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.1
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
       },
-      "best_analysis": "jarjestelmavinouma"
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "9ba626bd-6580-434a-9619-84f360eb7225",
+      "external_id": "oppilaanohjaus_resurssit",
+      "name": "Oppilaanohjaajien määrä / 1000 oppilasta",
+      "category_name": "Koulutus",
+      "unit": "oppilaanohjaajaa/1000 oppilasta",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "e30bb5de-3432-4618-9fe9-9d9ff80e6297",
@@ -1530,6 +1505,31 @@
         "aikasarja": 0.21,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 1.0,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "019a6e22-3d45-41a0-85eb-4d100d77f956",
+      "external_id": "elakkeensaajien_pienituloisuus",
+      "name": "Eläkkeensaajien pienituloisuusaste %",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "%",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "jarjestelmavinouma"
@@ -1559,6 +1559,30 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "527947f5-fd15-43a7-9a6d-b301febf79b1",
+      "external_id": "lapsiperheiden_asumisrasitus_vuokra",
+      "name": "Lapsiperheet vuokralla: asumiskustannusten tulo-osuus (netto %, mediaani)",
+      "category_name": "Asuminen ja toimeentulo",
+      "unit": "%",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "valmis",
+      "year_start": 2002.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "elinkaari"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
     },
     {
       "id": "08ef5799-6d19-461d-a39f-3592198c78df",
@@ -1602,30 +1626,6 @@
       "rooli": "panos",
       "suitability": {
         "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "527947f5-fd15-43a7-9a6d-b301febf79b1",
-      "external_id": "lapsiperheiden_asumisrasitus_vuokra",
-      "name": "Lapsiperheet vuokralla: asumiskustannusten tulo-osuus (netto %, mediaani)",
-      "category_name": "Asuminen ja toimeentulo",
-      "unit": "%",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "valmis",
-      "year_start": 2002.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "elinkaari"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.1
@@ -1710,54 +1710,6 @@
       "name": "3-5 years (pohjoismaat)",
       "category_name": "Nordic -- Children in day-care",
       "unit": "Percent of age group, %",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "43945f60-8448-402f-aa61-4fa90c72881e",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_75_&_75_100",
-      "name": "Single person without children | 75 & 75/100 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "4b9cf603-d245-4745-a7a5-01e8a0837d32",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_125_(singles_only)",
-      "name": "Single person without children | 125 (singles only) (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
       "status": null,
@@ -1923,6 +1875,101 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
+      "id": "43945f60-8448-402f-aa61-4fa90c72881e",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_75_&_75_100",
+      "name": "Single person without children | 75 & 75/100 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "4b9cf603-d245-4745-a7a5-01e8a0837d32",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_125_(singles_only)",
+      "name": "Single person without children | 125 (singles only) (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "01f13c1e-d183-4bde-8ff9-b657a2f731b5",
+      "external_id": "adoptiot_kotimaiset",
+      "name": "Kotimaiset adoptiot",
+      "category_name": "Lapset ja perhe",
+      "unit": "kpl",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1985.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "38231a27-e429-4d5f-a74e-39f39984bad6",
+      "external_id": "ttt_cofog_gf1004",
+      "name": "Perhe ja lapset — julkiset menot (M€)",
+      "category_name": "Lapset ja perhe",
+      "unit": "M€",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "elinkaari"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "3af7268b-e295-4249-94e8-0df7b7635af6",
       "external_id": "rikosepaillyt_15_17v",
       "name": "Rikoksista epäillyt 15–17-v / 1 000 vastaavan ikäistä",
@@ -1995,51 +2042,28 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "01f13c1e-d183-4bde-8ff9-b657a2f731b5",
-      "external_id": "adoptiot_kotimaiset",
-      "name": "Kotimaiset adoptiot",
-      "category_name": "Lapset ja perhe",
-      "unit": "kpl",
-      "ttt_pilari": "korjaava",
-      "roi": null,
+      "id": "3ed2b299-8416-4dd2-8619-a4b22499bd69",
+      "external_id": "kouluterveyskysely_yksinaisyys",
+      "name": "Yksinäiseksi itsensä kokevat 8–9lk (%)",
+      "category_name": "Koulutus",
+      "unit": "%",
+      "ttt_pilari": "ehkaiseva",
+      "roi": 1.8,
       "status": "haettava",
-      "year_start": 1985.0,
-      "year_end": 2024.0,
+      "year_start": 2006.0,
+      "year_end": 2023.0,
       "teemat": [
+        "vaikuttavuus",
         "elinkaari"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
+        "aikasarja": 0.27,
+        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
-    },
-    {
-      "id": "38231a27-e429-4d5f-a74e-39f39984bad6",
-      "external_id": "ttt_cofog_gf1004",
-      "name": "Perhe ja lapset — julkiset menot (M€)",
-      "category_name": "Lapset ja perhe",
-      "unit": "M€",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "elinkaari"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
     },
     {
       "id": "ca5a78cc-5041-4772-9c2a-8aacdbe29ad7",
@@ -2067,30 +2091,6 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "9218c7e2-9140-4939-a611-725122378a2b",
-      "external_id": "koulunkaynnin_tuki",
-      "name": "Koulunkäynninohjaajat / 1000 oppilasta",
-      "category_name": "Koulutus",
-      "unit": "koulunkäynninohjaajaa/1000 oppilasta",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2005.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.29,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "8d0b0275-688f-45ae-a786-1dbe450aa6c0",
       "external_id": "korkea_aste_suorittaneet",
       "name": "Korkea-asteen tutkinnon suorittaneet 25–34v",
@@ -2115,40 +2115,40 @@
       "best_analysis": "aikasarja"
     },
     {
-      "id": "3ed2b299-8416-4dd2-8619-a4b22499bd69",
-      "external_id": "kouluterveyskysely_yksinaisyys",
-      "name": "Yksinäiseksi itsensä kokevat 8–9lk (%)",
+      "id": "9218c7e2-9140-4939-a611-725122378a2b",
+      "external_id": "koulunkaynnin_tuki",
+      "name": "Koulunkäynninohjaajat / 1000 oppilasta",
       "category_name": "Koulutus",
-      "unit": "%",
+      "unit": "koulunkäynninohjaajaa/1000 oppilasta",
       "ttt_pilari": "ehkaiseva",
-      "roi": 1.8,
+      "roi": null,
       "status": "haettava",
-      "year_start": 2006.0,
-      "year_end": 2023.0,
+      "year_start": 2005.0,
+      "year_end": 2024.0,
       "teemat": [
         "vaikuttavuus",
         "elinkaari"
       ],
       "rooli": "vaikuttavuus",
       "suitability": {
-        "aikasarja": 0.27,
-        "panos_tuotos": 0.2,
+        "aikasarja": 0.29,
+        "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },
     {
-      "id": "4f8f741b-b9e0-40fc-80b1-6264003cba8c",
-      "external_id": "ikaantyneet_tavallinen_palveluasuminen",
-      "name": "Ikääntyneiden tavallinen palveluasuminen, asiakkaat 31.12.",
+      "id": "568787c1-b19f-460b-be1c-8a8a6f4ef86b",
+      "external_id": "omaishoitajat_maara",
+      "name": "Omaishoidon tuen saajia",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "asiakkaita",
-      "ttt_pilari": "korjaava",
+      "unit": "henkilöä",
+      "ttt_pilari": "ehkaiseva",
       "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2022.0,
+      "status": "haettava",
+      "year_start": 1998.0,
+      "year_end": 2024.0,
       "teemat": [
         "saavutettavuus",
         "vinouma",
@@ -2183,31 +2183,6 @@
       "suitability": {
         "aikasarja": 0.21,
         "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "568787c1-b19f-460b-be1c-8a8a6f4ef86b",
-      "external_id": "omaishoitajat_maara",
-      "name": "Omaishoidon tuen saajia",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "henkilöä",
-      "ttt_pilari": "ehkaiseva",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1998.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
       },
@@ -2264,6 +2239,31 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "4f8f741b-b9e0-40fc-80b1-6264003cba8c",
+      "external_id": "ikaantyneet_tavallinen_palveluasuminen",
+      "name": "Ikääntyneiden tavallinen palveluasuminen, asiakkaat 31.12.",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "asiakkaita",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2022.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
       "id": "c711afd3-b034-47d6-9044-cac56c2075b0",
       "external_id": "lapsiperheiden_asumisrasitus_yli40_vuokra",
       "name": "Lapsiperheet vuokralla: asumiskustannukset >40% tuloista (EU housing cost overburden)",
@@ -2287,6 +2287,30 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "0d35738e-b158-46ad-ab42-b4c48c1a478a",
+      "external_id": "pahoinpitely_lapset",
+      "name": "Lapsiin kohdistuneet pahoinpitelyt",
+      "category_name": "Rakenne ja hyvinvointi",
+      "unit": "henkilöä",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1987.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
     },
     {
       "id": "908da48e-653e-40a6-bef7-317e25344d24",
@@ -2313,30 +2337,6 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "0d35738e-b158-46ad-ab42-b4c48c1a478a",
-      "external_id": "pahoinpitely_lapset",
-      "name": "Lapsiin kohdistuneet pahoinpitelyt",
-      "category_name": "Rakenne ja hyvinvointi",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1987.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
     },
     {
       "id": "7fa5bbc5-3fcd-4d10-9f8b-a0c4cba5016d",
@@ -2415,30 +2415,6 @@
       "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_75_&_75_100",
       "name": "Couple with 2 children | 75 & 75/100 (pohjoismaat)",
       "category_name": "Nordic -- Unemployment benefit (insured)",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "aae01717-86aa-4936-957e-59431b01c939",
-      "external_id": "nordic_social_assistance_single_person_without_children_|_100_&_100_125",
-      "name": "Single person without children | 100 & 100/125 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
       "unit": "% of previous net income",
       "ttt_pilari": "vertailu",
       "roi": null,
@@ -2583,41 +2559,18 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "c314ca63-edf9-40e0-8633-d4f335f307d4",
-      "external_id": "perheneuvolat_kayntimaara",
-      "name": "Perheneuvolan käyntimäärä / 1000 asukasta",
-      "category_name": "Lapset ja perhe",
-      "unit": "käyntiä/1000 asukasta",
-      "ttt_pilari": "ehkaiseva",
+      "id": "aae01717-86aa-4936-957e-59431b01c939",
+      "external_id": "nordic_social_assistance_single_person_without_children_|_100_&_100_125",
+      "name": "Single person without children | 100 & 100/125 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
       "roi": null,
-      "status": "haettava",
-      "year_start": 1990.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "4b0ff3ea-03a5-4b32-8230-8023764fd0a9",
-      "external_id": "ttt_tfr_edata",
-      "name": "12dt -- Kokonaishedelmällisyysluku, 1776-2024\tKokonaishedelmällisyysluku",
-      "category_name": "Lapset ja perhe",
-      "unit": "",
-      "ttt_pilari": "vahvistava",
-      "roi": null,
-      "status": "saatavilla_v4",
+      "status": null,
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "vaikuttavuus",
+        "pohjoismainen",
         "elinkaari"
       ],
       "rooli": "vaikuttavuus",
@@ -2625,9 +2578,9 @@
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
+        "pohjoismainen_vertailu": 0.5
       },
-      "best_analysis": "aikasarja"
+      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "e2170ff3-b419-4abe-b7d2-5e81d1af3960",
@@ -2650,29 +2603,6 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "c79560d6-77a7-49a5-be9b-f157c37c6bc7",
-      "external_id": "lapset_vammaistuki_yht",
-      "name": "Alle 16v vammaistuen saajat, yhteensä",
-      "category_name": "Lapset ja perhe",
-      "unit": "henkilöä",
-      "ttt_pilari": "vahvistava",
-      "roi": 3.83,
-      "status": "saatavilla_v4",
-      "year_start": 2012.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.22,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },
@@ -2726,38 +2656,14 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "4297caa6-d61a-4b33-a922-91d8e95ebb99",
-      "external_id": "ammatillinen_erityisopetus",
-      "name": "Ammatillisen erityisopetuksen opiskelijat",
-      "category_name": "Koulutus",
-      "unit": "henkilöä",
+      "id": "c314ca63-edf9-40e0-8633-d4f335f307d4",
+      "external_id": "perheneuvolat_kayntimaara",
+      "name": "Perheneuvolan käyntimäärä / 1000 asukasta",
+      "category_name": "Lapset ja perhe",
+      "unit": "käyntiä/1000 asukasta",
       "ttt_pilari": "ehkaiseva",
       "roi": null,
       "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "vaikuttavuus",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
-      "id": "883dbb3e-5d1f-46e2-a16e-348e27840cd4",
-      "external_id": "nuorisotyottomyys_1524",
-      "name": "Nuorisotyöttömyysaste 15–24v",
-      "category_name": "Nuoret ja työllisyys",
-      "unit": "%",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "tarkistettava",
       "year_start": 1990.0,
       "year_end": 2024.0,
       "teemat": [
@@ -2768,7 +2674,54 @@
         "aikasarja": 0.3,
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.1
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "4b0ff3ea-03a5-4b32-8230-8023764fd0a9",
+      "external_id": "ttt_tfr_edata",
+      "name": "12dt -- Kokonaishedelmällisyysluku, 1776-2024\tKokonaishedelmällisyysluku",
+      "category_name": "Lapset ja perhe",
+      "unit": "",
+      "ttt_pilari": "vahvistava",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "c79560d6-77a7-49a5-be9b-f157c37c6bc7",
+      "external_id": "lapset_vammaistuki_yht",
+      "name": "Alle 16v vammaistuen saajat, yhteensä",
+      "category_name": "Lapset ja perhe",
+      "unit": "henkilöä",
+      "ttt_pilari": "vahvistava",
+      "roi": 3.83,
+      "status": "saatavilla_v4",
+      "year_start": 2012.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.22,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },
@@ -2817,6 +2770,53 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.1,
         "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "4297caa6-d61a-4b33-a922-91d8e95ebb99",
+      "external_id": "ammatillinen_erityisopetus",
+      "name": "Ammatillisen erityisopetuksen opiskelijat",
+      "category_name": "Koulutus",
+      "unit": "henkilöä",
+      "ttt_pilari": "ehkaiseva",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "vaikuttavuus",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "883dbb3e-5d1f-46e2-a16e-348e27840cd4",
+      "external_id": "nuorisotyottomyys_1524",
+      "name": "Nuorisotyöttömyysaste 15–24v",
+      "category_name": "Nuoret ja työllisyys",
+      "unit": "%",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "tarkistettava",
+      "year_start": 1990.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
     },
@@ -3018,78 +3018,6 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "d8ee3d74-4b09-4b85-b3fd-266fba0518a6",
-      "external_id": "nordic_disability_benefit_single_person_without_children_|_75",
-      "name": "Single person without children | 75 (pohjoismaat)",
-      "category_name": "Nordic -- Disability benefit",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "6777667e-f64f-46d6-a63a-1fa900b03a44",
-      "external_id": "nordic_unemployment_benefit_(uninsured)_single_person_without_children_|_50",
-      "name": "Single person without children | 50 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (uninsured)",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
-      "id": "7e740e26-47be-429e-a744-07501614cb48",
-      "external_id": "nordic_sickness_benefit_single_person_without_children_|_100",
-      "name": "Single person without children | 100 (pohjoismaat)",
-      "category_name": "Nordic -- Sickness benefit",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
-    },
-    {
       "id": "6373e1b9-f0e0-4006-9824-8a67ddd1a55c",
       "external_id": "nordic_unemployment_benefit_(insured)_single_person_without_children_|_125_(sing",
       "name": "Single person without children | 125 (singles only) (pohjoismaat)",
@@ -3162,6 +3090,102 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
+      "id": "6777667e-f64f-46d6-a63a-1fa900b03a44",
+      "external_id": "nordic_unemployment_benefit_(uninsured)_single_person_without_children_|_50",
+      "name": "Single person without children | 50 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (uninsured)",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "d8ee3d74-4b09-4b85-b3fd-266fba0518a6",
+      "external_id": "nordic_disability_benefit_single_person_without_children_|_75",
+      "name": "Single person without children | 75 (pohjoismaat)",
+      "category_name": "Nordic -- Disability benefit",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "7e740e26-47be-429e-a744-07501614cb48",
+      "external_id": "nordic_sickness_benefit_single_person_without_children_|_100",
+      "name": "Single person without children | 100 (pohjoismaat)",
+      "category_name": "Nordic -- Sickness benefit",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
+      "id": "1e4b1658-225e-4fcb-a196-a1a735f1d7d2",
+      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_100_&_100_125",
+      "name": "Couple with 2 children | 100 & 100/125 (pohjoismaat)",
+      "category_name": "Nordic -- Unemployment benefit (insured)",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
       "id": "3dcdc75f-4f84-43fc-936d-7e1bea1700c8",
       "external_id": "varhaiskasvatus_osallistuminen",
       "name": "Varhaiskasvatukseen osallistuneet 1–5v",
@@ -3207,30 +3231,6 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
-    },
-    {
-      "id": "1e4b1658-225e-4fcb-a196-a1a735f1d7d2",
-      "external_id": "nordic_unemployment_benefit_(insured)_couple_with_2_children_|_100_&_100_125",
-      "name": "Couple with 2 children | 100 & 100/125 (pohjoismaat)",
-      "category_name": "Nordic -- Unemployment benefit (insured)",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
     },
     {
       "id": "76fd9591-7c92-475b-a12e-525927b1bc2f",
@@ -3302,31 +3302,6 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
-    },
-    {
-      "id": "cc777427-3672-4cfa-9a1d-c61d7944ea72",
-      "external_id": "nordic_childlessness_by_age_45_childlessness_by_age_45",
-      "name": "Childlessness by age 45 (pohjoismaat)",
-      "category_name": "Nordic -- Childlessness by age 45",
-      "unit": "%",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vinouma",
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "35564387-a7b1-427b-9cb5-20cdc19672f3",
@@ -3447,6 +3422,31 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "aikasarja"
+    },
+    {
+      "id": "cc777427-3672-4cfa-9a1d-c61d7944ea72",
+      "external_id": "nordic_childlessness_by_age_45_childlessness_by_age_45",
+      "name": "Childlessness by age 45 (pohjoismaat)",
+      "category_name": "Nordic -- Childlessness by age 45",
+      "unit": "%",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vinouma",
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "jarjestelmavinouma"
     },
     {
       "id": "bd009f54-d723-443a-9ab2-d0e2a739bb11",
@@ -3763,6 +3763,30 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "a9e8d8c3-6198-43b5-b018-c6a3f0878233",
+      "external_id": "nordic_social_assistance_couple_with_2_children_|_50_&_50_75",
+      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
+      "category_name": "Nordic -- Social assistance",
+      "unit": "% of previous net income",
+      "ttt_pilari": "vertailu",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "pohjoismainen",
+        "elinkaari"
+      ],
+      "rooli": "vaikuttavuus",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.1,
+        "pohjoismainen_vertailu": 0.5
+      },
+      "best_analysis": "pohjoismainen_vertailu"
+    },
+    {
       "id": "49402513-207e-44a1-8ac6-aad3af443d85",
       "external_id": "nuoret_neet_riskiryhma",
       "name": "NEET-nuoret riskiryhmissä (maahanmuuttajataustaiset + matala koulutus)",
@@ -3786,30 +3810,6 @@
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "a9e8d8c3-6198-43b5-b018-c6a3f0878233",
-      "external_id": "nordic_social_assistance_couple_with_2_children_|_50_&_50_75",
-      "name": "Couple with 2 children | 50 & 50/75 (pohjoismaat)",
-      "category_name": "Nordic -- Social assistance",
-      "unit": "% of previous net income",
-      "ttt_pilari": "vertailu",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "pohjoismainen",
-        "elinkaari"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.1,
-        "pohjoismainen_vertailu": 0.5
-      },
-      "best_analysis": "pohjoismainen_vertailu"
     }
   ]
 }
