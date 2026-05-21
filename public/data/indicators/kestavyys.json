@@ -2,7 +2,7 @@
   "teema_id": "kestavyys",
   "label": "Kestävyys & Rakenne",
   "count": 30,
-  "generated_at": "2026-05-20T04:50:35.056644+00:00",
+  "generated_at": "2026-05-21T04:50:02.022842+00:00",
   "indicators": [
     {
       "id": "254bbec1-27bc-4657-8526-94a36f6d5673",
@@ -196,30 +196,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "ff6bacf6-520b-4589-9dc4-06510cdfe452",
-      "external_id": "ttt_cofog_gf1006",
-      "name": "Asuminen — julkiset menot (M€)",
-      "category_name": "Elinympäristö ja kestävyys",
-      "unit": "M€",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "kestavyys"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
       "id": "a5bf8641-915e-46fe-94b6-4d41f06a641c",
       "external_id": "muuttoliike_netto",
       "name": "Nettomaahanmuutto",
@@ -314,6 +290,30 @@
       "best_analysis": "aikasarja"
     },
     {
+      "id": "ff6bacf6-520b-4589-9dc4-06510cdfe452",
+      "external_id": "ttt_cofog_gf1006",
+      "name": "Asuminen — julkiset menot (M€)",
+      "category_name": "Elinympäristö ja kestävyys",
+      "unit": "M€",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "kestavyys"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "2d6091af-1da6-4ca6-8454-850274da3590",
       "external_id": "nordic_share_of_population_who_are_overweight_or_obese_share_of_population_who_a",
       "name": "Share of population who are overweight or obese (pohjoismaat)",
@@ -364,29 +364,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "307fca0b-0a31-438f-b85c-95d47aa0207e",
-      "external_id": "ely_joukkoliikenne",
-      "name": "Joukkoliikenteen käyttäjät",
-      "category_name": "Elinympäristö ja kestävyys",
-      "unit": "M matkaa / vuosi",
-      "ttt_pilari": "ehkaiseva",
-      "roi": 0.12,
-      "status": "saatavilla_v4",
-      "year_start": 2005.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.29,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "f32444dd-d8f7-4510-bc0a-9d69d1281009",
       "external_id": "vaesto_yhteensa",
       "name": "Väestö yhteensä",
@@ -404,6 +381,29 @@
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "307fca0b-0a31-438f-b85c-95d47aa0207e",
+      "external_id": "ely_joukkoliikenne",
+      "name": "Joukkoliikenteen käyttäjät",
+      "category_name": "Elinympäristö ja kestävyys",
+      "unit": "M matkaa / vuosi",
+      "ttt_pilari": "ehkaiseva",
+      "roi": 0.12,
+      "status": "saatavilla_v4",
+      "year_start": 2005.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.29,
+        "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.0
       },
@@ -509,29 +509,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "4bd7a6ca-2b94-4368-a58b-86696daa4d52",
-      "external_id": "ttt_huoltosuhde",
-      "name": "Demografinen huoltosuhde",
-      "category_name": "Väestö ja demografia",
-      "unit": null,
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "kestavyys"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.0,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "aikasarja"
-    },
-    {
       "id": "1bba1082-ac6f-4699-b7ce-077cc538a5b5",
       "external_id": "elinajanodote_50v",
       "name": "50-vuotiaan elinajanodote",
@@ -598,6 +575,29 @@
         "panos_tuotos": 0.0,
         "jarjestelmavinouma": 0.0,
         "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "aikasarja"
+    },
+    {
+      "id": "4bd7a6ca-2b94-4368-a58b-86696daa4d52",
+      "external_id": "ttt_huoltosuhde",
+      "name": "Demografinen huoltosuhde",
+      "category_name": "Väestö ja demografia",
+      "unit": null,
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "kestavyys"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.0,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "aikasarja"
     },

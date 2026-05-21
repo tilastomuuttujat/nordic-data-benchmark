@@ -2,57 +2,8 @@
   "teema_id": "vinouma",
   "label": "Järjestelmän Vinouma & Oikeudenmukaisuus",
   "count": 70,
-  "generated_at": "2026-05-20T04:50:35.054599+00:00",
+  "generated_at": "2026-05-21T04:50:02.020846+00:00",
   "indicators": [
-    {
-      "id": "50d28c75-7918-4a47-a15c-0c62b0c357a2",
-      "external_id": "muistisairaat_lkm",
-      "name": "Muistisairauksien esiintyvyys",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "henkilöä",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 2000.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "e8e6c693-43f4-4d91-a07b-431dcb0484d4",
-      "external_id": "ttt_kuntien_menot_meur",
-      "name": "Paikallishallinnon menot",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "M€",
-      "ttt_pilari": "konteksti",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
     {
       "id": "6f971980-a233-4bcb-9ca8-7c60166b4e99",
       "external_id": "terveyskeskus_kaynteja",
@@ -104,16 +55,16 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "b0fc4744-ae49-4274-84fd-b92af57275a7",
-      "external_id": "ttt_ika65_osuus",
-      "name": "Ikääntyneiden osuus",
+      "id": "50d28c75-7918-4a47-a15c-0c62b0c357a2",
+      "external_id": "muistisairaat_lkm",
+      "name": "Muistisairauksien esiintyvyys",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "",
+      "unit": "henkilöä",
       "ttt_pilari": "korjaava",
       "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
+      "status": "haettava",
+      "year_start": 2000.0,
+      "year_end": 2024.0,
       "teemat": [
         "saavutettavuus",
         "vinouma",
@@ -121,12 +72,36 @@
       ],
       "rooli": "tuotos",
       "suitability": {
-        "aikasarja": 0.1,
+        "aikasarja": 0.3,
         "panos_tuotos": 0.2,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "e8e6c693-43f4-4d91-a07b-431dcb0484d4",
+      "external_id": "ttt_kuntien_menot_meur",
+      "name": "Paikallishallinnon menot",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "M€",
+      "ttt_pilari": "konteksti",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "resurssit",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
     },
     {
       "id": "9931b708-aa86-4793-bef9-b7bbd690b2f0",
@@ -155,6 +130,31 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "b0fc4744-ae49-4274-84fd-b92af57275a7",
+      "external_id": "ttt_ika65_osuus",
+      "name": "Ikääntyneiden osuus",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla_v4",
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
       "id": "cf385deb-570a-468d-bb2f-84be4cc5ae94",
       "external_id": "ely_viheralueet",
       "name": "Viheralueita / asukas kaupungeissa",
@@ -177,54 +177,6 @@
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "57e7bf1b-2f3e-4f38-b867-e130a64bf82f",
-      "external_id": "julkinen_paaomakanta_netto",
-      "name": "Julkisen sektorin pääomakanta",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "MEUR",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "haettava",
-      "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "4c247601-db9f-4fd1-9839-f91c43c3a75d",
-      "external_id": "cofog_GF04_talous",
-      "name": "COFOG GF04 Elinkeinot / BKT",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "% BKT:sta",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "tarkistettava",
-      "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
     },
     {
       "id": "b0396695-a823-4f08-b8f8-546f708e0bfd",
@@ -420,6 +372,54 @@
       "best_analysis": "panos_tuotos"
     },
     {
+      "id": "57e7bf1b-2f3e-4f38-b867-e130a64bf82f",
+      "external_id": "julkinen_paaomakanta_netto",
+      "name": "Julkisen sektorin pääomakanta",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "MEUR",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "haettava",
+      "year_start": 1975.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "4c247601-db9f-4fd1-9839-f91c43c3a75d",
+      "external_id": "cofog_GF04_talous",
+      "name": "COFOG GF04 Elinkeinot / BKT",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "% BKT:sta",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "tarkistettava",
+      "year_start": 1975.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
       "id": "21f9dacb-2677-43bc-8078-0e27be95aaa7",
       "external_id": "ttt_kuntien_menot_bkt",
       "name": "Paikallishallinnon menot / BKT",
@@ -543,30 +543,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "e770b89c-de5f-492a-96df-d55f843e4d9b",
-      "external_id": "ttt_kuntoutus_psy",
-      "name": "Kuntoutuspsykoterapiaa saaneet 18 - 24-vuotiaat / 1 000 vastaavan ikäistä",
-      "category_name": "Mielenterveys ja päihteet",
-      "unit": "",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "saatavilla_v4",
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vaikuttavuus",
-        "vinouma"
-      ],
-      "rooli": "vaikuttavuus",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.7,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
       "id": "8a37ee91-5a65-4adb-b15b-1f1d42978d66",
       "external_id": "nordic_public_order_and_safety_public_order_and_safety",
       "name": "Public order and safety (pohjoismaat)",
@@ -591,25 +567,25 @@
       "best_analysis": "pohjoismainen_vertailu"
     },
     {
-      "id": "84c3dd1c-1903-4aa0-8c03-390a9219141b",
-      "external_id": "rikosepaillyt_0_14v",
-      "name": "Rikoksista epäillyt 0–14-v / 1 000 vastaavan ikäistä",
-      "category_name": "Lapset ja perhe",
-      "unit": "/1000",
-      "ttt_pilari": "turvallisuus",
+      "id": "e770b89c-de5f-492a-96df-d55f843e4d9b",
+      "external_id": "ttt_kuntoutus_psy",
+      "name": "Kuntoutuspsykoterapiaa saaneet 18 - 24-vuotiaat / 1 000 vastaavan ikäistä",
+      "category_name": "Mielenterveys ja päihteet",
+      "unit": "",
+      "ttt_pilari": "korjaava",
       "roi": null,
-      "status": null,
+      "status": "saatavilla_v4",
       "year_start": null,
       "year_end": null,
       "teemat": [
-        "vinouma",
-        "elinkaari"
+        "vaikuttavuus",
+        "vinouma"
       ],
-      "rooli": "rakenne",
+      "rooli": "vaikuttavuus",
       "suitability": {
         "aikasarja": 0.1,
         "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
+        "jarjestelmavinouma": 0.7,
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
@@ -640,27 +616,26 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "e30bb5de-3432-4618-9fe9-9d9ff80e6297",
-      "external_id": "ika_laitoshoito",
-      "name": "Laitoshoidossa olevat 75v+",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "% ikäryhmästä",
-      "ttt_pilari": "korjaava",
-      "roi": 0.56,
-      "status": "saatavilla_v4",
-      "year_start": 2013.0,
-      "year_end": 2024.0,
+      "id": "84c3dd1c-1903-4aa0-8c03-390a9219141b",
+      "external_id": "rikosepaillyt_0_14v",
+      "name": "Rikoksista epäillyt 0–14-v / 1 000 vastaavan ikäistä",
+      "category_name": "Lapset ja perhe",
+      "unit": "/1000",
+      "ttt_pilari": "turvallisuus",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
       "teemat": [
-        "saavutettavuus",
         "vinouma",
         "elinkaari"
       ],
-      "rooli": "tuotos",
+      "rooli": "rakenne",
       "suitability": {
-        "aikasarja": 0.21,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 1.0,
-        "pohjoismainen_vertailu": 0.1
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
     },
@@ -712,6 +687,31 @@
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "e30bb5de-3432-4618-9fe9-9d9ff80e6297",
+      "external_id": "ika_laitoshoito",
+      "name": "Laitoshoidossa olevat 75v+",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "% ikäryhmästä",
+      "ttt_pilari": "korjaava",
+      "roi": 0.56,
+      "status": "saatavilla_v4",
+      "year_start": 2013.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.21,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 1.0,
+        "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "jarjestelmavinouma"
     },
@@ -888,6 +888,30 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "3af7268b-e295-4249-94e8-0df7b7635af6",
+      "external_id": "rikosepaillyt_15_17v",
+      "name": "Rikoksista epäillyt 15–17-v / 1 000 vastaavan ikäistä",
+      "category_name": "Lapset ja perhe",
+      "unit": "/1000",
+      "ttt_pilari": "turvallisuus",
+      "roi": null,
+      "status": null,
+      "year_start": null,
+      "year_end": null,
+      "teemat": [
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "rakenne",
+      "suitability": {
+        "aikasarja": 0.1,
+        "panos_tuotos": 0.0,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
       "id": "9b29201e-8278-4de0-b5f0-3eb320bc5d1f",
       "external_id": "nordic_general_public_services_general_public_services",
       "name": "General public services (pohjoismaat)",
@@ -938,30 +962,6 @@
       "best_analysis": "panos_tuotos"
     },
     {
-      "id": "3af7268b-e295-4249-94e8-0df7b7635af6",
-      "external_id": "rikosepaillyt_15_17v",
-      "name": "Rikoksista epäillyt 15–17-v / 1 000 vastaavan ikäistä",
-      "category_name": "Lapset ja perhe",
-      "unit": "/1000",
-      "ttt_pilari": "turvallisuus",
-      "roi": null,
-      "status": null,
-      "year_start": null,
-      "year_end": null,
-      "teemat": [
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "rakenne",
-      "suitability": {
-        "aikasarja": 0.1,
-        "panos_tuotos": 0.0,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
       "id": "71b8b994-4c9c-4735-b759-04e6ca35b2c7",
       "external_id": "nordic_total_number_of_persons_in_age_group_total_number_of_persons_in_age_group",
       "name": "Total number of persons in age group (pohjoismaat)",
@@ -986,6 +986,31 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
+      "id": "4f8f741b-b9e0-40fc-80b1-6264003cba8c",
+      "external_id": "ikaantyneet_tavallinen_palveluasuminen",
+      "name": "Ikääntyneiden tavallinen palveluasuminen, asiakkaat 31.12.",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "asiakkaita",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 2000.0,
+      "year_end": 2022.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.2,
+        "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
       "id": "568787c1-b19f-460b-be1c-8a8a6f4ef86b",
       "external_id": "omaishoitajat_maara",
       "name": "Omaishoidon tuen saajia",
@@ -1005,31 +1030,6 @@
       "suitability": {
         "aikasarja": 0.3,
         "panos_tuotos": 0.2,
-        "jarjestelmavinouma": 0.8,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "271a9df2-25ce-44eb-970c-821858197a4c",
-      "external_id": "ika_terveet_elinvuodet",
-      "name": "Terveet elinvuodet 65v+",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "vuotta",
-      "ttt_pilari": "vahvistava",
-      "roi": 0.33,
-      "status": "saatavilla_v4",
-      "year_start": 2013.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.21,
-        "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
       },
@@ -1062,16 +1062,16 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "4f8f741b-b9e0-40fc-80b1-6264003cba8c",
-      "external_id": "ikaantyneet_tavallinen_palveluasuminen",
-      "name": "Ikääntyneiden tavallinen palveluasuminen, asiakkaat 31.12.",
+      "id": "271a9df2-25ce-44eb-970c-821858197a4c",
+      "external_id": "ika_terveet_elinvuodet",
+      "name": "Terveet elinvuodet 65v+",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "asiakkaita",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 2000.0,
-      "year_end": 2022.0,
+      "unit": "vuotta",
+      "ttt_pilari": "vahvistava",
+      "roi": 0.33,
+      "status": "saatavilla_v4",
+      "year_start": 2013.0,
+      "year_end": 2024.0,
       "teemat": [
         "saavutettavuus",
         "vinouma",
@@ -1079,60 +1079,12 @@
       ],
       "rooli": "tuotos",
       "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.2,
+        "aikasarja": 0.21,
+        "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.8,
         "pohjoismainen_vertailu": 0.0
       },
       "best_analysis": "jarjestelmavinouma"
-    },
-    {
-      "id": "4bdedcd6-90a0-4cc3-b438-14f2b757f6f4",
-      "external_id": "cofog_GF01_yleishallinto",
-      "name": "COFOG GF01 Yleishallinto / BKT",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "% BKT:sta",
-      "ttt_pilari": "talous",
-      "roi": null,
-      "status": "tarkistettava",
-      "year_start": 1975.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "panos_tuotos"
-    },
-    {
-      "id": "c34c442b-cf18-4713-95a6-226de9e2a706",
-      "external_id": "sosiaaliturva_maksettu_yht",
-      "name": "Sosiaaliturvan maksetut etuudet",
-      "category_name": "Talous ja julkinen rahoitus",
-      "unit": "EUR",
-      "ttt_pilari": "korjaava",
-      "roi": null,
-      "status": "saatavilla",
-      "year_start": 1980.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "resurssit",
-        "vinouma"
-      ],
-      "rooli": "panos",
-      "suitability": {
-        "aikasarja": 0.3,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 0.4,
-        "pohjoismainen_vertailu": 0.0
-      },
-      "best_analysis": "panos_tuotos"
     },
     {
       "id": "3cc54378-eb4a-4c0c-922f-c4876689efb6",
@@ -1247,6 +1199,54 @@
       "teemat": [
         "resurssit",
         "saavutettavuus",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.0
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "4bdedcd6-90a0-4cc3-b438-14f2b757f6f4",
+      "external_id": "cofog_GF01_yleishallinto",
+      "name": "COFOG GF01 Yleishallinto / BKT",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "% BKT:sta",
+      "ttt_pilari": "talous",
+      "roi": null,
+      "status": "tarkistettava",
+      "year_start": 1975.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
+        "vinouma"
+      ],
+      "rooli": "panos",
+      "suitability": {
+        "aikasarja": 0.3,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 0.4,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "panos_tuotos"
+    },
+    {
+      "id": "c34c442b-cf18-4713-95a6-226de9e2a706",
+      "external_id": "sosiaaliturva_maksettu_yht",
+      "name": "Sosiaaliturvan maksetut etuudet",
+      "category_name": "Talous ja julkinen rahoitus",
+      "unit": "EUR",
+      "ttt_pilari": "korjaava",
+      "roi": null,
+      "status": "saatavilla",
+      "year_start": 1980.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "resurssit",
         "vinouma"
       ],
       "rooli": "panos",
@@ -1385,14 +1385,14 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "c89e6a56-5f7d-45b5-9e0f-3dc7234b3680",
-      "external_id": "ikaantyneet_ymparivuorokautinen_palveluasuminen",
-      "name": "Iäkkäiden ympärivuorokautinen palveluasuminen, asiakkaat 31.12.",
+      "id": "fe564a35-8872-4c47-baa3-2c06a1c4dfb6",
+      "external_id": "tehostetussa_palveluasumisessa",
+      "name": "Tehostetussa palveluasumisessa 75v+",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "asiakkaita",
+      "unit": "henkilöä",
       "ttt_pilari": "korjaava",
       "roi": null,
-      "status": "saatavilla",
+      "status": "haettava",
       "year_start": 2000.0,
       "year_end": 2024.0,
       "teemat": [
@@ -1410,14 +1410,14 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "fe564a35-8872-4c47-baa3-2c06a1c4dfb6",
-      "external_id": "tehostetussa_palveluasumisessa",
-      "name": "Tehostetussa palveluasumisessa 75v+",
+      "id": "c89e6a56-5f7d-45b5-9e0f-3dc7234b3680",
+      "external_id": "ikaantyneet_ymparivuorokautinen_palveluasuminen",
+      "name": "Iäkkäiden ympärivuorokautinen palveluasuminen, asiakkaat 31.12.",
       "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "henkilöä",
+      "unit": "asiakkaita",
       "ttt_pilari": "korjaava",
       "roi": null,
-      "status": "haettava",
+      "status": "saatavilla",
       "year_start": 2000.0,
       "year_end": 2024.0,
       "teemat": [
@@ -1657,31 +1657,6 @@
       "best_analysis": "jarjestelmavinouma"
     },
     {
-      "id": "318a78fa-769d-44d8-90da-76ac912ff70d",
-      "external_id": "ika_toimintakyky",
-      "name": "Toimintakykyiset 75v+",
-      "category_name": "Ikääntyminen ja vanhuspalvelut",
-      "unit": "% ikäryhmästä",
-      "ttt_pilari": "vahvistava",
-      "roi": 1.33,
-      "status": "saatavilla_v4",
-      "year_start": 2013.0,
-      "year_end": 2024.0,
-      "teemat": [
-        "saavutettavuus",
-        "vinouma",
-        "elinkaari"
-      ],
-      "rooli": "tuotos",
-      "suitability": {
-        "aikasarja": 0.21,
-        "panos_tuotos": 0.4,
-        "jarjestelmavinouma": 1.0,
-        "pohjoismainen_vertailu": 0.1
-      },
-      "best_analysis": "jarjestelmavinouma"
-    },
-    {
       "id": "eb3173d2-e58c-4b9c-88f7-42fb6d216877",
       "external_id": "ika_yksinaisyys_80",
       "name": "Yksinäisyyttä kokevat 80-vuotiaat ja vanhemmat",
@@ -1702,6 +1677,31 @@
         "aikasarja": 0.21,
         "panos_tuotos": 0.4,
         "jarjestelmavinouma": 0.8,
+        "pohjoismainen_vertailu": 0.1
+      },
+      "best_analysis": "jarjestelmavinouma"
+    },
+    {
+      "id": "318a78fa-769d-44d8-90da-76ac912ff70d",
+      "external_id": "ika_toimintakyky",
+      "name": "Toimintakykyiset 75v+",
+      "category_name": "Ikääntyminen ja vanhuspalvelut",
+      "unit": "% ikäryhmästä",
+      "ttt_pilari": "vahvistava",
+      "roi": 1.33,
+      "status": "saatavilla_v4",
+      "year_start": 2013.0,
+      "year_end": 2024.0,
+      "teemat": [
+        "saavutettavuus",
+        "vinouma",
+        "elinkaari"
+      ],
+      "rooli": "tuotos",
+      "suitability": {
+        "aikasarja": 0.21,
+        "panos_tuotos": 0.4,
+        "jarjestelmavinouma": 1.0,
         "pohjoismainen_vertailu": 0.1
       },
       "best_analysis": "jarjestelmavinouma"
